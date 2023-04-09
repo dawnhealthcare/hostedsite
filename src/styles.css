@@ -1,0 +1,122 @@
+html,
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f5f5;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+.h-100vh {
+  min-height: 80vh;
+}
+.pb-main {
+  padding-bottom: 30px;
+}
+
+.wellness-wrapper {
+  background: #ffffff;
+  box-shadow: 0px 4px 16px 11px rgba(255, 168, 0, 0.05);
+  border-radius: 20px;
+  padding: 20px 30px;
+  margin-top: 60px;
+}
+
+.wellness-inner {
+  background: rgba(159, 189, 191, 0.4);
+  border-radius: 20px;
+}
+
+.inner-card {
+  margin-top: -60px;
+  /* min-width: 608px; */
+  background: #e8971e;
+  box-shadow: 0px 4px 16px rgba(240, 73, 116, 0.13);
+  border-radius: 20px 20px 0px 0px;
+  height: calc(100% + 60px);
+  /* padding: 50px 30px; */
+}
+
+.no-deco {
+  text-decoration: none;
+  color: #fff;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.wrapper-image {
+  z-index: 1;
+}
+
+.inner-image {
+  position: absolute;
+  width: 87%;
+  height: 91%;
+  border-radius: 247px 247px 100px 100px;
+}
+
+@media (max-width: 992px) {
+  .inner-card {
+    margin-top: 0px;
+    /* margin-bottom: 60px; */
+  }
+  .last-card {
+    margin-top: 40px;
+  }
+  .inner-image {
+    width: 85%;
+    height: 72%;
+  }
+
+  .h-100vh {
+    min-height: 74vh;
+  }
+}
+
+@media (min-width: 1400px) {
+  .inner-image {
+    width: 77%;
+    height: 91%;
+  }
+}
+
+.terms {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type='radio'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* create custom radiobutton appearance */
+  width: 20px;
+  height: 20px;
+  padding: 3px;
+  /* background-color only for content */
+  background-clip: content-box;
+  border: 2px solid #bbbbbb;
+  background-color: #e7e6e7;
+  border-radius: 50%;
+}
+
+/* appearance for checked radiobutton */
+input[type='radio']:checked {
+  background-color: #e8971e;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+  text-decoration: none;
+  transition: ease-in-out all 0.5s;
+}
+
+.cursor-pointer:hover {
+  color: #e8971e !important;
+}
