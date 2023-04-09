@@ -120,3 +120,7 @@ input[type='radio']:checked {
 .cursor-pointer:hover {
   color: #e8971e !important;
 }
+
+.navbar .active {
+  color: #e8971e !important;
+}

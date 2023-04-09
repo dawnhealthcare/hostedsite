@@ -2,7 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import { NavbarWrapper, NavItem, RecLink } from './styles';
 import Logo from './../../assets/logo/logo.png';
-import { Navbar } from 'react-bootstrap';
+import { Nav, Navbar } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 
 export const Header = (props) => {
@@ -30,23 +30,55 @@ export const Header = (props) => {
             id="responsive-navbar-nav"
             className="justify-content-end"
           >
-            <NavItem>
+            <Nav className="">
               {navLinks.map((navLink) => (
-                <RecLink
+                <Nav.Link
+                  href="#"
                   key={navLink.id}
-                  to={navLink.to}
                   className={active == navLink.to ? 'active' : ''}
                 >
-                  {navLink.title}
-                </RecLink>
+                  <RecLink
+                    to={navLink.to}
+                    className={`${
+                      active == navLink.to ? 'active' : ''
+                    } nav-link`}
+                  >
+                    {navLink.title}
+                  </RecLink>
+                </Nav.Link>
               ))}
-            </NavItem>
-            {/* <NavItem>
-              <Button onClick={() => navigate('/signup')}>Signup</Button>
-            </NavItem> */}
+            </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      {/* <Navbar collapseOnSelect expand="lg" fixed="top" className={className}>
+        <Container>
+          <Navbar.Brand>
+            <RecLink to="/">
+              <img src={Logo} className="img-fluid" alt="" />
+            </RecLink>
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse
+            id="responsive-navbar-nav"
+            className="justify-content-end"
+          >
+            <Nav className="me-auto">
+              <NavItem>
+                {navLinks.map((navLink) => (
+                  <RecLink
+                    key={navLink.id}
+                    to={navLink.to}
+                    className={active == navLink.to ? 'active' : ''}
+                  >
+                    {navLink.title}
+                  </RecLink>
+                ))}
+              </NavItem>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar> */}
     </NavbarWrapper>
   );
 };
