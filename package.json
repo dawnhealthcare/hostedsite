@@ -2,7 +2,7 @@
   "name": "dawn-health",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dawnhealthcare · he/him.github.io/hostedsite",
+  "homepage": "https://dawnhealthcare.github.io/hostedsite",
   "dependencies": {
     "@react-pdf-viewer/core": "^3.12.0",
     "@testing-library/jest-dom": "^5.16.5",
