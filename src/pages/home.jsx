@@ -63,10 +63,9 @@ const HomePage = () => {
                 className="wow animate__animated animate__fadeInLeft pb-main"
                 title="Mental Health Resilience For Adolescents"
               >
-                Families connect with us - Change this to: Revolutionize your
-                child's mental health journey with our AI-powered approach,
-                designed to keep parents engaged and informed every step of the
-                way.
+                Revolutionize your child's mental health journey with our
+                AI-powered approach, designed to keep parents engaged and
+                informed every step of the way.
               </SectionHeader>
             </Col>
             <Col md={12}>
