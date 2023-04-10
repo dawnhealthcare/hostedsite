@@ -9,7 +9,7 @@ import './styles.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename="/dawnhealth.care">
+    <BrowserRouter basename="/">
       <App />
     </BrowserRouter>
   </React.StrictMode>
