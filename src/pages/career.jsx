@@ -128,8 +128,8 @@ const CareerPage = () => {
             </Col>
             <Col md={6} className="wow animate__animated animate__fadeInRight">
               <SectionHeader className="" title="About You">
-                You will thrive in the role of Behavioral Therapist at
-                Brightline if you have:
+                You will thrive in the role of Behavioral Therapist at Dawn
+                Health if you have:
               </SectionHeader>
               <List className="pe-5">
                 <ListItem className="pb-3">
