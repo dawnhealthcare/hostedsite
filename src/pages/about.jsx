@@ -11,10 +11,9 @@ import Partner1 from './../assets/about/s1.png';
 import Partner2 from './../assets/about/s2.png';
 import Partner3 from './../assets/about/s3.png';
 import Partner4 from './../assets/about/s4.png';
-import Partner5 from './../assets/about/s5.png';
-import Partner6 from './../assets/about/s6.png';
 import Partner7 from './../assets/about/s7.png';
 import Partner8 from './../assets/about/s8.png';
+import Partner9 from './../assets/about/s9.png';
 
 const AboutPage = () => {
   return (
@@ -155,6 +154,13 @@ const AboutPage = () => {
               className="mb-4 wow animate__animated animate__zoomIn"
             >
               <img src={Partner8} className="img-fluid" alt="main image" />
+            </Col>
+            <Col
+              sm={6}
+              md={4}
+              className="mb-4 wow animate__animated animate__zoomIn"
+            >
+              <img src={Partner9} className="img-fluid" alt="main image" />
             </Col>
           </Row>
         </Container>
