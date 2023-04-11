@@ -6,7 +6,6 @@ import Para from '../components/Para';
 import { SectionHeader } from '../components/SectionHeader';
 import { Hero, SectionWrapper, FaqPageWrapper } from '../styles';
 import Main from './../assets/faq/1.png';
-
 const FaqPage = () => {
   return (
     <FaqPageWrapper>
