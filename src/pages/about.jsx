@@ -129,13 +129,13 @@ const AboutPage = () => {
             >
               <img src={Partner2} className="img-fluid" alt="main image" />
             </Col>
-            <Col
+            {/* <Col
               sm={6}
               md={4}
               className="mb-4 wow animate__animated animate__zoomIn"
             >
               <img src={Partner3} className="img-fluid" alt="main image" />
-            </Col>
+            </Col> */}
             <Col
               sm={6}
               md={4}
