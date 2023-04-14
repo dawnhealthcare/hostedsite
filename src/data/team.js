@@ -5,7 +5,7 @@ import Team4 from './../assets/team/4.png';
 import Team5 from './../assets/team/5.png';
 import Team6 from './../assets/team/6.png';
 import Team7 from './../assets/team/7.png';
-import Team8 from './../assets/team/8.png';
+import Team9 from './../assets/team/9.png';
 export const teamMembers = [
   {
     id: 1,
@@ -56,11 +56,11 @@ export const teamMembers = [
     src: Team7,
     alt: 'team image',
   },
-  // {
-  //   id: 8,
-  //   name: 'Karun Joseph',
-  //   status: 'Marketing specialist',
-  //   src: Team8,
-  //   alt: 'team image',
-  // },
+  {
+    id: 8,
+    name: 'Lauren Fulkerson, MD',
+    status: 'CLINICAL EXCELLENCE, PEDIATRIC & PARENTING ADVISOR',
+    src: Team9,
+    alt: 'team image',
+  },
 ];
