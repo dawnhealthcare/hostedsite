@@ -81,6 +81,7 @@ function Form() {
 
     let templateParams = {
       form_data: result,
+      title: 'Member Info',
     };
     emailjs
       .send('service_mo2rzyj', 'template_azf34qd', templateParams)

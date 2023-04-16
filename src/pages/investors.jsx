@@ -6,6 +6,7 @@ import Para from '../components/Para';
 import { SectionHeader } from '../components/SectionHeader';
 import Main from './../assets/home/1.png';
 import Video from './../assets/investors/investors.mp4';
+import Logo from './../assets/home/animated-1.gif';
 
 const InvestorsPage = () => {
   return (
@@ -43,10 +44,9 @@ const InvestorsPage = () => {
             <Col md={6}>
               <SectionHeader
                 className="wow animate__animated animate__fadeInLeft pb-main"
-                title="Mental Health Resilience"
+                title="Test Title"
               >
-                Revolutionize your child's mental health journey with our
-                AI-powered approach
+                Test description
               </SectionHeader>
             </Col>
             <Col md={12}>
@@ -71,10 +71,9 @@ const InvestorsPage = () => {
             <Col md={6}>
               <SectionHeader
                 className="wow animate__animated animate__fadeInLeft pb-main"
-                title="Mental Health Resilience"
+                title="Test Title"
               >
-                Revolutionize your child's mental health journey with our
-                AI-powered approach
+                Test Description
               </SectionHeader>
             </Col>
           </Row>

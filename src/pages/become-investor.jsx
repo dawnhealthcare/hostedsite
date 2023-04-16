@@ -42,6 +42,7 @@ const BecomeInvestor = () => {
 
     let templateParams = {
       form_data: result,
+      title: 'Investor Info',
     };
     emailjs
       .send('service_mo2rzyj', 'template_azf34qd', templateParams)
@@ -69,7 +70,7 @@ const BecomeInvestor = () => {
         <Container>
           <Row className="align-items-center reverse h-100vh">
             <Col md={6} className="wow animate__animated animate__fadeInLeft">
-              <Heading main="Become An Investor">
+              <Heading main="Investor">
                 Join the Dawn Health Wellness Ecosystem
               </Heading>
               <Para>
