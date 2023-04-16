@@ -8,8 +8,8 @@ export const ButtonWrapper = styled.button`
   );
   border: 3px solid rgba(255, 198, 86, 0.75);
   border-radius: 15px;
-  padding: 14px 30px;
-  height: 60px;
+  padding: 0 30px;
+  height: ${(props) => (props.size == 'md' ? '60px' : '50px')};
   font-weight: bold;
   font-size: 16px;
   color: #fff;

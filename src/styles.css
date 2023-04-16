@@ -4,12 +4,17 @@ body {
   background-color: #f5f5f5;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  padding-right: 0px !important;
 }
 .h-100vh {
   min-height: 90vh;
 }
 .pb-main {
   padding-bottom: 30px;
+}
+
+.h-50vh {
+  min-height: 80vh;
 }
 
 .wellness-wrapper {

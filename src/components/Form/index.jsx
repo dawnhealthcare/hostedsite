@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { Error } from '../Input/styles';
 import { Alert, Col, Row } from 'react-bootstrap';
