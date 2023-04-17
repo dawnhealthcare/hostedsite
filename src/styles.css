@@ -129,3 +129,43 @@ input[type='radio']:checked {
 .navbar .active {
   color: #e8971e !important;
 }
+.react-pdf__Page__annotations,
+.react-pdf__Page__textContent {
+  display: none;
+}
+.react-pdf__Document {
+  /* min-height: 600px !important; */
+  background: white;
+}
+.react-pdf__Document canvas {
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.rounded-btn {
+  background: linear-gradient(
+    270.23deg,
+    rgb(232, 151, 30) -6.15%,
+    rgba(255, 168, 0, 0.75) 118.13%
+  );
+  border: 3px solid rgba(255, 198, 86, 0.75);
+  border-radius: 100px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 800px) {
+  .rounded-btn {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@media (min-width: 800px) {
+  .react-pdf__Document {
+    min-height: 600px !important;
+  }
+}

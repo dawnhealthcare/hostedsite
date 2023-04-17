@@ -4,9 +4,11 @@ import { Col, Container, Row } from 'react-bootstrap';
 import Heading from '../components/Heading';
 import Para from '../components/Para';
 import { SectionHeader } from '../components/SectionHeader';
-import Main from './../assets/home/1.png';
+import Main from './../assets/investors/main.png';
+import InvestorPDF from './../assets/investors/investors.pdf';
+import PDFViewerComp from '../components/PDFViewer';
 import Video from './../assets/investors/investors.mp4';
-import Logo from './../assets/home/animated-1.gif';
+import Main2 from './../assets/about/2.png';
 
 const InvestorsPage = () => {
   return (
@@ -15,9 +17,7 @@ const InvestorsPage = () => {
         <Container>
           <Row className="align-items-center h-100vh reverse">
             <Col md={6} className="wow animate__animated animate__fadeInLeft">
-              <Heading main="Our Investors">
-                Join Us on Our Investor Journey
-              </Heading>
+              <Heading main="Our Investors">Join Us on a Journey</Heading>
               <Para>
                 Welcome to Dawn Health, a virtual mental health company
                 dedicated to promoting the well-being of adolescents and their
@@ -44,10 +44,8 @@ const InvestorsPage = () => {
             <Col md={6}>
               <SectionHeader
                 className="wow animate__animated animate__fadeInLeft pb-main"
-                title="Test Title"
-              >
-                Test description
-              </SectionHeader>
+                title="Investor Slideshare"
+              ></SectionHeader>
             </Col>
             <Col md={12}>
               <div className="wow animate__animated animate__zoomIn">
@@ -56,7 +54,7 @@ const InvestorsPage = () => {
                   width="100%"
                   height="100%"
                   controls
-                  autoplay
+                  autoPlay
                 >
                   <source src={Video} type="video/mp4" />
                 </video>
@@ -65,16 +63,57 @@ const InvestorsPage = () => {
           </Row>
         </Container>
       </SectionWrapper>
-      <SectionWrapper className="pb-5">
+      <SectionWrapper>
         <Container>
           <Row>
             <Col md={6}>
               <SectionHeader
                 className="wow animate__animated animate__fadeInLeft pb-main"
-                title="Test Title"
+                title="Surgeon General Speaks"
               >
-                Test Description
+                U.S. Surgeon General Speaks About Youth Mental Health at
+                Cleveland Clinic
               </SectionHeader>
+            </Col>
+            <Col md={12}>
+              <div className="wow animate__animated animate__zoomIn">
+                <iframe
+                  width="100%"
+                  height="603"
+                  src="https://www.youtube.com/embed/6-ZZAYMMH4g"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                ></iframe>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </SectionWrapper>
+      <SectionWrapper>
+        <Container>
+          <Row>
+            <Col md={6}>
+              <SectionHeader
+                className="wow animate__animated animate__fadeInLeft pb-main"
+                title="School Board Members Survey"
+              ></SectionHeader>
+            </Col>
+            <Col md={12}>
+              <div className="wow animate__animated animate__zoomIn">
+                <PDFViewerComp path={InvestorPDF} />
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </SectionWrapper>
+      <SectionWrapper className="pb-5">
+        <Container>
+          <Row>
+            <Col md={7}>
+              <SectionHeader
+                className="wow animate__animated animate__fadeInLeft pb-main"
+                title="Investing to Making a Difference"
+              ></SectionHeader>
             </Col>
           </Row>
           <Row className="align-items-center">
@@ -120,7 +159,7 @@ const InvestorsPage = () => {
               className="text-end wow animate__animated animate__fadeInRight"
             >
               <img
-                src={Main}
+                src={Main2}
                 className="img-fluid main-image"
                 alt="main image"
               />
