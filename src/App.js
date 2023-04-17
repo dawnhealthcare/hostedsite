@@ -36,7 +36,7 @@ function App() {
   return (
     <div className="App">
       <Header
-        className={`${height > 300 || width < 990 ? 'effix' : ''}`}
+        className={`${height > 50 || width < 990 ? 'effix' : ''}`}
         active={active}
         setActive={setActive}
       />

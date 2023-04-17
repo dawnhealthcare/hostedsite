@@ -7,7 +7,7 @@ import { SectionHeader } from '../components/SectionHeader';
 import Main from './../assets/investors/main.png';
 import InvestorPDF from './../assets/investors/investors.pdf';
 import PDFViewerComp from '../components/PDFViewer';
-import Video from './../assets/investors/investors.mp4';
+import DECK from './../assets/investors/deck.pdf';
 import Main2 from './../assets/about/2.png';
 
 const InvestorsPage = () => {
@@ -49,15 +49,7 @@ const InvestorsPage = () => {
             </Col>
             <Col md={12}>
               <div className="wow animate__animated animate__zoomIn">
-                <video
-                  id="myVideo"
-                  width="100%"
-                  height="100%"
-                  controls
-                  autoPlay
-                >
-                  <source src={Video} type="video/mp4" />
-                </video>
+                <PDFViewerComp path={DECK} />
               </div>
             </Col>
           </Row>

@@ -65,8 +65,8 @@ const BecomeInvestor = () => {
     sendEmail(data, reset);
   };
   return (
-    <BecomeInvestorWrapper>
-      <Hero>
+    <BecomeInvestorWrapper className="py-5">
+      {/* <Hero>
         <Container>
           <Row className="align-items-center reverse h-100vh">
             <Col md={6} className="wow animate__animated animate__fadeInLeft">
@@ -90,7 +90,7 @@ const BecomeInvestor = () => {
             </Col>
           </Row>
         </Container>
-      </Hero>
+      </Hero> */}
       <SectionWrapper>
         <Container>
           <Row className="pb-main align-items-center">
@@ -183,7 +183,9 @@ const BecomeInvestor = () => {
                     />
                   </Col>
                   <Col className="mb-4">
-                    <label>Do you have health care insurance?</label>
+                    <label>
+                      Are you interested in investing in Dawn Health?
+                    </label>
                     <div className="d-flex align-items-center">
                       <label className="d-flex align-items-center me-4">
                         <input
