@@ -30,7 +30,7 @@ const ProtectedInvestorPage = () => {
       ) : (
         <WrongCode
           setShowDialog2={setShowDialog}
-          message="Click the button bellow to access insvestors page"
+          message="Click the button bellow to access insvestor relations page"
           action="Click Here"
         />
       )}

@@ -179,7 +179,7 @@ const BecomeInvestor = ({ setAccessCode, accessCode, onClick }) => {
         </Button>
         {accessCode && (
           <Button className="mt-2 ms-3" onClick={onClick}>
-            Continue
+            Access Investor Page
           </Button>
         )}
       </form>

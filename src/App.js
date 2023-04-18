@@ -55,7 +55,7 @@ function App() {
           ></Route> */}
           <Route
             exact
-            path="/investors"
+            path="/investor-relations"
             element={<ProtectedInvestorPage />}
           ></Route>
           <Route
