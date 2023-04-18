@@ -48,11 +48,11 @@ function App() {
           <Route exact path="/faqs" element={<FaqPage />}></Route>
           <Route exact path="/join-our-team" element={<CareerPage />}></Route>
           <Route exact path="/signup" element={<SignupPage />}></Route>
-          <Route
+          {/* <Route
             exact
             path="/become-an-investor"
             element={<BecomeInvestor />}
-          ></Route>
+          ></Route> */}
           <Route
             exact
             path="/investors"
