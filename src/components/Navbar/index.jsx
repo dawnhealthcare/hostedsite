@@ -13,8 +13,9 @@ export const Header = (props) => {
     { id: 2, to: '/about', title: 'About Us' },
     { id: 3, to: '/signup', title: 'Sign Up' },
     { id: 4, to: '/team', title: 'Team' },
-    { id: 5, to: '/join-our-team', title: 'Join our Team' },
-    { id: 6, to: '/faqs', title: 'FAQs' },
+    { id: 5, to: '/investor-relations', title: 'Investor Relations' },
+    { id: 6, to: '/join-our-team', title: 'Join our Team' },
+    { id: 7, to: '/faqs', title: 'FAQs' },
   ];
   return (
     <NavbarWrapper>
