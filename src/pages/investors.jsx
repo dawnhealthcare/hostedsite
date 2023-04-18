@@ -7,7 +7,7 @@ import { SectionHeader } from '../components/SectionHeader';
 import Main from './../assets/investors/main.png';
 import InvestorPDF from './../assets/investors/investors.pdf';
 import PDFViewerComp from '../components/PDFViewer';
-import DECK from './../assets/investors/deck.pdf';
+import DECK from './../assets/investors/deck2.pdf';
 import Main2 from './../assets/about/2.png';
 
 const InvestorsPage = () => {
@@ -41,11 +41,20 @@ const InvestorsPage = () => {
       <SectionWrapper>
         <Container>
           <Row>
-            <Col md={6}>
+            <Col md={12}>
               <SectionHeader
                 className="wow animate__animated animate__fadeInLeft pb-main"
                 title="Investor Slideshare"
-              ></SectionHeader>
+              >
+                Investing in Dawn Health has the potential to unlock a world of
+                financial possibility, with the promise of generating remarkable
+                returns that could transform your future. Don't miss out on the
+                chance to witness the power of your investment come to life and
+                experience the thrill of watching your wealth grow
+                exponentially. Join us on a journey towards financial
+                prosperity, and see the amazing returns that Dawn Health can
+                deliver!
+              </SectionHeader>
             </Col>
             <Col md={12}>
               <div className="wow animate__animated animate__zoomIn">
@@ -58,14 +67,22 @@ const InvestorsPage = () => {
       <SectionWrapper>
         <Container>
           <Row>
-            <Col md={6}>
+            <Col md={12}>
               <SectionHeader
                 className="wow animate__animated animate__fadeInLeft pb-main"
                 title="Federal Focus on Adolescent Mental Health Care"
               >
-                U.S. Surgeon General Speaks About Youth Mental Health at
-                Cleveland Clinic" to "U.S. Surgeon General Reinforces The Focus
-                On Adolescent Mental Health
+                The U.S. Surgeon General's recent emphasis on adolescent mental
+                health is a much-needed reminder of the critical importance of
+                prioritizing the well-being of our youth. By shining a spotlight
+                on this pressing issue, we can work towards a future where young
+                people have the resources and support they need to thrive, both
+                personally and academically. With this renewed focus on
+                adolescent mental health, we have an opportunity to make a
+                positive impact on the lives of countless young people and help
+                them to reach their full potential. Let's join forces and
+                prioritize the mental health of our youth today for a brighter
+                tomorrow.
               </SectionHeader>
             </Col>
             <Col md={12}>
@@ -73,7 +90,7 @@ const InvestorsPage = () => {
                 <iframe
                   width="100%"
                   height="603"
-                  src="https://www.youtube.com/embed/6-ZZAYMMH4g"
+                  src="https://www.youtube.com/embed/6-ZZAYMMH4g?start=946"
                   title="YouTube video player"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 ></iframe>
@@ -89,7 +106,12 @@ const InvestorsPage = () => {
               <SectionHeader
                 className="wow animate__animated animate__fadeInLeft pb-main"
                 title="School Board Members Survey"
-              ></SectionHeader>
+              >
+                The School Board Members Survey highlights the urgent need for
+                increased focus on adolescent Mental Health and the need to
+                better support students struggling with mental health
+                challenges.
+              </SectionHeader>
             </Col>
             <Col md={12}>
               <div className="wow animate__animated animate__zoomIn">

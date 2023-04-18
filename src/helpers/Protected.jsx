@@ -15,6 +15,7 @@ const ProtectedInvestorPage = () => {
   const [showDialog3, setShowDialog3] = useState(false);
   const [showDialog, setShowDialog] = useState(true);
   const [hasCode, setHasCode] = useState(false);
+  const [accessCode, setAccessCode] = useState('');
 
   return (
     <>
@@ -42,6 +43,7 @@ const ProtectedInvestorPage = () => {
           setAuthenticated={setAuthenticated}
           setWrongCode={setWrongCode}
           setShowDialog2={setShowDialog2}
+          setAccessCode={setAccessCode}
         />
       </AuthDialog>
       <AuthDialog
@@ -62,9 +64,10 @@ const ProtectedInvestorPage = () => {
         title="Fill out the fields below to become an investor"
       >
         <InvestorForm
-          setShowDialog={setShowDialog}
-          setShowDialog2={setShowDialog2}
           setShowDialog3={setShowDialog3}
+          setAccessCode={setAccessCode}
+          accessCode={accessCode}
+          setAuthenticated={setAuthenticated}
         />
       </AuthDialog>
     </>
@@ -86,8 +89,8 @@ export const AccessCodeForm = ({
   setAuthenticated,
   setWrongCode,
   setShowDialog2,
+  setAccessCode,
 }) => {
-  const [accessCode, setAccessCode] = useState('');
   const {
     register,
     handleSubmit,
@@ -156,10 +159,25 @@ export const FirstPopup = ({
   );
 };
 
-export const InvestorForm = ({ setShowDialog, setHasCode, setShowDialog2 }) => {
+export const InvestorForm = ({
+  setShowDialog3,
+  setAccessCode,
+  accessCode,
+  setAuthenticated,
+}) => {
+  const handleContinue = () => {
+    if (accessCode === 'DHINVEST') {
+      setAuthenticated(true);
+      setShowDialog3(false);
+    }
+  };
   return (
     <div>
-      <BecomeInvestor />
+      <BecomeInvestor
+        setAccessCode={setAccessCode}
+        accessCode={accessCode}
+        onClick={handleContinue}
+      />
     </div>
   );
 };

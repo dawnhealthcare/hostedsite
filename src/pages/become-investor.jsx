@@ -8,7 +8,12 @@ import emailjs from 'emailjs-com';
 import { Error } from '../components/Input/styles';
 import Button from '../components/Button';
 
-const BecomeInvestor = () => {
+const BecomeInvestor = ({
+  setAccessCode,
+  accessCode,
+  setShowDialog3,
+  onClick,
+}) => {
   const [success, setSuccess] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
@@ -45,6 +50,7 @@ const BecomeInvestor = () => {
         setLoading(false);
         if (response.status == 200) {
           setSuccess('Successfully submited your data');
+          setAccessCode('DHINVEST');
           reset();
         }
       })
@@ -176,6 +182,11 @@ const BecomeInvestor = () => {
         <Button disabled={loading} className="mt-2" type="submit">
           {loading ? 'Loading...' : 'Submit'}
         </Button>
+        {accessCode && (
+          <Button className="mt-2 ms-3" onClick={onClick}>
+            Continue
+          </Button>
+        )}
       </form>
     </>
   );
