@@ -78,9 +78,7 @@ export const WrongCode = ({ setShowDialog2, message, action }) => {
   return (
     <div className="mx-auto flex-column w-full h-50vh container d-flex align-items-center justify-content-center">
       <Para className="mt-5">{message}</Para>
-      <Button size="sm" onClick={() => setShowDialog2(true)}>
-        {action}
-      </Button>
+      <Button onClick={() => setShowDialog2(true)}>{action}</Button>
     </div>
   );
 };
@@ -149,12 +147,8 @@ export const FirstPopup = ({
   };
   return (
     <div className="d-flex gap-3 justify-content-center">
-      <Button size="sm" onClick={() => handleClick(true)}>
-        Yes
-      </Button>
-      <Button size="sm" onClick={() => handleClick(false)}>
-        No
-      </Button>
+      <Button onClick={() => handleClick(true)}>Yes</Button>
+      <Button onClick={() => handleClick(false)}>No</Button>
     </div>
   );
 };

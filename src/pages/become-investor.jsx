@@ -8,12 +8,7 @@ import emailjs from 'emailjs-com';
 import { Error } from '../components/Input/styles';
 import Button from '../components/Button';
 
-const BecomeInvestor = ({
-  setAccessCode,
-  accessCode,
-  setShowDialog3,
-  onClick,
-}) => {
+const BecomeInvestor = ({ setAccessCode, accessCode, onClick }) => {
   const [success, setSuccess] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
