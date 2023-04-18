@@ -61,10 +61,11 @@ const InvestorsPage = () => {
             <Col md={6}>
               <SectionHeader
                 className="wow animate__animated animate__fadeInLeft pb-main"
-                title="Surgeon General Speaks"
+                title="Federal Focus on Adolescent Mental Health Care"
               >
                 U.S. Surgeon General Speaks About Youth Mental Health at
-                Cleveland Clinic
+                Cleveland Clinic" to "U.S. Surgeon General Reinforces The Focus
+                On Adolescent Mental Health
               </SectionHeader>
             </Col>
             <Col md={12}>

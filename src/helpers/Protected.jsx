@@ -3,17 +3,24 @@ import InvestorsPage from '../pages/investors';
 import AuthDialog from '../components/AuthDialog';
 import Para from '../components/Para';
 import Button from '../components/Button';
+import { Form } from 'react-bootstrap';
+import BecomeInvestor from '../pages/become-investor';
+import Input from '../components/Input';
+import { useForm } from 'react-hook-form';
 
 const ProtectedInvestorPage = () => {
   const [authenticated, setAuthenticated] = useState(false);
   const [wrongCode, setWrongCode] = useState(false);
+  const [showDialog2, setShowDialog2] = useState(false);
+  const [showDialog3, setShowDialog3] = useState(false);
   const [showDialog, setShowDialog] = useState(true);
+  const [hasCode, setHasCode] = useState(false);
 
   return (
     <>
       {!authenticated && wrongCode ? (
         <WrongCode
-          setShowDialog={setShowDialog}
+          setShowDialog2={setShowDialog2}
           message="Please enter a valid code to access this page"
           action="Try again"
         />
@@ -21,29 +28,138 @@ const ProtectedInvestorPage = () => {
         <InvestorsPage />
       ) : (
         <WrongCode
-          setShowDialog={setShowDialog}
-          message="Click the button bellow to enter your access code"
+          setShowDialog2={setShowDialog}
+          message="Click the button bellow to access insvestors page"
           action="Click Here"
         />
       )}
       <AuthDialog
-        allowedCode="INNOVEST2023"
-        onAuthSuccess={setAuthenticated}
-        onAuthFail={setWrongCode}
+        showDialog={showDialog2}
+        setShowDialog={setShowDialog2}
+        title="Access Code"
+      >
+        <AccessCodeForm
+          setAuthenticated={setAuthenticated}
+          setWrongCode={setWrongCode}
+          setShowDialog2={setShowDialog2}
+        />
+      </AuthDialog>
+      <AuthDialog
         showDialog={showDialog}
         setShowDialog={setShowDialog}
-      />
+        title="Do you have access code?"
+      >
+        <FirstPopup
+          setHasCode={setHasCode}
+          setShowDialog={setShowDialog}
+          setShowDialog2={setShowDialog2}
+          setShowDialog3={setShowDialog3}
+        />
+      </AuthDialog>
+      <AuthDialog
+        showDialog={showDialog3}
+        setShowDialog={setShowDialog3}
+        title="Fill out the fields below to become an investor"
+      >
+        <InvestorForm
+          setShowDialog={setShowDialog}
+          setShowDialog2={setShowDialog2}
+          setShowDialog3={setShowDialog3}
+        />
+      </AuthDialog>
     </>
   );
 };
 
-export const WrongCode = ({ setShowDialog, message, action }) => {
+export const WrongCode = ({ setShowDialog2, message, action }) => {
   return (
     <div className="mx-auto flex-column w-full h-50vh container d-flex align-items-center justify-content-center">
       <Para className="mt-5">{message}</Para>
-      <Button size="sm" onClick={() => setShowDialog(true)}>
+      <Button size="sm" onClick={() => setShowDialog2(true)}>
         {action}
       </Button>
+    </div>
+  );
+};
+
+export const AccessCodeForm = ({
+  setAuthenticated,
+  setWrongCode,
+  setShowDialog2,
+}) => {
+  const [accessCode, setAccessCode] = useState('');
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm({
+    mode: 'onBlur',
+  });
+
+  const Code = watch('accessCode');
+  const onSubmit = () => {
+    if (Code === 'DHINVEST') {
+      setWrongCode(false);
+      setAuthenticated(true);
+      setAccessCode(Code);
+    } else {
+      setAuthenticated(false);
+      setAccessCode('');
+      setWrongCode(true);
+    }
+    setShowDialog2(false);
+  };
+  return (
+    <form onSubmit={handleSubmit(onSubmit)}>
+      <Input
+        type="text"
+        placeholder="Enter access code"
+        register={register}
+        name="accessCode"
+        validation={{ required: true }}
+        errors={errors}
+      />
+      <Button type="submit" className="float-end mt-2">
+        Submit
+      </Button>
+    </form>
+  );
+};
+
+export const FirstPopup = ({
+  setShowDialog,
+  setHasCode,
+  setShowDialog2,
+  setShowDialog3,
+}) => {
+  const handleClick = (val) => {
+    setHasCode(val);
+    if (val) {
+      setShowDialog2(true);
+      setShowDialog(false);
+    } else {
+      setShowDialog(false);
+      setShowDialog2(false);
+      setShowDialog3(true);
+    }
+  };
+  return (
+    <div className="d-flex gap-3 justify-content-center">
+      <Button size="sm" onClick={() => handleClick(true)}>
+        Yes
+      </Button>
+      <Button size="sm" onClick={() => handleClick(false)}>
+        No
+      </Button>
+    </div>
+  );
+};
+
+export const InvestorForm = ({ setShowDialog, setHasCode, setShowDialog2 }) => {
+  return (
+    <div>
+      <BecomeInvestor />
     </div>
   );
 };

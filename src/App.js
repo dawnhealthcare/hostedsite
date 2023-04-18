@@ -50,7 +50,7 @@ function App() {
           <Route exact path="/signup" element={<SignupPage />}></Route>
           <Route
             exact
-            path="/become-investor"
+            path="/become-an-investor"
             element={<BecomeInvestor />}
           ></Route>
           <Route

@@ -14,7 +14,7 @@ body {
 }
 
 .h-50vh {
-  min-height: 80vh;
+  min-height: 90vh;
 }
 
 .wellness-wrapper {
@@ -168,4 +168,13 @@ input[type='radio']:checked {
   .react-pdf__Document {
     min-height: 600px !important;
   }
+}
+
+.react-pdf__message {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
 }
