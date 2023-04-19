@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Document, Page } from 'react-pdf';
 import { ActionWrapper, ViewerWrapper } from './styles';
 import { ArrowIcon } from '../Icons';
+import { Col, Row } from 'react-bootstrap';
 
 export default function SinglePage(props) {
   const [numPages, setNumPages] = useState(null);
@@ -28,10 +29,16 @@ export default function SinglePage(props) {
 
   return (
     <ViewerWrapper>
+      {/* <Row>
+        <Col
+          md={{ span: 10, offset: 1 }}
+          className="d-flex justify-content-center position-relative"
+        > */}
       <Document
         file={path}
         options={{ workerSrc: '/pdf.worker.js' }}
         onLoadSuccess={onDocumentLoadSuccess}
+        className="d-flex justify-content-center w-100"
       >
         <Page pageNumber={pageNumber} />
       </Document>
@@ -58,6 +65,8 @@ export default function SinglePage(props) {
           Page {pageNumber || (numPages ? 1 : '--')} of {numPages || '--'}
         </p>
       )}
+      {/* </Col>
+      </Row> */}
     </ViewerWrapper>
   );
 }

@@ -137,9 +137,10 @@ input[type='radio']:checked {
   /* min-height: 600px !important; */
   background: white;
 }
+
 .react-pdf__Document canvas {
-  height: 100% !important;
   width: 100% !important;
+  height: 100% !important;
 }
 
 .rounded-btn {
@@ -177,4 +178,8 @@ input[type='radio']:checked {
   justify-content: center;
   height: 100%;
   width: 100%;
+}
+
+.react-pdf__Page {
+  min-width: 80% !important;
 }
