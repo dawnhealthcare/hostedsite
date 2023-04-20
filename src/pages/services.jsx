@@ -74,7 +74,7 @@ const ServicesPage = () => {
           </Row>
         </Container>
       </SectionWrapper>
-      <SectionWrapper className="p-0">
+      <SectionWrapper className="">
         <Container>
           <Row className="align-items-center pb-main">
             <Col
@@ -88,7 +88,7 @@ const ServicesPage = () => {
               </Para>
             </Col>
           </Row>
-          <Row>
+          <Row className="mt-4">
             <Col className="wow animate__animated animate__zoomIn">
               <img src={Sun} className="img-fluid" alt="Sun" />
             </Col>
@@ -130,10 +130,14 @@ const ServicesPage = () => {
               </Button>
             </Col>
             <Col lg={5} className="wow animate__animated animate__fadeInRight">
-              <ValueCard className="mb-5" title="Primary Intervention" icon={1}>
-                A systematic review of school-based prevention programs found
-                that these interventions can effectively reduce symptoms of
-                anxiety and depression in children and adolescents
+              <ValueCard
+                className="mb-5"
+                title="Secondary Intervention"
+                icon={1}
+              >
+                A randomized controlled trial of a school-based CBT program for
+                adolescents with anxiety found that the program was effective in
+                reducing symptoms of anxiety and improving school attendance
               </ValueCard>
             </Col>
           </Row>

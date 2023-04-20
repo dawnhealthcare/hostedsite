@@ -6,8 +6,8 @@ import { SectionHeader } from '../components/SectionHeader';
 import TeamCard from '../components/TeamCard';
 import { teamMembers } from '../data/team';
 import { Hero, SectionWrapper, TeamPageWrapper } from '../styles';
-import Main8 from './../assets/home/8.png';
-import Animated from './../assets/home/animated-1.gif';
+import Main8 from './../assets/team/main.png';
+// import Animated from './../assets/home/animated-1.gif';
 
 const TeamPage = () => {
   return (
@@ -38,11 +38,11 @@ const TeamPage = () => {
                 className="img-fluid main-image wrapper-image"
                 alt="main image"
               />
-              <img
+              {/* <img
                 src={Animated}
                 className="img-fluid main-image inner-image"
                 alt="main image"
-              />
+              /> */}
             </Col>
           </Row>
         </Container>

@@ -37,7 +37,7 @@ export const teamMembers = [
   },
   {
     id: 6,
-    name: 'Kate E. Efsta',
+    name: 'Kate Efsta, SHRM-CP',
     status: 'People operations business partner',
     src: Team6,
     alt: 'team image',
@@ -45,7 +45,7 @@ export const teamMembers = [
   {
     id: 3,
     name: 'Joseph Onyeizu, MBA',
-    status: 'DIRECTOR OF STRATEGY & PROGRAM MANAGEMENT',
+    status: 'Director of Momentum',
     src: Team3,
     alt: 'team image',
   },
@@ -59,7 +59,7 @@ export const teamMembers = [
   {
     id: 4,
     name: 'Cacilda Teixeira, MBA',
-    status: 'Care Network Architect',
+    status: 'Partnerships & Care Network Advisor',
     src: Team4,
     alt: 'team image',
   },
