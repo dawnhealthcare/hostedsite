@@ -9,6 +9,7 @@ export const HomePageWrapper = styled.div``;
 export const InverstorsWrapper = styled.div``;
 export const BecomeInvestorWrapper = styled.div``;
 export const ServicesPageWrapper = styled.div``;
+export const ErrorPageWrapper = styled.div``;
 
 export const Hero = styled.div`
   background: rgba(159, 189, 191, 0.4);
