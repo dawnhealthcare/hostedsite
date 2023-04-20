@@ -22,7 +22,7 @@ const CareerPage = () => {
       <Hero>
         <Container>
           <Row className="align-items-center h-100vh reverse">
-            <Col md={5} className="wow animate__animated animate__fadeInLeft">
+            <Col lg={5} className="wow animate__animated animate__fadeInLeft">
               <Heading main="Unlock Your Potential ">
                 Join Our Team and Make your mark!
               </Heading>
@@ -34,7 +34,7 @@ const CareerPage = () => {
                 hire team members that share the same vision with us.
               </Para>
             </Col>
-            <Col md={1}></Col>
+            <Col lg={1}></Col>
             <Col
               md={6}
               className="text-end wow animate__animated animate__fadeInRight"
@@ -61,7 +61,7 @@ const CareerPage = () => {
             </Col>
           </Row>
           <Row className="pb-main align-items-center">
-            <Col md={6} className="wow animate__animated animate__fadeInLeft">
+            <Col lg={6} className="wow animate__animated animate__fadeInLeft">
               <SectionHeader className="" title="About The Role">
                 Our clinical team members collaborate with other phenomenal
                 behavioral health therapists and coaches, as well as our Chief
@@ -113,7 +113,7 @@ const CareerPage = () => {
               </List>
             </Col>
             <Col
-              md={6}
+              lg={6}
               className="text-end wow animate__animated animate__fadeInRight"
             >
               <img src={Main2} className="img-fluid" alt="main image" />
@@ -121,12 +121,12 @@ const CareerPage = () => {
           </Row>
           <Row className="pb-main align-items-center">
             <Col
-              md={6}
+              lg={6}
               className="text-start wow animate__animated animate__fadeInLeft"
             >
               <img src={Main3} className="img-fluid" alt="main image" />
             </Col>
-            <Col md={6} className="wow animate__animated animate__fadeInRight">
+            <Col lg={6} className="wow animate__animated animate__fadeInRight">
               <SectionHeader className="" title="About You">
                 You will thrive in the role of Behavioral Therapist at Dawn
                 Health if you have:
@@ -167,7 +167,7 @@ const CareerPage = () => {
             </Col>
           </Row>
           <Row className="pb-main align-items-center">
-            <Col md={6} className="wow animate__animated animate__fadeInLeft">
+            <Col lg={6} className="wow animate__animated animate__fadeInLeft">
               <SectionHeader className="" title="Benefits + Perks">
                 Here at Dawn Health, we believe that benefits should meet you
                 where you're at. Our benefits package includes the following:
@@ -224,7 +224,7 @@ const CareerPage = () => {
               </List>
             </Col>
             <Col
-              md={6}
+              lg={6}
               className="text-end wow animate__animated animate__fadeInRight"
             >
               <img src={Main4} className="img-fluid" alt="main image" />

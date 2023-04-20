@@ -19,6 +19,7 @@ import emailjs from 'emailjs-com';
 import InvestorsPage from './pages/investors';
 import ProtectedInvestorPage from './helpers/Protected';
 import BecomeInvestor from './pages/become-investor';
+import ServicesPage from './pages/services';
 
 emailjs.init('WrJDyDO12oscyG2nU');
 function App() {
@@ -48,6 +49,7 @@ function App() {
           <Route exact path="/faqs" element={<FaqPage />}></Route>
           <Route exact path="/join-our-team" element={<CareerPage />}></Route>
           <Route exact path="/signup" element={<SignupPage />}></Route>
+          <Route exact path="/services" element={<ServicesPage />}></Route>
           {/* <Route
             exact
             path="/become-an-investor"

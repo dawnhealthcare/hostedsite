@@ -16,7 +16,7 @@ const InvestorsPage = () => {
       <Hero>
         <Container>
           <Row className="align-items-center h-100vh reverse">
-            <Col md={6} className="wow animate__animated animate__fadeInLeft">
+            <Col lg={6} className="wow animate__animated animate__fadeInLeft">
               <Heading main="Our Investors">Join Us on a Journey</Heading>
               <Para>
                 Welcome to Dawn Health, a virtual mental health company
@@ -107,7 +107,7 @@ const InvestorsPage = () => {
       <SectionWrapper>
         <Container>
           <Row>
-            <Col md={6}>
+            <Col lg={6}>
               <SectionHeader
                 className="wow animate__animated animate__fadeInLeft pb-main"
                 title="School Board Members Survey"
@@ -129,7 +129,7 @@ const InvestorsPage = () => {
       <SectionWrapper className="pb-5">
         <Container>
           <Row>
-            <Col md={7}>
+            <Col lg={7}>
               <SectionHeader
                 className="wow animate__animated animate__fadeInLeft pb-main"
                 title="Investing to Making a Difference"
@@ -137,7 +137,7 @@ const InvestorsPage = () => {
             </Col>
           </Row>
           <Row className="align-items-center">
-            <Col md={6}>
+            <Col lg={6}>
               <Para>
                 As an investor, you have the chance to be part of something big
                 and innovative. Our focus on primary and secondary prevention
@@ -175,7 +175,7 @@ const InvestorsPage = () => {
               </Para>
             </Col>
             <Col
-              md={6}
+              lg={6}
               className="text-end wow animate__animated animate__fadeInRight"
             >
               <img

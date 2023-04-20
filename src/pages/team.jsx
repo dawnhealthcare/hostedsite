@@ -15,7 +15,11 @@ const TeamPage = () => {
       <Hero>
         <Container>
           <Row className="align-items-center h-100vh reverse">
-            <Col md={6} className="wow animate__animated animate__fadeInLeft">
+            <Col
+              md={12}
+              lg={6}
+              className="wow animate__animated animate__fadeInLeft"
+            >
               <Heading main="dedicated Team">
                 Empowering Mental Wellness for all Children
               </Heading>
@@ -46,7 +50,7 @@ const TeamPage = () => {
       <SectionWrapper>
         <Container>
           <Row>
-            <Col md={8} className="wow animate__animated animate__fadeInLeft">
+            <Col lg={8} className="wow animate__animated animate__fadeInLeft">
               <SectionHeader className="pb-main" title="Guiding Force">
                 The Guiding Force is a team of experienced professionals from
                 diverse backgrounds, industries, professions, and religions.
@@ -60,7 +64,7 @@ const TeamPage = () => {
           </Row>
           <Row className="pb-main">
             {teamMembers.map((member) => (
-              <Col sm={6} md={4} lg={3} className="mb-4" key={member.id}>
+              <Col md={6} lg={4} xl={3} className="mb-4" key={member.id}>
                 <TeamCard
                   className="wow animate__animated animate__zoomIn"
                   name={member.name}

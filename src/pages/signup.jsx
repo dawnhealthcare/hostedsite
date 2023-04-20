@@ -14,7 +14,7 @@ const SignupPage = () => {
       <Hero>
         <Container>
           <Row className="align-items-center reverse h-100vh">
-            <Col md={6} className="wow animate__animated animate__fadeInLeft">
+            <Col lg={6} className="wow animate__animated animate__fadeInLeft">
               <Heading main="Sign up here to">
                 Join the Dawn Health Wellness Ecosystem
               </Heading>
@@ -40,13 +40,13 @@ const SignupPage = () => {
         <Container>
           <Row className="pb-main align-items-center">
             <Col
-              md={5}
+              lg={5}
               className="text-end wow animate__animated animate__fadeInLeft"
             >
               <img src={Main2} className="img-fluid" alt="main image" />
             </Col>
-            <Col md={1}></Col>
-            <Col md={6} className="wow animate__animated animate__fadeInRight">
+            <Col lg={1}></Col>
+            <Col lg={6} className="wow animate__animated animate__fadeInRight">
               <SectionHeader className="pb-main" title="Sign Up">
                 Don't let your children and family suffer in silence - reach out
                 to us for understanding, empowerment, and nurtured resilience.

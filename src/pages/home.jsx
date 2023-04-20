@@ -24,7 +24,11 @@ const HomePage = () => {
       <Hero>
         <Container>
           <Row className="align-items-center h-100vh reverse">
-            <Col md={6} className="wow animate__animated animate__fadeInLeft">
+            <Col
+              md={12}
+              lg={6}
+              className="wow animate__animated animate__fadeInLeft"
+            >
               <Heading main="Mental health">
                 Nurturing Mental Health resilience
               </Heading>
@@ -58,7 +62,7 @@ const HomePage = () => {
       <SectionWrapper>
         <Container>
           <Row>
-            <Col md={8}>
+            <Col lg={8}>
               <SectionHeader
                 className="wow animate__animated animate__fadeInLeft pb-main"
                 title="Mental Health Resilience For Adolescents"
@@ -86,7 +90,7 @@ const HomePage = () => {
       <SectionWrapper>
         <Container>
           <Row>
-            <Col md={5}>
+            <Col lg={5}>
               <SectionHeader
                 className="pb-main wow animate__animated animate__fadeInLeft"
                 title="Our Wellness Programs"
@@ -201,8 +205,8 @@ const HomePage = () => {
       <SectionWrapper>
         <Container>
           <Row>
-            <Col md={6}></Col>
-            <Col md={6} className="wow animate__animated animate__slideInRight">
+            <Col lg={6}></Col>
+            <Col lg={6} className="wow animate__animated animate__slideInRight">
               <SectionHeader className="" title="Our Values to Help you">
                 We always want to provide the best value for you and your
                 health. Join us to maximize the benefits
@@ -210,10 +214,10 @@ const HomePage = () => {
             </Col>
           </Row>
           <Row className="align-items-center">
-            <Col md={6} className="wow animate__animated animate__slideInLeft">
+            <Col lg={6} className="wow animate__animated animate__slideInLeft">
               <img src={Main2} className="img-fluid mb-5" alt="main image" />
             </Col>
-            <Col md={6} className="wow animate__animated animate__slideInRight">
+            <Col lg={6} className="wow animate__animated animate__slideInRight">
               <Row>
                 <Col md={6}>
                   <ValueCard className="mb-5" title="Compassion" icon={1}>
@@ -253,11 +257,11 @@ const HomePage = () => {
       <SectionWrapper>
         <Container>
           <Row className="align-items-center">
-            <Col md={6} className="wow animate__animated animate__slideInLeft">
+            <Col lg={6} className="wow animate__animated animate__slideInLeft">
               <img src={Main3} className="img-fluid mb-5" alt="main image" />
             </Col>
-            <Col md={1}></Col>
-            <Col md={5} className="wow animate__animated animate__slideInRight">
+            <Col lg={1}></Col>
+            <Col lg={5} className="wow animate__animated animate__slideInRight">
               <Row className="pb-main">
                 <Col>
                   <SectionHeader className="pb-main" title="Why Dawn Health?">

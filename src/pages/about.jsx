@@ -23,7 +23,11 @@ const AboutPage = () => {
       <Hero>
         <Container>
           <Row className="align-items-center reverse h-100vh">
-            <Col md={5} className="wow animate__animated animate__fadeInLeft">
+            <Col
+              md={12}
+              lg={5}
+              className="wow animate__animated animate__fadeInLeft"
+            >
               <Heading main="About Us">
                 Our Families are Behind Our Brand
               </Heading>
@@ -53,12 +57,17 @@ const AboutPage = () => {
         <Container>
           <Row className="align-items-center pb-main">
             <Col
-              md={6}
+              md={12}
+              lg={6}
               className="text-start wow animate__animated animate__fadeInLeft"
             >
               <img src={Main2} className="img-fluid" alt="main image" />
             </Col>
-            <Col md={6} className="wow animate__animated animate__fadeInRight">
+            <Col
+              md={12}
+              lg={6}
+              className="wow animate__animated animate__fadeInRight"
+            >
               <SubHeading>Our Story</SubHeading>
               <Para>
                 In 2021, a group of brilliant minds at Harvard Medical School
@@ -83,7 +92,11 @@ const AboutPage = () => {
             </Col>
           </Row>
           <Row className="mt-5">
-            <Col md={7} className="wow animate__animated animate__fadeInLeft">
+            <Col
+              md={12}
+              lg={7}
+              className="wow animate__animated animate__fadeInLeft"
+            >
               <SectionHeader
                 className="pb-main"
                 title="Our Approach to Wellness Care"
@@ -107,7 +120,7 @@ const AboutPage = () => {
             </Col>
           </Row>
           <Row className="mt-5">
-            <Col md={5} className="wow animate__animated animate__fadeInLeft">
+            <Col lg={5} className="wow animate__animated animate__fadeInLeft">
               <SectionHeader className="pb-main" title="Our Proud Partners">
                 Collaborating to build a better future, our partners are the
                 cornerstone of our success. Together, we strive for excellence.
