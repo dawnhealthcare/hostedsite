@@ -89,7 +89,10 @@ const ServicesPage = () => {
             </Col>
           </Row>
           <Row className="mt-4">
-            <Col className="wow animate__animated animate__zoomIn">
+            <Col
+              md={12}
+              className="wow animate__animated animate__zoomIn text-center"
+            >
               <img src={Sun} className="img-fluid" alt="Sun" />
             </Col>
           </Row>

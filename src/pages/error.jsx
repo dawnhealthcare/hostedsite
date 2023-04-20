@@ -7,12 +7,14 @@ import Para from '../components/Para';
 const ErrorPage = () => {
   return (
     <ErrorPageWrapper>
-      <Hero className="text-center">
+      <Hero className="text-center h100vh">
         <Container>
           <Row className="align-items-center reverse h-100vh">
             <Col md={12} className="wow animate__animated animate__zoomIn">
-              <Heading main="404"></Heading>
-              <Para>The Page you are looking for is not available</Para>
+              <Heading main="oops!">Page Not Found</Heading>
+              <Para>
+                The page you are looking for doesn't exist or has been moved
+              </Para>
             </Col>
           </Row>
         </Container>

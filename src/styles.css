@@ -183,3 +183,7 @@ input[type='radio']:checked {
 .react-pdf__Page {
   min-width: 80% !important;
 }
+
+.h100vh {
+  height: 100vh;
+}
