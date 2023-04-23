@@ -49,7 +49,11 @@ const FaqList = (props) => {
       ),
     },
     {
-      question: 'What types of services does Dawn Health provide?',
+      question: (
+        <span>
+          What types of services does Dawn Health<sup>TM</sup> provide?
+        </span>
+      ),
       answer: (
         <Para className="mt-4">
           Our care delivery model provides a wide range of mental health
@@ -155,7 +159,11 @@ const FaqList = (props) => {
       ),
     },
     {
-      question: 'What is the cost associated with Dawn Health?',
+      question: (
+        <span>
+          What is the cost associated with Dawn Health<sup>TM</sup>?
+        </span>
+      ),
       answer: (
         <>
           <Para className="mt-4 mb-2">Our cost breakdown is as follows:</Para>
@@ -189,8 +197,12 @@ const FaqList = (props) => {
       ),
     },
     {
-      question:
-        'What is going to be the total annual cost to receive care through Dawn Health?',
+      question: (
+        <span>
+          What is going to be the total annual cost to receive care through Dawn
+          Health<sup>TM</sup>?
+        </span>
+      ),
       answer: (
         <>
           <Para className="mt-4">
@@ -214,16 +226,21 @@ const FaqList = (props) => {
       ),
     },
     {
-      question: 'How does Dawn Health compare to other providers?',
+      question: (
+        <span>
+          How does Dawn Health<sup>TM</sup> compare to other providers?
+        </span>
+      ),
       answer: (
         <>
           <Para className="mt-4">
-            At Dawn Health, we believe in being proactive when it comes to
-            mental health care. That's why we've built our care delivery system
-            around a wellness model approach that focuses on providing support
-            to our members before they even realize they need help. Our aim is
-            to help our members maintain good mental health rather than waiting
-            for them to become patients in need of treatment.
+            At Dawn Health<sup>TM</sup>, we believe in being proactive when it
+            comes to mental health care. That's why we've built our care
+            delivery system around a wellness model approach that focuses on
+            providing support to our members before they even realize they need
+            help. Our aim is to help our members maintain good mental health
+            rather than waiting for them to become patients in need of
+            treatment.
           </Para>
           <Para className="mt-2">
             We're also committed to making our services affordable and

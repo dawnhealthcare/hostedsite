@@ -33,14 +33,14 @@ const HomePage = () => {
                 Nurturing Mental Health resilience
               </Heading>
               <Para>
-                At Dawn Health, we're transforming adolescent mental healthcare
-                with a groundbreaking approach that prioritizes preventive
-                wellness. By identifying and addressing pre-crisis conditions,
-                we can help teens and their parents proactively manage their
-                mental health. Our innovative approach is designed to detect and
-                respond to increased depression and anxiety acuity levels,
-                ensuring that families receive the support they need before a
-                crisis occurs.
+                At Dawn Health<sup>TM</sup>, we're transforming adolescent
+                mental healthcare with a groundbreaking approach that
+                prioritizes preventive wellness. By identifying and addressing
+                pre-crisis conditions, we can help teens and their parents
+                proactively manage their mental health. Our innovative approach
+                is designed to detect and respond to increased depression and
+                anxiety acuity levels, ensuring that families receive the
+                support they need before a crisis occurs.
               </Para>
               <Button className="mt-3 mb-3" onClick={() => navigate('/signup')}>
                 Sign Up Here
@@ -264,7 +264,14 @@ const HomePage = () => {
             <Col lg={5} className="wow animate__animated animate__slideInRight">
               <Row className="pb-main">
                 <Col>
-                  <SectionHeader className="pb-main" title="Why Dawn Health?">
+                  <SectionHeader
+                    className="pb-main"
+                    title={
+                      <span>
+                        Why Dawn Health<sup>TM</sup>?
+                      </span>
+                    }
+                  >
                     Our care delivery approach eliminates the barriers of time,
                     distance, and stigma that prevent many people from seeking
                     the help they need. By prioritizing virtual mental health

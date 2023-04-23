@@ -81,7 +81,9 @@ const ServicesPage = () => {
               lg={{ span: 8, offset: 2 }}
               className="wow animate__animated animate__fadeInRight text-center"
             >
-              <SubHeading>Dawn Health Wellness Approach</SubHeading>
+              <SubHeading>
+                Dawn Health<sup>TM</sup> Wellness Approach
+              </SubHeading>
               <Para>
                 We work in partnership with parents to promote the brain health
                 of every child.

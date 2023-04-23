@@ -20,7 +20,7 @@ const TeamPage = () => {
               lg={6}
               className="wow animate__animated animate__fadeInLeft"
             >
-              <Heading main="dedicated Team">
+              <Heading main="Guiding Force">
                 Empowering Mental Wellness for all Children
               </Heading>
               <Para>

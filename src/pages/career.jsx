@@ -27,11 +27,12 @@ const CareerPage = () => {
                 Join Our Team and Make your mark!
               </Heading>
               <Para>
-                Dawn Health is on a mission to nurture mental health resilience
-                for every child and their families. When you join Dawn Health,
-                you’re joining a team that has an unstoppable drive and passion
-                to bring mental health wellness into every household. We only
-                hire team members that share the same vision with us.
+                Dawn Health<sup>TM</sup> is on a mission to nurture mental
+                health resilience for every child and their families. When you
+                join Dawn Health<sup>TM</sup>, you’re joining a team that has an
+                unstoppable drive and passion to bring mental health wellness
+                into every household. We only hire team members that share the
+                same vision with us.
               </Para>
             </Col>
             <Col lg={1}></Col>
@@ -80,11 +81,11 @@ const CareerPage = () => {
                 </ListItem>
                 <ListItem className="pb-3">
                   upport all aspects of each child or teen's treatment by
-                  collaborating with other care team members at Dawn Health,
-                  their school, household, and in the community. Document your
-                  work, including session notes, care plans, and ongoing
-                  progress, with high levels of accuracy and timeliness in our
-                  electronic health record.
+                  collaborating with other care team members at Dawn Health
+                  <sup>TM</sup>, their school, household, and in the community.
+                  Document your work, including session notes, care plans, and
+                  ongoing progress, with high levels of accuracy and timeliness
+                  in our electronic health record.
                 </ListItem>
                 <ListItem className="pb-3">
                   Acquire new state licenses (with support!) to support families
@@ -169,8 +170,9 @@ const CareerPage = () => {
           <Row className="pb-main align-items-center">
             <Col lg={6} className="wow animate__animated animate__fadeInLeft">
               <SectionHeader className="" title="Benefits + Perks">
-                Here at Dawn Health, we believe that benefits should meet you
-                where you're at. Our benefits package includes the following:
+                Here at Dawn Health<sup>TM</sup>, we believe that benefits
+                should meet you where you're at. Our benefits package includes
+                the following:
               </SectionHeader>
               <List className="pe-5">
                 <ListItem className="pb-3">

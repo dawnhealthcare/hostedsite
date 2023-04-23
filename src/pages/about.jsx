@@ -17,6 +17,7 @@ import Partner7 from './../assets/about/s7.png';
 import Partner8 from './../assets/about/s8.png';
 import Partner9 from './../assets/about/s9.png';
 import Partner10 from './../assets/about/s10.png';
+import Main3 from './../assets/about/main2.jpg';
 
 const AboutPage = () => {
   return (
@@ -76,20 +77,26 @@ const AboutPage = () => {
                 keep up with the needs of society. So, after a meticulous
                 exploration of the market and countless brainstorming sessions,
                 they decided to take matters into their own hands. Fast-forward
-                to 2023, and Dawn Health was born - a revolutionary mental
-                healthcare venture that focuses on prevention and wellness, not
-                just treating crises.
+                to 2023, and Dawn Health<sup>TM</sup> was born - a revolutionary
+                mental healthcare venture that focuses on prevention and
+                wellness, not just treating crises.
               </Para>
               <Para>
-                At Dawn Health, we believe that every adolescent deserves to
-                have control over their mental wellbeing, which is why we've
-                developed a state-of-the-art digital-wellness solution. Our
-                platform is user-friendly, accessible, and affordable, making it
-                easier than ever for young people to screen, monitor, and manage
-                their mental health. Say goodbye to sky-high costs and
-                access-to-care barriers - with Dawn Health, the future of mental
-                healthcare is in your hands.
+                At Dawn Health<sup>TM</sup>, we believe that every adolescent
+                deserves to have control over their mental wellbeing, which is
+                why we've developed a state-of-the-art digital-wellness
+                solution. Our platform is user-friendly, accessible, and
+                affordable, making it easier than ever for young people to
+                screen, monitor, and manage their mental health. Say goodbye to
+                sky-high costs and access-to-care barriers - with Dawn Health
+                <sup>TM</sup>
+                <sup>TM</sup>, the future of mental healthcare is in your hands.
               </Para>
+            </Col>
+          </Row>
+          <Row className="mt-5">
+            <Col className="text-center wow animate__animated animate__zoomIn">
+              <img alt="about" src={Main3} className="img-fluid" />
             </Col>
           </Row>
           <Row className="mt-5">

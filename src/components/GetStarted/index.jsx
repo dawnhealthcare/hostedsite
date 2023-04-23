@@ -17,7 +17,7 @@ const GetStarted = () => {
             <Col md={8}>
               <img src={Logo} className="img-fluid mb-3" alt="" />
               <Heading className="text-white text-center">
-                Get Started with Dawn Health
+                Get Started with Dawn Health<sup>TM</sup>
               </Heading>
             </Col>
             <Col md={6}>

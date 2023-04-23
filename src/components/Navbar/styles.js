@@ -15,7 +15,7 @@ export const NavItem = styled(Nav)`
 export const RecLink = styled(Link)`
   text-decoration: none;
   color: #3a3a3a;
-  transition: ease-in-out all 0.5s;
+  transition: ease-in-out all 0.1s;
   &:hover {
     color: #e8971e;
   }

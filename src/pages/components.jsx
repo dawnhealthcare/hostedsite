@@ -21,7 +21,8 @@ const Components = () => {
       <Row>
         <Col>
           <Heading main="Sign up">
-            Become part of the Dawn Health population Health network
+            Become part of the Dawn Health<sup>TM</sup> population Health
+            network
           </Heading>
         </Col>
       </Row>

@@ -328,7 +328,7 @@ export const ArrowIcon = (props) => {
     >
       <path
         d="M9 18L15 12L9 6"
-        stroke="white"
+        stroke={props.stroke || 'white'}
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"

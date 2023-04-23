@@ -138,7 +138,9 @@ const BecomeInvestor = ({ setAccessCode, accessCode, onClick }) => {
             />
           </Col>
           <Col className="mb-4">
-            <label>Are you interested in investing in Dawn Health?</label>
+            <label>
+              Are you interested in investing in Dawn Health<sup>TM</sup>?
+            </label>
             <div className="d-flex align-items-center">
               <label className="d-flex align-items-center me-4">
                 <input
