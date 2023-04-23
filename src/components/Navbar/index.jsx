@@ -39,7 +39,7 @@ export const Header = (props) => {
   ];
   return (
     <NavbarWrapper>
-      <Navbar collapseOnSelect expand="xl" fixed="top" className={className}>
+      <Navbar collapseOnSelect expand="lg" fixed="top" className={className}>
         <Container>
           <Navbar.Brand>
             <RecLink to="/">

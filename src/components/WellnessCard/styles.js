@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
-export const WellnessCardWrapper = styled.div``;
+export const WellnessCardWrapper = styled.div`
+  & img {
+    height: 150px;
+  }
+`;
 export const Title = styled.div`
   font-style: normal;
   font-weight: 700;

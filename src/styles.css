@@ -64,9 +64,9 @@ body {
   border-radius: 247px 247px 100px 100px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .inner-card {
-    margin-top: 0px;
+    margin-top: -10px;
     /* margin-bottom: 60px; */
   }
   .last-card {
@@ -165,7 +165,7 @@ input[type='radio']:checked {
   }
 }
 
-@media (max-width: 1198px) {
+@media (max-width: 991px) {
   .navbar-nav {
     align-items: unset !important;
   }

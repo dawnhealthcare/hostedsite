@@ -46,7 +46,7 @@ const ServicesPage = () => {
         <Container>
           <Row className="align-items-center pb-main">
             <Col
-              lg={{ span: 6, offset: 3 }}
+              xl={12}
               className="wow animate__animated animate__fadeInRight text-center"
             >
               <SubHeading>Wellness-based Model</SubHeading>
@@ -56,7 +56,7 @@ const ServicesPage = () => {
               </Para>
             </Col>
           </Row>
-          <Row className="d-flex justify-content-between">
+          <Row className="d-flex justify-content-between align-items-start">
             {services.map((service) => (
               <Col
                 md={6}
@@ -78,12 +78,10 @@ const ServicesPage = () => {
         <Container>
           <Row className="align-items-center pb-main">
             <Col
-              lg={{ span: 8, offset: 2 }}
+              xl={{ span: 8, offset: 2 }}
               className="wow animate__animated animate__fadeInRight text-center"
             >
-              <SubHeading>
-                Dawn Health<sup>TM</sup> Wellness Approach
-              </SubHeading>
+              <SubHeading>Dawn Health Wellness Approach</SubHeading>
               <Para>
                 We work in partnership with parents to promote the brain health
                 of every child.
@@ -122,19 +120,14 @@ const ServicesPage = () => {
             </Col>
           </Row>
           <Row className="align-items-center mt-4">
-            <Col lg={5} className="wow animate__animated animate__fadeInLeft">
+            <Col lg={6} className="wow animate__animated animate__fadeInLeft">
               <ValueCard className="mb-5" title="Primary Intervention" icon={1}>
                 A systematic review of school-based prevention programs found
                 that these interventions can effectively reduce symptoms of
                 anxiety and depression in children and adolescents
               </ValueCard>
             </Col>
-            <Col lg={2} className="text-center">
-              <Button className="w-full mb-5 wow animate__animated animate__zoomIn">
-                Sign Up Here
-              </Button>
-            </Col>
-            <Col lg={5} className="wow animate__animated animate__fadeInRight">
+            <Col lg={6} className="wow animate__animated animate__fadeInRight">
               <ValueCard
                 className="mb-5"
                 title="Secondary Intervention"
@@ -144,6 +137,13 @@ const ServicesPage = () => {
                 adolescents with anxiety found that the program was effective in
                 reducing symptoms of anxiety and improving school attendance
               </ValueCard>
+            </Col>
+          </Row>
+          <Row className="text-center">
+            <Col lg={12} className="text-center">
+              <Button className="mb-5 wow animate__animated animate__zoomIn">
+                Sign Up Here
+              </Button>
             </Col>
           </Row>
         </Container>

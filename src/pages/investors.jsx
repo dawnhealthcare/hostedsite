@@ -19,9 +19,9 @@ const InvestorsPage = () => {
             <Col lg={6} className="wow animate__animated animate__fadeInLeft">
               <Heading main="Our Investors">Join Us on a Journey</Heading>
               <Para>
-                Welcome to Dawn Health<sup>TM</sup>, a virtual mental health
-                company dedicated to promoting the well-being of adolescents and
-                their parents. Our investor page is the gateway to a universe of
+                Welcome to Dawn Health, a virtual mental health company
+                dedicated to promoting the well-being of adolescents and their
+                parents. Our investor page is the gateway to a universe of
                 opportunities to make a meaningful impact on mental health.
               </Para>
             </Col>
@@ -46,14 +46,14 @@ const InvestorsPage = () => {
                 className="wow animate__animated animate__fadeInLeft pb-main"
                 title="Investor Slideshare"
               >
-                Investing in Dawn Health<sup>TM</sup> has the potential to
-                unlock a world of financial possibility, with the promise of
-                generating remarkable returns that could transform your future.
-                Don't miss out on the chance to witness the power of your
-                investment come to life and experience the thrill of watching
-                your wealth grow exponentially. Join us on a journey towards
-                financial prosperity, and see the amazing returns that Dawn
-                Health<sup>TM</sup> can deliver!
+                Investing in Dawn Health has the potential to unlock a world of
+                financial possibility, with the promise of generating remarkable
+                returns that could transform your future. Don't miss out on the
+                chance to witness the power of your investment come to life and
+                experience the thrill of watching your wealth grow
+                exponentially. Join us on a journey towards financial
+                prosperity, and see the amazing returns that Dawn Health can
+                deliver!
               </SectionHeader>
             </Col>
             <Col md={12}>

@@ -26,19 +26,28 @@ const childrenOptions = [
 
 const insurences = [
   { value: 'aetna', label: 'Aetna' },
-  { value: 'anthem healthKeepers', label: 'Anthem HealthKeepers' },
-  { value: 'blue cross blue shield', label: 'Blue Cross Blue Shield' },
+  {
+    value: 'blue cross blue shield of massachusetts',
+    label: 'Blue Cross Blue Shield of Massachusetts',
+  },
+  {
+    value: 'blue cross blue shield of minnesota',
+    label: 'Blue Cross Blue Shield of Minnesota',
+  },
+  {
+    value: 'blue cross blue shield of texas',
+    label: 'Blue Cross Blue Shield of Texas',
+  },
   { value: 'cigna', label: 'Cigna' },
   { value: 'fallon health', label: 'Fallon Health' },
   {
     value: 'harvard pilgrim health care',
     label: 'Harvard Pilgrim Health Care',
   },
+  { value: 'health new england', label: 'Health New England' },
   { value: 'healthPartners', label: 'HealthPartners' },
   { value: 'humana', label: 'Humana' },
   { value: 'medica', label: 'Medica' },
-  { value: 'neighborhood health plan', label: 'Neighborhood Health Plan' },
-  { value: 'optima health', label: 'Optima Health' },
   { value: 'preferredOne', label: 'PreferredOne' },
   { value: 'tufts health plan', label: 'Tufts Health Plan' },
   { value: 'uCare', label: 'UCare' },

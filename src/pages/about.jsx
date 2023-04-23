@@ -77,20 +77,19 @@ const AboutPage = () => {
                 keep up with the needs of society. So, after a meticulous
                 exploration of the market and countless brainstorming sessions,
                 they decided to take matters into their own hands. Fast-forward
-                to 2023, and Dawn Health<sup>TM</sup> was born - a revolutionary
-                mental healthcare venture that focuses on prevention and
-                wellness, not just treating crises.
+                to 2023, and Dawn Health was born - a revolutionary mental
+                healthcare venture that focuses on prevention and wellness, not
+                just treating crises.
               </Para>
               <Para>
-                At Dawn Health<sup>TM</sup>, we believe that every adolescent
-                deserves to have control over their mental wellbeing, which is
-                why we've developed a state-of-the-art digital-wellness
-                solution. Our platform is user-friendly, accessible, and
-                affordable, making it easier than ever for young people to
-                screen, monitor, and manage their mental health. Say goodbye to
-                sky-high costs and access-to-care barriers - with Dawn Health
-                <sup>TM</sup>
-                <sup>TM</sup>, the future of mental healthcare is in your hands.
+                At Dawn Health, we believe that every adolescent deserves to
+                have control over their mental wellbeing, which is why we've
+                developed a state-of-the-art digital-wellness solution. Our
+                platform is user-friendly, accessible, and affordable, making it
+                easier than ever for young people to screen, monitor, and manage
+                their mental health. Say goodbye to sky-high costs and
+                access-to-care barriers - with Dawn Health , the future of
+                mental healthcare is in your hands.
               </Para>
             </Col>
           </Row>
@@ -102,7 +101,7 @@ const AboutPage = () => {
           <Row className="mt-5">
             <Col
               md={12}
-              lg={7}
+              xl={7}
               className="wow animate__animated animate__fadeInLeft"
             >
               <SectionHeader
@@ -128,7 +127,11 @@ const AboutPage = () => {
             </Col>
           </Row>
           <Row className="mt-5">
-            <Col lg={5} className="wow animate__animated animate__fadeInLeft">
+            <Col
+              lg={7}
+              xl={5}
+              className="wow animate__animated animate__fadeInLeft"
+            >
               <SectionHeader className="pb-main" title="Our Proud Partners">
                 Collaborating to build a better future, our partners are the
                 cornerstone of our success. Together, we strive for excellence.

@@ -33,14 +33,14 @@ const HomePage = () => {
                 Nurturing Mental Health resilience
               </Heading>
               <Para>
-                At Dawn Health<sup>TM</sup>, we're transforming adolescent
-                mental healthcare with a groundbreaking approach that
-                prioritizes preventive wellness. By identifying and addressing
-                pre-crisis conditions, we can help teens and their parents
-                proactively manage their mental health. Our innovative approach
-                is designed to detect and respond to increased depression and
-                anxiety acuity levels, ensuring that families receive the
-                support they need before a crisis occurs.
+                At Dawn Health, we're transforming adolescent mental healthcare
+                with a groundbreaking approach that prioritizes preventive
+                wellness. By identifying and addressing pre-crisis conditions,
+                we can help teens and their parents proactively manage their
+                mental health. Our innovative approach is designed to detect and
+                respond to increased depression and anxiety acuity levels,
+                ensuring that families receive the support they need before a
+                crisis occurs.
               </Para>
               <Button className="mt-3 mb-3" onClick={() => navigate('/signup')}>
                 Sign Up Here
@@ -90,9 +90,9 @@ const HomePage = () => {
       <SectionWrapper>
         <Container>
           <Row>
-            <Col lg={5}>
+            <Col xl={7} xxl={5}>
               <SectionHeader
-                className="pb-main wow animate__animated animate__fadeInLeft"
+                className="wow animate__animated animate__fadeInLeft"
                 title="Our Wellness Programs"
               >
                 Take charge of your mental health with our proactive care
@@ -121,7 +121,7 @@ const HomePage = () => {
               className="wellness-wrapper wow animate__animated animate__zoomIn"
             >
               <Row className="wellness-inner">
-                <Col lg={3}>
+                <Col xl={3}>
                   <Card>
                     <img src={Main4} className="img-fluid mb-3" alt="main" />
                     <Title>
@@ -137,7 +137,7 @@ const HomePage = () => {
                     </Para>
                   </Card>
                 </Col>
-                <Col lg={6}>
+                <Col xl={6}>
                   <Row className="inner-card">
                     <Col lg={6}>
                       <Card className="last-card">
@@ -186,7 +186,7 @@ const HomePage = () => {
                     </Col>
                   </Row>
                 </Col>
-                <Col lg={3}>
+                <Col xl={3}>
                   <Card className="last-card">
                     <img src={Main7} className="img-fluid mb-3" alt="main" />
                     <Title>Partnering with Parents/Guardians</Title>
@@ -206,7 +206,7 @@ const HomePage = () => {
         <Container>
           <Row>
             <Col lg={6}></Col>
-            <Col lg={6} className="wow animate__animated animate__slideInRight">
+            <Col xl={6} className="wow animate__animated animate__slideInRight">
               <SectionHeader className="" title="Our Values to Help you">
                 We always want to provide the best value for you and your
                 health. Join us to maximize the benefits
@@ -214,28 +214,31 @@ const HomePage = () => {
             </Col>
           </Row>
           <Row className="align-items-center">
-            <Col lg={6} className="wow animate__animated animate__slideInLeft">
+            <Col
+              xl={6}
+              className="wow animate__animated animate__slideInLeft text-center"
+            >
               <img src={Main2} className="img-fluid mb-5" alt="main image" />
             </Col>
-            <Col lg={6} className="wow animate__animated animate__slideInRight">
+            <Col xl={6} className="wow animate__animated animate__slideInRight">
               <Row>
-                <Col md={6}>
+                <Col md={12} lg={6}>
                   <ValueCard className="mb-5" title="Compassion" icon={1}>
                     Encouraging kindness and understanding towards those facing
                     mental health challenges.
                   </ValueCard>
                 </Col>
-                <Col md={6}>
+                <Col md={12} lg={6}>
                   <ValueCard className="mb-5" title="Quality" icon={2}>
                     Providing the best possible care with the highest standards.
                   </ValueCard>
                 </Col>
-                <Col md={6}>
+                <Col md={12} lg={6}>
                   <ValueCard className="mb-5" title="Integrity" icon={3}>
                     Conducting oneself with honesty and responsibility.
                   </ValueCard>
                 </Col>
-                <Col md={6}>
+                <Col md={12} lg={6}>
                   <ValueCard className="mb-5" title="Innovation" icon={4}>
                     Utilizing new approaches and technologies to improve care.
                   </ValueCard>
@@ -266,11 +269,7 @@ const HomePage = () => {
                 <Col>
                   <SectionHeader
                     className="pb-main"
-                    title={
-                      <span>
-                        Why Dawn Health<sup>TM</sup>?
-                      </span>
-                    }
+                    title={<span>Why Dawn Health?</span>}
                   >
                     Our care delivery approach eliminates the barriers of time,
                     distance, and stigma that prevent many people from seeking

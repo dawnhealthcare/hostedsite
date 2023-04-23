@@ -30,6 +30,9 @@ const Footer = () => {
                 >
                   <LinkedinIcon />
                 </a>
+                <Para className="my-3 text-white intro">
+                  Dawn Health is a registered trademark owned by Dawn Health LLC
+                </Para>
               </div>
             </Col>
             <Col sm={2} className="wow animate__animated animate__fadeInRight">
@@ -68,8 +71,7 @@ const Footer = () => {
           <Row>
             <Col className="">
               <Text>
-                All Copyright © 2023 - Dawn Health<sup>TM</sup> . All Right
-                Reversed{' '}
+                All Copyright © 2023 - Dawn Health. All Right Reversed
               </Text>
             </Col>
           </Row>
