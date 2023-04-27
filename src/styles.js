@@ -10,6 +10,14 @@ export const InverstorsWrapper = styled.div``;
 export const BecomeInvestorWrapper = styled.div``;
 export const ServicesPageWrapper = styled.div``;
 export const ErrorPageWrapper = styled.div``;
+export const AllBlogsWrapper = styled.div``;
+export const BlogPageWrapper = styled.div`
+  & .egg {
+    border-radius: 100px;
+    overflow: hidden;
+    border: 15px solid #fff;
+  }
+`;
 
 export const Hero = styled.div`
   background: rgba(159, 189, 191, 0.4);

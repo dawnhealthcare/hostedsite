@@ -10,8 +10,10 @@ import { services } from '../data/services';
 import WellnessCard from '../components/WellnessCard';
 import ValueCard from '../components/ValuesCard';
 import Button from '../components/Button';
+import { useNavigate } from 'react-router-dom';
 
 const ServicesPage = () => {
+  const navigate = useNavigate();
   return (
     <ServicesPageWrapper>
       <Hero>
@@ -141,7 +143,10 @@ const ServicesPage = () => {
           </Row>
           <Row className="text-center">
             <Col lg={12} className="text-center">
-              <Button className="mb-5 wow animate__animated animate__zoomIn">
+              <Button
+                className="mb-5 wow animate__animated animate__zoomIn"
+                onClick={() => navigate('/signup')}
+              >
                 Sign Up Here
               </Button>
             </Col>

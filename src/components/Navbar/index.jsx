@@ -22,7 +22,7 @@ export const Header = (props) => {
         { id: 2, to: '/services', title: 'Services' },
         { id: 4, to: '/signup', title: 'Sign Up' },
         { id: 8, to: '/faqs', title: 'FAQs' },
-        { id: 9, to: '/blog', title: 'Blog' },
+        { id: 9, to: '/blogs', title: 'Blog' },
       ],
     },
     {

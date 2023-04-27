@@ -21,6 +21,8 @@ import ProtectedInvestorPage from './helpers/Protected';
 import BecomeInvestor from './pages/become-investor';
 import ServicesPage from './pages/services';
 import ErrorPage from './pages/error';
+import AllBlogsPage from './pages/allBlogs';
+import BlogPage from './pages/blog';
 
 emailjs.init('WrJDyDO12oscyG2nU');
 function App() {
@@ -51,6 +53,8 @@ function App() {
           <Route exact path="/join-our-team" element={<CareerPage />}></Route>
           <Route exact path="/signup" element={<SignupPage />}></Route>
           <Route exact path="/services" element={<ServicesPage />}></Route>
+          <Route exact path="/blogs" element={<AllBlogsPage />}></Route>
+          <Route exact path="/blogs/:title" element={<BlogPage />}></Route>
           <Route exact path="*" element={<ErrorPage />}></Route>
           {/* <Route
             exact

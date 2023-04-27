@@ -77,9 +77,9 @@ body {
     height: 72%;
   }
 
-  .h-100vh {
+  /* .h-100vh {
     min-height: 74vh;
-  }
+  } */
 }
 
 @media (min-width: 1400px) {

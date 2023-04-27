@@ -15,8 +15,8 @@ const SignupPage = () => {
         <Container>
           <Row className="align-items-center reverse h-100vh">
             <Col lg={6} className="wow animate__animated animate__fadeInLeft">
-              <Heading main="Sign up here to">
-                Join the Dawn Healt Wellness Ecosystem
+              <Heading main="Sign up here">
+                Join the Dawn Health Wellness Ecosystem
               </Heading>
               <Para>
                 Take the first step towards mental health resilience for your
