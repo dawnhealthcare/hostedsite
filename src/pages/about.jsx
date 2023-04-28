@@ -114,7 +114,7 @@ const AboutPage = () => {
             </Col>
           </Row>
           <Row className="">
-            <Col md={12} className="wow animate__animated animate__fadeInLeft">
+            <Col md={12} className="wow animate__animated animate__zoomIn">
               <iframe
                 width="100%"
                 height="715"
@@ -146,13 +146,13 @@ const AboutPage = () => {
             >
               <img src={Partner1} className="img-fluid" alt="main image" />
             </Col>
-            <Col
+            {/* <Col
               sm={6}
               md={4}
               className="mb-4 wow animate__animated animate__zoomIn"
             >
               <img src={Partner10} className="img-fluid" alt="main image" />
-            </Col>
+            </Col> */}
             <Col
               sm={6}
               md={4}
@@ -174,13 +174,13 @@ const AboutPage = () => {
             >
               <img src={Partner4} className="img-fluid" alt="main image" />
             </Col>
-            <Col
+            {/* <Col
               sm={6}
               md={4}
               className="mb-4 wow animate__animated animate__zoomIn"
             >
               <img src={Partner7} className="img-fluid" alt="main image" />
-            </Col>
+            </Col> */}
             <Col
               sm={6}
               md={4}
