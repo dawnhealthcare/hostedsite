@@ -63,16 +63,26 @@ const TeamPage = () => {
             </Col>
           </Row>
           <Row className="pb-main">
-            {teamMembers.map((member) => (
-              <Col md={6} lg={4} xl={3} className="mb-4" key={member.id}>
-                <TeamCard
-                  className="wow animate__animated animate__zoomIn"
-                  name={member.name}
-                  status={member.status}
-                  alt={member.alt}
-                  src={member.src}
-                />
-              </Col>
+            {teamMembers.map((members) => (
+              <>
+                <Col md={12} key={members.title}>
+                  <SectionHeader
+                    className="wow animate__animated animate__fadeInLeft"
+                    title={members.title}
+                  ></SectionHeader>
+                </Col>
+                {members.members?.map((member) => (
+                  <Col md={6} lg={4} xl={3} className="mb-4" key={member.id}>
+                    <TeamCard
+                      className="wow animate__animated animate__zoomIn"
+                      name={member.name}
+                      status={member.status}
+                      alt={member.alt}
+                      src={member.src}
+                    />
+                  </Col>
+                ))}
+              </>
             ))}
           </Row>
         </Container>

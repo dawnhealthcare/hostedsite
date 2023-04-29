@@ -1,13 +1,38 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { AllBlogsWrapper, Hero, SectionWrapper } from '../styles';
 import { Col, Container, Row } from 'react-bootstrap';
 import Heading from '../components/Heading';
 import Para from '../components/Para';
 import BlogCard from '../components/BlogCard';
 import SubHeading from '../components/SubHeading';
-import { blogs } from '../data/blogs';
+// import { blogs } from '../data/blogs';
+import { useState } from 'react';
+import { client } from '../client';
 
 const AllBlogsPage = () => {
+  const [blogs, setBlogs] = useState([]);
+  useEffect(() => {
+    client
+      .fetch(
+        `
+      *[_type == 'post'] {
+        title,
+        slug,
+        body,
+        publishAt,
+        mainImage {
+          assets -> {
+            _id,
+            url
+          },
+          alt
+        }
+      }  | order(publishAt desc)
+    `
+      )
+      .then((data) => setBlogs(data))
+      .catch((err) => console.log(err));
+  }, []);
   return (
     <AllBlogsWrapper>
       <Hero>
@@ -40,18 +65,20 @@ const AllBlogsPage = () => {
               </Para>
             </Col>
           </Row>
-          <Row className="align-items-center pb-main">
-            <Col md={12} className="mb-5">
-              <BlogCard
-                horizontal
-                title={blogs[1].title}
-                desc={blogs[1].desc}
-                createdAt={blogs[1].createdAt}
-                image={blogs[1].image}
-                category={blogs[1].category}
-              />
-            </Col>
-          </Row>
+          {blogs.length > 0 && (
+            <Row className="align-items-center pb-main">
+              <Col md={12} className="mb-5">
+                <BlogCard
+                  horizontal
+                  title={blogs[1]?.title}
+                  desc={blogs[1]?.desc}
+                  createdAt={blogs[1]?.createdAt}
+                  image={blogs[1]?.image}
+                  category={blogs[1]?.category}
+                />
+              </Col>
+            </Row>
+          )}
           <Row>
             {blogs?.map(({ id, title, desc, createdAt, image, category }) => (
               <Col
