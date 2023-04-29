@@ -30,7 +30,7 @@ export const teamMembers = [
       {
         id: 3,
         name: 'Shani Reifschlager Cress, MS',
-        status: 'Chief Revenue Operations Officer',
+        status: 'Director of Revenue Operations',
         src: Mem1,
         alt: 'team image',
       },

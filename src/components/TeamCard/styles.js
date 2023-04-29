@@ -10,9 +10,9 @@ export const TeamCardWrapper = styled.div`
 `;
 
 export const ContentWrapper = styled.div`
-  padding: 20px;
+  padding: 10px 20px;
   background: rgba(159, 189, 191, 0.4);
-  height: 140px;
+  height: 128px;
 `;
 
 export const Name = styled.h4`
@@ -26,7 +26,7 @@ export const Name = styled.h4`
 export const Status = styled.p`
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 140%;
   text-transform: uppercase;
   color: #3a3a3a;

@@ -16,7 +16,7 @@ import Partner6 from './../assets/about/s6.png';
 import Partner7 from './../assets/about/s7.png';
 import Partner8 from './../assets/about/s8.png';
 import Partner9 from './../assets/about/s9.png';
-import Partner10 from './../assets/about/s10.png';
+import Partner11 from './../assets/about/s11.png';
 import Main3 from './../assets/about/main2.jpg';
 
 const AboutPage = () => {
@@ -208,6 +208,18 @@ const AboutPage = () => {
               className="mb-4 wow animate__animated animate__zoomIn"
             >
               <img src={Partner6} className="img-fluid" alt="main image" />
+            </Col>
+            <Col
+              sm={6}
+              md={4}
+              className="mb-4 wow animate__animated animate__zoomIn"
+            >
+              <img
+                style={{ maxHeight: '72px' }}
+                src={Partner11}
+                className="img-fluid"
+                alt="main image"
+              />
             </Col>
           </Row>
         </Container>
