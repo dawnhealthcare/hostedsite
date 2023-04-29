@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.de748f2a.css",
-    "main.js": "/static/js/main.288fe362.js",
+    "main.css": "/static/css/main.4d9f8423.css",
+    "main.js": "/static/js/main.0af18759.js",
     "static/js/726.0f44553e.chunk.js": "/static/js/726.0f44553e.chunk.js",
     "static/js/496.51819bd1.chunk.js": "/static/js/496.51819bd1.chunk.js",
     "static/media/main.gif": "/static/media/main.b79ef56f04b84362d2f6.gif",
     "static/media/investors.pdf": "/static/media/investors.03eecd9b6cdd152c3d24.pdf",
-    "static/media/sun.svg": "/static/media/sun.e0b8e532f44740a4311402a2224d8ac0.svg",
+    "static/media/sun.svg": "/static/media/sun.b020ae59a6d342b30c0a14a9c5c414cd.svg",
     "static/media/2.png": "/static/media/2.f96d8e8d257a11b82da1.png",
     "static/media/main.png": "/static/media/main.32f49aba54448ce80829.png",
     "static/media/1.png": "/static/media/1.96628db156a694d76c11.png",
@@ -27,13 +27,13 @@
     "static/media/s7.png": "/static/media/s7.45a0e4504b523e39fdab.png",
     "static/media/dark-logo.png": "/static/media/dark-logo.b1b958a6cb0cbae87f36.png",
     "index.html": "/index.html",
-    "main.de748f2a.css.map": "/static/css/main.de748f2a.css.map",
-    "main.288fe362.js.map": "/static/js/main.288fe362.js.map",
+    "main.4d9f8423.css.map": "/static/css/main.4d9f8423.css.map",
+    "main.0af18759.js.map": "/static/js/main.0af18759.js.map",
     "726.0f44553e.chunk.js.map": "/static/js/726.0f44553e.chunk.js.map",
     "496.51819bd1.chunk.js.map": "/static/js/496.51819bd1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.de748f2a.css",
-    "static/js/main.288fe362.js"
+    "static/css/main.4d9f8423.css",
+    "static/js/main.0af18759.js"
   ]
 }
