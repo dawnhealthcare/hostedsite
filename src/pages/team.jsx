@@ -49,8 +49,11 @@ const TeamPage = () => {
       </Hero>
       <SectionWrapper>
         <Container>
-          <Row>
-            <Col lg={8} className="wow animate__animated animate__fadeInLeft">
+          <Row className="text-center">
+            <Col
+              md={{ span: 8, offset: 2 }}
+              className="wow animate__animated animate__zoomIn"
+            >
               <SectionHeader className="pb-main" title="Guiding Force">
                 The Guiding Force is a team of experienced professionals from
                 diverse backgrounds, industries, professions, and religions.
