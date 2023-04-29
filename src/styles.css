@@ -205,3 +205,6 @@ input[type='radio']:checked {
 .dropdown-menu {
   top: 35px !important;
 }
+.blog-body figure {
+  text-align: center;
+}

@@ -12,13 +12,16 @@ import {
 } from './styles';
 import { useNavigate } from 'react-router-dom';
 
-const BlogCard = ({ horizontal, title, image, desc, createdAt, category }) => {
-  console.log(title);
+const BlogCard = ({
+  horizontal,
+  title,
+  image,
+  desc,
+  createdAt,
+  category,
+  slug,
+}) => {
   const navigate = useNavigate();
-  const onClick = (title) => {
-    const slug = title.toLowerCase().split(' ').join('-');
-    navigate(`/blogs/${slug}`);
-  };
   return (
     <BlogCardWrapper className={horizontal && 'd-flex align-items-strach'}>
       <ImageWrapper horizontal={horizontal}>
@@ -47,7 +50,7 @@ const BlogCard = ({ horizontal, title, image, desc, createdAt, category }) => {
         </Para>
         <Button
           className={`mt-5 ${!horizontal && 'w-100'}`}
-          onClick={() => onClick(title)}
+          onClick={() => navigate(`/blogs/${slug}`)}
         >
           Read More
         </Button>

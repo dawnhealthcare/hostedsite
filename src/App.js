@@ -54,7 +54,7 @@ function App() {
           <Route exact path="/signup" element={<SignupPage />}></Route>
           <Route exact path="/services" element={<ServicesPage />}></Route>
           <Route exact path="/blogs" element={<AllBlogsPage />}></Route>
-          <Route exact path="/blogs/:title" element={<BlogPage />}></Route>
+          <Route exact path="/blogs/:slug" element={<BlogPage />}></Route>
           <Route exact path="*" element={<ErrorPage />}></Route>
           {/* <Route
             exact
