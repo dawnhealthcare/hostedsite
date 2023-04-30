@@ -102,7 +102,7 @@ const BlogPage = ({ setIsBlogPage }) => {
                   <Col
                     md={12}
                     xl={{ span: 10, offset: 1 }}
-                    className="wow animate__animated animate__fadeInLeft text-center"
+                    className="wow animate__animated animate__zoomIn text-center"
                   >
                     <Heading innerClass="text-white" main="Dawn Health Blog">
                       {post?.title}
@@ -134,12 +134,29 @@ const BlogPage = ({ setIsBlogPage }) => {
                   <div className="d-flex align-items-center gap-2">
                     <Para className="mb-0">Share to</Para>
                     <LinkedinShareButton
-                      source="https://dawnhealth.care"
-                      url={`https://dawnhealth.care/blogs/${slug}`}
+                      source="dawnhealth.care"
+                      // url={`https://www.wix.com/blog/2021/02/types-of-blogs/`}
+                      url={`https://dawnhealth.care/blogs/building-resilience-in-children-and-the-role-of-mental-health-education-and-support`}
                       summary={post?.description}
                       title={post?.title}
                     >
+                      {/* <a
+                        href={`https://www.linkedin.com/shareArticle?mini=true&url=https://dawnhealth.care/blogs/${slug}/&title=${post?.title}&summary=dawnhealth.care&source=dawnhealth.care`}
+                        onclick="window.open(this.href, 'mywin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+                      >
+                        <img
+                          src="http://chillyfacts.com/wp-content/uploads/2017/06/LinkedIN.gif"
+                          alt=""
+                          width="54"
+                          height="20"
+                        />
+                      </a>
+                      <a
+                        href={`https://www.linkedin.com/sharing/share-offsite/?url=https://dawnhealth.care/blogs/${slug}`}
+                        target="_blank"
+                      > */}
                       <LinkedinIcon size={32} round={true} />
+                      {/* </a> */}
                     </LinkedinShareButton>
                     <FacebookShareButton
                       quote={post?.title}
@@ -182,6 +199,7 @@ const BlogPage = ({ setIsBlogPage }) => {
                   <Row>
                     {blogs
                       .filter((blog) => blog.slug.current !== slug)
+                      .splice(0, 3)
                       ?.map(
                         ({
                           id,
