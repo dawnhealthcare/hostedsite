@@ -60,23 +60,16 @@ export const Header = (props) => {
                       title={
                         <span style={{ color: '#3a3a3a' }}>
                           {navLink.title}
-                          {/* <ArrowIcon
-                            stroke="#3a3a3a"
-                            className="ms-2"
-                            width="20"
-                            height="20"
-                            style={{ transform: 'rotate(90deg)' }}
-                          /> */}
                         </span>
                       }
                       id="basic-nav-dropdown"
                     >
                       {navLink.links.map((link) => (
-                        <NavDropdown.Item
-                          onClick={() => toggleMenuOpen(false)}
-                          id="basic-nav-dropdown"
-                        >
-                          <Nav.Link href="#" key={navLink.id} className="py-0">
+                        <Nav.Link href="#" key={navLink.id} className="py-0">
+                          <NavDropdown.Item
+                            onClick={() => toggleMenuOpen(false)}
+                            id="basic-nav-dropdown"
+                          >
                             <RecLink
                               to={link.to}
                               className={`${
@@ -85,8 +78,8 @@ export const Header = (props) => {
                             >
                               {link.title}
                             </RecLink>
-                          </Nav.Link>
-                        </NavDropdown.Item>
+                          </NavDropdown.Item>
+                        </Nav.Link>
                       ))}
                     </NavDropdown>
                   ) : (
