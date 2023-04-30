@@ -27,7 +27,7 @@ export const Overlay = styled.div`
 export const Hero = styled.div`
   background: ${(props) =>
     props.bg ? `url(${props.bg})` : 'rgba(159, 189, 191, 0.4)'};
-  background-position: center;
+  background-position: top;
   background-size: cover;
   & .reverse {
     @media (max-width: 992px) {

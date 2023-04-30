@@ -17,6 +17,8 @@ import {
   LinkedinIcon,
   LinkedinShareButton,
   TwitterIcon,
+  WhatsappIcon,
+  WhatsappShareButton,
 } from 'react-share';
 
 const BlogPage = ({ setIsBlogPage }) => {
@@ -96,10 +98,10 @@ const BlogPage = ({ setIsBlogPage }) => {
           <Hero bg={post?.mainImage.asset.url}>
             <Overlay>
               <Container>
-                <Row className="align-items-center reverse h-100vh">
+                <Row className="align-items-center pt-5 h-100vh">
                   <Col
                     md={12}
-                    lg={{ span: 8, offset: 2 }}
+                    xl={{ span: 10, offset: 1 }}
                     className="wow animate__animated animate__fadeInLeft text-center"
                   >
                     <Heading innerClass="text-white" main="Dawn Health Blog">
@@ -125,24 +127,35 @@ const BlogPage = ({ setIsBlogPage }) => {
               </Container>
             </Overlay>
           </Hero>
-          <SectionWrapper className="bg-white">
+          <SectionWrapper className="bg-white pt-4">
             <Container>
               <Row>
-                <Col md={12}>
-                  <LinkedinShareButton
-                    url={`https://dawnhealth.care/blogs/${slug.current}`}
-                  >
-                    <span className="myShareCountWrapper">
+                <Col lg={{ span: 8, offset: 2 }}>
+                  <div className="d-flex align-items-center gap-2">
+                    <Para className="mb-0">Share to</Para>
+                    <LinkedinShareButton
+                      source="https://dawnhealth.care"
+                      url={`https://dawnhealth.care/blogs/${slug}`}
+                      summary={post?.description}
+                      title={post?.title}
+                    >
                       <LinkedinIcon size={32} round={true} />
-                    </span>
-                  </LinkedinShareButton>
-                  <FacebookShareButton
-                    url={`https://dawnhealth.care/blogs/${slug.current}`}
-                  >
-                    <span className="myShareCountWrapper">
+                    </LinkedinShareButton>
+                    <FacebookShareButton
+                      quote={post?.title}
+                      hashtag="dawnhealth"
+                      url={`https://dawnhealth.care/blogs/${slug}`}
+                    >
                       <FacebookIcon size={32} round={true} />
-                    </span>
-                  </FacebookShareButton>
+                    </FacebookShareButton>
+                    <WhatsappShareButton
+                      className="me-2"
+                      url={`https://dawnhealth.care/blogs/${slug}`}
+                      title={post?.title}
+                    >
+                      <WhatsappIcon size={32} round={true} />
+                    </WhatsappShareButton>
+                  </div>
                 </Col>
               </Row>
               <Row className="blog-body pb-main">
