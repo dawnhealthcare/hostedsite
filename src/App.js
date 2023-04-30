@@ -29,6 +29,7 @@ function App() {
   const params = useLocation();
   const { height, width } = useScroll();
   const [active, setActive] = useState(params.pathname);
+  const [isBlogPage, setIsBlogPage] = useState(false);
   useScrollToTop();
 
   useEffect(() => {
@@ -40,7 +41,9 @@ function App() {
   return (
     <div className="App">
       <Header
-        className={`${height > 50 || width < 990 ? 'effix' : ''}`}
+        className={`${height > 50 || width < 990 ? 'effix' : ''} ${
+          isBlogPage && 'bg-white'
+        }`}
         active={active}
         setActive={setActive}
       />
@@ -54,7 +57,11 @@ function App() {
           <Route exact path="/signup" element={<SignupPage />}></Route>
           <Route exact path="/services" element={<ServicesPage />}></Route>
           <Route exact path="/blogs" element={<AllBlogsPage />}></Route>
-          <Route exact path="/blogs/:slug" element={<BlogPage />}></Route>
+          <Route
+            exact
+            path="/blogs/:slug"
+            element={<BlogPage setIsBlogPage={setIsBlogPage} />}
+          ></Route>
           <Route exact path="*" element={<ErrorPage />}></Route>
           {/* <Route
             exact

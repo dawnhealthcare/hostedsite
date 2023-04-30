@@ -5,17 +5,19 @@ import Heading from '../components/Heading';
 import Para from '../components/Para';
 import BlogCard from '../components/BlogCard';
 import SubHeading from '../components/SubHeading';
-// import { blogs } from '../data/blogs';
 import { useState } from 'react';
 import { client } from '../client';
+import Loader from '../components/Loader';
 
 const AllBlogsPage = () => {
   const [blogs, setBlogs] = useState([]);
+  const [blogsLoading, setBlogsLoading] = useState(true);
   useEffect(() => {
     client
       .fetch(
         `*[_type == "post"]{
           title,
+          description,
           author->{name},
           mainImage{
             asset->{
@@ -29,8 +31,13 @@ const AllBlogsPage = () => {
           slug
         }`
       )
-      .then((data) => setBlogs(data))
-      .catch((err) => console.log(err));
+      .then((data) => {
+        setBlogsLoading(false);
+        setBlogs(data);
+      })
+      .catch((err) => {
+        setBlogsLoading(false);
+      });
   }, []);
   return (
     <AllBlogsWrapper>
@@ -55,51 +62,66 @@ const AllBlogsPage = () => {
         </Container>
       </Hero>
       <SectionWrapper>
-        <Container>
-          <Row className="pb-main">
-            <Col>
-              <SubHeading>Featured blogs</SubHeading>
-              <Para>
-                Explore the best of the blogosphere with our featured picks.
-              </Para>
-            </Col>
-          </Row>
-          {blogs.length > 0 && (
-            <Row className="align-items-center pb-main">
-              <Col md={12} className="mb-5">
-                <BlogCard
-                  horizontal
-                  title={blogs[0]?.title}
-                  desc={blogs[0]?.desc}
-                  slug={blogs[0]?.slug.current}
-                  createdAt={blogs[0]?.publishedAt}
-                  image={blogs[0]?.mainImage?.asset?.url}
-                  category="Blog"
-                />
+        {blogsLoading ? (
+          <Loader fix message="Fetching blogs" />
+        ) : blogs.length > 0 ? (
+          <Container>
+            <Row className="pb-main">
+              <Col>
+                <SubHeading>Featured blogs</SubHeading>
+                <Para>
+                  Explore the best of the blogosphere with our featured picks.
+                </Para>
               </Col>
             </Row>
-          )}
-          <Row>
-            {blogs
-              ?.slice(1)
-              .map(({ id, title, desc, publishedAt, mainImage, slug }) => (
-                <Col
-                  key={id}
-                  md={4}
-                  className="text-start wow animate__animated animate__zoomIn mb-4"
-                >
+            {blogs.length > 0 && (
+              <Row className="align-items-center pb-main">
+                <Col md={12} className="mb-5">
                   <BlogCard
-                    title={title}
-                    desc={desc}
-                    createdAt={publishedAt}
-                    image={mainImage?.asset?.url}
-                    slug={slug.current}
+                    horizontal
+                    title={blogs[0]?.title}
+                    desc={blogs[0]?.description}
+                    slug={blogs[0]?.slug.current}
+                    createdAt={blogs[0]?.publishedAt}
+                    image={blogs[0]?.mainImage?.asset?.url}
                     category="Blog"
                   />
                 </Col>
-              ))}
-          </Row>
-        </Container>
+              </Row>
+            )}
+            <Row>
+              {blogs
+                ?.slice(1)
+                .map(
+                  ({
+                    id,
+                    title,
+                    description,
+                    publishedAt,
+                    mainImage,
+                    slug,
+                  }) => (
+                    <Col
+                      key={id}
+                      md={4}
+                      className="text-start wow animate__animated animate__zoomIn mb-4"
+                    >
+                      <BlogCard
+                        title={title}
+                        desc={description}
+                        createdAt={publishedAt}
+                        image={mainImage?.asset?.url}
+                        slug={slug.current}
+                        category="Blog"
+                      />
+                    </Col>
+                  )
+                )}
+            </Row>
+          </Container>
+        ) : (
+          <Para>No data found</Para>
+        )}
       </SectionWrapper>
     </AllBlogsWrapper>
   );

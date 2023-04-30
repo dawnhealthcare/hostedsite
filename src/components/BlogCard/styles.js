@@ -8,6 +8,7 @@ export const BlogCardWrapper = styled.div`
     /* min-width: 100%; */
     width: 100%;
     max-height: 250px;
+    min-height: 250px;
     object-fit: cover;
     object-position: top;
     height: 100%;
@@ -24,10 +25,16 @@ export const BlogCardWrapper = styled.div`
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
+  @media (max-width: 992px) {
+    flex-wrap: wrap;
+  }
 `;
 
 export const ImageWrapper = styled.div`
   flex: ${(props) => props.horizontal && 6};
+  @media (max-width: 992px) {
+    flex: ${(props) => props.horizontal && 'unset'};
+  }
 `;
 
 export const TopWrapper = styled.div``;
@@ -35,6 +42,9 @@ export const TopWrapper = styled.div``;
 export const BodyWrapper = styled.div`
   padding: ${(props) => (props.horizontal ? '90px' : '20px')};
   flex: ${(props) => props.horizontal && 7};
+  @media (max-width: 992px) {
+    padding: ${(props) => (props.horizontal ? '20px' : '20px')};
+  }
 `;
 
 export const Title = styled.h3`

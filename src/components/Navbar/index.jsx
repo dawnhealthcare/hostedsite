@@ -1,18 +1,12 @@
 import React, { useState } from 'react';
 import Container from 'react-bootstrap/Container';
-import { NavbarWrapper, NavItem, RecLink } from './styles';
+import { NavbarWrapper, RecLink } from './styles';
 import Logo from './../../assets/logo/logo.png';
 import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
-import { useNavigate } from 'react-router-dom';
-import { ArrowIcon } from '../Icons';
 
 export const Header = (props) => {
   const { active, className } = props;
   const [menuOpen, toggleMenuOpen] = useState(false);
-  // const check = () => {
-  //   const wel = ['/services', '/signup', '/faqs', '/blog'];
-  //   const fam = ['/about', '/team', '/join-our-team'];
-  // }
   const navLinks = [
     { id: 1, to: '/', title: 'Home' },
     {
@@ -117,34 +111,6 @@ export const Header = (props) => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      {/* <Navbar collapseOnSelect expand="lg" fixed="top" className={className}>
-        <Container>
-          <Navbar.Brand>
-            <RecLink to="/">
-              <img src={Logo} className="img-fluid" alt="" />
-            </RecLink>
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse
-            id="responsive-navbar-nav"
-            className="justify-content-end"
-          >
-            <Nav className="me-auto">
-              <NavItem>
-                {navLinks.map((navLink) => (
-                  <RecLink
-                    key={navLink.id}
-                    to={navLink.to}
-                    className={active == navLink.to ? 'active' : ''}
-                  >
-                    {navLink.title}
-                  </RecLink>
-                ))}
-              </NavItem>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar> */}
     </NavbarWrapper>
   );
 };

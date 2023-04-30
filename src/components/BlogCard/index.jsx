@@ -11,6 +11,7 @@ import {
   TopWrapper,
 } from './styles';
 import { useNavigate } from 'react-router-dom';
+import { format } from 'date-fns';
 
 const BlogCard = ({
   horizontal,
@@ -36,11 +37,13 @@ const BlogCard = ({
         horizontal={horizontal}
         className={horizontal && 'align-self-center'}
       >
-        <TopWrapper className="d-flex justify-content-between mb-3">
+        <TopWrapper className="d-flex justify-content-between align-items-center mb-3">
           <CategoryChip>
             <p className="mb-0">{category}</p>
           </CategoryChip>
-          <DateWrapper>{createdAt}</DateWrapper>
+          <DateWrapper>
+            {format(new Date(createdAt), 'dd MMMM yyyy')}
+          </DateWrapper>
         </TopWrapper>
         <Title horizontal={horizontal} className="title">
           {title}

@@ -9,7 +9,7 @@ const ErrorPage = () => {
     <ErrorPageWrapper>
       <Hero className="text-center h100vh">
         <Container>
-          <Row className="align-items-center reverse h-100vh">
+          <Row className="align-items-center pt-5 h-100vh">
             <Col md={12} className="wow animate__animated animate__zoomIn">
               <Heading main="oops!">Page Not Found</Heading>
               <Para>
