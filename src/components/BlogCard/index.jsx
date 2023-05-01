@@ -21,6 +21,7 @@ const BlogCard = ({
   createdAt,
   category,
   slug,
+  author,
 }) => {
   const navigate = useNavigate();
   return (
@@ -30,7 +31,7 @@ const BlogCard = ({
           alt="blog"
           src={image}
           style={horizontal && { maxHeight: '550px' }}
-          className="img-fluid"
+          className="img-fluid main"
         />
       </ImageWrapper>
       <BodyWrapper
@@ -39,7 +40,14 @@ const BlogCard = ({
       >
         <TopWrapper className="d-flex justify-content-between align-items-center mb-3">
           <CategoryChip>
-            <p className="mb-0">{category}</p>
+            <p className="mb-0 d-flex align-items-center">
+              <img
+                src={author?.image || 'l'}
+                className="rounded-circle me-2 author-image"
+                alt="author"
+              />
+              {author?.name}
+            </p>
           </CategoryChip>
           <DateWrapper>
             {format(new Date(createdAt), 'dd MMMM yyyy')}

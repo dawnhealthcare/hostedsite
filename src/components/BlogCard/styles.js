@@ -4,7 +4,7 @@ export const BlogCardWrapper = styled.div`
   border-radius: 10px;
   background: #e8e8e8;
   overflow: hidden;
-  & img {
+  & img.main {
     /* min-width: 100%; */
     width: 100%;
     max-height: 250px;
@@ -12,6 +12,10 @@ export const BlogCardWrapper = styled.div`
     object-fit: cover;
     object-position: top;
     height: 100%;
+  }
+  & .author-image {
+    width: 40px;
+    height: 40px;
   }
   & .title {
     display: -webkit-box;
@@ -62,16 +66,15 @@ export const Para = styled.p`
 `;
 
 export const CategoryChip = styled.div`
-  background: #e8971e;
+  /* background: #e8971e; */
   border-radius: 41px;
   display: flex;
   align-items: center;
   & p {
-    padding: 3px 30px;
-    font-weight: 600;
+    /* padding: 3px 30px; */
     font-size: 14px;
     margin-bottom: 0;
-    color: #ffffff;
+    color: #a5a5a5;
   }
 `;
 

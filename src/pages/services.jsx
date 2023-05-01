@@ -147,7 +147,7 @@ const ServicesPage = () => {
                 className="mb-5 wow animate__animated animate__zoomIn"
                 onClick={() => navigate('/signup')}
               >
-                Sign Up Here
+                Parents Click Here
               </Button>
             </Col>
           </Row>

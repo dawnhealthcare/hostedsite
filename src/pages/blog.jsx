@@ -40,7 +40,7 @@ const BlogPage = ({ setIsBlogPage }) => {
         `*[_type == "post"]{
           title,
           description,
-          author->{name},
+          author->{name, "image": image.asset->url},
           mainImage{
             asset->{
               _id,
@@ -68,7 +68,7 @@ const BlogPage = ({ setIsBlogPage }) => {
         `*[slug.current == $slug]{
           title,
           description,
-          author->{name},
+          author->{name, "image": image.asset->url},
           mainImage{
             asset->{
               _id,
@@ -121,6 +121,16 @@ const BlogPage = ({ setIsBlogPage }) => {
                         {post?.title}
                       </Heading>
                       <Para className="text-white">{post?.description}</Para>
+                      <Para className="text-white mb-0 d-flex align-items-center justify-content-center">
+                        <span className="me-2">By</span>
+                        <img
+                          style={{ width: '40px', height: '40px' }}
+                          src={post?.author?.image || 'l'}
+                          className="rounded-circle me-2 author-image"
+                          alt="author"
+                        />
+                        {post?.author?.name}
+                      </Para>
                     </Col>
                     {/* <Col lg={1}></Col>
                 <Col
@@ -221,6 +231,7 @@ const BlogPage = ({ setIsBlogPage }) => {
                             publishedAt,
                             mainImage,
                             slug,
+                            author,
                           }) => (
                             <Col
                               key={id}
@@ -233,6 +244,7 @@ const BlogPage = ({ setIsBlogPage }) => {
                                 createdAt={publishedAt}
                                 image={mainImage?.asset?.url}
                                 slug={slug.current}
+                                author={author}
                                 category="Blog"
                               />
                             </Col>

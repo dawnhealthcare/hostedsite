@@ -18,7 +18,7 @@ const AllBlogsPage = () => {
         `*[_type == "post"]{
           title,
           description,
-          author->{name},
+          author->{name, "image": image.asset->url},
           mainImage{
             asset->{
               _id,
@@ -85,6 +85,7 @@ const AllBlogsPage = () => {
                     createdAt={blogs[0]?.publishedAt}
                     image={blogs[0]?.mainImage?.asset?.url}
                     category="Blog"
+                    author={blogs[0]?.author}
                   />
                 </Col>
               </Row>
@@ -100,6 +101,7 @@ const AllBlogsPage = () => {
                     publishedAt,
                     mainImage,
                     slug,
+                    author,
                   }) => (
                     <Col
                       key={id}
@@ -113,6 +115,7 @@ const AllBlogsPage = () => {
                         image={mainImage?.asset?.url}
                         slug={slug.current}
                         category="Blog"
+                        author={author}
                       />
                     </Col>
                   )

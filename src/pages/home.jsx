@@ -43,7 +43,7 @@ const HomePage = () => {
                 crisis occurs.
               </Para>
               <Button className="mt-3 mb-3" onClick={() => navigate('/signup')}>
-                Sign Up Here
+                Parents Click Here
               </Button>
             </Col>
             <Col
