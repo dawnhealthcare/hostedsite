@@ -131,33 +131,33 @@ const BlogPage = ({ setIsBlogPage }) => {
             <Container>
               <Row>
                 <Col lg={{ span: 8, offset: 2 }}>
-                  <div className="d-flex align-items-center gap-2">
-                    <Para className="mb-0">Share to</Para>
-                    <LinkedinShareButton
+                  <div className="d-flex align-items-center gap-2 pt-3">
+                    {/* <Para className="mb-0">Share to</Para> */}
+                    {/* <LinkedinShareButton
                       source="dawnhealth.care"
-                      // url={`https://www.wix.com/blog/2021/02/types-of-blogs/`}
-                      url={`https://dawnhealth.care/blogs/building-resilience-in-children-and-the-role-of-mental-health-education-and-support`}
+                      url={`https://dawnhealth.care/blogs/${slug}`}
                       summary={post?.description}
                       title={post?.title}
                     >
-                      {/* <a
-                        href={`https://www.linkedin.com/shareArticle?mini=true&url=https://dawnhealth.care/blogs/${slug}/&title=${post?.title}&summary=dawnhealth.care&source=dawnhealth.care`}
-                        onclick="window.open(this.href, 'mywin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
-                      >
-                        <img
-                          src="http://chillyfacts.com/wp-content/uploads/2017/06/LinkedIN.gif"
-                          alt=""
-                          width="54"
-                          height="20"
-                        />
-                      </a>
-                      <a
-                        href={`https://www.linkedin.com/sharing/share-offsite/?url=https://dawnhealth.care/blogs/${slug}`}
-                        target="_blank"
-                      > */}
                       <LinkedinIcon size={32} round={true} />
-                      {/* </a> */}
-                    </LinkedinShareButton>
+                    </LinkedinShareButton> */}
+                    {/* <a
+                      href={`https://www.linkedin.com/shareArticle?mini=true&url=https://dawnhealth.care/blogs/${slug}/&title=${post?.title}&summary=dawnhealth.care&source=dawnhealth.care`}
+                      onclick="window.open(this.href, 'mywin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+                    >
+                      <img
+                        src="http://chillyfacts.com/wp-content/uploads/2017/06/LinkedIN.gif"
+                        alt=""
+                        width="54"
+                        height="20"
+                      />
+                    </a>
+                    <a
+                      href={`https://www.linkedin.com/sharing/share-offsite/?url=https://dawnhealth.care/blogs/${slug}`}
+                      target="_blank"
+                    >
+                      share
+                    </a>
                     <FacebookShareButton
                       quote={post?.title}
                       hashtag="dawnhealth"
@@ -171,7 +171,7 @@ const BlogPage = ({ setIsBlogPage }) => {
                       title={post?.title}
                     >
                       <WhatsappIcon size={32} round={true} />
-                    </WhatsappShareButton>
+                    </WhatsappShareButton> */}
                   </div>
                 </Col>
               </Row>
