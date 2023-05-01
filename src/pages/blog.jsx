@@ -20,6 +20,7 @@ import {
   WhatsappIcon,
   WhatsappShareButton,
 } from 'react-share';
+import { Helmet } from 'react-helmet';
 
 const BlogPage = ({ setIsBlogPage }) => {
   const [post, setPost] = useState(null);
@@ -88,28 +89,40 @@ const BlogPage = ({ setIsBlogPage }) => {
       });
   }, [slug]);
   return (
-    <BlogPageWrapper>
-      {postLoading ? (
-        <Loader message="Fetching blog data..." />
-      ) : !post ? (
-        <ErrorPage />
-      ) : (
-        <>
-          <Hero bg={post?.mainImage.asset.url}>
-            <Overlay>
-              <Container>
-                <Row className="align-items-center pt-5 h-100vh">
-                  <Col
-                    md={12}
-                    xl={{ span: 10, offset: 1 }}
-                    className="wow animate__animated animate__zoomIn text-center"
-                  >
-                    <Heading innerClass="text-white" main="Dawn Health Blog">
-                      {post?.title}
-                    </Heading>
-                    <Para className="text-white">{post?.description}</Para>
-                  </Col>
-                  {/* <Col lg={1}></Col>
+    <>
+      <Helmet>
+        <title>{`Dawn Health ${post?.title || 'loading'}`}</title>
+        <meta name="description" content={post?.title} />
+        <meta name="keywords" content="dawnhelath,care" />
+        <meta property="og:title" content={post?.title} />
+        <meta property="og:description" content={post?.description} />
+        <meta
+          property="og:image"
+          content={`https://dawnhealth.care/blogs/${slug}`}
+        />
+      </Helmet>
+      <BlogPageWrapper>
+        {postLoading ? (
+          <Loader message="Fetching blog data..." />
+        ) : !post ? (
+          <ErrorPage />
+        ) : (
+          <>
+            <Hero bg={post?.mainImage.asset.url}>
+              <Overlay>
+                <Container>
+                  <Row className="align-items-center pt-5 h-100vh">
+                    <Col
+                      md={12}
+                      xl={{ span: 10, offset: 1 }}
+                      className="wow animate__animated animate__zoomIn text-center"
+                    >
+                      <Heading innerClass="text-white" main="Dawn Health Blog">
+                        {post?.title}
+                      </Heading>
+                      <Para className="text-white">{post?.description}</Para>
+                    </Col>
+                    {/* <Col lg={1}></Col>
                 <Col
                   md={6}
                   lg={5}
@@ -123,17 +136,17 @@ const BlogPage = ({ setIsBlogPage }) => {
                     />
                   </div>
                 </Col> */}
-                </Row>
-              </Container>
-            </Overlay>
-          </Hero>
-          <SectionWrapper className="bg-white pt-4">
-            <Container>
-              <Row>
-                <Col lg={{ span: 8, offset: 2 }}>
-                  <div className="d-flex align-items-center gap-2 pt-3">
-                    {/* <Para className="mb-0">Share to</Para> */}
-                    {/* <LinkedinShareButton
+                  </Row>
+                </Container>
+              </Overlay>
+            </Hero>
+            <SectionWrapper className="bg-white pt-4">
+              <Container>
+                <Row>
+                  <Col lg={{ span: 8, offset: 2 }}>
+                    <div className="d-flex align-items-center gap-2 pt-3">
+                      {/* <Para className="mb-0">Share to</Para> */}
+                      {/* <LinkedinShareButton
                       source="dawnhealth.care"
                       url={`https://dawnhealth.care/blogs/${slug}`}
                       summary={post?.description}
@@ -141,7 +154,7 @@ const BlogPage = ({ setIsBlogPage }) => {
                     >
                       <LinkedinIcon size={32} round={true} />
                     </LinkedinShareButton> */}
-                    {/* <a
+                      {/* <a
                       href={`https://www.linkedin.com/shareArticle?mini=true&url=https://dawnhealth.care/blogs/${slug}/&title=${post?.title}&summary=dawnhealth.care&source=dawnhealth.care`}
                       onclick="window.open(this.href, 'mywin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
                     >
@@ -172,67 +185,68 @@ const BlogPage = ({ setIsBlogPage }) => {
                     >
                       <WhatsappIcon size={32} round={true} />
                     </WhatsappShareButton> */}
-                  </div>
-                </Col>
-              </Row>
-              <Row className="blog-body pb-main">
-                <Col lg={{ span: 8, offset: 2 }} className="pt-3">
-                  <SanityBlockContent
-                    blocks={post?.body}
-                    dataset="production"
-                    projectId="4lddormh"
-                  />
-                </Col>
-              </Row>
-            </Container>
-          </SectionWrapper>
-          <SectionWrapper>
-            <Container>
-              {blogs.length > 1 && (
-                <>
-                  <Row className="pb-main">
-                    <Col>
-                      <SubHeading>Related blogs</SubHeading>
-                      <Para>Posts you may like</Para>
-                    </Col>
-                  </Row>
-                  <Row>
-                    {blogs
-                      .filter((blog) => blog.slug.current !== slug)
-                      .splice(0, 3)
-                      ?.map(
-                        ({
-                          id,
-                          title,
-                          description,
-                          publishedAt,
-                          mainImage,
-                          slug,
-                        }) => (
-                          <Col
-                            key={id}
-                            md={4}
-                            className="text-start wow animate__animated animate__zoomIn mb-4"
-                          >
-                            <BlogCard
-                              title={title}
-                              desc={description}
-                              createdAt={publishedAt}
-                              image={mainImage?.asset?.url}
-                              slug={slug.current}
-                              category="Blog"
-                            />
-                          </Col>
-                        )
-                      )}
-                  </Row>
-                </>
-              )}
-            </Container>
-          </SectionWrapper>
-        </>
-      )}
-    </BlogPageWrapper>
+                    </div>
+                  </Col>
+                </Row>
+                <Row className="blog-body pb-main">
+                  <Col lg={{ span: 8, offset: 2 }} className="pt-3">
+                    <SanityBlockContent
+                      blocks={post?.body}
+                      dataset="production"
+                      projectId="4lddormh"
+                    />
+                  </Col>
+                </Row>
+              </Container>
+            </SectionWrapper>
+            <SectionWrapper>
+              <Container>
+                {blogs.length > 1 && (
+                  <>
+                    <Row className="pb-main">
+                      <Col>
+                        <SubHeading>Related blogs</SubHeading>
+                        <Para>Posts you may like</Para>
+                      </Col>
+                    </Row>
+                    <Row>
+                      {blogs
+                        .filter((blog) => blog.slug.current !== slug)
+                        .splice(0, 3)
+                        ?.map(
+                          ({
+                            id,
+                            title,
+                            description,
+                            publishedAt,
+                            mainImage,
+                            slug,
+                          }) => (
+                            <Col
+                              key={id}
+                              md={4}
+                              className="text-start wow animate__animated animate__zoomIn mb-4"
+                            >
+                              <BlogCard
+                                title={title}
+                                desc={description}
+                                createdAt={publishedAt}
+                                image={mainImage?.asset?.url}
+                                slug={slug.current}
+                                category="Blog"
+                              />
+                            </Col>
+                          )
+                        )}
+                    </Row>
+                  </>
+                )}
+              </Container>
+            </SectionWrapper>
+          </>
+        )}
+      </BlogPageWrapper>
+    </>
   );
 };
 
