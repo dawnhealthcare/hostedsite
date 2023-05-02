@@ -96,10 +96,7 @@ const BlogPage = ({ setIsBlogPage }) => {
         <meta name="keywords" content="dawnhelath,care" />
         <meta property="og:title" content={post?.title} />
         <meta property="og:description" content={post?.description} />
-        <meta
-          property="og:image"
-          content={`https://dawnhealth.care/blogs/${slug}`}
-        />
+        <meta property="og:image" content={`${post?.mainImage.asset.url}`} />
       </Helmet>
       <BlogPageWrapper>
         {postLoading ? (

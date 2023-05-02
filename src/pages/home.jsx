@@ -24,17 +24,6 @@ const HomePage = () => {
     <>
       <Helmet>
         <title>{`Dawn Health`}</title>
-        <meta
-          name="description"
-          content="In 2021, a group of brilliant minds at Harvard Medical School
-                had an epiphany: traditional mental healthcare was failing to
-                keep up with the needs of society. So, after a meticulous
-                exploration of the market and countless brainstorming sessions,
-                they decided to take matters into their own hands. Fast-forward
-                to 2023, and Dawn Health was born - a revolutionary mental
-                healthcare venture that focuses on prevention and wellness, not
-                just treating crises."
-        />
         <meta name="keywords" content="dawnhelath,care" />
         <meta property="og:title" content="Dawn Health" />
         <meta
