@@ -5,7 +5,6 @@ import { Header } from './components/Navbar';
 import useScroll from './hooks/useScroll';
 import AboutPage from './pages/about';
 import CareerPage from './pages/career';
-import Components from './pages/components';
 import FaqPage from './pages/faqs';
 import HomePage from './pages/home';
 import SignupPage from './pages/signup';
@@ -78,7 +77,6 @@ function App() {
             path="/terms-and-conditions"
             element={<TermsAndConitionsPage />}
           ></Route>
-          <Route exact path="/components" element={<Components />}></Route>
         </Routes>
       </Body>
       <Footer />

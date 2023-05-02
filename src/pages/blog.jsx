@@ -157,44 +157,44 @@ const BlogPage = ({ setIsBlogPage }) => {
                     <div className="d-flex align-items-center gap-2 pt-3">
                       {/* <Para className="mb-0">Share to</Para> */}
                       {/* <LinkedinShareButton
-                      source="dawnhealth.care"
-                      url={`https://dawnhealth.care/blogs/${slug}`}
-                      summary={post?.description}
-                      title={post?.title}
-                    >
-                      <LinkedinIcon size={32} round={true} />
-                    </LinkedinShareButton> */}
+                        source="dawnhealth.care"
+                        url={`https://dawnhealth.care/blogs/${slug}`}
+                        summary={post?.description}
+                        title={post?.title}
+                      >
+                        <LinkedinIcon size={32} round={true} />
+                      </LinkedinShareButton> */}
                       {/* <a
-                      href={`https://www.linkedin.com/shareArticle?mini=true&url=https://dawnhealth.care/blogs/${slug}/&title=${post?.title}&summary=dawnhealth.care&source=dawnhealth.care`}
-                      onclick="window.open(this.href, 'mywin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
-                    >
-                      <img
-                        src="http://chillyfacts.com/wp-content/uploads/2017/06/LinkedIN.gif"
-                        alt=""
-                        width="54"
-                        height="20"
-                      />
-                    </a>
-                    <a
-                      href={`https://www.linkedin.com/sharing/share-offsite/?url=https://dawnhealth.care/blogs/${slug}`}
-                      target="_blank"
-                    >
-                      share
-                    </a>
-                    <FacebookShareButton
-                      quote={post?.title}
-                      hashtag="dawnhealth"
-                      url={`https://dawnhealth.care/blogs/${slug}`}
-                    >
-                      <FacebookIcon size={32} round={true} />
-                    </FacebookShareButton>
-                    <WhatsappShareButton
-                      className="me-2"
-                      url={`https://dawnhealth.care/blogs/${slug}`}
-                      title={post?.title}
-                    >
-                      <WhatsappIcon size={32} round={true} />
-                    </WhatsappShareButton> */}
+                        href={`https://www.linkedin.com/shareArticle?mini=true&url=https://dawnhealth.care/blogs/${slug}/&title=${post?.title}&summary=dawnhealth.care&source=dawnhealth.care`}
+                        onclick="window.open(this.href, 'mywin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+                      >
+                        <img
+                          src="http://chillyfacts.com/wp-content/uploads/2017/06/LinkedIN.gif"
+                          alt=""
+                          width="54"
+                          height="20"
+                        />
+                      </a>
+                      <a
+                        href={`https://www.linkedin.com/sharing/share-offsite/?url=https://dawnhealth.care/blogs/${slug}`}
+                        target="_blank"
+                      >
+                        share
+                      </a> */}
+                      {/* <FacebookShareButton
+                        quote={post?.title}
+                        hashtag="dawnhealth"
+                        url={`https://dawnhealth.care/blogs/${slug}`}
+                      >
+                        <FacebookIcon size={32} round={true} />
+                      </FacebookShareButton>
+                      <WhatsappShareButton
+                        className="me-2"
+                        url={`https://dawnhealth.care/blogs/${slug}`}
+                        title={post?.title}
+                      >
+                        <WhatsappIcon size={32} round={true} />
+                      </WhatsappShareButton> */}
                     </div>
                   </Col>
                 </Row>
