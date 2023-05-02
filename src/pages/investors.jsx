@@ -29,11 +29,7 @@ const InvestorsPage = () => {
               md={6}
               className="text-end wow animate__animated animate__fadeInRight"
             >
-              <img
-                src={Main}
-                className="img-fluid main-image"
-                alt="main image"
-              />
+              <img src={Main} className="img-fluid main-image" alt="main" />
             </Col>
           </Row>
         </Container>
@@ -59,11 +55,7 @@ const InvestorsPage = () => {
             <Col md={12}>
               <div className="wow animate__animated animate__zoomIn">
                 {/* <PDFViewerComp path={DECK} /> */}
-                <img
-                  src={Main3}
-                  className="img-fluid main-image"
-                  alt="main image"
-                />
+                <img src={Main3} className="img-fluid main-image" alt="main" />
               </div>
             </Col>
           </Row>
@@ -178,11 +170,7 @@ const InvestorsPage = () => {
               lg={6}
               className="text-end wow animate__animated animate__fadeInRight"
             >
-              <img
-                src={Main2}
-                className="img-fluid main-image"
-                alt="main image"
-              />
+              <img src={Main2} className="img-fluid main-image" alt="main" />
             </Col>
           </Row>
         </Container>

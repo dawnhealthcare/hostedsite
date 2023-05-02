@@ -54,11 +54,7 @@ const HomePage = () => {
                 md={6}
                 className="text-end wow animate__animated animate__fadeInRight"
               >
-                <img
-                  src={Main}
-                  className="img-fluid main-image"
-                  alt="main image"
-                />
+                <img src={Main} className="img-fluid main-image" alt="main" />
               </Col>
             </Row>
           </Container>
@@ -227,7 +223,7 @@ const HomePage = () => {
                 xl={6}
                 className="wow animate__animated animate__slideInLeft text-center"
               >
-                <img src={Main2} className="img-fluid mb-5" alt="main image" />
+                <img src={Main2} className="img-fluid mb-5" alt="main" />
               </Col>
               <Col
                 xl={6}
@@ -277,7 +273,7 @@ const HomePage = () => {
                 lg={6}
                 className="wow animate__animated animate__slideInLeft"
               >
-                <img src={Main3} className="img-fluid mb-5" alt="main image" />
+                <img src={Main3} className="img-fluid mb-5" alt="main" />
               </Col>
               <Col lg={1}></Col>
               <Col

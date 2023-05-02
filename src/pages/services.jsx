@@ -35,11 +35,7 @@ const ServicesPage = () => {
               md={6}
               className="text-end wow animate__animated animate__fadeInRight"
             >
-              <img
-                src={Main}
-                className="img-fluid main-image"
-                alt="main image"
-              />
+              <img src={Main} className="img-fluid main-image" alt="main" />
             </Col>
           </Row>
         </Container>

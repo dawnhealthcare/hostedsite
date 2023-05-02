@@ -36,12 +36,12 @@ const TeamPage = () => {
               <img
                 src={Main8}
                 className="img-fluid main-image wrapper-image"
-                alt="main image"
+                alt="main"
               />
               {/* <img
                 src={Animated}
                 className="img-fluid main-image inner-image"
-                alt="main image"
+                alt="main"
               /> */}
             </Col>
           </Row>

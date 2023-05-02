@@ -27,11 +27,7 @@ const SignupPage = () => {
               md={6}
               className="text-end wow animate__animated animate__fadeInRight"
             >
-              <img
-                src={Main}
-                className="img-fluid main-image"
-                alt="main image"
-              />
+              <img src={Main} className="img-fluid main-image" alt="main" />
             </Col>
           </Row>
         </Container>
@@ -43,7 +39,7 @@ const SignupPage = () => {
               lg={5}
               className="text-end wow animate__animated animate__fadeInLeft"
             >
-              <img src={Main2} className="img-fluid" alt="main image" />
+              <img src={Main2} className="img-fluid" alt="main" />
             </Col>
             <Col lg={1}></Col>
             <Col lg={6} className="wow animate__animated animate__fadeInRight">
