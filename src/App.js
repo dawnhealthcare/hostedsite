@@ -55,10 +55,10 @@ function App() {
           <Route exact path="/join-our-team" element={<CareerPage />}></Route>
           <Route exact path="/signup" element={<SignupPage />}></Route>
           <Route exact path="/services" element={<ServicesPage />}></Route>
-          <Route exact path="/blogs" element={<AllBlogsPage />}></Route>
+          <Route exact path="/blog" element={<AllBlogsPage />}></Route>
           <Route
             exact
-            path="/blogs/:slug"
+            path="/blog/:slug"
             element={<BlogPage setIsBlogPage={setIsBlogPage} />}
           ></Route>
           <Route exact path="*" element={<ErrorPage />}></Route>

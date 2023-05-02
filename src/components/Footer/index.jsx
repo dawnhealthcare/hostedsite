@@ -60,7 +60,7 @@ const Footer = () => {
             <Col sm={2} className="wow animate__animated animate__fadeInRight">
               <Title>Support</Title>
               <ReLink to="/faqs">FAQs</ReLink>
-              <ReLink to="/blogs">Blog</ReLink>
+              <ReLink to="/blog">Blog</ReLink>
               <ReLink to="/terms-and-conditions">Terms & Conditions</ReLink>
               {/* <ReLink to="/">Privacy Policy</ReLink> */}
             </Col>

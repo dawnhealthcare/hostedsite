@@ -61,7 +61,7 @@ const BlogCard = ({
         </Para>
         <Button
           className={`mt-5 ${!horizontal && 'w-100'}`}
-          onClick={() => navigate(`/blogs/${slug}`)}
+          onClick={() => navigate(`/blog/${slug}`)}
         >
           Read More
         </Button>
