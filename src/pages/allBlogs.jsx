@@ -50,12 +50,16 @@ const AllBlogsPage = () => {
               className="wow animate__animated animate__zoomIn"
             >
               <Heading main="Dawn Health Blog">
-                Empowering Your Wellness Journey at Dawn
+                Empowering Mental Health Resilience & Brain Health
               </Heading>
               <Para>
-                Stay on top of the latest news, trends, and best practices
-                around supporting children mental health. Explore ideas of
-                industry thought leaders and the Dawn Health care team.
+                Discover the latest breakthroughs, game-changing insights, and
+                expert opinions on the forefront of children's mental health.
+                Join forces with industry thought leaders and the esteemed Dawn
+                Health care team to explore innovative ideas, best practices,
+                and cutting-edge trends in support of our most precious asset -
+                our children's well-being. Stay ahead of the curve and elevate
+                your knowledge with our unparalleled resources
               </Para>
             </Col>
           </Row>
