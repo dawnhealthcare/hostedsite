@@ -91,8 +91,8 @@ const CareerPage = () => {
                   in multiple states as we grow nationwide.
                 </ListItem>
                 <ListItem className="pb-3">
-                  Support other Brightline teams as needed, including with
-                  recruitment or content development
+                  Support other teams as needed, including with recruitment or
+                  content development
                 </ListItem>
                 <ListItem className="pb-3">
                   Engage in opportunities to further your knowledge of CBT and

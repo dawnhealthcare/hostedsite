@@ -17,6 +17,7 @@ import Partner7 from './../assets/about/s7.png';
 import Partner8 from './../assets/about/s8.png';
 import Partner9 from './../assets/about/s9.png';
 import Partner11 from './../assets/about/s11.png';
+import Partner12 from './../assets/about/s12.png';
 import Main3 from './../assets/about/main2.jpg';
 
 const AboutPage = () => {
@@ -46,11 +47,7 @@ const AboutPage = () => {
               md={6}
               className="text-end wow animate__animated animate__fadeInRight"
             >
-              <img
-                src={Main}
-                className="img-fluid main-image"
-                alt="main image"
-              />
+              <img src={Main} className="img-fluid main-image" alt="main" />
             </Col>
           </Row>
         </Container>
@@ -63,7 +60,7 @@ const AboutPage = () => {
               lg={6}
               className="text-start wow animate__animated animate__fadeInLeft"
             >
-              <img src={Main2} className="img-fluid" alt="main image" />
+              <img src={Main2} className="img-fluid" alt="main" />
             </Col>
             <Col
               md={12}
@@ -144,70 +141,82 @@ const AboutPage = () => {
               md={4}
               className="mb-4 wow animate__animated animate__zoomIn"
             >
-              <img src={Partner1} className="img-fluid" alt="main image" />
+              <img src={Partner1} className="img-fluid" alt="main" />
+            </Col>
+            <Col
+              sm={6}
+              md={4}
+              className="mb-4 wow animate__animated animate__zoomIn"
+            >
+              <img
+                style={{ maxHeight: '152px' }}
+                src={Partner12}
+                className="img-fluid"
+                alt="main"
+              />
             </Col>
             {/* <Col
               sm={6}
               md={4}
               className="mb-4 wow animate__animated animate__zoomIn"
             >
-              <img src={Partner10} className="img-fluid" alt="main image" />
+              <img src={Partner10} className="img-fluid" alt="main" />
             </Col> */}
             <Col
               sm={6}
               md={4}
               className="mb-4 wow animate__animated animate__zoomIn"
             >
-              <img src={Partner2} className="img-fluid" alt="main image" />
+              <img src={Partner2} className="img-fluid" alt="main" />
             </Col>
             {/* <Col
               sm={6}
               md={4}
               className="mb-4 wow animate__animated animate__zoomIn"
             >
-              <img src={Partner3} className="img-fluid" alt="main image" />
+              <img src={Partner3} className="img-fluid" alt="main" />
             </Col> */}
             <Col
               sm={6}
               md={4}
               className="mb-4 wow animate__animated animate__zoomIn"
             >
-              <img src={Partner4} className="img-fluid" alt="main image" />
+              <img src={Partner4} className="img-fluid" alt="main" />
             </Col>
             {/* <Col
               sm={6}
               md={4}
               className="mb-4 wow animate__animated animate__zoomIn"
             >
-              <img src={Partner7} className="img-fluid" alt="main image" />
+              <img src={Partner7} className="img-fluid" alt="main" />
             </Col> */}
             <Col
               sm={6}
               md={4}
               className="mb-4 wow animate__animated animate__zoomIn"
             >
-              <img src={Partner8} className="img-fluid" alt="main image" />
+              <img src={Partner8} className="img-fluid" alt="main" />
             </Col>
             <Col
               sm={6}
               md={4}
               className="mb-4 wow animate__animated animate__zoomIn"
             >
-              <img src={Partner9} className="img-fluid" alt="main image" />
+              <img src={Partner9} className="img-fluid" alt="main" />
             </Col>
             <Col
               sm={6}
               md={4}
               className="mb-4 wow animate__animated animate__zoomIn"
             >
-              <img src={Partner5} className="img-fluid" alt="main image" />
+              <img src={Partner5} className="img-fluid" alt="main" />
             </Col>
             <Col
               sm={6}
               md={4}
               className="mb-4 wow animate__animated animate__zoomIn"
             >
-              <img src={Partner6} className="img-fluid" alt="main image" />
+              <img src={Partner6} className="img-fluid" alt="main" />
             </Col>
             <Col
               sm={6}
@@ -218,7 +227,7 @@ const AboutPage = () => {
                 style={{ maxHeight: '72px' }}
                 src={Partner11}
                 className="img-fluid"
-                alt="main image"
+                alt="main"
               />
             </Col>
           </Row>
