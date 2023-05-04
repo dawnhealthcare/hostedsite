@@ -72,7 +72,7 @@ const Footer = () => {
           <Row>
             <Col className="">
               <Text>
-                All Copyright © 2023 - Dawn Health. All Right Reversed
+                All Copyright © 2023 - Dawn Health. All Right Reserved
               </Text>
             </Col>
           </Row>
