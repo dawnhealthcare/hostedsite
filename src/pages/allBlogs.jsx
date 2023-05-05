@@ -15,7 +15,7 @@ const AllBlogsPage = () => {
   useEffect(() => {
     client
       .fetch(
-        `*[_type == "post"]{
+        `*[_type == "post"] | order(publishedAt desc){
           title,
           description,
           author->{name, "image": image.asset->url},

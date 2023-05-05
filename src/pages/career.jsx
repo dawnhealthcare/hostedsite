@@ -79,7 +79,7 @@ const CareerPage = () => {
                   health concerns, such as anxiety and depression.
                 </ListItem>
                 <ListItem className="pb-3">
-                  upport all aspects of each child or teen's treatment by
+                  Support all aspects of each child or teen's treatment by
                   collaborating with other care team members at Dawn Health ,
                   their school, household, and in the community. Document your
                   work, including session notes, care plans, and ongoing

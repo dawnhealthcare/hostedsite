@@ -50,7 +50,7 @@ const TeamPage = () => {
       <SectionWrapper>
         <Container>
           <Row>
-            <Col xl={8} className="wow animate__animated animate__fadeInLeft">
+            <Col className="wow animate__animated animate__fadeInLeft">
               <SectionHeader className="pb-main" title="Guiding Force">
                 The Guiding Force is a team of experienced professionals from
                 diverse backgrounds, industries, professions, and religions.
@@ -60,6 +60,40 @@ const TeamPage = () => {
                 making a difference by leveraging their collective expertise to
                 build a better future for the next generation.
               </SectionHeader>
+            </Col>
+          </Row>
+          <Row className="pb-main">
+            <Col>
+              <SectionHeader
+                className="wow animate__animated animate__fadeInLeft"
+                title="Our Principles"
+              ></SectionHeader>
+              <Para>
+                We believe that success is built on collaboration and
+                partnership. That's why we seek out individuals who are experts
+                in their field and work together to develop new and innovative
+                solutions. By partnering with the best and brightest, we can
+                create truly groundbreaking solutions that push the limits of
+                what's possible.
+              </Para>
+              <Para>
+                In addition to our focus on collaboration, we're also passionate
+                about incubating new ideas and solutions. We're always on the
+                lookout for new and innovative approaches to the challenges our
+                clients face, and we work hard to turn those ideas into reality.
+                Whether it's through research and development, prototyping, or
+                other methods, we're committed to bringing cutting-edge ideas to
+                life.
+              </Para>
+              <Para>
+                Finally, we believe in investing in our team members and helping
+                them to grow and build their own companies if they wish. We
+                understand that the best way to build a successful company is by
+                empowering our team members to be their best selves. That's why
+                we provide ongoing training, support, and mentorship to all of
+                our staff and encourage them to pursue their passions and build
+                their own companies if they choose to do so.
+              </Para>
             </Col>
           </Row>
           <Row className="pb-main">
