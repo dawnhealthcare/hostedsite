@@ -7,18 +7,9 @@ import SubHeading from '../components/SubHeading';
 import { Hero, SectionWrapper, AboutPageWrapper } from '../styles';
 import Main from './../assets/about/1.png';
 import Main2 from './../assets/about/2.png';
-import Partner1 from './../assets/about/s1.png';
-import Partner2 from './../assets/about/s2.png';
-import Partner3 from './../assets/about/s3.png';
-import Partner4 from './../assets/about/s4.png';
-import Partner5 from './../assets/about/s5.png';
-import Partner6 from './../assets/about/s6.png';
-import Partner7 from './../assets/about/s7.png';
-import Partner8 from './../assets/about/s8.png';
-import Partner9 from './../assets/about/s9.png';
-import Partner11 from './../assets/about/s11.png';
-import Partner12 from './../assets/about/s12.png';
 import Main3 from './../assets/about/main2.jpg';
+import { partners } from '../data/partners';
+import Partner from '../components/Partner';
 
 const AboutPage = () => {
   return (
@@ -135,101 +126,20 @@ const AboutPage = () => {
               </SectionHeader>
             </Col>
           </Row>
-          <Row className="pb-main align-items-end">
-            <Col
-              sm={6}
-              md={4}
-              className="mb-4 wow animate__animated animate__zoomIn"
-            >
-              <img src={Partner1} className="img-fluid" alt="main" />
-            </Col>
-            <Col
-              sm={6}
-              md={4}
-              className="mb-4 wow animate__animated animate__zoomIn"
-            >
-              <img
-                style={{ maxHeight: '152px' }}
-                src={Partner12}
-                className="img-fluid"
-                alt="main"
-              />
-            </Col>
-            {/* <Col
-              sm={6}
-              md={4}
-              className="mb-4 wow animate__animated animate__zoomIn"
-            >
-              <img src={Partner10} className="img-fluid" alt="main" />
-            </Col> */}
-            <Col
-              sm={6}
-              md={4}
-              className="mb-4 wow animate__animated animate__zoomIn"
-            >
-              <img src={Partner2} className="img-fluid" alt="main" />
-            </Col>
-            {/* <Col
-              sm={6}
-              md={4}
-              className="mb-4 wow animate__animated animate__zoomIn"
-            >
-              <img src={Partner3} className="img-fluid" alt="main" />
-            </Col> */}
-            <Col
-              sm={6}
-              md={4}
-              className="mb-4 wow animate__animated animate__zoomIn"
-            >
-              <img src={Partner4} className="img-fluid" alt="main" />
-            </Col>
-            {/* <Col
-              sm={6}
-              md={4}
-              className="mb-4 wow animate__animated animate__zoomIn"
-            >
-              <img src={Partner7} className="img-fluid" alt="main" />
-            </Col> */}
-            <Col
-              sm={6}
-              md={4}
-              className="mb-4 wow animate__animated animate__zoomIn"
-            >
-              <img src={Partner8} className="img-fluid" alt="main" />
-            </Col>
-            <Col
-              sm={6}
-              md={4}
-              className="mb-4 wow animate__animated animate__zoomIn"
-            >
-              <img src={Partner9} className="img-fluid" alt="main" />
-            </Col>
-            <Col
-              sm={6}
-              md={4}
-              className="mb-4 wow animate__animated animate__zoomIn"
-            >
-              <img src={Partner5} className="img-fluid" alt="main" />
-            </Col>
-            <Col
-              sm={6}
-              md={4}
-              className="mb-4 wow animate__animated animate__zoomIn"
-            >
-              <img src={Partner6} className="img-fluid" alt="main" />
-            </Col>
-            <Col
-              sm={6}
-              md={4}
-              className="mb-4 wow animate__animated animate__zoomIn"
-            >
-              <img
-                style={{ maxHeight: '72px' }}
-                src={Partner11}
-                className="img-fluid"
-                alt="main"
-              />
-            </Col>
+          <Row className="text-center mb-5">
+            {partners.map((partner) => (
+              <Col
+                className="wow animate__animated animate__zoomIn"
+                md={2}
+                key={partner.id}
+              >
+                <Partner
+                  image={partner.image}
+                  link={partner.link}
+                  title={partner.title}
+                />
+              </Col>
+            ))}
           </Row>
         </Container>
       </SectionWrapper>
