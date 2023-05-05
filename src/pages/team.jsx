@@ -68,7 +68,7 @@ const TeamPage = () => {
                 className="wow animate__animated animate__fadeInLeft"
                 title="Our Principles"
               ></SectionHeader>
-              <Para>
+              <Para className="wow animate__animated animate__fadeInLeft">
                 We believe that success is built on collaboration and
                 partnership. That's why we seek out individuals who are experts
                 in their field and work together to develop new and innovative
@@ -76,7 +76,7 @@ const TeamPage = () => {
                 create truly groundbreaking solutions that push the limits of
                 what's possible.
               </Para>
-              <Para>
+              <Para className="wow animate__animated animate__fadeInLeft">
                 In addition to our focus on collaboration, we're also passionate
                 about incubating new ideas and solutions. We're always on the
                 lookout for new and innovative approaches to the challenges our
@@ -85,7 +85,7 @@ const TeamPage = () => {
                 other methods, we're committed to bringing cutting-edge ideas to
                 life.
               </Para>
-              <Para>
+              <Para className="wow animate__animated animate__fadeInLeft">
                 Finally, we believe in investing in our team members and helping
                 them to grow and build their own companies if they wish. We
                 understand that the best way to build a successful company is by
