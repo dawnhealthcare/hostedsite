@@ -2,18 +2,23 @@ import img1 from './../assets/home/4.png';
 import img2 from './../assets/home/6.png';
 import img3 from './../assets/home/7.png';
 import img4 from './../assets/home/5.png';
+import Para from './../components/Para';
 export const services = [
   {
     id: 222,
     title: 'Primary Prevention',
     desc: (
-      <span>
-        Discover a healthier future with Dawn Health's wellness program. Our
-        biweekly text-based screenings don’t just detect early warning signs of
-        mental health issues, but also allows us to equip children and parents
-        with the knowledge to cultivate healthy habits and promote metabolic
-        health.
-      </span>
+      <>
+        <Para>
+          Our wellness program offers biweekly text-based screenings to detect
+          early warning signs of mental health issues and promote metabolic
+          health.
+        </Para>
+        <Para>
+          The program equips children and parents with knowledge to cultivate
+          healthy habits and discover a healthier future.
+        </Para>
+      </>
     ),
     image: img1,
   },
@@ -21,13 +26,17 @@ export const services = [
     id: 223,
     title: 'Secondary Prevention',
     desc: (
-      <span>
-        Take charge of your health with Dawn Health's proactive approach to
-        secondary prevention. Our biweekly text-based screenings provide key
-        data points to determine when sessions with one of our culturally
-        competent providers is necessary to reinforce the child’s mental health
-        resilience.
-      </span>
+      <>
+        <Para>
+          Our proactive approach to secondary prevention empowers individuals to
+          take charge of their health.
+        </Para>
+        <Para>
+          Biweekly text-based screenings provide key data points for determining
+          when sessions with culturally competent providers are necessary to
+          reinforce the child's mental health resilience.
+        </Para>
+      </>
     ),
     image: img2,
   },
@@ -35,13 +44,17 @@ export const services = [
     id: 224,
     title: 'Tertiary Prevention',
     desc: (
-      <span>
-        Experience the peace of mind you deserve by getting the expert care and
-        ongoing care navigation at a pre-crisis level. For children with chronic
-        conditions, Dawn Health offers a comprehensive approach that goes beyond
-        just treatment, providing parents with the resources and tools they need
-        to confidently manage their child's condition.
-      </span>
+      <>
+        <Para>
+          Get expert care and ongoing care navigation at a pre-crisis level with
+          Dawn Health, ensuring peace of mind.
+        </Para>
+        <Para>
+          We offer a comprehensive approach for children with chronic
+          conditions, providing parents with resources and tools to confidently
+          manage their child's condition, going beyond just treatment.
+        </Para>
+      </>
     ),
     image: img3,
   },
@@ -49,14 +62,19 @@ export const services = [
     id: 225,
     title: 'Quaternary Prevention',
     desc: (
-      <span>
-        Dawn Health's patient-centered approach to Quaternary prevention
-        empowers parents to make informed decisions, avoid unnecessary
-        interventions and harm, and promote family-centered care. With access to
-        the child’s measurable based outcomes, parents will be able to see
-        progression of care and gain confidence with the support of our care
-        navigation team.
-      </span>
+      <>
+        <Para>
+          Our patient-centered approach to Quaternary prevention empowers
+          parents to make informed decisions, avoid unnecessary interventions,
+          and promote family-centered care.
+        </Para>
+        <Para>
+          By providing access to measurable based outcomes and the support of a
+          care navigation team, Dawn Health enables parents to see the
+          progression of care and gain confidence in managing their child's
+          health.
+        </Para>
+      </>
     ),
     image: img4,
   },

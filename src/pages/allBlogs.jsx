@@ -53,13 +53,11 @@ const AllBlogsPage = () => {
                 Empowering Mental Health Resilience & Brain Health
               </Heading>
               <Para>
-                Discover the latest breakthroughs, game-changing insights, and
-                expert opinions on the forefront of children's mental health.
-                Join forces with industry thought leaders and the esteemed Dawn
-                Health care team to explore innovative ideas, best practices,
-                and cutting-edge trends in support of our most precious asset -
-                our children's well-being. Stay ahead of the curve and elevate
-                your knowledge with our unparalleled resources
+                Embark on a journey into the forefront of children's mental
+                health with Dawn Health. Connect with industry leaders who are
+                also parents, unlock expert insights, and unearth breakthroughs
+                to nurture your child's well-being. Stay ahead of the curve and
+                elevate your knowledge with our unparalleled resources.
               </Para>
             </Col>
           </Row>

@@ -1,6 +1,11 @@
 import styled from 'styled-components';
 
 export const WellnessCardWrapper = styled.div`
+  background: white;
+  padding: 20px;
+  border: 1px solid #dadada;
+  border-radius: 10px;
+  min-height: 100%;
   & img {
     height: 150px;
   }

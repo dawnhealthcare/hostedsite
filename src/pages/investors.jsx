@@ -7,7 +7,7 @@ import { SectionHeader } from '../components/SectionHeader';
 import Main from './../assets/investors/main.png';
 import InvestorPDF from './../assets/investors/investors.pdf';
 import PDFViewerComp from '../components/PDFViewer';
-import Main3 from './../assets/investors/main.gif';
+// import Main3 from './../assets/investors/main.gif';
 import Main2 from './../assets/about/2.png';
 
 const InvestorsPage = () => {
@@ -54,8 +54,14 @@ const InvestorsPage = () => {
             </Col>
             <Col md={12}>
               <div className="wow animate__animated animate__zoomIn">
-                {/* <PDFViewerComp path={DECK} /> */}
-                <img src={Main3} className="img-fluid main-image" alt="main" />
+                <iframe
+                  width="100%"
+                  height="603"
+                  src="https://www.youtube.com/embed/zm_29HUI2-k"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
               </div>
             </Col>
           </Row>

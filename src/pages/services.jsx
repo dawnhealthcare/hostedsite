@@ -54,21 +54,26 @@ const ServicesPage = () => {
               </Para>
             </Col>
           </Row>
-          <Row className="d-flex justify-content-between align-items-start">
-            {services.map((service) => (
-              <Col
-                md={6}
-                lg={5}
-                className="mb-5 wow animate__animated animate__zoomIn"
-              >
-                <WellnessCard
-                  title={service.title}
-                  key={service.id}
-                  desc={service.desc}
-                  image={service.image}
-                />
-              </Col>
-            ))}
+          <Row className="d-flex justify-content-between">
+            <Col lg={{ offset: 1, span: 10 }}>
+              <Row>
+                {services.map((service) => (
+                  <Col
+                    md={6}
+                    lg={6}
+                    className="mb-4 wow animate__animated animate__zoomIn"
+                    style={{ minHeight: '100%' }}
+                  >
+                    <WellnessCard
+                      title={service.title}
+                      key={service.id}
+                      desc={service.desc}
+                      image={service.image}
+                    />
+                  </Col>
+                ))}
+              </Row>
+            </Col>
           </Row>
         </Container>
       </SectionWrapper>
