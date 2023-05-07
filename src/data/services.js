@@ -8,17 +8,17 @@ export const services = [
     id: 222,
     title: 'Primary Prevention',
     desc: (
-      <>
-        <Para>
+      <ul className="">
+        <li className="mb-3">
           Our wellness program offers biweekly text-based screenings to detect
           early warning signs of mental health issues and promote metabolic
           health.
-        </Para>
-        <Para>
+        </li>
+        <li>
           The program equips children and parents with knowledge to cultivate
           healthy habits and discover a healthier future.
-        </Para>
-      </>
+        </li>
+      </ul>
     ),
     image: img1,
   },
@@ -26,17 +26,17 @@ export const services = [
     id: 223,
     title: 'Secondary Prevention',
     desc: (
-      <>
-        <Para>
+      <ul className="">
+        <li className="mb-3">
           Our proactive approach to secondary prevention empowers individuals to
           take charge of their health.
-        </Para>
-        <Para>
+        </li>
+        <li>
           Biweekly text-based screenings provide key data points for determining
           when sessions with culturally competent providers are necessary to
           reinforce the child's mental health resilience.
-        </Para>
-      </>
+        </li>
+      </ul>
     ),
     image: img2,
   },
@@ -44,17 +44,17 @@ export const services = [
     id: 224,
     title: 'Tertiary Prevention',
     desc: (
-      <>
-        <Para>
+      <ul className="">
+        <li className="mb-3">
           Get expert care and ongoing care navigation at a pre-crisis level with
           Dawn Health, ensuring peace of mind.
-        </Para>
-        <Para>
+        </li>
+        <li>
           We offer a comprehensive approach for children with chronic
           conditions, providing parents with resources and tools to confidently
           manage their child's condition, going beyond just treatment.
-        </Para>
-      </>
+        </li>
+      </ul>
     ),
     image: img3,
   },
@@ -62,19 +62,19 @@ export const services = [
     id: 225,
     title: 'Quaternary Prevention',
     desc: (
-      <>
-        <Para>
+      <ul className="">
+        <li className="mb-3">
           Our patient-centered approach to Quaternary prevention empowers
           parents to make informed decisions, avoid unnecessary interventions,
           and promote family-centered care.
-        </Para>
-        <Para>
+        </li>
+        <li>
           By providing access to measurable based outcomes and the support of a
           care navigation team, Dawn Health enables parents to see the
           progression of care and gain confidence in managing their child's
           health.
-        </Para>
-      </>
+        </li>
+      </ul>
     ),
     image: img4,
   },
