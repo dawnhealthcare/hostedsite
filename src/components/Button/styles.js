@@ -17,4 +17,5 @@ export const ButtonWrapper = styled.button`
   &:hover {
     background-color: red;
   }
+  -webkit-print-color-adjust: exact;
 `;

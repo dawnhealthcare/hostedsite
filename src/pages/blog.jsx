@@ -214,7 +214,7 @@ const BlogPage = ({ setIsBlogPage }) => {
                 </Row>
               </Container>
             </SectionWrapper>
-            <SectionWrapper>
+            <SectionWrapper className="related-blogs">
               <Container>
                 {blogs.length > 1 && (
                   <>

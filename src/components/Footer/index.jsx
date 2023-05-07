@@ -8,7 +8,7 @@ import { CopyRight, FooterWrapper, ReLink, Title, Text } from './styles';
 const Footer = () => {
   return (
     <>
-      <FooterWrapper>
+      <FooterWrapper className="footer">
         <Container>
           <Row>
             <Col sm={6} className="wow animate__animated animate__fadeInLeft">
@@ -67,7 +67,7 @@ const Footer = () => {
           </Row>
         </Container>
       </FooterWrapper>
-      <CopyRight>
+      <CopyRight className="footer">
         <Container>
           <Row>
             <Col className="">

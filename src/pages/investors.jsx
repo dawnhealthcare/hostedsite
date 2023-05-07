@@ -40,16 +40,23 @@ const InvestorsPage = () => {
             <Col md={12}>
               <SectionHeader
                 className="wow animate__animated animate__fadeInLeft pb-main"
-                title="Investor Slideshare"
+                title="Statistics on Youth Mental Health"
               >
-                Investing in Dawn Health has the potential to unlock a world of
-                financial possibility, with the promise of generating remarkable
-                returns that could transform your future. Don't miss out on the
-                chance to witness the power of your investment come to life and
-                experience the thrill of watching your wealth grow
-                exponentially. Join us on a journey towards financial
-                prosperity, and see the amazing returns that Dawn Health can
-                deliver!
+                What COVID did, is it really pulled back the curtain on just how
+                severe the mental health epidemic is in the United States,
+                particularly among youth. There are three numbers that always
+                stick in my head. One, is the number 11, that’s the number of
+                years it takes on average for a child to receive treatment after
+                developing symptoms. The second number is, 57, that’s the
+                percentage increase in the suicide rate we had among kids in the
+                decade prior to the pandemic… The other number… is 44 percent.
+                That’s the percentage of high school students who say they feel
+                persistently sad or hopeless… These to me stick in my head
+                because they give me a snapshot of where we are. We've got to
+                invest in prevention, especially school-based
+                <strong className="ms-2">
+                  U.S. Surgeon General, Vivek H. Murthy
+                </strong>
               </SectionHeader>
             </Col>
             <Col md={12}>

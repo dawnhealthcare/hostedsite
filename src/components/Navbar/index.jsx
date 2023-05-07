@@ -32,7 +32,7 @@ export const Header = (props) => {
     { id: 6, to: '/investor-relations', title: 'Investor Relations' },
   ];
   return (
-    <NavbarWrapper>
+    <NavbarWrapper className="navbar-wrapper">
       <Navbar collapseOnSelect expand="lg" fixed="top" className={className}>
         <Container>
           <Navbar.Brand>

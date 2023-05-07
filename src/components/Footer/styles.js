@@ -8,9 +8,11 @@ export const FooterWrapper = styled.div`
     max-width: 321px;
     margin-top: 20px;
   }
+  -webkit-print-color-adjust: exact;
 `;
 
 export const Title = styled.h3`
+  -webkit-print-color-adjust: exact;
   font-style: normal;
   font-weight: 700;
   font-size: 23px;
@@ -38,6 +40,7 @@ export const CopyRight = styled.div`
   text-align: center;
   background: #1e2330;
   padding: 20px 0;
+  -webkit-print-color-adjust: exact;
 `;
 
 export const Text = styled.p`

@@ -46,7 +46,7 @@ const BlogCard = ({
                 className="rounded-circle me-2 author-image"
                 alt="author"
               />
-              {author?.name}
+              <span className="name">{author?.name}</span>
             </p>
           </CategoryChip>
           <DateWrapper>

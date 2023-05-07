@@ -212,3 +212,11 @@ input[type='radio']:checked {
   max-width: 100%;
   height: auto;
 }
+
+@media print {
+  .footer,
+  .navbar-wrapper,
+  .related-blogs {
+    display: none !important;
+  }
+}

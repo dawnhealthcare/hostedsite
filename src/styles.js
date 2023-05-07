@@ -19,16 +19,26 @@ export const BlogPageWrapper = styled.div`
   }
 `;
 export const Overlay = styled.div`
+  position: relative;
   height: 100%;
   width: 100%;
   background: rgb(0, 0, 0, 0.6);
+  z-index: 999;
 `;
 
 export const Hero = styled.div`
   background: ${(props) =>
     props.bg ? `url(${props.bg})` : 'rgba(159, 189, 191, 0.4)'};
+
+  -webkit-print-color-adjust: exact;
   background-position: top;
   background-size: cover;
+  .blog-image-main {
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    top: 0;
+  }
   & .reverse {
     @media (max-width: 992px) {
       flex-direction: column-reverse;

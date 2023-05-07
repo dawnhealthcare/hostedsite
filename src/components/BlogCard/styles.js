@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const BlogCardWrapper = styled.div`
+  -webkit-print-color-adjust: exact;
   border-radius: 10px;
   background: #e8e8e8;
   overflow: hidden;
@@ -18,6 +19,12 @@ export const BlogCardWrapper = styled.div`
     height: 40px;
   }
   & .title {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  & .name {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
