@@ -90,7 +90,7 @@ export const Card = styled.div`
   justify-content: center;
   align-items: center;
   height: 100%;
-  text-align: center;
+  /* text-align: center; */
   padding: 20px 0;
 `;
 

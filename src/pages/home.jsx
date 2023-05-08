@@ -128,17 +128,27 @@ const HomePage = () => {
                         Biweekly Evidence-Based Assessment for Depression &
                         Anxiety
                       </Title>
-                      <Para>
+                      {/* <Para>
                         Text-based diagnosis tool, validated by the American
                         Psychiatric Association (APA) and the U.S. Preventive
                         Services Task Force (USPSTF), that also engages
                         parents/guardians to measure the symptoms' acuity level
                         in adolescents
-                      </Para>
+                      </Para> */}
+                      <ul className="text-left">
+                        <li className="mt-2">
+                          Utilize a trusted text-based diagnosis tool validated
+                          by the APA and USPSTF to assess adolescent symptoms.
+                        </li>
+                        <li className="mt-3">
+                          Engage parents/guardians in measuring symptom severity
+                          and actively monitor their adolescents' well-being.
+                        </li>
+                      </ul>
                     </Card>
                   </Col>
                   <Col xl={6}>
-                    <Row className="inner-card">
+                    <Row className="inner-card align-items-baseline pt-5">
                       <Col lg={6}>
                         <Card className="last-card">
                           <img
@@ -149,7 +159,7 @@ const HomePage = () => {
                           <Title className="text-white">
                             Continuous Data Assessment
                           </Title>
-                          <Para className="text-white">
+                          {/* <Para className="text-white">
                             Tracking and monitoring depression and anxiety
                             symptoms in your children can lead to better
                             diagnosis and treatment outcomes. Research studies
@@ -160,7 +170,18 @@ const HomePage = () => {
                             Research. By staying aware of your child's mental
                             health, you can help them get the support they need
                             to thrive.
-                          </Para>
+                          </Para> */}
+                          <ul className="text-white text-left">
+                            <li>
+                              Harness the potential of mobile app tracking to
+                              revolutionize your children's mental health care.
+                            </li>
+                            <li className="mt-3">
+                              Stay informed about your child's emotional
+                              well-being and empower them with the support they
+                              need to thrive.
+                            </li>
+                          </ul>
                         </Card>
                       </Col>
                       <Col lg={6}>
@@ -173,7 +194,7 @@ const HomePage = () => {
                           <Title className="text-white">
                             Virtual & Prompt Care
                           </Title>
-                          <Para className="text-white">
+                          {/* <Para className="text-white">
                             Virtual and prompt care for mental health offers a
                             convenient, accessible, and confidential way for
                             parents of adolescents to provide their children
@@ -182,7 +203,19 @@ const HomePage = () => {
                             care, parents can promote overall wellness and
                             ensure that their children receive the care they
                             need before they realize they need it.
-                          </Para>
+                          </Para> */}
+                          <ul className="text-white text-left">
+                            <li>
+                              Embrace the convenience and confidentiality of
+                              virtual mental health care, empowering parents to
+                              support their adolescents' well-being.
+                            </li>
+                            <li className="mt-3">
+                              Proactively provide necessary resources and
+                              support to manage mental health challenges,
+                              promoting overall wellness and early intervention.
+                            </li>
+                          </ul>
                         </Card>
                       </Col>
                     </Row>
@@ -191,12 +224,25 @@ const HomePage = () => {
                     <Card className="last-card">
                       <img src={Main7} className="img-fluid mb-3" alt="main" />
                       <Title>Partnering with Parents/Guardians</Title>
-                      <Para>
+                      {/* <Para>
                         Partnering together to promote student engagement,
                         reduce absenteeism, and build mental health resilience,
                         ensuring children receive the support they need to
                         succeed.
-                      </Para>
+                      </Para> */}
+                      <ul className="text-left">
+                        <li>
+                          Join forces to foster student engagement, combat
+                          absenteeism, and strengthen mental health resilience,
+                          guaranteeing children receive the necessary support
+                          for success.
+                        </li>
+                        <li className="mt-3">
+                          Collaborate in promoting student involvement, reducing
+                          absenteeism, and cultivating mental well-being, laying
+                          the foundation for children's achievement.
+                        </li>
+                      </ul>
                     </Card>
                   </Col>
                 </Row>
