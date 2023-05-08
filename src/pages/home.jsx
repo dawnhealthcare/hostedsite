@@ -65,11 +65,10 @@ const HomePage = () => {
               <Col lg={8}>
                 <SectionHeader
                   className="wow animate__animated animate__fadeInLeft pb-main"
-                  title="Mental Health Resilience For Adolescents"
+                  title="Dawn Health"
                 >
-                  Revolutionize your child's mental health journey with our
-                  AI-powered approach, designed to keep parents engaged and
-                  informed every step of the way.
+                  Empowering Resilient Adolescents: Preparing for Tomorrow,
+                  Together
                 </SectionHeader>
               </Col>
               <Col md={12}>
