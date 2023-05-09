@@ -19,8 +19,8 @@ const SignupPage = () => {
                 Join the Dawn Health Wellness Ecosystem
               </Heading>
               <Para>
-                Take the first step towards mental health resilience for your
-                children and our communities.
+                Unlocking Potential, Illuminating Paths: Igniting Resilience in
+                Adolescents, Hand-in-Hand with Parents!
               </Para>
             </Col>
             <Col
