@@ -16,7 +16,6 @@ export const Header = (props) => {
         { id: 2, to: '/services', title: 'Services' },
         { id: 4, to: '/signup', title: 'Sign Up' },
         { id: 8, to: '/faqs', title: 'FAQs' },
-        { id: 9, to: '/blog', title: 'Blog' },
       ],
     },
     {
@@ -26,6 +25,14 @@ export const Header = (props) => {
         { id: 3, to: '/about', title: 'About Us' },
         { id: 5, to: '/team', title: 'Guiding Force' },
         { id: 7, to: '/join-our-team', title: 'Join our Team' },
+      ],
+    },
+    {
+      id: 13,
+      title: 'Resources',
+      links: [
+        { id: 14, to: '/resources', title: 'Resources' },
+        { id: 15, to: '/blog', title: 'Blog' },
       ],
     },
     ,

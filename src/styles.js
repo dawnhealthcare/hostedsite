@@ -11,6 +11,7 @@ export const BecomeInvestorWrapper = styled.div``;
 export const ServicesPageWrapper = styled.div``;
 export const ErrorPageWrapper = styled.div``;
 export const AllBlogsWrapper = styled.div``;
+export const ResourcesPageWrapper = styled.div``;
 export const BlogPageWrapper = styled.div`
   & .egg {
     border-radius: 100px;

@@ -15,6 +15,7 @@ import Main4 from './../assets/home/4.png';
 import Main5 from './../assets/home/5.png';
 import Main6 from './../assets/home/6.png';
 import Main7 from './../assets/home/7.png';
+import Poem from './../assets/home/poem.png';
 import { useNavigate } from 'react-router-dom';
 
 const HomePage = () => {
@@ -82,6 +83,25 @@ const HomePage = () => {
                     allowFullScreen
                   ></iframe>
                 </div>
+              </Col>
+            </Row>
+          </Container>
+        </SectionWrapper>
+        <SectionWrapper className="bg-white">
+          <Container>
+            {/* <Row>
+              <Col lg={8}>
+                <SectionHeader
+                  className="wow animate__animated animate__fadeInLeft pb-main"
+                  title="Dawn Health Poem"
+                >
+                  By Kate Efsta, DawnHealth.care
+                </SectionHeader>
+              </Col>
+            </Row> */}
+            <Row className="d-flex justify-content-center pb-main">
+              <Col lg={{ span: 5 }}>
+                <img src={Poem} className="img-fluid" alt="main" />
               </Col>
             </Row>
           </Container>

@@ -22,6 +22,7 @@ import ServicesPage from './pages/services';
 import ErrorPage from './pages/error';
 import AllBlogsPage from './pages/allBlogs';
 import BlogPage from './pages/blog';
+import ResourcesPage from './pages/resources';
 
 emailjs.init('WrJDyDO12oscyG2nU');
 function App() {
@@ -56,6 +57,7 @@ function App() {
           <Route exact path="/signup" element={<SignupPage />}></Route>
           <Route exact path="/services" element={<ServicesPage />}></Route>
           <Route exact path="/blog" element={<AllBlogsPage />}></Route>
+          <Route exact path="/resources" element={<ResourcesPage />}></Route>
           <Route
             exact
             path="/blog/:slug"
