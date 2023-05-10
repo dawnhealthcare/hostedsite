@@ -28,7 +28,7 @@ const HomePage = () => {
             <Row className="align-items-center h-100vh reverse">
               <Col
                 md={12}
-                lg={7}
+                lg={6}
                 className="wow animate__animated animate__fadeInLeft"
               >
                 <Heading
@@ -51,7 +51,7 @@ const HomePage = () => {
                 </Button>
               </Col>
               <Col
-                md={5}
+                md={6}
                 className="text-end wow animate__animated animate__fadeInRight"
               >
                 <img src={Main} className="img-fluid main-image" alt="main" />
