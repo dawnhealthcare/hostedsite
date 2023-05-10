@@ -113,6 +113,7 @@ const TeamPage = () => {
                       status={member.status}
                       alt={member.alt}
                       src={member.src}
+                      lead={member.lead}
                     />
                   </Col>
                 ))}

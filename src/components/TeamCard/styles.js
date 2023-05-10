@@ -9,6 +9,18 @@ export const TeamCardWrapper = styled.div`
   }
 `;
 
+export const ImagesWrapper = styled.div`
+  position: relative;
+  & .mark {
+    position: absolute;
+    z-index: 99999999999999999999999999;
+    top: 4px;
+    right: 4px;
+    width: 50px;
+    background: transparent;
+  }
+`;
+
 export const ContentWrapper = styled.div`
   padding: 10px 15px;
   background: rgba(159, 189, 191, 0.4);

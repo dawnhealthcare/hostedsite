@@ -20,6 +20,7 @@ export const teamMembers = [
         status: 'Founder & CEO',
         src: Team1,
         alt: 'team',
+        lead: true,
       },
       {
         id: 2,
@@ -27,6 +28,7 @@ export const teamMembers = [
         status: 'Co-Founder & Chief Care Officer',
         src: Team2,
         alt: 'team',
+        lead: true,
       },
       {
         id: 3,
@@ -34,13 +36,15 @@ export const teamMembers = [
         status: 'Director of Revenue Operations',
         src: Mem1,
         alt: 'team',
+        lead: true,
       },
       {
         id: 4,
-        name: 'Joseph Onyeizu, MBA',
+        name: 'Joseph Onyeizu, MBA, MS',
         status: 'Director of Momentum',
         src: Team3,
         alt: 'team',
+        lead: true,
       },
       {
         id: 5,
@@ -107,6 +111,7 @@ export const teamMembers = [
         status: 'Executive Director, Providence',
         src: Mem4,
         alt: 'team',
+        lead: true,
       },
     ],
   },
