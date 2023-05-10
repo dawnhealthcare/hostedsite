@@ -13,7 +13,7 @@ export const ImagesWrapper = styled.div`
   position: relative;
   & .mark {
     position: absolute;
-    z-index: 99999999999999999999999999;
+    z-index: 1;
     top: 4px;
     right: 4px;
     width: 50px;
