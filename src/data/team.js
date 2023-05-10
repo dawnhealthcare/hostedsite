@@ -16,7 +16,7 @@ export const teamMembers = [
     members: [
       {
         id: 1,
-        name: 'Panos Efsta, EMBA',
+        name: 'Panos Efsta, MBA, MS',
         status: 'Founder & CEO',
         src: Team1,
         alt: 'team',

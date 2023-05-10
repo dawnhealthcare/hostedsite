@@ -31,7 +31,7 @@ export const Header = (props) => {
       id: 13,
       title: 'Resources',
       links: [
-        { id: 14, to: '/resources', title: 'Resources' },
+        { id: 14, to: '/resources', title: 'Media' },
         { id: 15, to: '/blog', title: 'Blog' },
       ],
     },

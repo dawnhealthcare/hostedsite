@@ -234,7 +234,7 @@ function Form() {
                 type="number"
               />
             </Col>
-            <Col md={6} className="mb-4" key={child + 'B'}>
+            {/* <Col md={6} className="mb-4" key={child + 'B'}>
               <label>{`Child ${child} Phone Number`}</label>
               <Input
                 register={register}
@@ -245,7 +245,7 @@ function Form() {
                 className="phone-number"
                 defaultValue="+1"
               />
-            </Col>
+            </Col> */}
           </>
         ))}
       </Row>
