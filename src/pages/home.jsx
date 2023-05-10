@@ -89,16 +89,6 @@ const HomePage = () => {
         </SectionWrapper>
         <SectionWrapper className="bg-white">
           <Container>
-            {/* <Row>
-              <Col lg={8}>
-                <SectionHeader
-                  className="wow animate__animated animate__fadeInLeft pb-main"
-                  title="Dawn Health Poem"
-                >
-                  By Kate Efsta, DawnHealth.care
-                </SectionHeader>
-              </Col>
-            </Row> */}
             <Row className="d-flex justify-content-center pb-main">
               <Col lg={{ span: 5 }}>
                 <img src={Poem} className="img-fluid" alt="main" />
