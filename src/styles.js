@@ -25,6 +25,9 @@ export const Overlay = styled.div`
   width: 100%;
   background: rgb(0, 0, 0, 0.6);
   z-index: 999;
+  @media (max-width: 768px) {
+    background: rgb(0, 0, 0, 0.8);
+  }
 `;
 
 export const Hero = styled.div`

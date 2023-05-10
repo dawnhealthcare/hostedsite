@@ -70,7 +70,7 @@ export const teamMembers = [
       },
       {
         id: 8,
-        name: 'Jim Ciemny, LCSW, Ed.S',
+        name: 'Jim Ciemny, LICSW, Ed.S',
         status: 'Secondary Education Advisor',
         src: Team7,
         alt: 'team',

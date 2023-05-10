@@ -5,9 +5,11 @@ export const BookCardWrapper = styled.div`
   overflow: hidden;
   border-radius: 10px;
   text-align: center;
+  border: 1px solid gainsboro;
   & img {
-    max-height: 470px;
+    max-height: 270px;
     width: 100%;
+    background-color: #dedede;
   }
   & a {
     background: linear-gradient(
@@ -17,7 +19,7 @@ export const BookCardWrapper = styled.div`
     );
     border: 3px solid rgba(255, 198, 86, 0.75);
     border-radius: 15px;
-    padding: 15px 30px;
+    padding: 15px 25px;
     font-weight: bold;
     font-size: 16px;
     color: #fff;
@@ -30,5 +32,5 @@ export const BookCardWrapper = styled.div`
 `;
 
 export const Body = styled.div`
-  padding: 40px;
+  padding: 40px 10px;
 `;

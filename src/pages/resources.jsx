@@ -48,9 +48,10 @@ const ResourcesPage = () => {
           <Row>
             {books.map((book) => (
               <Col
-                md={6}
-                lg={4}
-                xl={3}
+                sm={6}
+                md={4}
+                lg={3}
+                xl={2}
                 key={book.id}
                 className="wow animate__animated animate__zoomIn mb-4"
               >

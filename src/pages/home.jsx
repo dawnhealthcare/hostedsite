@@ -28,21 +28,20 @@ const HomePage = () => {
             <Row className="align-items-center h-100vh reverse">
               <Col
                 md={12}
-                lg={6}
+                lg={7}
                 className="wow animate__animated animate__fadeInLeft"
               >
-                <Heading main="Mental health">
-                  Nurturing Mental Health resilience
+                <Heading
+                  main="Empowering Adolescents, Guiding Parents"
+                  className="pt-md-5"
+                >
+                  Nurturing Resilience for Mental Health
                 </Heading>
                 <Para>
-                  At Dawn Health, we're transforming adolescent mental
-                  healthcare with a groundbreaking approach that prioritizes
-                  preventive wellness. By identifying and addressing pre-crisis
-                  conditions, we can help teens and their parents proactively
-                  manage their mental health. Our innovative approach is
-                  designed to detect and respond to increased depression and
-                  anxiety acuity levels, ensuring that families receive the
-                  support they need before a crisis occurs.
+                  Dawn Health prioritizes preventive wellness. We empower
+                  parents, nurture resilience, and proactively manage mental
+                  health through innovative approaches. Join us in empowering
+                  the next generation to thrive.
                 </Para>
                 <Button
                   className="mt-3 mb-3"
@@ -52,7 +51,7 @@ const HomePage = () => {
                 </Button>
               </Col>
               <Col
-                md={6}
+                md={5}
                 className="text-end wow animate__animated animate__fadeInRight"
               >
                 <img src={Main} className="img-fluid main-image" alt="main" />
