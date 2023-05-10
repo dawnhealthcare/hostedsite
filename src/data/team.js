@@ -64,14 +64,14 @@ export const teamMembers = [
       {
         id: 7,
         name: 'Lauren Fulkerson, MD',
-        status: 'CLINICAL EXCELLENCE, PEDIATRIC & PARENTING ADVISOR',
+        status: 'PEDIATRICS & PARENTING ADVISOR',
         src: Team9,
         alt: 'team',
       },
       {
         id: 8,
-        name: 'Jim Ciemny, LCSW',
-        status: 'Clinical Excellence & Secondary Education Advisor',
+        name: 'Jim Ciemny, LCSW, Ed.S',
+        status: 'Secondary Education Advisor',
         src: Team7,
         alt: 'team',
       },
