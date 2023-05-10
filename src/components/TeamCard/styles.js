@@ -10,7 +10,7 @@ export const TeamCardWrapper = styled.div`
 `;
 
 export const ContentWrapper = styled.div`
-  padding: 10px 20px;
+  padding: 10px 15px;
   background: rgba(159, 189, 191, 0.4);
   height: 128px;
 `;
@@ -18,7 +18,7 @@ export const ContentWrapper = styled.div`
 export const Name = styled.h4`
   font-style: normal;
   font-weight: 700;
-  font-size: 23px;
+  font-size: 21px;
   line-height: 140%;
   color: rgba(255, 168, 0, 0.92);
 `;
