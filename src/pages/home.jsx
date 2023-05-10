@@ -28,12 +28,13 @@ const HomePage = () => {
             <Row className="align-items-center h-100vh reverse">
               <Col
                 md={12}
-                lg={6}
+                lg={7}
                 className="wow animate__animated animate__fadeInLeft"
               >
                 <Heading
+                  medium
                   main="Empowering Adolescents, Guiding Parents"
-                  className="pt-md-5"
+                  className="pt-lg-5"
                 >
                   Nurturing Resilience for Mental Health
                 </Heading>
@@ -51,7 +52,7 @@ const HomePage = () => {
                 </Button>
               </Col>
               <Col
-                md={6}
+                md={5}
                 className="text-end wow animate__animated animate__fadeInRight"
               >
                 <img src={Main} className="img-fluid main-image" alt="main" />

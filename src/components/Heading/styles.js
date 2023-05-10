@@ -16,7 +16,7 @@ export const InnerMainHeading = styled.span`
   display: block;
   font-style: normal;
   font-weight: 700;
-  font-size: 60px;
+  font-size: ${(props) => (props.medium ? '55px' : '60px')};
   line-height: 140%;
   text-transform: capitalize;
   color: rgba(255, 168, 0, 0.92);
