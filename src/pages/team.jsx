@@ -86,7 +86,7 @@ const TeamPage = () => {
           </Row>
           <Row className="pb-main">
             {Principles.map((principal) => (
-              <Col md={6} lg={3} key={principal.id}>
+              <Col md={6} xl={3} className="mb-4" key={principal.id}>
                 <WellnessCard
                   title={principal.title}
                   desc={principal.desc}
