@@ -87,6 +87,49 @@ const HomePage = () => {
             </Row>
           </Container>
         </SectionWrapper>
+        <SectionWrapper>
+          <Container>
+            <Row>
+              <Col lg={12}>
+                <SectionHeader
+                  className="wow animate__animated animate__fadeInLeft"
+                  title="Why Dawn Health is Different"
+                >
+                  At Dawn Health, we are more than just healthcare providers; we
+                  are difference makers. We revolutionize the way we approach
+                  care by treating our clients as valued members of our wellness
+                  ecosystem rather than merely sick patients.
+                </SectionHeader>
+              </Col>
+              <Col md={12} className="mb-5">
+                <Para className="wow animate__animated animate__fadeInLeft">
+                  Discover a world where peace of mind and a sense of belonging
+                  define your child's care experience. Through our innovative
+                  primary and secondary interventions, we take a proactive
+                  approach that nurtures their holistic development. We are
+                  dedicated to providing the right care precisely when it is
+                  needed and at a cost that eases the financial burden on your
+                  family.
+                </Para>
+                <Para className="wow animate__animated animate__fadeInLeft">
+                  With us, you'll find a nurturing haven where your child's
+                  unique needs are met with unwavering compassion, expertise,
+                  and dedication. We believe in empowering your little one(s) to
+                  thrive, unleashing their full potential. Trust us to redefine
+                  care delivery, creating a brighter future where your child's
+                  wellness takes center stage.
+                </Para>
+                <Para className="wow animate__animated animate__fadeInLeft pb-main">
+                  Join us on this transformative journey, where we build a
+                  foundation of health, happiness, and limitless possibilities
+                  for your precious one(s). Together, let's embrace a new era of
+                  care that celebrates their well-being and ignites their
+                  extraordinary potential.
+                </Para>
+              </Col>
+            </Row>
+          </Container>
+        </SectionWrapper>
         <SectionWrapper className="bg-white">
           <Container>
             <Row className="d-flex justify-content-center pb-main">

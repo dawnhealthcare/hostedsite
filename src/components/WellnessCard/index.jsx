@@ -4,7 +4,7 @@ import Para from '../Para';
 
 const WellnessCard = ({ image, title, desc }) => {
   return (
-    <WellnessCardWrapper>
+    <WellnessCardWrapper className="wow animate__animated animate__zoomIn">
       <div className="text-center">
         <img src={image} alt="wellness image" />
         <Title>{title}</Title>
