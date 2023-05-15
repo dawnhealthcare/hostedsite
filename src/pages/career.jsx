@@ -56,7 +56,7 @@ const CareerPage = () => {
                 className="pb-main wow animate__animated animate__zoomIn"
                 title="Child & Adolescent Behavioral Therapist"
               >
-                Licensed in any of the following states: IL, MA, MN, TX & VA
+                Licensed in any of the following states: IL, MA, MN, TX or VA
               </SectionHeader>
             </Col>
           </Row>
@@ -92,7 +92,7 @@ const CareerPage = () => {
                 </ListItem>
                 <ListItem className="pb-3">
                   Support other teams as needed, including with recruitment or
-                  content development
+                  content development.
                 </ListItem>
                 <ListItem className="pb-3">
                   Engage in opportunities to further your knowledge of CBT and
