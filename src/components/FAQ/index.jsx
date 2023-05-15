@@ -155,40 +155,6 @@ const FaqList = (props) => {
       ),
     },
     {
-      question: <span>What is the cost associated with Dawn Health?</span>,
-      answer: (
-        <>
-          <Para className="mt-4 mb-2">Our cost breakdown is as follows:</Para>
-          <ul>
-            <li className="mb-2">
-              Annual monitoring fee: $20 per member, and it includes the
-              biweekly text-based assessments sent to the child and parent.
-            </li>
-            <li className="mb-2">
-              If the member requires a pre-crisis intervention or scheduled
-              therapy sessions based on the assessment results:
-              <ul className="mt-2">
-                <li className="mb-2">
-                  $0 per intervention session that usually lasts up to 30
-                  minutes,
-                </li>
-                <li className="mb-2">$480 per annum, and</li>
-                <li className="mb-2">
-                  $125 per session – chargeable to your insurance*
-                  <ul className="mt-2">
-                    <li className="mb-2">
-                      *Copays vary by the insurance provider, and we will make
-                      you aware before each session.{' '}
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </>
-      ),
-    },
-    {
       question: (
         <span>
           What is going to be the total annual cost to receive care through Dawn
@@ -198,53 +164,25 @@ const FaqList = (props) => {
       answer: (
         <>
           <Para className="mt-4">
-            If your child needs approximately 12 sessions in a calendar year,
-            then the total cost comes down to the following:
+            If the biweekly screenings trigger the mental health resilience
+            pathway (MHRP) then the approximate cost could be as follows:
           </Para>
           <ul>
-            <li>$20 monitoring fee</li>
-            <li>$480 care navigation fee</li>
-            <li>
-              $125 x 12 = $1,500 therapy cost, from which you could pay a $30
-              copay for each of the visits
+            <li className="mb-2">$500 annual subscription fee</li>
+          </ul>
+          <Para className="mt-4">Mental Health Resilience Pathway:</Para>
+          <ul>
+            <li className="mb-2">
+              $125 ($60*)x 10** = $600 for 1 hr. mental health session cost
+              [*your insurance should be covering this cost after a typical $60
+              copayment. **typical number of sessions per year]
             </li>
-            <li>
-              Total: $2,000, from which your responsibility could be
-              approximately $860 in a calendar year, depending on your insurance
-              coverage
+            <li className="mb-2">
+              $70 x 3*** = $210 for 30 min. health coaching session cost
+              [***typical number of sessions per year] Approximate Annual
+              Out-of-Pocket cost per child: $500+$600+$210 = $1,310
             </li>
           </ul>
-        </>
-      ),
-    },
-    {
-      question: <span>How does Dawn Health compare to other providers?</span>,
-      answer: (
-        <>
-          <Para className="mt-4">
-            At Dawn Health, we believe in being proactive when it comes to
-            mental health care. That's why we've built our care delivery system
-            around a wellness model approach that focuses on providing support
-            to our members before they even realize they need help. Our aim is
-            to help our members maintain good mental health rather than waiting
-            for them to become patients in need of treatment.
-          </Para>
-          <Para className="mt-2">
-            We're also committed to making our services affordable and
-            accessible to everyone. That's why our pricing is highly competitive
-            and approximately $60 cheaper per session than any alternative
-            systems available. We don't believe that cost should be a barrier to
-            receiving high-quality mental health care.
-          </Para>
-          <Para className="mt-2">
-            Lastly, we're proud to partner with school districts to identify
-            those who need financial assistance to cover their costs. We believe
-            that everyone deserves access to mental health care, regardless of
-            their financial situation. By working with school districts, we're
-            helping to ensure true health equity for our communities. At Dawn
-            Health, we're dedicated to creating a brighter, healthier future for
-            all.
-          </Para>
         </>
       ),
     },
