@@ -15,7 +15,6 @@ export const Header = (props) => {
       links: [
         { id: 2, to: '/services', title: 'Services' },
         { id: 4, to: '/signup', title: 'Sign Up' },
-        { id: 8, to: '/faqs', title: 'FAQs' },
       ],
     },
     {
@@ -33,6 +32,7 @@ export const Header = (props) => {
       links: [
         { id: 14, to: '/resources', title: 'Media' },
         { id: 15, to: '/blog', title: 'Blog' },
+        { id: 8, to: '/faqs', title: 'FAQs' },
       ],
     },
     ,
