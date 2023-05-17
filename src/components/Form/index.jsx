@@ -7,8 +7,11 @@ import Button from '../Button';
 import Input from '../Input';
 import emailjs from 'emailjs-com';
 import { CloseIcon } from '../Icons';
+import Para from '../Para';
 
 const options = [
+  { value: 'DC', label: 'DC' },
+  { value: 'FL', label: 'FL' },
   { value: 'IL', label: 'IL' },
   { value: 'MA', label: 'MA' },
   { value: 'MN', label: 'MN' },
@@ -117,7 +120,20 @@ function Form() {
     <form onSubmit={handleSubmit(onSubmit)}>
       {success && (
         <Alert variant="success" className="d-flex justify-content-between">
-          Successfulyy submitted your data
+          <div>
+            <Para>
+              Thank you for submitting your information to Dawn Health. The
+              appropriate team will be in touch with you shortly.
+            </Para>
+            <Para>
+              If this is an emergency, please call 911 or the National Suicide
+              Prevention Lifeline at 988. Both provide free 24/7 support.
+            </Para>
+            <Para className="mb-0">
+              Warm regards, <br />
+              Dawn Health
+            </Para>
+          </div>
           <CloseIcon
             className="cursor-pointer"
             onClick={() => setSuccess(false)}
