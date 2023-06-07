@@ -56,8 +56,8 @@ const CareerPage = () => {
                 className="pb-main wow animate__animated animate__zoomIn"
                 title="Child & Adolescent Behavioral Therapist"
               >
-                Licensed in any of the following states: DC, FL, IL, MA, MN, TX
-                or VA
+                Licensed in any of the following states: DC, FL, IL, MA, MN, PA,
+                TX or VA
               </SectionHeader>
             </Col>
           </Row>
