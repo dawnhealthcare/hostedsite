@@ -31,7 +31,8 @@ const Footer = () => {
                   <LinkedinIcon />
                 </a>
                 <Para className="my-3 text-white intro">
-                  Dawn Health is a registered trademark owned by Dawn Health LLC
+                  Dawn Health is a registered trademark owned by Dawn Health
+                  Care LLC
                 </Para>
               </div>
             </Col>
