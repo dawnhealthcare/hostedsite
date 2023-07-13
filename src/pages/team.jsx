@@ -1,14 +1,14 @@
-import React from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
-import Heading from '../components/Heading';
-import Para from '../components/Para';
-import { SectionHeader } from '../components/SectionHeader';
-import TeamCard from '../components/TeamCard';
-import { teamMembers } from '../data/team';
-import { Hero, SectionWrapper, TeamPageWrapper } from '../styles';
-import Main8 from './../assets/team/main.png';
-import WellnessCard from '../components/WellnessCard';
-import { Principles } from '../data/home';
+import React from "react";
+import { Col, Container, Row } from "react-bootstrap";
+import Heading from "../components/Heading";
+import Para from "../components/Para";
+import { SectionHeader } from "../components/SectionHeader";
+import TeamCard from "../components/TeamCard";
+import { members, teamMembers } from "../data/team";
+import { Hero, SectionWrapper, TeamPageWrapper } from "../styles";
+import Main8 from "./../assets/team/main.png";
+import WellnessCard from "../components/WellnessCard";
+import { Principles } from "../data/home";
 // import Animated from './../assets/home/animated-1.gif';
 
 const TeamPage = () => {
@@ -96,6 +96,42 @@ const TeamPage = () => {
             ))}
           </Row>
           <Row className="pb-main">
+            {members.map((member) => (
+              <>
+                <Col md={12} key={member.title}>
+                  <SectionHeader
+                    className="wow animate__animated animate__fadeInLeft"
+                    title={member.title}
+                  ></SectionHeader>
+                </Col>
+                {member.members.team1.map((one) => (
+                  <Col md={6} lg={4} xl={3} className="mb-4" key={one.id}>
+                    <TeamCard
+                      className="wow animate__animated animate__zoomIn"
+                      name={one.name}
+                      status={one.status}
+                      alt={one.alt}
+                      src={one.src}
+                      lead={one.lead}
+                    />
+                  </Col>
+                ))}
+                <Row>
+                  {member.members.team2.map((two) => (
+                    <Col md={6} lg={4} xl={3} className="mb-4" key={two.id}>
+                      <TeamCard
+                        className="wow animate__animated animate__zoomIn"
+                        name={two.name}
+                        status={two.status}
+                        alt={two.alt}
+                        src={two.src}
+                        lead={two.lead}
+                      />
+                    </Col>
+                  ))}
+                </Row>
+              </>
+            ))}
             {teamMembers.map((members) => (
               <>
                 <Col md={12} key={members.title}>
