@@ -130,7 +130,7 @@ const HomePage = () => {
             </Row>
           </Container>
         </SectionWrapper>
-        <SectionWrapper className="bg-white">
+        <SectionWrapper className="">
           <Container>
             <Row className="d-flex justify-content-center pb-main">
               <Col lg={{ span: 5 }}>

@@ -266,7 +266,7 @@ function Form() {
           </>
         ))}
       </Row>
-      <Row>
+      {/* <Row>
         <Col className="mb-4">
           <label>Do you have health care insurance?</label>
           <div className="d-flex align-items-center">
@@ -291,9 +291,9 @@ function Form() {
           </div>
           {errors.hasInsurance && <Error>This field is required</Error>}
         </Col>
-      </Row>
+      </Row> */}
 
-      {hasInsurance === 'yes' && (
+      {/* {hasInsurance === 'yes' && (
         <Row>
           <Col md={6} className="mb-4">
             <label>Select Insurance</label>
@@ -367,7 +367,7 @@ function Form() {
             />
           </Col>
         </Row>
-      )}
+      )} */}
       <Button disabled={loading} className="mt-4" type="submit">
         {loading ? 'Loading...' : 'Submit'}
       </Button>
