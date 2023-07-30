@@ -36,7 +36,7 @@ const HomePage = () => {
                   main="Empowering Adolescents, Guiding Parents"
                   className="pt-lg-5"
                 >
-                  Nurturing Resilience for Mental Health
+                  Nurturing Mental Health Resilience
                 </Heading>
                 <Para>
                   Dawn Health prioritizes preventive wellness. We empower

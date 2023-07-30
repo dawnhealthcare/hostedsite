@@ -1,0 +1,14 @@
+<ul class="dropdown-menu">
+                    {% if serviceCategoryList is empty %}
+								{% else %}
+                  <li><a href="#" data-filter-category-id="All">{{ lang('services.all') }}</a></li>
+                  {% endif %}
+							
+							{% for category in serviceCategoryList %}
+								{% if category.name %}
+                  <li><a href="#" data-filter-category-id="{{ category.id }}" data-filter-category-name="{{ category.name }}">{{ category['name'] }}</a></li>
+
+                  {% endif %}
+							{% endfor %}
+                  
+                </ul>
