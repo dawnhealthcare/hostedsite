@@ -9,7 +9,7 @@ import TestimonialCard from '../components/TestimonialCard';
 import ValueCard from '../components/ValuesCard';
 import { Card, Hero, HomePageWrapper, SectionWrapper, Title } from '../styles';
 import Main from './../assets/home/1.png';
-import Main2 from './../assets/home/2.png';
+import Main2 from './../assets/home/values.png';
 import Main3 from './../assets/home/3.png';
 import Main4 from './../assets/home/4.png';
 import Main5 from './../assets/home/5.png';
@@ -72,11 +72,11 @@ const HomePage = () => {
                   Together
                 </SectionHeader>
               </Col>
-              <Col md={12}>
+              <Col md={{ span: 12, offset: 0 }}>
                 <div className="wow animate__animated animate__zoomIn">
                   <iframe
                     width="100%"
-                    height="603"
+                    height="753"
                     src="https://www.youtube.com/embed/zdDU42ldncw"
                     title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -130,15 +130,7 @@ const HomePage = () => {
             </Row>
           </Container>
         </SectionWrapper>
-        <SectionWrapper className="">
-          <Container>
-            <Row className="d-flex justify-content-center pb-main">
-              <Col lg={{ span: 5 }}>
-                <img src={Poem} className="img-fluid" alt="main" />
-              </Col>
-            </Row>
-          </Container>
-        </SectionWrapper>
+
         <SectionWrapper>
           <Container>
             <Row>
@@ -404,6 +396,15 @@ const HomePage = () => {
                     </TestimonialCard>
                   </Col>
                 </Row>
+              </Col>
+            </Row>
+          </Container>
+        </SectionWrapper>
+        <SectionWrapper className="">
+          <Container>
+            <Row className="d-flex justify-content-center pb-main">
+              <Col lg={{ span: 5 }}>
+                <img src={Poem} className="img-fluid" alt="main" />
               </Col>
             </Row>
           </Container>

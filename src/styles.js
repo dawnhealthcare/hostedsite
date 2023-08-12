@@ -40,7 +40,7 @@ export const Hero = styled.div`
   .blog-image-main {
     position: absolute;
     width: 100%;
-    height: 90vh;
+    min-height: 90vh;
     top: 0;
   }
   & .reverse {

@@ -21,7 +21,8 @@ const ServicesPage = () => {
           <Row className="align-items-center reverse h-100vh">
             <Col lg={7} className="wow animate__animated animate__fadeInLeft">
               <Heading main="Our Services">
-                Mental Health Resilience & Brain Health
+                Wellness-based Virtual Mental Health Care for Adolescents (Ages
+                9 to 17) in Partnership with Parents/Guardians
               </Heading>
               <Para>
                 We take a holistic approach to promoting brain health and mental

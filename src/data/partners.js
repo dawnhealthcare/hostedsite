@@ -23,7 +23,7 @@ export const partners = [
     link: 'https://consciousparentingrevolution.com/',
     image: Partner2,
   },
-  { id: 223, title: 'LanguageLine Solutions', link: '#', image: Partner3 },
-  { id: 224, title: 'Kareo a Tebra Company', link: '#', image: Partner4 },
-  { id: 225, title: 'AI-PRO', link: '#', image: Partner5 },
+  // { id: 223, title: 'LanguageLine Solutions', link: '#', image: Partner3 },
+  // { id: 224, title: 'Kareo a Tebra Company', link: '#', image: Partner4 },
+  // { id: 225, title: 'AI-PRO', link: '#', image: Partner5 },
 ];
