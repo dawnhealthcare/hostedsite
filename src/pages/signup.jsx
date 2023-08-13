@@ -18,7 +18,7 @@ const SignupPage = () => {
               <Heading main="Sign up here">
                 Join the Dawn Health Wellness Ecosystem
               </Heading>
-              <Para>
+              <Para hero>
                 Unlocking Potential, Illuminating Paths: Igniting Resilience in
                 Adolescents, Hand-in-Hand with Parents!
               </Para>

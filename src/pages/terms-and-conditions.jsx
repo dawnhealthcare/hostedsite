@@ -11,8 +11,10 @@ const TermsAndConitionsPage = () => {
         <Container>
           <Row>
             <Col md={6}>
-              <SubHeading>TERMS & CONDITIONS AGREEMENT</SubHeading>
-              <Para>
+              <SubHeading className="text-white">
+                TERMS & CONDITIONS AGREEMENT
+              </SubHeading>
+              <Para hero>
                 Welcome to Dawn Health (“Website”). By accessing or using the
                 Website, you agree to be bound by the following Terms &
                 Conditions:

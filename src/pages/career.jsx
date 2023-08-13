@@ -22,11 +22,11 @@ const CareerPage = () => {
       <Hero>
         <Container>
           <Row className="align-items-center h-100vh reverse">
-            <Col lg={5} className="wow animate__animated animate__fadeInLeft">
+            <Col md={6} className="wow animate__animated animate__fadeInLeft">
               <Heading main="Unlock Your Potential ">
                 Join Our Team and Make your mark!
               </Heading>
-              <Para>
+              <Para hero>
                 Dawn Health is on a mission to nurture mental health resilience
                 for every child and their families. When you join Dawn Health,
                 you’re joining a team that has an unstoppable drive and passion
@@ -34,7 +34,6 @@ const CareerPage = () => {
                 hire team members that share the same vision with us.
               </Para>
             </Col>
-            <Col lg={1}></Col>
             <Col
               md={6}
               className="text-end wow animate__animated animate__fadeInRight"

@@ -23,19 +23,12 @@ const ServicesPage = () => {
               <Heading main="Our Services">
                 Wellness-based Virtual Mental Health Care for Adolescents
               </Heading>
-              <Para>
+              <Para hero>
                 Embark on a transformative journey toward wellness with our
                 unique Virtual Mental Health Care designed exclusively for
                 adolescents (ages 9 to 17). In close partnership with parents
                 and guardians, we craft a compassionate, holistic approach that
-                fosters mental resilience and optimal brain function. Every
-                child is our priority, and we work hand in hand with families
-                and schools to provide unparalleled support and resources.
-                Together, we build a foundation for robust mental health that
-                extends from home to school, ensuring a future filled with
-                potential, positivity, and peace of mind. Join us as we
-                revolutionize the way we nurture the minds of our young
-                generation.
+                fosters mental resilience and optimal brain function.
               </Para>
             </Col>
             <Col

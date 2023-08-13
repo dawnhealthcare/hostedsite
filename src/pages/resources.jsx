@@ -15,20 +15,15 @@ const ResourcesPage = () => {
       <Hero>
         <Container>
           <Row className="align-items-center reverse h-100vh">
-            <Col
-              md={12}
-              lg={5}
-              className="wow animate__animated animate__fadeInLeft"
-            >
+            <Col md={6} className="wow animate__animated animate__fadeInLeft">
               <Heading main="Resources">For Engaged Parents</Heading>
-              <Para>
+              <Para hero>
                 Unleash your child's brilliance! Our holistic approach unlocks
                 potential, promoting brain health and resilience. With parents
                 and schools as partners, we empower the next generation for
                 academic and personal success.
               </Para>
             </Col>
-            <Col md={1}></Col>
             <Col
               md={6}
               className="text-end wow animate__animated animate__fadeInRight"

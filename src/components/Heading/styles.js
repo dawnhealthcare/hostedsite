@@ -19,7 +19,7 @@ export const InnerMainHeading = styled.span`
   font-size: ${(props) => (props.medium ? '55px' : '60px')};
   line-height: 140%;
   text-transform: capitalize;
-  color: rgba(255, 168, 0, 0.92);
+  color: #fff;
   @media (max-width: 992px) {
     font-size: 34px;
     margin-top: 20px;

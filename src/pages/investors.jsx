@@ -18,7 +18,7 @@ const InvestorsPage = () => {
           <Row className="align-items-center h-100vh reverse">
             <Col lg={6} className="wow animate__animated animate__fadeInLeft">
               <Heading main="Our Investors">Join Us on a Journey</Heading>
-              <Para>
+              <Para hero>
                 Welcome to Dawn Health, a virtual mental health company
                 dedicated to promoting the well-being of adolescents and their
                 parents. Our investor page is the gateway to a universe of

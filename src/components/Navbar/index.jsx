@@ -44,7 +44,7 @@ export const Header = (props) => {
         <Container>
           <Navbar.Brand>
             <RecLink to="/">
-              <img src={Logo} className="img-fluid" alt="" />
+              <img src={Logo} className="img-fluid logo-h" alt="" />
             </RecLink>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />

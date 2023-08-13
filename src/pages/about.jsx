@@ -19,13 +19,13 @@ const AboutPage = () => {
           <Row className="align-items-center reverse h-100vh">
             <Col
               md={12}
-              lg={5}
+              lg={6}
               className="wow animate__animated animate__fadeInLeft"
             >
               <Heading main="About Us">
                 Our Families are Behind Our Brand
               </Heading>
-              <Para>
+              <Para hero>
                 Family comes first for all of us. Our team comprises of
                 passionate, highly diverse, educated, and experienced
                 professionals who are committed to creating a better tomorrow
@@ -33,7 +33,6 @@ const AboutPage = () => {
                 today.
               </Para>
             </Col>
-            <Col md={1}></Col>
             <Col
               md={6}
               className="text-end wow animate__animated animate__fadeInRight"

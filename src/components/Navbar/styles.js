@@ -5,6 +5,26 @@ import { Link } from 'react-router-dom';
 export const NavbarWrapper = styled.div`
   & .effix {
     background-color: #fff !important;
+    .nav-link.active {
+      color: #e8971e !important;
+    }
+  }
+  .dropdown .nav-link.active {
+    color: #e8971e !important;
+  }
+  .dropdown .nav-link:hover {
+    color: #e8971e !important;
+  }
+  .dropdown .nav-link {
+    font-size: 19px;
+  }
+  .logo-h {
+    height: 64px;
+  }
+  @media (max-width: 768px) {
+    .logo-h {
+      height: 50px;
+    }
   }
 `;
 
@@ -17,9 +37,12 @@ export const RecLink = styled(Link)`
   color: #3a3a3a;
   transition: ease-in-out all 0.1s;
   &:hover {
-    color: #e8971e;
+    color: #fff;
   }
   &.active {
-    color: #e8971e;
+    color: #fff !important;
+  }
+  &.nav-link {
+    font-size: 19px !important;
   }
 `;

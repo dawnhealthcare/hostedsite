@@ -2,9 +2,9 @@ import React from 'react';
 import { ParaWrapper } from './styles';
 
 const Para = (props) => {
-  const { className, children, ...rest } = props;
+  const { className, children, hero, ...rest } = props;
   return (
-    <ParaWrapper {...rest} className={className}>
+    <ParaWrapper {...rest} className={className} hero={hero}>
       {children}
     </ParaWrapper>
   );

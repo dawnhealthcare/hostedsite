@@ -52,7 +52,7 @@ const AllBlogsPage = () => {
               <Heading main="Dawn Health Blog">
                 Empowering Mental Health Resilience & Brain Health
               </Heading>
-              <Para>
+              <Para hero>
                 Embark on a journey into the forefront of children's mental
                 health with Dawn Health. Connect with industry leaders who are
                 also parents, unlock expert insights, and unearth breakthroughs
@@ -125,7 +125,7 @@ const AllBlogsPage = () => {
             </Row>
           </Container>
         ) : (
-          <Para>No data found</Para>
+          <Para className="text-center">No data found</Para>
         )}
       </SectionWrapper>
     </AllBlogsWrapper>

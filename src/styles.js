@@ -32,7 +32,9 @@ export const Overlay = styled.div`
 
 export const Hero = styled.div`
   background: ${(props) =>
-    props.bg ? `url(${props.bg})` : 'rgba(159, 189, 191, 0.4)'};
+    props.bg
+      ? `url(${props.bg})`
+      : 'linear-gradient(180deg, rgba(83.34, 192.31, 83.34, 0.81) 0%, rgba(196.52, 244.37, 196.52, 0.75) 0%, rgba(139.16, 196.98, 229.50, 0.88) 0%, rgba(85, 189.72, 204, 0.87) 0%, rgba(103.16, 213.73, 219.75, 0.70) 48%, rgba(119.90, 235.88, 234.28, 0.54) 66%, rgba(229, 255, 229, 0) 100%, rgba(39.51, 90.31, 83.02, 0.32) 100%)'};
 
   -webkit-print-color-adjust: exact;
   background-position: top;

@@ -38,7 +38,7 @@ const HomePage = () => {
                 >
                   Nurturing Mental Health Resilience
                 </Heading>
-                <Para>
+                <Para hero>
                   Dawn Health prioritizes preventive wellness. We empower
                   parents, nurture resilience, and proactively manage mental
                   health through innovative approaches. Join us in empowering

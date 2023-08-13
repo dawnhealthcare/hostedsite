@@ -125,7 +125,9 @@ const BlogPage = ({ setIsBlogPage }) => {
                       <Heading innerClass="text-white" main="Dawn Health Blog">
                         {post?.title}
                       </Heading>
-                      <Para className="text-white">{post?.description}</Para>
+                      <Para hero className="text-white">
+                        {post?.description}
+                      </Para>
                       <Para className="text-white mb-0 d-flex align-items-center justify-content-center">
                         <span className="me-2">By</span>
                         <img
