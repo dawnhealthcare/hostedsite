@@ -14,7 +14,7 @@ const SignupPage = () => {
       <Hero>
         <Container>
           <Row className="align-items-center reverse h-100vh">
-            <Col lg={6} className="wow animate__animated animate__fadeInLeft">
+            <Col lg={7} className="wow animate__animated animate__fadeInLeft">
               <Heading main="Sign up here">
                 Join the Dawn Health Wellness Ecosystem
               </Heading>
@@ -24,7 +24,7 @@ const SignupPage = () => {
               </Para>
             </Col>
             <Col
-              md={6}
+              md={5}
               className="text-end wow animate__animated animate__fadeInRight"
             >
               <img src={Main} className="img-fluid main-image" alt="main" />

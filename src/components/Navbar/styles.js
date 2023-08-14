@@ -5,6 +5,9 @@ import { Link } from 'react-router-dom';
 export const NavbarWrapper = styled.div`
   & .effix {
     background-color: #fff !important;
+    .nav-link:hover {
+      color: #e8971e !important;
+    }
     .nav-link.active {
       color: #e8971e !important;
     }
