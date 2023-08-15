@@ -1,9 +1,9 @@
 import React from 'react';
 import { WebsiteCardWrapper } from './styles';
 
-const WebsiteCard = ({ image, link, title }) => {
+const WebsiteCard = ({ image, link, title, bg }) => {
   return (
-    <WebsiteCardWrapper>
+    <WebsiteCardWrapper bg={bg}>
       <img src={image} className="img-fluid mb-4" alt="book cover" />
       <a href={link} target="_blank">
         {title}

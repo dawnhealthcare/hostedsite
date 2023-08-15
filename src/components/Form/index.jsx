@@ -8,6 +8,9 @@ import Input from '../Input';
 import emailjs from 'emailjs-com';
 import { CloseIcon } from '../Icons';
 import Para from '../Para';
+import PhoneInput from '../PhoneInput';
+import Checkbox from '../Checkbox';
+import AuthDialog from '../AuthDialog';
 
 const options = [
   { value: 'DC', label: 'DC' },
@@ -63,14 +66,19 @@ function Form() {
   const [numChildren, setNumChildren] = useState([]);
   const [success, setSuccess] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const [error, setError] = useState('');
   const handleNumChildrenChange = (event) => {
     const length = event.target.value;
     const arr = Array.from({ length }, (_, index) => index + 1);
     setNumChildren(arr);
   };
+
+  const [phoneNumber, setPhoneNumber] = useState('');
+
   const {
     register,
+    getValues,
     watch,
     handleSubmit,
     reset,
@@ -115,143 +123,166 @@ function Form() {
 
   const onSubmit = (data) => {
     sendEmail(data, reset);
+    // console.log(data);
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
-      {success && (
-        <Alert variant="success" className="d-flex justify-content-between">
-          <div>
-            <Para>
-              Thank you for submitting your information to Dawn Health. The
-              appropriate team will be in touch with you shortly.
-            </Para>
-            <Para>
-              If this is an emergency, please call 911 or the National Suicide
-              Prevention Lifeline at 988. Both provide free 24/7 support.
-            </Para>
-            <Para className="mb-0">
-              Warm regards, <br />
-              Dawn Health
-            </Para>
-          </div>
-          <CloseIcon
-            className="cursor-pointer"
-            onClick={() => setSuccess(false)}
-          />
-        </Alert>
-      )}
-      {error && (
-        <Alert variant="danger" className="d-flex justify-content-between">
-          {error}
-          <CloseIcon
-            className="cursor-pointer"
-            onClick={() => setError(false)}
-          />
-        </Alert>
-      )}
-      <Row>
-        <Col md={6} className="mb-4">
-          <label>Parent's First Name</label>
-          <Input
-            register={register}
-            name="parentFirstName"
-            placeholder="Parent's First Name"
-            validation={{ required: true }}
-            errors={errors}
-          />
-        </Col>
-        <Col md={6} className="mb-4">
-          <label>Parent's Last Name</label>
-          <Input
-            register={register}
-            name="parentLastName"
-            placeholder="Parent's Last Name"
-            validation={{ required: true }}
-            errors={errors}
-          />
-        </Col>
-      </Row>
-      <Row>
-        <Col md={6} className="mb-4">
-          <label>Parent's Phone Number</label>
-          <Input
+    <>
+      <AuthDialog
+        title="Information"
+        showDialog={isOpen}
+        setShowDialog={setIsOpen}
+      >
+        <pre>First Name: {getValues().parentFirstName}</pre>
+        <pre>Last Name: {getValues().parentLastName}</pre>
+        <pre>Phone Number: {getValues().parentPhoneNumber}</pre>
+        <pre>Email: {getValues().email}</pre>
+      </AuthDialog>
+      <form onSubmit={handleSubmit(onSubmit)}>
+        {success && (
+          <Alert variant="success" className="d-flex justify-content-between">
+            <div>
+              <Para>
+                Thank you for submitting your information to Dawn Health. The
+                appropriate team will be in touch with you shortly.
+              </Para>
+              <Para>
+                If this is an emergency, please call 911 or the National Suicide
+                Prevention Lifeline at 988. Both provide free 24/7 support.
+              </Para>
+              <Para className="mb-0">
+                Warm regards, <br />
+                Dawn Health
+              </Para>
+            </div>
+            <CloseIcon
+              className="cursor-pointer"
+              onClick={() => setSuccess(false)}
+            />
+          </Alert>
+        )}
+        {error && (
+          <Alert variant="danger" className="d-flex justify-content-between">
+            {error}
+            <CloseIcon
+              className="cursor-pointer"
+              onClick={() => setError(false)}
+            />
+          </Alert>
+        )}
+        <Row>
+          <Col md={6} className="mb-4">
+            <label>Parent's First Name</label>
+            <Input
+              register={register}
+              name="parentFirstName"
+              placeholder="Parent's First Name"
+              validation={{ required: true }}
+              errors={errors}
+            />
+          </Col>
+          <Col md={6} className="mb-4">
+            <label>Parent's Last Name</label>
+            <Input
+              register={register}
+              name="parentLastName"
+              placeholder="Parent's Last Name"
+              validation={{ required: true }}
+              errors={errors}
+            />
+          </Col>
+        </Row>
+        <Row>
+          <Col md={6} className="mb-4">
+            <label>Parent's Phone Number</label>
+            {/* <Input
             register={register}
             name="parentPhoneNumber"
             placeholder="Parent's Phone Number"
             validation={{ required: true }}
             errors={errors}
-          />
-        </Col>
-        <Col md={6} className="mb-4">
-          <label>State</label>
-          <SelectWrapper
-            {...register('state', { required: true })}
-            placeholder="State"
-          >
-            <OptionWrapper value="" disabled selected>
-              State
-            </OptionWrapper>
-            {options.map((option) => (
-              <OptionWrapper
-                key={option.label + option.value}
-                value={option.value}
-              >
-                {option.label}
+          /> */}
+            <PhoneInput
+              register={register}
+              placeholder="Parent's Phone Number"
+              validation={{ required: true }}
+              errors={errors}
+              name="parentPhoneNumber"
+              setPhoneNumber={setPhoneNumber}
+              phoneNumber={phoneNumber}
+            />
+          </Col>
+          <Col md={6} className="mb-4">
+            <label>State</label>
+            <SelectWrapper
+              {...register('state', { required: true })}
+              placeholder="State"
+            >
+              <OptionWrapper value="" disabled selected>
+                State
               </OptionWrapper>
-            ))}
-          </SelectWrapper>
-          {errors.state && <Error>This field is required</Error>}
-        </Col>
-      </Row>
-      <Row>
-        <Col md={6} className="mb-4">
-          <label>Email Address</label>
-          <Input
-            register={register}
-            name="email"
-            placeholder="Email Address"
-            validation={{ required: true }}
-            errors={errors}
-          />
-        </Col>
-        <Col md={6} className="mb-4">
-          <label>Number of Childern</label>
-          <SelectWrapper
-            {...register('numOfChildern', { required: true })}
-            placeholder="numOfChildern"
-            onChange={handleNumChildrenChange}
-          >
-            <OptionWrapper value="" disabled selected>
-              Number of children
-            </OptionWrapper>
-            {childrenOptions.map((option) => (
-              <OptionWrapper
-                key={option.label + option.value}
-                value={option.value}
-              >
-                {option.label}
+              {options.map((option) => (
+                <OptionWrapper
+                  key={option.label + option.value}
+                  value={option.value}
+                >
+                  {option.label}
+                </OptionWrapper>
+              ))}
+            </SelectWrapper>
+            {errors.state && <Error>This field is required</Error>}
+          </Col>
+        </Row>
+        <Row>
+          <Col md={6} className="mb-4">
+            <label>Email Address</label>
+            <Input
+              register={register}
+              name="email"
+              placeholder="Email Address"
+              validation={{ required: true }}
+              errors={errors}
+            />
+          </Col>
+          <Col md={6} className="mb-4">
+            <label>Number of Childern</label>
+            <SelectWrapper
+              {...register('numOfChildern', { required: true })}
+              placeholder="numOfChildern"
+              onChange={handleNumChildrenChange}
+            >
+              <OptionWrapper value="" disabled selected>
+                Number of children
               </OptionWrapper>
-            ))}
-          </SelectWrapper>
-          {errors.numOfChildern && <Error>This field is required</Error>}
-        </Col>
-      </Row>
-      <Row>
-        {numChildren?.map((child) => (
-          <>
-            <Col md={6} className="mb-4" key={child + 'A'}>
-              <label>{`Child ${child} Age`}</label>
-              <Input
-                register={register}
-                name={`child${child}Age`}
-                placeholder={`Child ${child} Age`}
-                validation={{ required: true }}
-                errors={errors}
-                type="number"
-              />
-            </Col>
-            {/* <Col md={6} className="mb-4" key={child + 'B'}>
+              {childrenOptions.map((option) => (
+                <OptionWrapper
+                  key={option.label + option.value}
+                  value={option.value}
+                >
+                  {option.label}
+                </OptionWrapper>
+              ))}
+            </SelectWrapper>
+            {errors.numOfChildern && numChildren.length == 0 && (
+              <Error>This field is required</Error>
+            )}
+          </Col>
+        </Row>
+        <Row>
+          {numChildren?.map((child) => (
+            <>
+              <Col md={6} className="mb-4" key={child + 'A'}>
+                <label>{`Child ${child} Age`}</label>
+                <Input
+                  register={register}
+                  name={`child${child}Age`}
+                  placeholder={`Child ${child} Age`}
+                  validation={{ required: true }}
+                  errors={errors}
+                  type="number"
+                />
+              </Col>
+              {/* <Col md={6} className="mb-4" key={child + 'B'}>
               <label>{`Child ${child} Phone Number`}</label>
               <Input
                 register={register}
@@ -263,10 +294,21 @@ function Form() {
                 defaultValue="+1"
               />
             </Col> */}
-          </>
-        ))}
-      </Row>
-      {/* <Row>
+            </>
+          ))}
+          <Col md={12} className="mb-4">
+            <Checkbox
+              register={register}
+              name="confirmData"
+              label="Check your info before submit"
+              validation={{ required: true }}
+              errors={errors}
+              setIsOpen={setIsOpen}
+              isOpen={isOpen}
+            />
+          </Col>
+        </Row>
+        {/* <Row>
         <Col className="mb-4">
           <label>Do you have health care insurance?</label>
           <div className="d-flex align-items-center">
@@ -293,7 +335,7 @@ function Form() {
         </Col>
       </Row> */}
 
-      {/* {hasInsurance === 'yes' && (
+        {/* {hasInsurance === 'yes' && (
         <Row>
           <Col md={6} className="mb-4">
             <label>Select Insurance</label>
@@ -368,10 +410,17 @@ function Form() {
           </Col>
         </Row>
       )} */}
-      <Button disabled={loading} className="mt-4" type="submit">
-        {loading ? 'Loading...' : 'Submit'}
-      </Button>
-    </form>
+        <div className="">
+          <strong>
+            Your estimated annual subscription cost: $
+            {(numChildren.length * 515.3 || 0).toFixed(2)}
+          </strong>
+        </div>
+        <Button disabled={loading} className="mt-4" type="submit">
+          {loading ? 'Loading...' : 'Submit'}
+        </Button>
+      </form>
+    </>
   );
 }
 

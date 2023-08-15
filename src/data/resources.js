@@ -14,11 +14,13 @@ import Book13 from './../assets/resources/book13.png';
 import Book14 from './../assets/resources/book14.png';
 import Book15 from './../assets/resources/book15.png';
 import Book16 from './../assets/resources/top.png';
+import Web0 from './../assets/resources/web0.png';
 import Web1 from './../assets/resources/web1.png';
 import Web2 from './../assets/resources/web2.png';
 import Web3 from './../assets/resources/web3.png';
 import Web4 from './../assets/resources/web4.png';
-export const books = [
+
+export const ownBooks = [
   {
     id: 0,
     image: Book16,
@@ -29,6 +31,9 @@ export const books = [
     image: Book1,
     link: 'https://www.amazon.com/Coaching-Kids-Scientific-Thinking-Overcoming/dp/1733905960/ref=sr_1_1?keywords=kate+efsta&sr=8-1',
   },
+];
+
+export const books = [
   {
     id: 2,
     image: Book2,
@@ -102,6 +107,13 @@ export const books = [
 ];
 
 export const websites = [
+  {
+    id: 220,
+    title: 'iCAC.org',
+    link: 'https://www.icactaskforce.org/',
+    image: Web0,
+    bg: 'dark',
+  },
   {
     id: 221,
     title: 'Aacap.org',

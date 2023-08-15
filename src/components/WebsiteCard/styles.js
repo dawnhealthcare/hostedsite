@@ -22,6 +22,10 @@ export const WebsiteCardWrapper = styled.div`
       color: rgb(255, 168, 0);
     }
   }
+  & img {
+    background: ${(props) => (props.bg === 'dark' ? `#043862` : '#fff')};
+    padding: ${(props) => (props.bg === 'dark' ? `20px 5px` : '0')};
+  }
 `;
 
 export const Body = styled.div`

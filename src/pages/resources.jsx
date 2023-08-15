@@ -5,7 +5,7 @@ import Heading from '../components/Heading';
 import Para from '../components/Para';
 import Main from './../assets/resources/main.png';
 import { SectionHeader } from '../components/SectionHeader';
-import { books, websites } from '../data/resources';
+import { books, ownBooks, websites } from '../data/resources';
 import BookCard from '../components/BookCard';
 import WebsiteCard from '../components/WebsiteCard';
 
@@ -36,8 +36,35 @@ const ResourcesPage = () => {
       <SectionWrapper>
         <Container>
           <Row>
-            <Col lg={5} className="wow animate__animated animate__fadeInLeft">
-              <SectionHeader className="" title="Books"></SectionHeader>
+            <Col lg={12} className="wow animate__animated animate__fadeInLeft">
+              <SectionHeader
+                className="pb-main"
+                title="Revitalize Your Wellness Journey"
+              >
+                Explore Dawn Health's Expertly Authored Reading Materials
+              </SectionHeader>
+            </Col>
+          </Row>
+          <Row>
+            {ownBooks.map((book) => (
+              <Col
+                sm={6}
+                md={4}
+                lg={3}
+                xl={2}
+                key={book.id}
+                className="wow animate__animated animate__zoomIn mb-4"
+              >
+                <BookCard image={book.image} link={book.link} />
+              </Col>
+            ))}
+          </Row>
+          <Row>
+            <Col lg={12} className="wow animate__animated animate__fadeInLeft">
+              <SectionHeader className="pb-main" title="Explore More">
+                Dive into Our Additional Reading Materials for Enhanced
+                Wellbeing
+              </SectionHeader>
             </Col>
           </Row>
           <Row>
@@ -56,7 +83,10 @@ const ResourcesPage = () => {
           </Row>
           <Row>
             <Col lg={5} className="wow animate__animated animate__fadeInLeft">
-              <SectionHeader className="" title="Websites"></SectionHeader>
+              <SectionHeader
+                className=""
+                title="Non-for-Profit Organizations"
+              ></SectionHeader>
             </Col>
           </Row>
           <Row className="pb-main">
@@ -72,6 +102,7 @@ const ResourcesPage = () => {
                   image={website.image}
                   title={website.title}
                   link={website.link}
+                  bg={website.bg || 'none'}
                 />
               </Col>
             ))}

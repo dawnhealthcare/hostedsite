@@ -89,35 +89,35 @@ const FaqList = (props) => {
         </Para>
       ),
     },
-    {
-      question: 'Is virtual mental health care covered by insurance?',
-      answer: (
-        <Para className="mt-4">
-          Yes. We accept insurance! This means that if you have insurance, you
-          may be able to receive our services without paying the full cost out
-          of pocket. We work with a variety of insurance providers to help make
-          our services more accessible and affordable for you. Contact us to
-          find out if we accept your insurance and to learn more about how
-          insurance can help cover the cost of your care.
-        </Para>
-      ),
-    },
-    {
-      question: 'How do I know if my insurance covers mental health services?',
-      answer: (
-        <Para className="mt-4">
-          The Paul Wellstone and Pete Domenici Mental Health Parity and
-          Addiction Equity Act of 2008{' '}
-          <a href="http://mhpaea.com" target="_blank">
-            (MHPAEA)
-          </a>{' '}
-          is a federal law that generally prevents group health plans and health
-          insurance issuers that provide mental health or substance use disorder
-          (MH/SUD) benefits from imposing less favorable benefit limitations on
-          those benefits than on medical/surgical benefits.
-        </Para>
-      ),
-    },
+    // {
+    //   question: 'Is virtual mental health care covered by insurance?',
+    //   answer: (
+    //     <Para className="mt-4">
+    //       Yes. We accept insurance! This means that if you have insurance, you
+    //       may be able to receive our services without paying the full cost out
+    //       of pocket. We work with a variety of insurance providers to help make
+    //       our services more accessible and affordable for you. Contact us to
+    //       find out if we accept your insurance and to learn more about how
+    //       insurance can help cover the cost of your care.
+    //     </Para>
+    //   ),
+    // },
+    // {
+    //   question: 'How do I know if my insurance covers mental health services?',
+    //   answer: (
+    //     <Para className="mt-4">
+    //       The Paul Wellstone and Pete Domenici Mental Health Parity and
+    //       Addiction Equity Act of 2008{' '}
+    //       <a href="http://mhpaea.com" target="_blank">
+    //         (MHPAEA)
+    //       </a>{' '}
+    //       is a federal law that generally prevents group health plans and health
+    //       insurance issuers that provide mental health or substance use disorder
+    //       (MH/SUD) benefits from imposing less favorable benefit limitations on
+    //       those benefits than on medical/surgical benefits.
+    //     </Para>
+    //   ),
+    // },
     {
       question:
         'How can I find a mental health professional who offers virtual care?',
@@ -164,13 +164,25 @@ const FaqList = (props) => {
       answer: (
         <>
           <Para className="mt-4">
-            If the biweekly screenings trigger the mental health resilience
-            pathway (MHRP) then the approximate cost could be as follows:
+            Embrace a pathway to wellness and resilience with Dawn Health at an
+            investment tailored to nurture your mental well-being! Our annual
+            subscription is $500, plus a minimal transaction fee, totaling
+            $515.30 for the year. Should your personalized care plan activate
+            the Mental Health Resilience Pathway, each session will be $145 plus
+            a small transaction fee. For an estimated 10 sessions per calendar
+            year, the investment is just $1,496.50.
           </Para>
-          <ul>
+          <Para className="mt-2">
+            Imagine a world where support, growth, and health are accessible,
+            wrapped in a package designed to fit seamlessly into your life.
+            These costs aren't mere expenses; they're stepping stones toward a
+            life filled with strength, positivity, and happiness. Take the leap
+            with us, and discover the transformation that awaits you!
+          </Para>
+          {/* <ul>
             <li className="mb-2">$500 annual subscription fee</li>
-          </ul>
-          <Para className="mt-4">Mental Health Resilience Pathway:</Para>
+          </ul> */}
+          {/* <Para className="mt-4">Mental Health Resilience Pathway:</Para>
           <ul>
             <li className="mb-2">
               $125 ($60*)x 10** = $600 for 1 hr. mental health session cost
@@ -182,7 +194,50 @@ const FaqList = (props) => {
               [***typical number of sessions per year] Approximate Annual
               Out-of-Pocket cost per child: $500+$600+$210 = $1,310
             </li>
+          </ul> */}
+        </>
+      ),
+    },
+    {
+      question: (
+        <span>
+          How does the cost to receive care from Dawn Health compare to other
+          household expense items?
+        </span>
+      ),
+      answer: (
+        <>
+          <ul className="mt-4">
+            <li className="mb-2">
+              Less than a daily gourmet coffee: It's like trading a fancy latte
+              for the well-being of your child.
+            </li>
+            <li className="mb-2">
+              Comparable to a monthly family dinner out: Instead of one night
+              out, you're nourishing your child's mental health all month long.
+            </li>
+            <li className="mb-2">
+              The cost of a new outfit or pair of brand-name sneakers: It's an
+              investment in confidence and success, not just style.
+            </li>
+            <li className="mb-2">
+              Similar to your monthly streaming or cable bill: Imagine
+              exchanging endless channels for endless possibilities in your
+              child's life.
+            </li>
           </ul>
+          <Para className="mt-4">
+            Isn't your child's mental growth, happiness, and success worth it?
+            With our program, you're not just spending; you're investing in a
+            lifetime of resilience and fulfillment. Join us now and take a
+            purposeful step toward a vibrant future for your child
+          </Para>
+          <Para className="mt-2">
+            By placing the cost in the context of everyday expenses, this
+            comparison makes the investment seem more manageable and worthwhile,
+            and it connects directly with the values and priorities that parents
+            can understand and appreciate.
+          </Para>
         </>
       ),
     },

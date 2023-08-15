@@ -55,6 +55,12 @@ export const Hero = styled.div`
       margin-top: 90px;
     }
   }
+  @media (max-width: 500px) {
+    background: ${(props) =>
+      props.bg
+        ? `url(${props.bg})`
+        : 'linear-gradient(rgba(83, 192, 83, 0.81) 0%, rgb(69, 179, 69) 0%, rgb(24, 123, 179) 0%, rgba(85, 190, 204, 0.87) 0%, rgb(45 180 187) 48%, rgb(86, 204, 216) 66%, rgba(36, 169, 158, 0) 100%, rgb(40, 90, 83) 100%)'};
+  }
 `;
 
 export const SectionWrapper = styled.div`
