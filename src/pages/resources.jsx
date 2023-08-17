@@ -62,7 +62,7 @@ const ResourcesPage = () => {
           <Row>
             <Col lg={12} className="wow animate__animated animate__fadeInLeft">
               <SectionHeader className="pb-main" title="Explore More">
-                Dive into Our Additional Reading Materials for Enhanced
+                Dive into our Additional Reading Materials for Enhanced
                 Wellbeing
               </SectionHeader>
             </Col>
