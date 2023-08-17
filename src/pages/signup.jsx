@@ -40,102 +40,78 @@ const SignupPage = () => {
                 className="pb-2"
                 title="Know Your Cost: Tailoring a Bright Future"
               >
-                Embrace the limitless potential of your child's future. Our
-                mental health network is more than just an annual commitment;
-                it's a customized pathway toward happiness, growth, and success.
+                Unleash the boundless potential of your child's future. With our
+                mental health network, your annual $515.30 commitment per child
+                and $149.65 per session becomes a valuable investment in their
+                well-being, growth, and success.
               </SectionHeader>
             </Col>
             <Col lg={12} className="wow animate__animated animate__fadeInLeft">
               <Para>
-                Embrace a future filled with promise and joy for your child.
-                With our mental health network, you're not just spending $515.30
-                annually per child and $149.65 per session—you're making an
-                invaluable investment in their happiness, growth, and success.
-                The total annual expense of $2,011.80 for 10 transformational
-                therapeutic sessions breaks down to a mere $167.65 per month.
-                Imagine giving your child the gift of well-being for less than
-                your daily coffee or a monthly gym membership. The rewards are
-                beyond measure, and the positive ripple effects will last a
-                lifetime. Don't just dream of a brighter tomorrow for your
-                child—make it a reality. Join us today, and take the empowering
-                step toward nurturing their mental health.
-              </Para>
-              <Para>
-                Here's a detailed look at the investment you're making:
+                HImagine the joy of giving your child a thriving future for just
+                $167.65 per month. That's less than a daily coffee or gym
+                membership! This modest investment includes:
               </Para>
               <ul>
                 <li>
-                  Annual Subscription: At $515.30 per child, this foundation
-                  ensures ongoing support and connection.
+                  Annual Subscription: $515.30 per child for continued support
+                  and connection.
                 </li>
                 <li>
-                  Session Costs: Priced at $149.65 each, these therapeutic
-                  meetings form the building blocks of our collaborative care.
+                  Session Costs: $149.65 each, the foundation of our
+                  collaborative care.
                 </li>
                 <li>
-                  Total Annual Investment: The overall yearly cost of $2,011.80
-                  for 10 transformational sessions breaks down to a mere $167.65
-                  per month.
+                  Total Annual Investment: $2,011.80 for 10 life-changing
+                  sessions.
                 </li>
                 <li>
-                  Individualized Care Plans: Beyond the annual subscription,
-                  therapy costs are determined based on the unique,
-                  individualized care plan that is crafted to meet your child's
-                  specific needs.
+                  Individualized Care Plans: Tailored therapy to meet your
+                  child's specific needs.
                 </li>
               </ul>
               <Para>
-                The value of this investment transcends monetary terms. Imagine
-                bestowing the gift of well-being on your child for less than the
-                price of a daily coffee or a monthly gym membership. The rewards
-                of this specialized approach are profound, resonating through
-                every facet of your child's life. From building confidence to
-                nurturing emotional well-being, the positive impact will last a
-                lifetime.
+                The rewards of this thoughtful approach echo through every
+                aspect of your child's life. It's not about money; it's about
+                nurturing dreams and building futures.
               </Para>
               <Para>
-                Don't just aspire to a brighter tomorrow for your child—create
-                it. Join us today, and take the empowered step toward
-                individualized care that recognizes your child's unique
-                brilliance. Together, we're not only providing therapy; we're
-                nurturing dreams and building futures.
+                Don't merely hope for a bright tomorrow for your child—create
+                it. Join us today, and take the inspired step toward recognizing
+                your child's unique brilliance. Together, we're doing more than
+                providing therapy; we're igniting passions and sculpting
+                futures.
               </Para>
             </Col>
             <Col lg={12} className="wow animate__animated animate__fadeInLeft">
               <SectionHeader
                 className="pb-2"
                 title="How It Works: A Simple and Rewarding Process!"
-              ></SectionHeader>
+              >
+                Embark on a Journey Toward Connection and Joy:
+              </SectionHeader>
               <ul>
                 <li>
-                  <strong>Start by Entering Your Information:</strong> Just fill
-                  out the details in the Sign Up section below, and our
-                  state-of-the-art system will promptly notify you with a
-                  personalized profile registration link.
+                  <strong>Enter Your Information Easily:</strong> Just fill out
+                  the Sign Up section below. Our advanced system will quickly
+                  send you a personalized registration link.
                 </li>
                 <li>
-                  <strong>Create Your Profile in a Flash:</strong> With an
-                  approximate time of only 20 minutes, setting up your profile
-                  has never been easier! This includes the completion of a
-                  specially crafted intake assessment,{' '}
+                  <strong>Create Your Profile in Minutes:</strong> In a mere 20
+                  minutes, set up your profile, including a specially crafted
+                  intake assessment, to understand your unique needs.
                 </li>
-              </ul>
-              <Para>Tailored to understand your unique needs.</Para>
-              <ul>
                 <li>
-                  <strong>Unlock the Power of Communication:</strong> Once your
-                  profile is complete, get ready to experience a seamless
-                  connection. Our system will begin generating biweekly
-                  communications with you and your registered child(ren),
-                  fostering a harmonious connection that grows stronger with
-                  every interaction.
+                  <strong>Unlock Seamless Communication:</strong> Once
+                  registered, enjoy biweekly connections with you and your
+                  child(ren), nurturing a bond that strengthens with every
+                  interaction.
                 </li>
               </ul>
               <Para>
-                Join us now and embark on a journey that's more than just a
-                registration - it's a pathway toward understanding, connection,
-                and joy. Your family deserves the best, and we're here to
-                provide it!
+                Join us today and step into a world that's not merely about
+                registration; it's about understanding, connection, and joy.
+                Your family deserves the best, and we're eager to provide it!
               </Para>
             </Col>
           </Row>

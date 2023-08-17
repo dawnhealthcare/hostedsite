@@ -75,8 +75,8 @@ const AboutPage = () => {
                 platform is user-friendly, accessible, and affordable, making it
                 easier than ever for young people to screen, monitor, and manage
                 their mental health. Say goodbye to sky-high costs and
-                access-to-care barriers - with Dawn Health , the future of
-                mental healthcare is in your hands.
+                access-to-care barriers - with Dawn Health, the future of mental
+                healthcare is in your hands.
               </Para>
             </Col>
           </Row>

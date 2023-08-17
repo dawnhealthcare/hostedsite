@@ -300,7 +300,7 @@ function Form() {
             <Checkbox
               register={register}
               name="confirmData"
-              label="Check your info before submit"
+              label="Verify your details"
               validation={{ required: true }}
               errors={errors}
               setIsOpen={setIsOpen}

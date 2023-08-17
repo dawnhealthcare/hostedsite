@@ -29,6 +29,13 @@ export const BookCardWrapper = styled.div`
       background-color: red;
     }
   }
+  @media (max-width: 768px) {
+    & img {
+      max-height: 498px;
+      width: 100%;
+      background-color: #dedede;
+    }
+  }
 `;
 
 export const Body = styled.div`

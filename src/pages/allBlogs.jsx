@@ -70,7 +70,7 @@ const AllBlogsPage = () => {
           <Container>
             <Row className="pb-main">
               <Col>
-                <SubHeading>Featured blogs</SubHeading>
+                <SubHeading>Featured Articles</SubHeading>
                 <Para>
                   Explore the best of the blogosphere with our featured picks.
                 </Para>

@@ -82,7 +82,7 @@ const ResourcesPage = () => {
             ))}
           </Row>
           <Row>
-            <Col lg={5} className="wow animate__animated animate__fadeInLeft">
+            <Col lg={12} className="wow animate__animated animate__fadeInLeft">
               <SectionHeader
                 className=""
                 title="Non-for-Profit Organizations"

@@ -13,6 +13,7 @@ import Book12 from './../assets/resources/book12.png';
 import Book13 from './../assets/resources/book13.png';
 import Book14 from './../assets/resources/book14.png';
 import Book15 from './../assets/resources/book15.png';
+import Book17 from './../assets/resources/17.png';
 import Book16 from './../assets/resources/top.png';
 import Web0 from './../assets/resources/web0.png';
 import Web1 from './../assets/resources/web1.png';
@@ -24,7 +25,12 @@ export const ownBooks = [
   {
     id: 0,
     image: Book16,
-    link: 'https://www.amazon.com/Empowered-Hearts-Resilience-Connection-Children-ebook/dp/B0CFG1PSGX/ref=sr_1_8?crid=2IUCQG9GR3MTM&keywords=Empowered+Hearts&qid=1691866203&s=books&sprefix=empowered+hearts%2Cstripbooks%2C216&sr=1-8',
+    link: 'https://www.amazon.com/Empowered-Hearts-Resilience-Connection-Children/dp/B0CFCQ1K1T/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=',
+  },
+  {
+    id: 100,
+    image: Book17,
+    link: 'https://www.amazon.com/dp/B0CFCTV13B?ref_=ast_author_dp',
   },
   {
     id: 1,

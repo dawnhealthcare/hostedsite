@@ -30,6 +30,9 @@ const ServicesPage = () => {
                 and guardians, we craft a compassionate, holistic approach that
                 fosters mental resilience and optimal brain function.
               </Para>
+              <Button className="mt-3 mb-3" onClick={() => navigate('/signup')}>
+                Parents Click Here
+              </Button>
             </Col>
             <Col
               md={5}
