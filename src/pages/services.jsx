@@ -66,6 +66,7 @@ const ServicesPage = () => {
                     lg={6}
                     className="mb-4 wow animate__animated animate__zoomIn"
                     style={{ minHeight: '100%' }}
+                    key={service.title}
                   >
                     <WellnessCard
                       title={service.title}

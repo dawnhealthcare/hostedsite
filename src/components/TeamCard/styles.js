@@ -23,7 +23,16 @@ export const ImagesWrapper = styled.div`
 
 export const ContentWrapper = styled.div`
   padding: 10px 15px;
-  background: rgba(159, 189, 191, 0.4);
+  background: linear-gradient(
+    rgba(83, 192, 83, 0.81) 0%,
+    rgba(197, 244, 197, 0.75) 0%,
+    rgba(139, 197, 230, 0.88) 0%,
+    rgba(85, 190, 204, 0.87) 0%,
+    rgba(103, 214, 220, 0.7) 48%,
+    rgba(120, 236, 234, 0.54) 66%,
+    rgb(110 229 216 / 33%) 100%,
+    rgba(40, 90, 83, 0.32) 100%
+  );
   height: 128px;
 `;
 
@@ -32,12 +41,12 @@ export const Name = styled.h4`
   font-weight: 700;
   font-size: 21px;
   line-height: 140%;
-  color: rgba(255, 168, 0, 0.92);
+  color: #fff;
 `;
 
 export const Status = styled.p`
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 14px;
   line-height: 140%;
   text-transform: uppercase;

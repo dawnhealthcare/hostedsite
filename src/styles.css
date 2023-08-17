@@ -26,7 +26,16 @@ body {
 }
 
 .wellness-inner {
-  background: rgba(159, 189, 191, 0.4);
+  background: linear-gradient(
+    rgba(83, 192, 83, 0.81) 0%,
+    rgba(197, 244, 197, 0.75) 0%,
+    rgba(139, 197, 230, 0.88) 0%,
+    rgba(85, 190, 204, 0.87) 0%,
+    rgba(103, 214, 220, 0.7) 48%,
+    rgba(120, 236, 234, 0.54) 66%,
+    rgb(110 229 216 / 33%) 100%,
+    rgba(40, 90, 83, 0.32) 100%
+  );
   border-radius: 20px;
 }
 
@@ -129,6 +138,7 @@ input[type='radio']:checked {
 .navbar .active {
   color: #e8971e !important;
 }
+
 .react-pdf__Page__annotations,
 .react-pdf__Page__textContent {
   display: none;
@@ -194,7 +204,7 @@ input[type='radio']:checked {
   height: 100vh;
 }
 .dropdown-item:active {
-  background: #e8971e;
+  background: #ffffff;
 }
 .dropdown-item:active a {
   color: #fff !important;
@@ -204,6 +214,9 @@ input[type='radio']:checked {
 }
 .dropdown-menu {
   top: 42px !important;
+}
+.dropdown-item:active .nav-link.active {
+  color: #fff !important;
 }
 .blog-body figure {
   text-align: center;

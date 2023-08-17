@@ -106,7 +106,7 @@ const AllBlogsPage = () => {
                     author,
                   }) => (
                     <Col
-                      key={id}
+                      key={slug + id + title}
                       md={4}
                       className="text-start wow animate__animated animate__zoomIn mb-4"
                     >

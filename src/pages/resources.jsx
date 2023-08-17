@@ -48,11 +48,12 @@ const ResourcesPage = () => {
           <Row>
             {ownBooks.map((book) => (
               <Col
+                xs={6}
                 sm={6}
                 md={4}
                 lg={3}
                 xl={2}
-                key={book.id}
+                key={book.id + book.link}
                 className="wow animate__animated animate__zoomIn mb-4"
               >
                 <BookCard image={book.image} link={book.link} />
@@ -70,11 +71,12 @@ const ResourcesPage = () => {
           <Row>
             {books.map((book) => (
               <Col
+                xs={6}
                 sm={6}
                 md={4}
                 lg={3}
                 xl={2}
-                key={book.id}
+                key={book.id + book.link}
                 className="wow animate__animated animate__zoomIn mb-4"
               >
                 <BookCard image={book.image} link={book.link} />
@@ -95,7 +97,7 @@ const ResourcesPage = () => {
                 md={6}
                 lg={4}
                 xl={3}
-                key={website.id}
+                key={website.id + website.title}
                 className="wow animate__animated animate__zoomIn mb-4"
               >
                 <WebsiteCard

@@ -6,6 +6,8 @@ import Team5 from './../assets/team/5.png';
 import Team6 from './../assets/team/6.png';
 import Team7 from './../assets/team/7.png';
 import Team9 from './../assets/team/9.png';
+import Team99 from './../assets/team/10.png';
+import Team11 from './../assets/team/11.png';
 import Mem1 from './../assets/team/mem1.jpg';
 import Mem2 from './../assets/team/mem2.jpg';
 import Mem3 from './../assets/team/mem3.jpg';
@@ -112,10 +114,25 @@ export const members = [
           alt: 'team',
         },
         {
+          id: 100,
+          name: 'Pragnya Vella',
+          status: 'Digital Marketing Intern',
+          src: Team11,
+          alt: 'team',
+        },
+        {
           id: 4,
           name: 'Joseph Onyeizu, MBA, MS',
           status: 'CHIEF OF STAFF (FRACTIONAL)',
           src: Team3,
+          alt: 'team',
+          lead: true,
+        },
+        {
+          id: 99,
+          name: 'Arshad Nawaz BSC',
+          status: 'SR. Front-End Developer & UIUX Designer',
+          src: Team99,
           alt: 'team',
           lead: true,
         },

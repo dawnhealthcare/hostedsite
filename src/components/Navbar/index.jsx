@@ -57,6 +57,7 @@ export const Header = (props) => {
                 <>
                   {navLink.links ? (
                     <NavDropdown
+                      key={navLink.id + navLink.title}
                       onMouseEnter={() => {
                         toggleMenuOpen(navLink.id);
                       }}
@@ -72,7 +73,11 @@ export const Header = (props) => {
                       id="basic-nav-dropdown"
                     >
                       {navLink.links.map((link) => (
-                        <Nav.Link href="#" key={navLink.id} className="py-0">
+                        <Nav.Link
+                          href="#"
+                          key={navLink.id + link.title + link.to}
+                          className="py-0"
+                        >
                           <NavDropdown.Item
                             onClick={() => toggleMenuOpen(false)}
                             id="basic-nav-dropdown"
@@ -92,7 +97,7 @@ export const Header = (props) => {
                   ) : (
                     <Nav.Link
                       href="#"
-                      key={navLink.id}
+                      key={navLink.id + 'c'}
                       className={active == navLink.to ? 'active' : ''}
                     >
                       <RecLink

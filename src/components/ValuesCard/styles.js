@@ -1,8 +1,17 @@
 import styled from 'styled-components';
 
 export const ValueCardWrapper = styled.div`
-  background: rgba(159, 189, 191, 0.4);
-  border: 3px solid rgba(255, 255, 255, 0.33);
+  background: linear-gradient(
+    rgba(83, 192, 83, 0.81) 0%,
+    rgba(197, 244, 197, 0.75) 0%,
+    rgba(139, 197, 230, 0.88) 0%,
+    rgba(85, 190, 204, 0.87) 0%,
+    rgba(103, 214, 220, 0.7) 48%,
+    rgba(120, 236, 234, 0.54) 66%,
+    rgb(110 229 216 / 33%) 100%,
+    rgba(40, 90, 83, 0.32) 100%
+  );
+  /* border: 3px solid rgba(255, 255, 255, 0.33); */
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -33,7 +42,7 @@ export const TitleWrapper = styled.div`
   font-weight: 700;
   font-size: 23px;
   line-height: 140%;
-  color: #e8971e;
+  color: #fff;
   margin-bottom: 10px;
 `;
 

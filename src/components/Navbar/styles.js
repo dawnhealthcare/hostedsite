@@ -21,6 +21,7 @@ export const NavbarWrapper = styled.div`
   .dropdown .nav-link {
     font-size: 19px;
   }
+
   .logo-h {
     height: 64px;
   }

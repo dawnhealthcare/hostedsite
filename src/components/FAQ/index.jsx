@@ -260,7 +260,7 @@ const FaqList = (props) => {
     <div>
       {faqs.map((faq, index) => (
         <Faq
-          key={index}
+          key={faq.question}
           index={index}
           className={className}
           question={faq.question}

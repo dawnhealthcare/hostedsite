@@ -130,7 +130,7 @@ const AboutPage = () => {
               <Col
                 className="wow animate__animated animate__zoomIn"
                 md={2}
-                key={partner.id}
+                key={partner.title}
               >
                 <Partner
                   image={partner.image}

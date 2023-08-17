@@ -42,7 +42,7 @@ const Components = () => {
         <Col sm={4}>
           {teamMembers.map((member) => (
             <TeamCard
-              key={member.id}
+              key={member.id + member.name}
               name={member.name}
               status={member.status}
               alt={member.alt}

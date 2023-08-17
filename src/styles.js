@@ -2,6 +2,9 @@ import styled from 'styled-components';
 
 export const Body = styled.div`
   min-height: calc(64.7vh);
+  @media (max-width: 768px) {
+    margin-top: 74px;
+  }
 `;
 
 export const HomePageWrapper = styled.div``;

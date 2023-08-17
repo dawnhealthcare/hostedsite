@@ -86,7 +86,12 @@ const TeamPage = () => {
           </Row>
           <Row className="pb-main">
             {Principles.map((principal) => (
-              <Col md={6} xl={3} className="mb-4" key={principal.id}>
+              <Col
+                md={6}
+                xl={3}
+                className="mb-4"
+                key={principal.id + principal.title}
+              >
                 <WellnessCard
                   title={principal.title}
                   desc={principal.desc}
@@ -118,7 +123,13 @@ const TeamPage = () => {
                 ))}
                 <Row>
                   {member.members.team2.map((two) => (
-                    <Col md={6} lg={4} xl={3} className="mb-4" key={two.id}>
+                    <Col
+                      md={6}
+                      lg={4}
+                      xl={3}
+                      className="mb-4"
+                      key={two.id + two.name}
+                    >
                       <TeamCard
                         className="wow animate__animated animate__zoomIn"
                         name={two.name}
@@ -134,7 +145,7 @@ const TeamPage = () => {
             ))}
             {teamMembers.map((members) => (
               <>
-                <Col md={12} key={members.title}>
+                <Col md={12} key={members.title + members.name}>
                   <SectionHeader
                     className="wow animate__animated animate__fadeInLeft"
                     title={members.title}

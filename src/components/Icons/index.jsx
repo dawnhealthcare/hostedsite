@@ -188,7 +188,7 @@ export const InstagramIcon = (props) => {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      class="feather feather-instagram"
+      className="feather feather-instagram"
       {...props}
     >
       <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
@@ -350,7 +350,7 @@ export const ArrowIcon = (props) => {
     >
       <path
         d="M9 18L15 12L9 6"
-        stroke={props.stroke || "white"}
+        stroke={props.stroke || 'white'}
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
