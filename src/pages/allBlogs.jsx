@@ -8,6 +8,7 @@ import SubHeading from '../components/SubHeading';
 import { useState } from 'react';
 import { client } from '../client';
 import Loader from '../components/Loader';
+import uuid from 'react-uuid';
 
 const AllBlogsPage = () => {
   const [blogs, setBlogs] = useState([]);
@@ -43,13 +44,13 @@ const AllBlogsPage = () => {
     <AllBlogsWrapper>
       <Hero>
         <Container>
-          <Row className="align-items-center h-100vh text-center">
+          <Row className="align-items-center h-100vh text-center pt-5 pt-md-0">
             <Col
               md={12}
               lg={{ span: 8, offset: 2 }}
               className="wow animate__animated animate__zoomIn"
             >
-              <Heading main="Dawn Health Blog">
+              <Heading main="Dawn Health Blog" className="pt-4 pt-md-0">
                 Empowering Mental Health Resilience & Brain Health
               </Heading>
               <Para hero>
@@ -106,7 +107,7 @@ const AllBlogsPage = () => {
                     author,
                   }) => (
                     <Col
-                      key={slug + id + title}
+                      key={uuid()}
                       md={4}
                       className="text-start wow animate__animated animate__zoomIn mb-4"
                     >

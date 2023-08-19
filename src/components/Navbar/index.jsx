@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import { NavbarWrapper, RecLink } from './styles';
 import Logo from './../../assets/logo/logo.png';
 import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import uuid from 'react-uuid';
 
 export const Header = (props) => {
   const { active, className } = props;
@@ -54,10 +55,10 @@ export const Header = (props) => {
           >
             <Nav className="align-items-center">
               {navLinks.map((navLink) => (
-                <>
+                <div key={uuid()}>
                   {navLink.links ? (
                     <NavDropdown
-                      key={navLink.id + navLink.title}
+                      key={uuid()}
                       onMouseEnter={() => {
                         toggleMenuOpen(navLink.id);
                       }}
@@ -73,11 +74,7 @@ export const Header = (props) => {
                       id="basic-nav-dropdown"
                     >
                       {navLink.links.map((link) => (
-                        <Nav.Link
-                          href="#"
-                          key={navLink.id + link.title + link.to}
-                          className="py-0"
-                        >
+                        <Nav.Link href="#" key={uuid()} className="py-0">
                           <NavDropdown.Item
                             onClick={() => toggleMenuOpen(false)}
                             id="basic-nav-dropdown"
@@ -96,8 +93,8 @@ export const Header = (props) => {
                     </NavDropdown>
                   ) : (
                     <Nav.Link
+                      key={uuid()}
                       href="#"
-                      key={navLink.id + 'c'}
                       className={active == navLink.to ? 'active' : ''}
                     >
                       <RecLink
@@ -110,7 +107,7 @@ export const Header = (props) => {
                       </RecLink>
                     </Nav.Link>
                   )}
-                </>
+                </div>
               ))}
             </Nav>
           </Navbar.Collapse>

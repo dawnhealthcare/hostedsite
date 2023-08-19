@@ -114,7 +114,7 @@ const BlogPage = ({ setIsBlogPage }) => {
         ) : (
           <>
             <Hero bg={post?.mainImage.asset.url}>
-              <Overlay>
+              <Overlay className="py-4">
                 <Container>
                   <Row className="align-items-center pt-5 h-100vh">
                     <Col

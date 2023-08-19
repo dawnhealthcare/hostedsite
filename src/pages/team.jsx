@@ -9,6 +9,7 @@ import { Hero, SectionWrapper, TeamPageWrapper } from '../styles';
 import Main8 from './../assets/team/main.png';
 import WellnessCard from '../components/WellnessCard';
 import { Principles } from '../data/home';
+import uuid from 'react-uuid';
 // import Animated from './../assets/home/animated-1.gif';
 
 const TeamPage = () => {
@@ -86,12 +87,7 @@ const TeamPage = () => {
           </Row>
           <Row className="pb-main">
             {Principles.map((principal) => (
-              <Col
-                md={6}
-                xl={3}
-                className="mb-4"
-                key={principal.id + principal.title}
-              >
+              <Col md={6} xl={3} className="mb-4" key={uuid()}>
                 <WellnessCard
                   title={principal.title}
                   desc={principal.desc}
@@ -103,14 +99,14 @@ const TeamPage = () => {
           <Row className="pb-main">
             {members.map((member) => (
               <>
-                <Col md={12} key={member.title}>
+                <Col md={12} key={uuid()}>
                   <SectionHeader
                     className="wow animate__animated animate__fadeInLeft"
                     title={member.title}
                   ></SectionHeader>
                 </Col>
                 {member.members.team1.map((one) => (
-                  <Col md={6} lg={4} xl={3} className="mb-4" key={one.id}>
+                  <Col md={6} lg={4} xl={3} className="mb-4" key={uuid()}>
                     <TeamCard
                       className="wow animate__animated animate__zoomIn"
                       name={one.name}
@@ -123,13 +119,7 @@ const TeamPage = () => {
                 ))}
                 <Row>
                   {member.members.team2.map((two) => (
-                    <Col
-                      md={6}
-                      lg={4}
-                      xl={3}
-                      className="mb-4"
-                      key={two.id + two.name}
-                    >
+                    <Col md={6} lg={4} xl={3} className="mb-4" key={uuid()}>
                       <TeamCard
                         className="wow animate__animated animate__zoomIn"
                         name={two.name}
@@ -145,14 +135,14 @@ const TeamPage = () => {
             ))}
             {teamMembers.map((members) => (
               <>
-                <Col md={12} key={members.title + members.name}>
+                <Col md={12} key={uuid()}>
                   <SectionHeader
                     className="wow animate__animated animate__fadeInLeft"
                     title={members.title}
                   ></SectionHeader>
                 </Col>
                 {members.members?.map((member) => (
-                  <Col md={6} lg={4} xl={3} className="mb-4" key={member.id}>
+                  <Col md={6} lg={4} xl={3} className="mb-4" key={uuid()}>
                     <TeamCard
                       className="wow animate__animated animate__zoomIn"
                       name={member.name}

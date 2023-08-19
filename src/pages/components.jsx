@@ -11,6 +11,7 @@ import SubHeading from '../components/SubHeading';
 import TeamCard from '../components/TeamCard';
 import ValueCard from '../components/ValuesCard';
 import { teamMembers } from '../data/team';
+import uuid from 'react-uuid';
 
 const Components = () => {
   return (
@@ -42,7 +43,7 @@ const Components = () => {
         <Col sm={4}>
           {teamMembers.map((member) => (
             <TeamCard
-              key={member.id + member.name}
+              key={uuid()}
               name={member.name}
               status={member.status}
               alt={member.alt}

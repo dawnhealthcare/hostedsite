@@ -10,6 +10,7 @@ import Main2 from './../assets/about/2.png';
 import Main3 from './../assets/about/main2.jpg';
 import { partners } from '../data/partners';
 import Partner from '../components/Partner';
+import uuid from 'react-uuid';
 
 const AboutPage = () => {
   return (
@@ -130,7 +131,7 @@ const AboutPage = () => {
               <Col
                 className="wow animate__animated animate__zoomIn"
                 md={2}
-                key={partner.title}
+                key={uuid()}
               >
                 <Partner
                   image={partner.image}

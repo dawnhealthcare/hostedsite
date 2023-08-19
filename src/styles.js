@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Body = styled.div`
   min-height: calc(64.7vh);
   @media (max-width: 768px) {
-    margin-top: 74px;
+    margin-top: 10px;
   }
 `;
 
@@ -42,6 +42,7 @@ export const Hero = styled.div`
   -webkit-print-color-adjust: exact;
   background-position: top;
   background-size: cover;
+  padding-top: 90px;
   .blog-image-main {
     position: absolute;
     width: 100%;
@@ -58,11 +59,12 @@ export const Hero = styled.div`
       margin-top: 90px;
     }
   }
-  @media (max-width: 500px) {
+  @media (max-width: 768px) {
     background: ${(props) =>
       props.bg
         ? `url(${props.bg})`
         : 'linear-gradient(rgba(83, 192, 83, 0.81) 0%, rgb(69, 179, 69) 0%, rgb(24, 123, 179) 0%, rgba(85, 190, 204, 0.87) 0%, rgb(45 180 187) 48%, rgb(86, 204, 216) 66%, rgba(36, 169, 158, 0) 100%, rgb(40, 90, 83) 100%)'};
+    padding-top: 0px;
   }
 `;
 

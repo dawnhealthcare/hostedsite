@@ -11,6 +11,7 @@ import WellnessCard from '../components/WellnessCard';
 import ValueCard from '../components/ValuesCard';
 import Button from '../components/Button';
 import { useNavigate } from 'react-router-dom';
+import uuid from 'react-uuid';
 
 const ServicesPage = () => {
   const navigate = useNavigate();
@@ -66,7 +67,7 @@ const ServicesPage = () => {
                     lg={6}
                     className="mb-4 wow animate__animated animate__zoomIn"
                     style={{ minHeight: '100%' }}
-                    key={service.title}
+                    key={uuid()}
                   >
                     <WellnessCard
                       title={service.title}

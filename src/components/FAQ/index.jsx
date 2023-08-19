@@ -3,6 +3,7 @@ import { MinusICon, PlusICon } from '../Icons';
 import Para from '../Para';
 import { FaqHeader, FaqWrapper, Question } from './styles';
 import { Link } from 'react-router-dom';
+import uuid from 'react-uuid';
 
 const Faq = ({
   question,
@@ -260,7 +261,7 @@ const FaqList = (props) => {
     <div>
       {faqs.map((faq, index) => (
         <Faq
-          key={faq.question}
+          key={uuid()}
           index={index}
           className={className}
           question={faq.question}
