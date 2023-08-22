@@ -7,6 +7,7 @@ import Team6 from './../assets/team/6.png';
 import Team7 from './../assets/team/7.png';
 import Team9 from './../assets/team/9.png';
 import Team99 from './../assets/team/10.png';
+import Team100 from './../assets/team/12.png';
 import Team11 from './../assets/team/11.png';
 import Mem1 from './../assets/team/mem1.jpg';
 import Mem2 from './../assets/team/mem2.jpg';
@@ -14,6 +15,7 @@ import Mem3 from './../assets/team/mem3.jpg';
 import Mem4 from './../assets/team/mem4.png';
 export const teamMembers = [
   {
+    id: 223344,
     title: 'Clinical Excellence Advisory Team',
     members: [
       {
@@ -47,6 +49,7 @@ export const teamMembers = [
     ],
   },
   {
+    id: 223345,
     title: 'Board of Advisors',
     members: [
       {
@@ -70,6 +73,7 @@ export const teamMembers = [
 
 export const members = [
   {
+    id: 223346,
     title: 'Leadership Team',
     members: {
       team1: [
@@ -120,6 +124,16 @@ export const members = [
           src: Team11,
           alt: 'team',
         },
+      ],
+      team3: [
+        {
+          id: 99,
+          name: 'Arshad Nawaz BSC',
+          status: 'SR. Front-End Developer & UIUX Designer',
+          src: Team99,
+          alt: 'team',
+          lead: true,
+        },
         {
           id: 4,
           name: 'Joseph Onyeizu, MBA, MS',
@@ -129,10 +143,10 @@ export const members = [
           lead: true,
         },
         {
-          id: 99,
-          name: 'Arshad Nawaz BSC',
-          status: 'SR. Front-End Developer & UIUX Designer',
-          src: Team99,
+          id: 100,
+          name: 'Zachary Fleming',
+          status: 'Chief System Officer (FRACTIONAL)',
+          src: Team100,
           alt: 'team',
           lead: true,
         },

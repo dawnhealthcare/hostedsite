@@ -3,7 +3,6 @@ import { MinusICon, PlusICon } from '../Icons';
 import Para from '../Para';
 import { FaqHeader, FaqWrapper, Question } from './styles';
 import { Link } from 'react-router-dom';
-import uuid from 'react-uuid';
 
 const Faq = ({
   question,
@@ -40,6 +39,7 @@ const FaqList = (props) => {
   const { className } = props;
   const faqs = [
     {
+      id: 334455,
       question: 'What is a virtual wellness mental health model?',
       answer: (
         <Para className="mt-4">
@@ -50,6 +50,7 @@ const FaqList = (props) => {
       ),
     },
     {
+      id: 334456,
       question: <span>What types of services does Dawn Health provide?</span>,
       answer: (
         <Para className="mt-4">
@@ -61,6 +62,7 @@ const FaqList = (props) => {
       ),
     },
     {
+      id: 334457,
       question: 'Is virtual mental health care as effective as in-person care?',
       answer: (
         <Para className="mt-4">
@@ -70,6 +72,7 @@ const FaqList = (props) => {
       ),
     },
     {
+      id: 334458,
       question:
         'What are the benefits of using a virtual wellness mental health model?',
       answer: (
@@ -81,6 +84,7 @@ const FaqList = (props) => {
       ),
     },
     {
+      id: 334459,
       question: 'What technology is required for virtual mental health care?',
       answer: (
         <Para className="mt-4">
@@ -90,36 +94,8 @@ const FaqList = (props) => {
         </Para>
       ),
     },
-    // {
-    //   question: 'Is virtual mental health care covered by insurance?',
-    //   answer: (
-    //     <Para className="mt-4">
-    //       Yes. We accept insurance! This means that if you have insurance, you
-    //       may be able to receive our services without paying the full cost out
-    //       of pocket. We work with a variety of insurance providers to help make
-    //       our services more accessible and affordable for you. Contact us to
-    //       find out if we accept your insurance and to learn more about how
-    //       insurance can help cover the cost of your care.
-    //     </Para>
-    //   ),
-    // },
-    // {
-    //   question: 'How do I know if my insurance covers mental health services?',
-    //   answer: (
-    //     <Para className="mt-4">
-    //       The Paul Wellstone and Pete Domenici Mental Health Parity and
-    //       Addiction Equity Act of 2008{' '}
-    //       <a href="http://mhpaea.com" target="_blank">
-    //         (MHPAEA)
-    //       </a>{' '}
-    //       is a federal law that generally prevents group health plans and health
-    //       insurance issuers that provide mental health or substance use disorder
-    //       (MH/SUD) benefits from imposing less favorable benefit limitations on
-    //       those benefits than on medical/surgical benefits.
-    //     </Para>
-    //   ),
-    // },
     {
+      id: 334460,
       question:
         'How can I find a mental health professional who offers virtual care?',
       answer: (
@@ -133,6 +109,7 @@ const FaqList = (props) => {
       ),
     },
     {
+      id: 334461,
       question:
         'How do I ensure the privacy and security of my virtual mental health sessions?',
       answer: (
@@ -145,6 +122,7 @@ const FaqList = (props) => {
       ),
     },
     {
+      id: 334462,
       question: 'How do I prepare for a virtual mental health session?',
       answer: (
         <Para className="mt-4">
@@ -156,6 +134,7 @@ const FaqList = (props) => {
       ),
     },
     {
+      id: 334463,
       question: (
         <span>
           What is going to be the total annual cost to receive care through Dawn
@@ -200,6 +179,7 @@ const FaqList = (props) => {
       ),
     },
     {
+      id: 334464,
       question: (
         <span>
           How does the cost to receive care from Dawn Health compare to other
@@ -243,6 +223,7 @@ const FaqList = (props) => {
       ),
     },
     {
+      id: 334465,
       question: 'How do I sign up?',
       answer: (
         <Para className="mt-4">
@@ -261,7 +242,7 @@ const FaqList = (props) => {
     <div>
       {faqs.map((faq, index) => (
         <Faq
-          key={uuid()}
+          key={faq.id}
           index={index}
           className={className}
           question={faq.question}

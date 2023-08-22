@@ -11,7 +11,6 @@ import Para from '../Para';
 import PhoneInput from '../PhoneInput';
 import Checkbox from '../Checkbox';
 import AuthDialog from '../AuthDialog';
-import uuid from 'react-uuid';
 
 const options = [
   { value: 'DC', label: 'DC' },
@@ -223,7 +222,7 @@ function Form() {
                 State
               </OptionWrapper>
               {options.map((option) => (
-                <OptionWrapper key={uuid()} value={option.value}>
+                <OptionWrapper key={option.label} value={option.value}>
                   {option.label}
                 </OptionWrapper>
               ))}
@@ -253,7 +252,7 @@ function Form() {
                 Number of children
               </OptionWrapper>
               {childrenOptions.map((option) => (
-                <OptionWrapper key={uuid()} value={option.value}>
+                <OptionWrapper key={option.label} value={option.value}>
                   {option.label}
                 </OptionWrapper>
               ))}
@@ -264,9 +263,9 @@ function Form() {
           </Col>
         </Row>
         <Row>
-          {numChildren?.map((child) => (
+          {numChildren?.map((child, index) => (
             <>
-              <Col md={6} className="mb-4" key={uuid()}>
+              <Col md={6} className="mb-4" key={`${index}${index}${index}`}>
                 <label>{`Child ${child} Age`}</label>
                 <Input
                   register={register}

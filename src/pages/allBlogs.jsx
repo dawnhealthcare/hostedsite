@@ -8,7 +8,6 @@ import SubHeading from '../components/SubHeading';
 import { useState } from 'react';
 import { client } from '../client';
 import Loader from '../components/Loader';
-import uuid from 'react-uuid';
 
 const AllBlogsPage = () => {
   const [blogs, setBlogs] = useState([]);
@@ -107,7 +106,7 @@ const AllBlogsPage = () => {
                     author,
                   }) => (
                     <Col
-                      key={uuid()}
+                      key={id}
                       md={4}
                       className="text-start wow animate__animated animate__zoomIn mb-4"
                     >

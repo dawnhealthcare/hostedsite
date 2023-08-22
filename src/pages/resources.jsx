@@ -8,7 +8,6 @@ import { SectionHeader } from '../components/SectionHeader';
 import { books, ownBooks, websites } from '../data/resources';
 import BookCard from '../components/BookCard';
 import WebsiteCard from '../components/WebsiteCard';
-import uuid from 'react-uuid';
 
 const ResourcesPage = () => {
   return (
@@ -54,7 +53,7 @@ const ResourcesPage = () => {
                 md={4}
                 lg={3}
                 xl={2}
-                key={uuid()}
+                key={book.id}
                 className="wow animate__animated animate__zoomIn mb-4"
               >
                 <BookCard image={book.image} link={book.link} />
@@ -77,7 +76,7 @@ const ResourcesPage = () => {
                 md={4}
                 lg={3}
                 xl={2}
-                key={uuid()}
+                key={book.id + book.image}
                 className="wow animate__animated animate__zoomIn mb-4"
               >
                 <BookCard image={book.image} link={book.link} />
@@ -98,7 +97,7 @@ const ResourcesPage = () => {
                 md={6}
                 lg={4}
                 xl={3}
-                key={uuid()}
+                key={website.title}
                 className="wow animate__animated animate__zoomIn mb-4"
               >
                 <WebsiteCard
