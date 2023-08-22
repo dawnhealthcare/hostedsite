@@ -39,7 +39,7 @@ export const ContentWrapper = styled.div`
 export const Name = styled.h4`
   font-style: normal;
   font-weight: 700;
-  font-size: 21px;
+  font-size: 20px;
   line-height: 140%;
   color: #fff;
 `;
