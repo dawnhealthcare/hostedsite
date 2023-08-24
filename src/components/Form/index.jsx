@@ -212,6 +212,7 @@ function Form() {
         <pre>Last Name: {getValues().parentLastName}</pre>
         <pre>Phone Number: {getValues().parentPhoneNumber}</pre>
         <pre>Email: {getValues().email}</pre>
+        <pre>State: {getValues().state}</pre>
       </AuthDialog>
       <form onSubmit={handleSubmit(onSubmit)}>
         <AuthDialog

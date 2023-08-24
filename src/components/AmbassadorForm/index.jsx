@@ -99,6 +99,7 @@ function AmbassadorForm() {
         <pre>Last Name: {getValues().lastName}</pre>
         <pre>Phone Number: {getValues().phoneNumber}</pre>
         <pre>Email: {getValues().email}</pre>
+        <pre>State: {getValues().state}</pre>
       </AuthDialog>
       <form onSubmit={handleSubmit(onSubmit)}>
         <AuthDialog
@@ -110,8 +111,8 @@ function AmbassadorForm() {
             <Alert variant="success" className="d-flex justify-content-between">
               <div>
                 <Para>
-                  Thank you for submitting your information to Dawn Health. The
-                  appropriate team will be in touch with you shortly.
+                  Our team will review your application and reach back out to
+                  you.
                 </Para>
               </div>
             </Alert>
