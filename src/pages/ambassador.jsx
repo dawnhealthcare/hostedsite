@@ -14,7 +14,7 @@ import {
 import Main from './../assets/ambassador/main.png';
 import Main2 from './../assets/ambassador/main2.png';
 import Main3 from './../assets/ambassador/main3.png';
-import Main4 from './../assets/signup/2.png';
+import Main4 from './../assets/ambassador/main4.png';
 import GetStarted from '../components/GetStarted';
 import AmbassadorForm from '../components/AmbassadorForm';
 
@@ -154,12 +154,11 @@ const Ambassador = () => {
           </Row>
           <Row className="mt-5 pb-main align-items-center">
             <Col
-              lg={5}
+              lg={6}
               className="text-end wow animate__animated animate__fadeInLeft"
             >
               <img src={Main4} className="img-fluid" alt="main" />
             </Col>
-            <Col lg={1}></Col>
             <Col
               lg={6}
               className="wow animate__animated animate__fadeInRight mt-sm-0 mt-4"

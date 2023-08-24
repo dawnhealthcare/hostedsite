@@ -113,14 +113,15 @@ function Form() {
   const [success, setSuccess] = useState(false);
   const [loading, setLoading] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [isStatusOpen, setIsStatusOpen] = useState(false);
   const [error, setError] = useState('');
   const handleNumChildrenChange = (event) => {
     const length = event.target.value;
     const arr = Array.from({ length }, (_, index) => index + 1);
     setNumChildren(arr);
-    console.log(arr);
   };
   const handleHearAboutChange = (event) => {
+    // setAmbassador(event.target.value);
     setHearAbout(event.target.value);
   };
 
@@ -161,18 +162,43 @@ function Form() {
         if (response.status == 200) {
           setSuccess('Successfully submited your data');
           reset();
+          setIsStatusOpen(true);
         }
       })
       .catch((error) => {
         setLoading(false);
         if (error) {
           setError(error.text);
+          setIsStatusOpen(true);
         }
       });
   };
 
   const onSubmit = (data) => {
-    sendEmail(data, reset);
+    const {
+      parentFirstName,
+      parentLastName,
+      parentPhoneNumber,
+      email,
+      state,
+      hearAboutUs,
+      numOfChildern,
+      confirmData,
+      ambassador,
+      ...rest
+    } = data;
+    const res = {
+      parentFirstName,
+      parentLastName,
+      parentPhoneNumber,
+      email,
+      state,
+      numOfChildern,
+      ...rest,
+      howDidYouHearAboutUs: hearAboutUs,
+      ambassador,
+    };
+    sendEmail(res, reset);
   };
 
   return (
@@ -188,37 +214,40 @@ function Form() {
         <pre>Email: {getValues().email}</pre>
       </AuthDialog>
       <form onSubmit={handleSubmit(onSubmit)}>
-        {success && (
-          <Alert variant="success" className="d-flex justify-content-between">
-            <div>
-              <Para>
-                Thank you for submitting your information to Dawn Health. The
-                appropriate team will be in touch with you shortly.
-              </Para>
-              <Para>
-                If this is an emergency, please call 911 or the National Suicide
-                Prevention Lifeline at 988. Both provide free 24/7 support.
-              </Para>
-              <Para className="mb-0">
-                Warm regards, <br />
-                Dawn Health
-              </Para>
-            </div>
-            <CloseIcon
-              className="cursor-pointer"
-              onClick={() => setSuccess(false)}
-            />
-          </Alert>
-        )}
-        {error && (
-          <Alert variant="danger" className="d-flex justify-content-between">
-            {error}
-            <CloseIcon
-              className="cursor-pointer"
-              onClick={() => setError(false)}
-            />
-          </Alert>
-        )}
+        <AuthDialog
+          title="Information"
+          showDialog={isStatusOpen}
+          setShowDialog={setIsStatusOpen}
+        >
+          {success && (
+            <Alert variant="success" className="d-flex justify-content-between">
+              <div>
+                <Para>
+                  Thank you for submitting your information to Dawn Health. The
+                  appropriate team will be in touch with you shortly.
+                </Para>
+                <Para>
+                  If this is an emergency, please call 911 or the National
+                  Suicide Prevention Lifeline at 988. Both provide free 24/7
+                  support.
+                </Para>
+                <Para className="mb-0">
+                  Warm regards, <br />
+                  Dawn Health
+                </Para>
+              </div>
+            </Alert>
+          )}
+          {error && (
+            <Alert variant="danger" className="d-flex justify-content-between">
+              {error}
+              <CloseIcon
+                className="cursor-pointer"
+                onClick={() => setError(false)}
+              />
+            </Alert>
+          )}
+        </AuthDialog>
         <Row>
           <Col md={6} className="mb-4">
             <label>Parent's First Name</label>

@@ -27,6 +27,7 @@ function AmbassadorForm() {
   const [success, setSuccess] = useState(false);
   const [loading, setLoading] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [isStatusOpen, setIsStatusOpen] = useState(false);
   const [error, setError] = useState('');
 
   const [phoneNumber, setPhoneNumber] = useState('');
@@ -63,18 +64,28 @@ function AmbassadorForm() {
         if (response.status == 200) {
           setSuccess('Successfully submited your data');
           reset();
+          setIsStatusOpen(true);
         }
       })
       .catch((error) => {
         setLoading(false);
         if (error) {
           setError(error.text);
+          setIsStatusOpen(true);
         }
       });
   };
 
   const onSubmit = (data) => {
-    sendEmail(data, reset);
+    const res = {
+      firstName: data.firstName,
+      lastName: data.lastName,
+      state: data.state,
+      phoneNumber: data.phoneNumber,
+      email: data.email,
+      howDidYouHearAboutUs: data.ambassador,
+    };
+    sendEmail(res, reset);
   };
 
   return (
@@ -86,33 +97,31 @@ function AmbassadorForm() {
       >
         <pre>First Name: {getValues().firstName}</pre>
         <pre>Last Name: {getValues().lastName}</pre>
-        <pre>Phone Number: {getValues().parentPhoneNumber}</pre>
+        <pre>Phone Number: {getValues().phoneNumber}</pre>
         <pre>Email: {getValues().email}</pre>
       </AuthDialog>
       <form onSubmit={handleSubmit(onSubmit)}>
-        {success && (
-          <Alert variant="success" className="d-flex justify-content-between">
-            <div>
-              <Para>
-                Thank you for submitting your information to Dawn Health. The
-                appropriate team will be in touch with you shortly.
-              </Para>
-            </div>
-            <CloseIcon
-              className="cursor-pointer"
-              onClick={() => setSuccess(false)}
-            />
-          </Alert>
-        )}
-        {error && (
-          <Alert variant="danger" className="d-flex justify-content-between">
-            {error}
-            <CloseIcon
-              className="cursor-pointer"
-              onClick={() => setError(false)}
-            />
-          </Alert>
-        )}
+        <AuthDialog
+          title="Information"
+          showDialog={isStatusOpen}
+          setShowDialog={setIsStatusOpen}
+        >
+          {success && (
+            <Alert variant="success" className="d-flex justify-content-between">
+              <div>
+                <Para>
+                  Thank you for submitting your information to Dawn Health. The
+                  appropriate team will be in touch with you shortly.
+                </Para>
+              </div>
+            </Alert>
+          )}
+          {error && (
+            <Alert variant="danger" className="d-flex justify-content-between">
+              {error}
+            </Alert>
+          )}
+        </AuthDialog>
         <Row>
           <Col md={6} className="mb-4">
             <label>First Name</label>
@@ -143,7 +152,7 @@ function AmbassadorForm() {
               placeholder="Phone Number"
               validation={{ required: true }}
               errors={errors}
-              name="parentPhoneNumber"
+              name="phoneNumber"
               setPhoneNumber={setPhoneNumber}
               phoneNumber={phoneNumber}
             />
@@ -199,6 +208,14 @@ function AmbassadorForm() {
               setIsOpen={setIsOpen}
               isOpen={isOpen}
             />
+          </Col>
+        </Row>
+        <Row>
+          <Col md={12} className="">
+            <Para>
+              Engagement as a Dawn Health Ambassador necessitates that you first
+              attain the status of a registered member within the organization
+            </Para>
           </Col>
         </Row>
         <Button disabled={loading} className="mt-2" type="submit">
