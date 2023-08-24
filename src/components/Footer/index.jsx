@@ -46,6 +46,7 @@ const Footer = () => {
               <Title>Company</Title>
               <ReLink to="/about">Partners</ReLink>
               <ReLink to="/join-our-team">Join our team</ReLink>
+              <ReLink to="/ambassadorship">Ambassadorship</ReLink>
               {/* <Para className="cursor-pointer text-white" onClick={handleShow}>
                 Contact us
               </Para> */}

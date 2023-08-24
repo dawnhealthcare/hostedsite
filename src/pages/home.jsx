@@ -44,12 +44,20 @@ const HomePage = () => {
                   health through innovative approaches. Join us in empowering
                   the next generation to thrive.
                 </Para>
-                <Button
-                  className="mt-3 mb-3"
-                  onClick={() => navigate('/signup')}
-                >
-                  Parents Click Here
-                </Button>
+                <div className="d-flex gap-3 mt-4 flex-wrap flex-sm-nowrap">
+                  <Button
+                    className="mb-1 parent"
+                    onClick={() => navigate('/signup')}
+                  >
+                    Parents Click Here
+                  </Button>
+                  <Button
+                    className="mb-3 ambassador"
+                    onClick={() => navigate('/ambassadorship')}
+                  >
+                    Become a Dawn Health Ambassador
+                  </Button>
+                </div>
               </Col>
               <Col
                 md={5}
@@ -101,7 +109,7 @@ const HomePage = () => {
                   ecosystem rather than merely sick patients.
                 </SectionHeader>
               </Col>
-              <Col md={12} className="mb-5">
+              <Col md={12} className="">
                 <Para className="wow animate__animated animate__fadeInLeft">
                   Discover a world where peace of mind and a sense of belonging
                   define your child's care experience. Through our innovative
@@ -119,7 +127,7 @@ const HomePage = () => {
                   care delivery, creating a brighter future where your child's
                   wellness takes center stage.
                 </Para>
-                <Para className="wow animate__animated animate__fadeInLeft pb-main">
+                <Para className="wow animate__animated animate__fadeInLeft">
                   Join us on this transformative journey, where we build a
                   foundation of health, happiness, and limitless possibilities
                   for your precious one(s). Together, let's embrace a new era of

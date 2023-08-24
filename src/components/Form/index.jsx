@@ -31,6 +31,19 @@ const childrenOptions = [
   { value: '5', label: '5' },
 ];
 
+const ambassadors = [
+  { value: 'Ilyas Yamani', label: 'Ilyas Yamani' },
+  { value: 'Jim Ciemny', label: 'Jim Ciemny' },
+  { value: 'Joseph Onyeizu', label: 'Joseph Onyeizu' },
+  { value: 'Kate Efsta', label: 'Kate Efsta' },
+  { value: 'Kevin Streeter', label: 'Kevin Streeter' },
+  { value: 'Lauren Fulkerson', label: 'Lauren Fulkerson' },
+  { value: 'Mara Bloom', label: 'Mara Bloom' },
+  { value: 'Panos Efsta', label: 'Panos Efsta' },
+  { value: 'Shani Reifschlager', label: 'Shani Reifschlager' },
+  { value: 'Zachary Fleming', label: 'Zachary Fleming' },
+];
+
 const insurences = [
   { value: 'aetna', label: 'Aetna' },
   {
@@ -62,8 +75,41 @@ const insurences = [
   { value: 'other', label: 'Other' },
 ];
 
+const hearAboutUsOptions = [
+  { value: 'At a Local Event', label: 'At a Local Event' },
+  { value: 'At My Church', label: 'At My Church' },
+  { value: 'By Seeing an Advertisement', label: 'By Seeing an Advertisement' },
+  { value: 'Through LinkedIn', label: 'Through LinkedIn' },
+  { value: 'On Instagram', label: 'On Instagram' },
+  {
+    value: 'Dawn Health Ambassador',
+    label: 'Dawn Health Ambassador',
+  },
+  {
+    value: 'From a Friend (Word-of-Mouth)',
+    label: 'From a Friend (Word-of-Mouth)',
+  },
+  {
+    value: 'From somebody at Dawn Health',
+    label: 'From somebody at Dawn Health',
+  },
+  { value: 'Reading Your Books', label: 'Reading Your Books' },
+  {
+    value: 'Recommendation from My Dentist',
+    label: 'Recommendation from My Dentist',
+  },
+  {
+    value: 'Recommendation from My Pediatrician',
+    label: 'Recommendation from My Pediatrician',
+  },
+  { value: 'Spotted Your Banner', label: 'Spotted Your Banner' },
+  { value: "Via My Kid's School", label: "Via My Kid's School" },
+];
+
 function Form() {
   const [numChildren, setNumChildren] = useState([]);
+  const [hearAbout, setHearAbout] = useState('');
+  const [ambassador, setAmbassador] = useState('');
   const [success, setSuccess] = useState(false);
   const [loading, setLoading] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -72,6 +118,10 @@ function Form() {
     const length = event.target.value;
     const arr = Array.from({ length }, (_, index) => index + 1);
     setNumChildren(arr);
+    console.log(arr);
+  };
+  const handleHearAboutChange = (event) => {
+    setHearAbout(event.target.value);
   };
 
   const [phoneNumber, setPhoneNumber] = useState('');
@@ -123,7 +173,6 @@ function Form() {
 
   const onSubmit = (data) => {
     sendEmail(data, reset);
-    // console.log(data);
   };
 
   return (
@@ -276,6 +325,7 @@ function Form() {
                   type="number"
                 />
               </Col>
+
               {/* <Col md={6} className="mb-4" key={child + 'B'}>
               <label>{`Child ${child} Phone Number`}</label>
               <Input
@@ -290,6 +340,48 @@ function Form() {
             </Col> */}
             </>
           ))}
+          <Col md={12} className="mb-4">
+            <label>How did you hear about us?</label>
+            <SelectWrapper
+              {...register('hearAboutUs', { required: true })}
+              placeholder="hearAboutUs"
+              onChange={handleHearAboutChange}
+            >
+              <OptionWrapper value="" disabled selected>
+                How did you hear about us?
+              </OptionWrapper>
+              {hearAboutUsOptions.map((option) => (
+                <OptionWrapper key={option.label} value={option.value}>
+                  {option.label}
+                </OptionWrapper>
+              ))}
+            </SelectWrapper>
+            {errors.hearAboutUs && hearAbout.length == 0 && (
+              <Error>This field is required</Error>
+            )}
+          </Col>
+          {hearAbout === 'Dawn Health Ambassador' && (
+            <Col md={12} className="mb-4">
+              <label>DawnHealth Ambassadors</label>
+              <SelectWrapper
+                {...register('ambassador', { required: true })}
+                placeholder="ambassador"
+                onChange={(e) => setAmbassador(e.target.value)}
+              >
+                <OptionWrapper value="" disabled selected>
+                  DawnHealth Ambassadors
+                </OptionWrapper>
+                {ambassadors.map((option) => (
+                  <OptionWrapper key={option.label} value={option.value}>
+                    {option.label}
+                  </OptionWrapper>
+                ))}
+              </SelectWrapper>
+              {errors.ambassador && ambassador.length == 0 && (
+                <Error>This field is required</Error>
+              )}
+            </Col>
+          )}
           <Col md={12} className="mb-4">
             <Checkbox
               register={register}

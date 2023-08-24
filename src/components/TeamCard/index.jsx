@@ -14,7 +14,6 @@ const TeamCard = (props) => {
     <TeamCardWrapper className={className}>
       <ImagesWrapper>
         <img src={src} alt={alt} />
-        {/* {lead && <img src={Mark} alt={alt} className="mark" />} */}
       </ImagesWrapper>
       <ContentWrapper>
         <Name>{name}</Name>

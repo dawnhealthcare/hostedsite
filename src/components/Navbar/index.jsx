@@ -22,6 +22,7 @@ export const Header = (props) => {
       links: [
         { id: 3, to: '/about', title: 'About Us' },
         { id: 5, to: '/team', title: 'Guiding Force' },
+        { id: 50, to: '/ambassadorship', title: 'Ambassadorship' },
         { id: 7, to: '/join-our-team', title: 'Join our Team' },
       ],
     },
