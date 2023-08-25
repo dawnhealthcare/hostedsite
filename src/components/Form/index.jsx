@@ -211,8 +211,21 @@ function Form() {
         <pre>First Name: {getValues().parentFirstName}</pre>
         <pre>Last Name: {getValues().parentLastName}</pre>
         <pre>Phone Number: {getValues().parentPhoneNumber}</pre>
-        <pre>Email: {getValues().email}</pre>
         <pre>State: {getValues().state}</pre>
+        <pre>Email: {getValues().email}</pre>
+        <pre>Number of children: {numChildren.length}</pre>
+
+        {numChildren?.map((child, index) => (
+          <div key={index}>
+            <pre>
+              {`Child ${child} Age`}: {getValues()[`child${child}Age`]}
+            </pre>
+          </div>
+        ))}
+        <pre>How did you hear about us?: {getValues().hearAboutUs}</pre>
+        {getValues().ambassador && (
+          <pre>Ambassador: {getValues().ambassador}</pre>
+        )}
       </AuthDialog>
       <form onSubmit={handleSubmit(onSubmit)}>
         <AuthDialog

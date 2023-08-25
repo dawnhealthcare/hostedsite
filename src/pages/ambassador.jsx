@@ -29,7 +29,7 @@ const Ambassador = () => {
               lg={6}
               className="wow animate__animated animate__fadeInLeft"
             >
-              <Heading main="Ambassador">
+              <Heading main="Ambassadorship">
                 Become a Dawn Health Ambassador
               </Heading>
               <Para hero>

@@ -98,8 +98,8 @@ function AmbassadorForm() {
         <pre>First Name: {getValues().firstName}</pre>
         <pre>Last Name: {getValues().lastName}</pre>
         <pre>Phone Number: {getValues().phoneNumber}</pre>
-        <pre>Email: {getValues().email}</pre>
         <pre>State: {getValues().state}</pre>
+        <pre>Email: {getValues().email}</pre>
       </AuthDialog>
       <form onSubmit={handleSubmit(onSubmit)}>
         <AuthDialog
