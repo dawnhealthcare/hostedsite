@@ -69,7 +69,7 @@ export const Header = (props) => {
                         <span
                           className={
                             navLink.links.some((item) => item.to === active)
-                              ? 'text-white'
+                              ? 'text-active-col'
                               : 'text-dropdown-col'
                           }
                         >
