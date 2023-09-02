@@ -53,7 +53,7 @@ const Footer = () => {
               <div className="mb-2">
                 <a
                   className="cursor-pointer text-white"
-                  href="mailto:panos@dawnhealth.care"
+                  href="mailto:support@dawnhealth.care"
                 >
                   Contact us
                 </a>
