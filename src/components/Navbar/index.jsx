@@ -66,7 +66,13 @@ export const Header = (props) => {
                       }}
                       show={menuOpen == navLink.id}
                       title={
-                        <span style={{ color: '#3a3a3a' }}>
+                        <span
+                          className={
+                            navLink.links.some((item) => item.to === active)
+                              ? 'text-white'
+                              : 'text-dropdown-col'
+                          }
+                        >
                           {navLink.title}
                         </span>
                       }
