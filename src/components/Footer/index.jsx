@@ -20,7 +20,7 @@ const Footer = () => {
                 future.
               </Para>
               <div className="mt-4 mb-4">
-                <a className="me-3" href="mailto:panos@dawnhealth.care">
+                <a className="me-3" href="mailto:support@dawnhealth.care">
                   <EmailIcon />
                 </a>
                 <a
