@@ -1,8 +1,6 @@
 import Team1 from './../assets/team/1.png';
 import Team2 from './../assets/team/2.png';
 import Team3 from './../assets/team/3.png';
-import Team4 from './../assets/team/4.png';
-import Team5 from './../assets/team/5.png';
 import Team6 from './../assets/team/6.png';
 import Team7 from './../assets/team/7.png';
 import Team9 from './../assets/team/9.png';
@@ -11,7 +9,6 @@ import Team100 from './../assets/team/12.png';
 import Team11 from './../assets/team/11.png';
 import Mem1 from './../assets/team/mem1.jpg';
 import Mem2 from './../assets/team/mem2.jpg';
-import Mem3 from './../assets/team/mem3.jpg';
 import Mem4 from './../assets/team/mem4.png';
 export const teamMembers = [
   {

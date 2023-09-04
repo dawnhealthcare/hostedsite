@@ -177,18 +177,6 @@ const Ambassador = () => {
                 are selected for an interview. We look forward to the
                 possibility of working together!
               </SectionHeader>
-              {/* <Para>
-                Investing in your child's mental well-being is an essential yet
-                manageable commitment. Our mental health network offers an
-                annual membership at $500 per child, along with $145 per
-                session. The total annual cost of $1,950 for 10 sessions
-                translates to a monthly fee of just $162.50. Think of it as
-                investing less than the price of a daily cup of coffee or a
-                monthly gym membership or cable bill. The value of nurturing
-                mental health is immeasurable, and this investment serves as a
-                foundation for your child's growth, happiness, and success. Join
-                us in taking this vital step toward a brighter future.
-              </Para> */}
               <AmbassadorForm />
             </Col>
           </Row>

@@ -11,6 +11,9 @@ export const NavbarWrapper = styled.div`
     .nav-link.active {
       color: #e8971e !important;
     }
+    .text-active-col {
+      color: rgb(232, 151, 30) !important;
+    }
   }
   .dropdown .nav-link.active {
     color: #e8971e !important;

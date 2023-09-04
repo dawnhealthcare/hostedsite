@@ -1,5 +1,4 @@
 import React from 'react';
-import Mark from './../../assets/team/mark.png';
 import {
   ContentWrapper,
   ImagesWrapper,
