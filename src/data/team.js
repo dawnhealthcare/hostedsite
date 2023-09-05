@@ -142,7 +142,7 @@ export const members = [
         {
           id: 100,
           name: 'Zachary Fleming',
-          status: 'Chief System Officer (FRACTIONAL)',
+          status: 'Chief Technology & Product Officer (FRACTIONAL)',
           src: Team100,
           alt: 'team',
           lead: true,
