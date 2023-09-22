@@ -16,7 +16,8 @@ import Main5 from './../assets/home/5.png';
 import Main6 from './../assets/home/6.png';
 import Main7 from './../assets/home/7.png';
 import Poem from './../assets/home/poem.png';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { why } from '../data/why';
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -103,14 +104,49 @@ const HomePage = () => {
                   className="wow animate__animated animate__fadeInLeft"
                   title="Why Dawn Health is Different"
                 >
-                  At Dawn Health, we are more than just healthcare providers; we
-                  are difference makers. We revolutionize the way we approach
-                  care by treating our clients as valued members of our wellness
-                  ecosystem rather than merely sick patients.
+                  Dawn Health: Where Care Meets Revolution
                 </SectionHeader>
+                <Para className="mb-2 fw-semibold wow animate__animated animate__fadeInLeft">
+                  Are You Ready for a Healthcare Odyssey?
+                </Para>
+                <Para className="mb-5 wow animate__animated animate__fadeInLeft">
+                  Parents, brace yourselves for a healthcare journey that will
+                  forever transform your perception of what medical care can be.
+                  This isn't just about doctor visits and prescriptions; this is
+                  about a life-altering voyage toward ultimate wellness for your
+                  little champions
+                </Para>
               </Col>
-              <Col md={12} className="">
-                <Para className="wow animate__animated animate__fadeInLeft">
+              {why.map((item) => (
+                <Col
+                  md={6}
+                  className="wow animate__animated animate__zoomIn"
+                  key={item.id}
+                >
+                  <ValueCard className="mb-4" title={item.title} sub={item.sub}>
+                    {item.description}
+                  </ValueCard>
+                </Col>
+              ))}
+              <Col
+                md={12}
+                className="text-center wow animate__animated animate__zoomIn"
+              >
+                <Para>
+                  There's a seat saved for you and your child in this incredible
+                  adventure. Together, let's awaken the extraordinary that waits
+                  within! 🌟
+                </Para>
+              </Col>
+              <Col
+                md={12}
+                className="text-center wow animate__animated animate__zoomIn"
+              >
+                <Para className="mt-3">
+                  <span className="fw-semibold">👇 Join Us Now 👇</span> <br />
+                  Become a <Link to="/signup">Dawn Health Member</Link> Today!
+                </Para>
+                {/* <Para className="wow animate__animated animate__fadeInLeft">
                   Discover a world where peace of mind and a sense of belonging
                   define your child's care experience. Through our innovative
                   primary and secondary interventions, we take a proactive
@@ -133,7 +169,7 @@ const HomePage = () => {
                   for your precious one(s). Together, let's embrace a new era of
                   care that celebrates their well-being and ignites their
                   extraordinary potential.
-                </Para>
+                </Para> */}
               </Col>
             </Row>
           </Container>

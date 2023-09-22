@@ -7,6 +7,7 @@ import { Hero, SectionWrapper, SignupPageWrapper } from '../styles';
 import Main from './../assets/signup/1.png';
 import Main2 from './../assets/signup/2.png';
 import Form from '../components/Form';
+import ValueCard from '../components/ValuesCard';
 
 const SignupPage = () => {
   return (
@@ -48,40 +49,55 @@ const SignupPage = () => {
             </Col>
             <Col lg={12} className="wow animate__animated animate__fadeInLeft">
               <Para>
-                HImagine the joy of giving your child a thriving future for just
+                Imagine the joy of giving your child a thriving future for just
                 $167.65 per month. That's less than a daily coffee or gym
                 membership! This modest investment includes:
               </Para>
-              <ul>
-                <li>
-                  Annual Subscription: $515.30 per child for continued support
-                  and connection.
-                </li>
-                <li>
-                  Session Costs: $149.65 each, the foundation of our
-                  collaborative care.
-                </li>
-                <li>
-                  Total Annual Investment: $2,011.80 for 10 life-changing
-                  sessions.
-                </li>
-                <li>
-                  Individualized Care Plans: Tailored therapy to meet your
-                  child's specific needs.
-                </li>
-              </ul>
+              <Row>
+                <Col md={12} lg={6}>
+                  <ValueCard className="mb-5" title="Annual Subscription">
+                    $499.00 per child, which allows us to offer you the
+                    innovative digital health tools and value-added services
+                    that make Dawn Health unique.
+                  </ValueCard>
+                </Col>
+                <Col md={12} lg={6}>
+                  <ValueCard
+                    className="mb-5"
+                    title="Therapy (Individual or Family) Session Cost"
+                  >
+                    $155.00 each, fostering collaborative care from a licensed
+                    counselor.
+                  </ValueCard>
+                </Col>
+                <Col md={12} lg={6}>
+                  <ValueCard
+                    className="mb-5"
+                    title="Health Coaching Session Cost"
+                  >
+                    $80.00 each for guidance and expertise from a
+                    board-certified health coach.
+                  </ValueCard>
+                </Col>
+                <Col md={12} lg={6}>
+                  <ValueCard className="mb-5" title="Individualized Care">
+                    Mental Health Resilience pathway tailored to your child's or
+                    your unique needs.
+                  </ValueCard>
+                </Col>
+              </Row>
               <Para>
-                The rewards of this thoughtful approach echo through every
-                aspect of your child's life. It's not about money; it's about
-                nurturing dreams and building futures.
+                Don't just wish for your child's success—make it happen. Join us
+                today to take a decisive step in nurturing their innate talents.
+                Together, we're not just offering therapy; we're shaping lives
               </Para>
-              <Para>
+              {/* <Para>
                 Don't merely hope for a bright tomorrow for your child—create
                 it. Join us today, and take the inspired step toward recognizing
                 your child's unique brilliance. Together, we're doing more than
                 providing therapy; we're igniting passions and sculpting
                 futures.
-              </Para>
+              </Para> */}
             </Col>
             <Col lg={12} className="wow animate__animated animate__fadeInLeft">
               <SectionHeader

@@ -8,7 +8,7 @@ import {
 } from './styles';
 
 const ValueCard = (props) => {
-  const { className, title, children, icon } = props;
+  const { className, title, children, icon, sub } = props;
   const Icon =
     icon == 1 ? (
       <HeartIcon />
@@ -21,8 +21,9 @@ const ValueCard = (props) => {
     );
   return (
     <ValueCardWrapper className={className}>
-      <IconWrapper>{Icon}</IconWrapper>
-      <TitleWrapper>{title}</TitleWrapper>
+      {icon && <IconWrapper>{Icon}</IconWrapper>}
+      <TitleWrapper className="text-center">{title}</TitleWrapper>
+      {sub && <p className="fw-semibold">{sub}</p>}
       <DescWrapper>{children}</DescWrapper>
     </ValueCardWrapper>
   );
