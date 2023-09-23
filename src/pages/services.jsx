@@ -3,7 +3,7 @@ import { Hero, SectionWrapper, ServicesPageWrapper } from '../styles';
 import { Col, Container, Row } from 'react-bootstrap';
 import Heading from '../components/Heading';
 import Para from '../components/Para';
-import Main from './../assets/services/main.png';
+import Main from './../assets/home/1.png';
 import Sun from './../assets/services/sun.png';
 import SubHeading from '../components/SubHeading';
 import { services } from '../data/services';
