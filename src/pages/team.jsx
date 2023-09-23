@@ -53,7 +53,7 @@ const TeamPage = () => {
         <Container>
           <Row>
             <Col className="wow animate__animated animate__fadeInLeft">
-              <SectionHeader className="pb-main" title="Guiding Force">
+              <SectionHeader className="pb-main" title="Our Leadership Team">
                 We are a team of parents who are experienced professionals from
                 diverse backgrounds, industries, professions, expertise, and
                 religions. Despite our differences, we share a common vision: to
@@ -89,6 +89,7 @@ const TeamPage = () => {
               <Col md={6} xl={3} className="mb-4" key={principal.title}>
                 <WellnessCard
                   title={principal.title}
+                  letter={principal.letter}
                   desc={principal.desc}
                   image={principal.image}
                 />

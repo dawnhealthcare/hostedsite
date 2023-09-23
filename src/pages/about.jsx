@@ -114,11 +114,7 @@ const AboutPage = () => {
             </Col>
           </Row>
           <Row className="mt-5">
-            <Col
-              lg={7}
-              xl={5}
-              className="wow animate__animated animate__fadeInLeft"
-            >
+            <Col lg={12} className="wow animate__animated animate__fadeInLeft">
               <SectionHeader className="pb-main" title="Our Proud Partners">
                 Collaborating to build a better future, our partners are the
                 cornerstone of our success. Together, we strive for excellence.

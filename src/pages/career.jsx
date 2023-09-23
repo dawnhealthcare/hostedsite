@@ -21,8 +21,8 @@ const CareerPage = () => {
     <CareerPageWrapper>
       <Hero>
         <Container>
-          <Row className="align-items-center h-100vh reverse">
-            <Col md={6} className="wow animate__animated animate__fadeInLeft">
+          <Row className="align-items-center h-100vh reverse gx-md-5">
+            <Col md={7} className="wow animate__animated animate__fadeInLeft">
               <Heading main="Unlock Your Potential ">
                 Join Our Team and Make your mark!
               </Heading>
@@ -35,7 +35,7 @@ const CareerPage = () => {
               </Para>
             </Col>
             <Col
-              md={6}
+              md={5}
               className="text-end wow animate__animated animate__fadeInRight"
             >
               <img

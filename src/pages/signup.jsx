@@ -97,12 +97,12 @@ const SignupPage = () => {
                 Embark on a Journey Toward Connection and Joy:
               </SectionHeader>
               <ul>
-                <li>
+                <li className="mb-2">
                   <strong>Enter Your Information Easily:</strong> Just fill out
                   the Sign Up section below. Our advanced system will quickly
                   send you a personalized registration link.
                 </li>
-                <li>
+                <li className="mb-2">
                   <strong>Create Your Profile in Minutes:</strong> In a mere 20
                   minutes, set up your profile, including a specially crafted
                   intake assessment, to understand your unique needs.

@@ -8,7 +8,7 @@ import { SectionHeader } from '../components/SectionHeader';
 import TestimonialCard from '../components/TestimonialCard';
 import ValueCard from '../components/ValuesCard';
 import { Card, Hero, HomePageWrapper, SectionWrapper, Title } from '../styles';
-import Main from './../assets/home/1.png';
+import Main from './../assets/services/main.png';
 import Main2 from './../assets/home/values.png';
 import Main3 from './../assets/home/3.png';
 import Main4 from './../assets/home/4.png';

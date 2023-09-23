@@ -69,6 +69,7 @@ const ServicesPage = () => {
                     key={service.title}
                   >
                     <WellnessCard
+                      bold
                       title={service.title}
                       key={service.id}
                       desc={service.desc}

@@ -29,9 +29,7 @@ const Ambassador = () => {
               lg={6}
               className="wow animate__animated animate__fadeInLeft"
             >
-              <Heading main="Ambassadorship">
-                Become a Dawn Health Ambassador
-              </Heading>
+              <Heading main="Ambassadorship">Spread the Word!</Heading>
               <Para hero>
                 Join a community of passionate parents dedicated to nurturing
                 well-being. Share the benefits of Dawn Health and make a
@@ -74,10 +72,7 @@ const Ambassador = () => {
           </Row>
           <Row className="align-items-center">
             <Col md={6} className="wow animate__animated animate__fadeInLeft">
-              <SectionHeader
-                className=""
-                title="Benefits of Becoming an Ambassador"
-              ></SectionHeader>
+              <SectionHeader className="" title="Benefits"></SectionHeader>
               <List className="pe-5">
                 <ListItem className="pb-3">
                   Provide exceptional care: support children and teens ages 9 to
@@ -112,10 +107,7 @@ const Ambassador = () => {
               <img src={Main3} className="img-fluid" alt="main image" />
             </Col>
             <Col md={6} className="wow animate__animated animate__fadeInRight">
-              <SectionHeader
-                className=""
-                title="Expectations from an Ambassador"
-              ></SectionHeader>
+              <SectionHeader className="" title="Expectations"></SectionHeader>
               <List className="pe-5">
                 <ListItem className="pb-3">
                   Spread the Word: Ambassadors are expected to actively promote
