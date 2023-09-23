@@ -40,19 +40,9 @@ const SignupPage = () => {
               <SectionHeader
                 className="pb-2"
                 title="Know Your Cost: Tailoring a Bright Future"
-              >
-                Unleash the boundless potential of your child's future. With our
-                mental health network, your annual $515.30 commitment per child
-                and $149.65 per session becomes a valuable investment in their
-                well-being, growth, and success.
-              </SectionHeader>
+              ></SectionHeader>
             </Col>
             <Col lg={12} className="wow animate__animated animate__fadeInLeft">
-              <Para>
-                Imagine the joy of giving your child a thriving future for just
-                $167.65 per month. That's less than a daily coffee or gym
-                membership! This modest investment includes:
-              </Para>
               <Row>
                 <Col md={12} lg={6}>
                   <ValueCard className="mb-5" title="Annual Subscription">

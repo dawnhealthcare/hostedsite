@@ -102,10 +102,8 @@ const HomePage = () => {
               <Col lg={12}>
                 <SectionHeader
                   className="wow animate__animated animate__fadeInLeft"
-                  title="Why Dawn Health is Different"
-                >
-                  Dawn Health: Where Care Meets Revolution
-                </SectionHeader>
+                  title="Dawn Health: Where Care Meets Revolution"
+                ></SectionHeader>
                 <Para className="mb-2 fw-semibold wow animate__animated animate__fadeInLeft">
                   Are You Ready for a Healthcare Odyssey?
                 </Para>
@@ -142,10 +140,9 @@ const HomePage = () => {
                 md={12}
                 className="text-center wow animate__animated animate__zoomIn"
               >
-                <Para className="mt-3">
-                  <span className="fw-semibold">👇 Join Us Now 👇</span> <br />
-                  Become a <Link to="/signup">Dawn Health Member</Link> Today!
-                </Para>
+                <Button className="mb-1" onClick={() => navigate('/signup')}>
+                  Parents Click Here
+                </Button>
                 {/* <Para className="wow animate__animated animate__fadeInLeft">
                   Discover a world where peace of mind and a sense of belonging
                   define your child's care experience. Through our innovative
@@ -178,7 +175,7 @@ const HomePage = () => {
         <SectionWrapper>
           <Container>
             <Row>
-              <Col xl={7} xxl={5}>
+              <Col xl={12} xxl={12}>
                 <SectionHeader
                   className="wow animate__animated animate__fadeInLeft"
                   title="Our Wellness Programs"

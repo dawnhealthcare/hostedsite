@@ -64,9 +64,9 @@ const CareerPage = () => {
             <Col lg={6} className="wow animate__animated animate__fadeInLeft">
               <SectionHeader className="" title="About The Role">
                 Our clinical team members collaborate with other phenomenal
-                behavioral health therapists and coaches, as well as our Chief
-                Care and Chief Clinical Excellence Officers, to support our
-                members through our services. Our Behavioral Therapists:
+                behavioral therapists, health coaches, as well as our Chief Care
+                Officer, to support our members through our services. Our
+                Part-Time Behavioral Therapists:
               </SectionHeader>
               <List className="pe-5">
                 <ListItem className="pb-3">
@@ -80,19 +80,11 @@ const CareerPage = () => {
                 </ListItem>
                 <ListItem className="pb-3">
                   Support all aspects of each child or teen's treatment by
-                  collaborating with other care team members at Dawn Health ,
+                  collaborating with other care team members at Dawn Health,
                   their school, household, and in the community. Document your
                   work, including session notes, care plans, and ongoing
                   progress, with high levels of accuracy and timeliness in our
                   electronic health record.
-                </ListItem>
-                <ListItem className="pb-3">
-                  Acquire new state licenses (with support!) to support families
-                  in multiple states as we grow nationwide.
-                </ListItem>
-                <ListItem className="pb-3">
-                  Support other teams as needed, including with recruitment or
-                  content development.
                 </ListItem>
                 <ListItem className="pb-3">
                   Engage in opportunities to further your knowledge of CBT and
@@ -107,8 +99,8 @@ const CareerPage = () => {
                   needed.
                 </ListItem>
                 <ListItem className="pb-3">
-                  Participate in training on CBT or other professional
-                  development topics.
+                  Provide availability weekly from 4 PM to 8 PM and during
+                  Saturdays 9 AM to 6 PM (CST).
                 </ListItem>
               </List>
             </Col>
@@ -137,13 +129,12 @@ const CareerPage = () => {
                   children and their families.
                 </ListItem>
                 <ListItem className="pb-3">
-                  3 years of experience practicing independently as an LMFT,
-                  LCSW, LPC, or LMHC without supervision.
+                  3 years of experience practicing independently as a Psy.D,
+                  LMFT, LCSW, LPC, or LMHC without supervision.
                 </ListItem>
                 <ListItem className="pb-3">
                   Expertise in delivering child and teen-focused CBT,
-                  particularly for anxiety, depression, and disruptive behavior
-                  disorders
+                  particularly for anxiety and depression.
                 </ListItem>
                 <ListItem className="pb-3">
                   Experience in family-centered care models and a warm, engaging
@@ -184,42 +175,10 @@ const CareerPage = () => {
                   like-minded peers.
                 </ListItem>
                 <ListItem className="pb-3">
-                  And for Full-Time [W2] Opportunities:
-                  <List className="mt-3">
-                    <ListItem className="pb-3">
-                      Competitive compensation packages.
-                    </ListItem>
-                    <ListItem className="pb-3">
-                      Medical, dental, and vision insurance.
-                    </ListItem>
-                    <ListItem className="pb-3">
-                      Generous paid time off - including holidays, sick leave,
-                      and vacation.
-                    </ListItem>
-                    <ListItem className="pb-3">
-                      Licensing fees and cross-licensing reimbursement.
-                    </ListItem>
-                    <ListItem className="pb-3">
-                      Malpractice liability insurance.
-                    </ListItem>
-                    <ListItem className="pb-3">Home office equipment.</ListItem>
-                    <ListItem className="pb-3">
-                      Internet & phone stipend.
-                    </ListItem>
-                  </List>
+                  Competitive compensation packages.
                 </ListItem>
-
                 <ListItem className="pb-3">
-                  And for Contracting [1099] Opportunities:
-                  <List className="mt-3">
-                    <ListItem className="pb-3">
-                      Reimbursement up to $85 per session, dependent on
-                      licensure, skillset, and capacity.
-                    </ListItem>
-                    <ListItem className="pb-3">
-                      Malpractice liability insurance.
-                    </ListItem>
-                  </List>
+                  Malpractice liability insurance.
                 </ListItem>
               </List>
             </Col>

@@ -112,7 +112,7 @@ const InvestorsPage = () => {
       <SectionWrapper>
         <Container>
           <Row>
-            <Col lg={6}>
+            <Col lg={12}>
               <SectionHeader
                 className="wow animate__animated animate__fadeInLeft pb-main"
                 title="School Board Members Survey"

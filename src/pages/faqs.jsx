@@ -32,7 +32,7 @@ const FaqPage = () => {
       <SectionWrapper>
         <Container>
           <Row>
-            <Col lg={5} className="wow animate__animated animate__fadeInLeft">
+            <Col lg={12} className="wow animate__animated animate__fadeInLeft">
               <SectionHeader className="pb-main" title="FAQs">
                 Expertly Crafted Answers to Your Mental Wellness Related
                 Questions
