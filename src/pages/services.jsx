@@ -6,11 +6,12 @@ import Para from '../components/Para';
 import Main from './../assets/home/1.png';
 import Sun from './../assets/services/sun.png';
 import SubHeading from '../components/SubHeading';
-import { services } from '../data/services';
+import { services, therapy } from '../data/services';
 import WellnessCard from '../components/WellnessCard';
 import ValueCard from '../components/ValuesCard';
 import Button from '../components/Button';
 import { useNavigate } from 'react-router-dom';
+import { SectionHeader } from '../components/SectionHeader';
 
 const ServicesPage = () => {
   const navigate = useNavigate();
@@ -108,6 +109,30 @@ const ServicesPage = () => {
       </SectionWrapper>
       <SectionWrapper>
         <Container>
+          <Row>
+            <Col lg={12} className="mb-3">
+              <SectionHeader
+                className="wow animate__animated animate__fadeInLeft"
+                title="Nurturing Your Family's Growth: The Power of Therapy and Health Coaching"
+              ></SectionHeader>
+            </Col>
+          </Row>
+          <Row className="g-4 mb-5">
+            {therapy.map((item) => (
+              <Col
+                md={6}
+                className="wow animate__animated animate__zoomIn"
+                key={item.id}
+              >
+                <ValueCard
+                  className="mb-4 h-100 justify-content-start pt-5"
+                  title={item.title}
+                >
+                  {item.description}
+                </ValueCard>
+              </Col>
+            ))}
+          </Row>
           <Row className="align-items-center pb-main">
             <Col
               lg={{ span: 10, offset: 1 }}

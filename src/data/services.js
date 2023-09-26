@@ -79,3 +79,30 @@ export const services = [
     image: img4,
   },
 ];
+
+export const therapy = [
+  {
+    id: 90001,
+    title: "🌱 Therapy: Your Family's Emotional Gardener",
+    description:
+      "Imagine a seasoned gardener delicately examining the roots and leaves of your family's emotional well-being. That's what therapists do—dig deep into the intricacies of mental health, providing a safe space to navigate life's complexities. From understanding social anxieties to conquering emotional hurdles, a therapist helps your child become resilient against life's storms. When you invest in therapy, you're fortifying your family's emotional backbone, allowing your child to blossom in confidence and joy.",
+  },
+  {
+    id: 90002,
+    title: "🌞 Health Coaching: Your Family's Daily Sunshine",
+    description:
+      "Picture a knowledgeable friend guiding you through the day-to-day aspects of wellness—nutrition, exercise, and daily habits. That's what health coaching offers. Health coaches are like your family's personal cheerleaders, setting achievable goals and cheering you on every step of the way. From meal plans to exercise routines, a health coach helps lay the foundation for a vibrant, energetic life.",
+  },
+  {
+    id: 90003,
+    title: '🌻 Why Choose One When Your Family Deserves Both?',
+    description:
+      'Both therapy and health coaching offer indispensable tools for any family striving to live their best lives. While therapy nurtures the emotional and psychological aspects, health coaching optimizes the day-to-day, physical wellbeing. Your family is an intricate garden deserving of both deep-rooted care and daily sunshine.',
+  },
+  {
+    id: 90004,
+    title: "🌟 Invest in Your Family's Future",
+    description:
+      "The seeds you sow today will reap benefits for years to come. By investing in our mental health resilience pathway, you're not just nurturing your child—you're setting the stage for your entire family to thrive. Make the wise choice today because every child deserves a life that's not just lived but lived well.",
+  },
+];
