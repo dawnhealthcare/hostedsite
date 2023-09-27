@@ -3,10 +3,15 @@ import { Col, Container, Row } from 'react-bootstrap';
 import { Hero } from '../styles';
 import SubHeading from '../components/SubHeading';
 import Para from '../components/Para';
+import { Helmet } from 'react-helmet';
 
 const TermsAndConitionsPage = () => {
   return (
     <>
+      <Helmet>
+        <title>Terms and Conditions - Dawn Health</title>
+        <meta name="description" content="Dawn Health Terms and Conditions" />
+      </Helmet>
       <Hero className="terms">
         <Container>
           <Row>

@@ -40,13 +40,6 @@ function App() {
   }, [params]);
   return (
     <>
-      <Helmet>
-        <title>Home - Dawn Health</title>
-        <meta
-          name="google-site-verification"
-          content="jzxl6E0gof9UpFENaUAIXDR5rmRSauIhtFRW393jHYY"
-        />
-      </Helmet>
       <div className="App">
         <Header
           className={`${height > 50 || width < 990 ? 'effix' : ''} ${
@@ -59,7 +52,7 @@ function App() {
           <Routes>
             <Route exact path="/" element={<HomePage />}></Route>
             <Route exact path="/team" element={<TeamPage />}></Route>
-            <Route exact path="/about" element={<AboutPage />}></Route>
+            <Route exact path="/about-us" element={<AboutPage />}></Route>
             <Route exact path="/faqs" element={<FaqPage />}></Route>
             <Route exact path="/join-our-team" element={<CareerPage />}></Route>
             <Route exact path="/signup" element={<SignupPage />}></Route>

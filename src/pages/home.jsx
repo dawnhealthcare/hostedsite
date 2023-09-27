@@ -18,11 +18,19 @@ import Main7 from './../assets/home/7.png';
 import Poem from './../assets/home/poem.png';
 import { Link, useNavigate } from 'react-router-dom';
 import { why } from '../data/why';
+import { Helmet } from 'react-helmet';
 
 const HomePage = () => {
   const navigate = useNavigate();
   return (
     <>
+      <Helmet>
+        <title>Home - Virtual Mental Health Care - Dawn Health</title>
+        <meta
+          name="description"
+          content="Dawn Health prioritizes preventive wellness. We empower adolescents, guide parents, and nurture resilience by proactively managing mental health through innovative approaches. Join us in empowering the next generation to thrive."
+        />
+      </Helmet>
       <HomePageWrapper>
         <Hero>
           <Container>
@@ -41,9 +49,10 @@ const HomePage = () => {
                 </Heading>
                 <Para hero>
                   Dawn Health prioritizes preventive wellness. We empower
-                  parents, nurture resilience, and proactively manage mental
-                  health through innovative approaches. Join us in empowering
-                  the next generation to thrive.
+                  adolescents, guide parents, and nurture resilience by
+                  proactively managing mental health through innovative
+                  approaches. Join us in empowering the next generation to
+                  thrive.
                 </Para>
                 <div className="d-flex gap-3 mt-4 flex-wrap flex-sm-nowrap">
                   <Button
