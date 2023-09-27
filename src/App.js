@@ -22,6 +22,7 @@ import AllBlogsPage from './pages/allBlogs';
 import BlogPage from './pages/blog';
 import ResourcesPage from './pages/resources';
 import Ambassador from './pages/ambassador';
+import { Helmet } from 'react-helmet';
 
 emailjs.init('WrJDyDO12oscyG2nU');
 function App() {
@@ -38,51 +39,64 @@ function App() {
     setActive(params.pathname);
   }, [params]);
   return (
-    <div className="App">
-      <Header
-        className={`${height > 50 || width < 990 ? 'effix' : ''} ${
-          isBlogPage && 'bg-white'
-        }`}
-        active={active}
-        setActive={setActive}
-      />
-      <Body>
-        <Routes>
-          <Route exact path="/" element={<HomePage />}></Route>
-          <Route exact path="/team" element={<TeamPage />}></Route>
-          <Route exact path="/about" element={<AboutPage />}></Route>
-          <Route exact path="/faqs" element={<FaqPage />}></Route>
-          <Route exact path="/join-our-team" element={<CareerPage />}></Route>
-          <Route exact path="/signup" element={<SignupPage />}></Route>
-          <Route exact path="/services" element={<ServicesPage />}></Route>
-          <Route exact path="/blog" element={<AllBlogsPage />}></Route>
-          <Route exact path="/resources" element={<ResourcesPage />}></Route>
-          <Route exact path="/ambassadorship" element={<Ambassador />}></Route>
-          <Route
-            exact
-            path="/blog/:slug"
-            element={<BlogPage setIsBlogPage={setIsBlogPage} />}
-          ></Route>
-          <Route exact path="*" element={<ErrorPage />}></Route>
-          {/* <Route
+    <>
+      <Helmet>
+        <title>Home - Dawn Health</title>
+        <meta
+          name="google-site-verification"
+          content="MUzhURRO1S3WZus6Xb82Hrj8FvGBDey_v_tVrpjiGiQ"
+        />
+      </Helmet>
+      <div className="App">
+        <Header
+          className={`${height > 50 || width < 990 ? 'effix' : ''} ${
+            isBlogPage && 'bg-white'
+          }`}
+          active={active}
+          setActive={setActive}
+        />
+        <Body>
+          <Routes>
+            <Route exact path="/" element={<HomePage />}></Route>
+            <Route exact path="/team" element={<TeamPage />}></Route>
+            <Route exact path="/about" element={<AboutPage />}></Route>
+            <Route exact path="/faqs" element={<FaqPage />}></Route>
+            <Route exact path="/join-our-team" element={<CareerPage />}></Route>
+            <Route exact path="/signup" element={<SignupPage />}></Route>
+            <Route exact path="/services" element={<ServicesPage />}></Route>
+            <Route exact path="/blog" element={<AllBlogsPage />}></Route>
+            <Route exact path="/resources" element={<ResourcesPage />}></Route>
+            <Route
+              exact
+              path="/ambassadorship"
+              element={<Ambassador />}
+            ></Route>
+            <Route
+              exact
+              path="/blog/:slug"
+              element={<BlogPage setIsBlogPage={setIsBlogPage} />}
+            ></Route>
+            <Route exact path="*" element={<ErrorPage />}></Route>
+            {/* <Route
             exact
             path="/become-an-investor"
             element={<BecomeInvestor />}
           ></Route> */}
-          <Route
-            exact
-            path="/investor-relations"
-            element={<ProtectedInvestorPage />}
-          ></Route>
-          <Route
-            exact
-            path="/terms-and-conditions"
-            element={<TermsAndConitionsPage />}
-          ></Route>
-        </Routes>
-      </Body>
-      <Footer />
-    </div>
+            <Route
+              exact
+              path="/investor-relations"
+              element={<ProtectedInvestorPage />}
+            ></Route>
+            <Route
+              exact
+              path="/terms-and-conditions"
+              element={<TermsAndConitionsPage />}
+            ></Route>
+          </Routes>
+        </Body>
+        <Footer />
+      </div>
+    </>
   );
 }
 
