@@ -77,7 +77,11 @@ const HomePage = () => {
                 md={5}
                 className="text-end wow animate__animated animate__fadeInRight"
               >
-                <img src={Main} className="img-fluid main-image" alt="main" />
+                <img
+                  src={Main}
+                  className="img-fluid main-image"
+                  alt="Virtual Mental Health Care - Dawn Health"
+                />
               </Col>
             </Row>
           </Container>
@@ -221,7 +225,11 @@ const HomePage = () => {
                 <Row className="wellness-inner">
                   <Col xl={3}>
                     <Card>
-                      <img src={Main4} className="img-fluid mb-3" alt="main" />
+                      <img
+                        src={Main4}
+                        className="img-fluid mb-3"
+                        alt="Virtual Mental Health Care - Dawn Health"
+                      />
                       <Title>
                         Biweekly Evidence-Based Assessment for Depression &
                         Anxiety
@@ -252,7 +260,7 @@ const HomePage = () => {
                           <img
                             src={Main5}
                             className="img-fluid mb-3"
-                            alt="main"
+                            alt="Virtual Mental Health Care - Dawn Health"
                           />
                           <Title className="text-white">
                             Continuous Data Assessment
@@ -287,7 +295,7 @@ const HomePage = () => {
                           <img
                             src={Main6}
                             className="img-fluid mb-3"
-                            alt="main"
+                            alt="Virtual Mental Health Care - Dawn Health"
                           />
                           <Title className="text-white">
                             Virtual & Prompt Care
@@ -320,7 +328,11 @@ const HomePage = () => {
                   </Col>
                   <Col xl={3}>
                     <Card className="last-card">
-                      <img src={Main7} className="img-fluid mb-3" alt="main" />
+                      <img
+                        src={Main7}
+                        className="img-fluid mb-3"
+                        alt="Virtual Mental Health Care - Dawn Health"
+                      />
                       <Title>Partnering with Parents/Guardians</Title>
                       {/* <Para>
                         Partnering together to promote student engagement,
@@ -367,7 +379,11 @@ const HomePage = () => {
                 xl={6}
                 className="wow animate__animated animate__slideInLeft text-center"
               >
-                <img src={Main2} className="img-fluid mb-5" alt="main" />
+                <img
+                  src={Main2}
+                  className="img-fluid mb-5"
+                  alt="Virtual Mental Health Care - Dawn Health"
+                />
               </Col>
               <Col
                 xl={6}
@@ -417,7 +433,11 @@ const HomePage = () => {
                 lg={6}
                 className="wow animate__animated animate__slideInLeft"
               >
-                <img src={Main3} className="img-fluid mb-5" alt="main" />
+                <img
+                  src={Main3}
+                  className="img-fluid mb-5"
+                  alt="Virtual Mental Health Care - Dawn Health"
+                />
               </Col>
               <Col lg={1}></Col>
               <Col
@@ -458,7 +478,11 @@ const HomePage = () => {
           <Container>
             <Row className="d-flex justify-content-center pb-main">
               <Col lg={{ span: 5 }}>
-                <img src={Poem} className="img-fluid" alt="main" />
+                <img
+                  src={Poem}
+                  className="img-fluid"
+                  alt="Virtual Mental Health Care - Dawn Health"
+                />
               </Col>
             </Row>
           </Container>
