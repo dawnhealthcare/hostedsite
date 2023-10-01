@@ -30,6 +30,10 @@ const HomePage = () => {
           name="description"
           content="Dawn Health prioritizes preventive wellness. We empower adolescents, guide parents, and nurture resilience by proactively managing mental health through innovative approaches. Join us in empowering the next generation to thrive."
         />
+        <meta
+          name="keywords"
+          content="adolescent mental health, preventive wellness, mental health care, resilience building, wellness programs, evidence-based assessment, virtual mental health care, parent-child partnership, mental health support, proactive care pathways, adolescent well-being, healthcare for adolescents, mental health interventions, early intervention programs, virtual therapy, adolescent counseling, mental health resources, student engagement, absenteeism reduction, promoting mental well-being, dawnhealth, dawn health, dawn health care, dawnhealthcare"
+        />
       </Helmet>
       <HomePageWrapper>
         <Hero>
