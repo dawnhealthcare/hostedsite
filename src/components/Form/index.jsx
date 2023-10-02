@@ -142,20 +142,23 @@ function Form() {
   });
 
   useEffect(() => {
-    const childCost = 499;
-    let discountRate = 1.0;
-
-    if (numChildren.length === 2) {
-      discountRate = 0.9; // 90% of the total cost
+    if (numChildren.length === 0) {
+      setCost(0);
+    } else if (numChildren.length === 1) {
+      setCost(499);
+    } else if (numChildren.length === 2) {
+      setCost(948.1);
     } else if (numChildren.length === 3) {
-      discountRate = 0.8; // 80% of the total cost
-    } else if (numChildren.length >= 4) {
-      discountRate = 0.7; // 70% of the total cost
+      setCost(1347.3);
+    } else if (numChildren.length === 4) {
+      setCost(1696.6);
+    } else if (numChildren.length === 5) {
+      setCost(2045.9);
+    } else if (numChildren.length === 6) {
+      setCost(2395.2);
+    } else if (numChildren.length === 7) {
+      setCost(2744.5);
     }
-
-    // Calculate the total cost
-    const totalCost = numChildren.length * childCost * discountRate;
-    setCost(totalCost);
   }, [numChildren.length]);
 
   const hasInsurance = watch('hasInsurance');
