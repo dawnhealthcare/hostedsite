@@ -63,7 +63,8 @@ const SignupPage = () => {
                 <Row>
                   <Col md={12} lg={6}>
                     <ValueCard className="mb-5" title="Annual Subscription">
-                      $499.00 per child, which allows us to offer you the
+                      $499.00 for the 1st child and 10% off for each child after
+                      that [with max 30%], which allows us to offer you the
                       innovative digital health tools and value-added services
                       that make Dawn Health unique.
                     </ValueCard>

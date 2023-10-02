@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { Error } from '../Input/styles';
 import { Alert, Col, Row } from 'react-bootstrap';
@@ -29,6 +29,8 @@ const childrenOptions = [
   { value: '3', label: '3' },
   { value: '4', label: '4' },
   { value: '5', label: '5' },
+  { value: '6', label: '6' },
+  { value: '7', label: '7' },
 ];
 
 const ambassadors = [
@@ -115,6 +117,7 @@ function Form() {
   const [isOpen, setIsOpen] = useState(false);
   const [isStatusOpen, setIsStatusOpen] = useState(false);
   const [error, setError] = useState('');
+  const [cost, setCost] = useState(0);
   const handleNumChildrenChange = (event) => {
     const length = event.target.value;
     const arr = Array.from({ length }, (_, index) => index + 1);
@@ -137,6 +140,23 @@ function Form() {
   } = useForm({
     mode: 'onBlur',
   });
+
+  useEffect(() => {
+    const childCost = 499;
+    let discountRate = 1.0;
+
+    if (numChildren.length === 2) {
+      discountRate = 0.9; // 90% of the total cost
+    } else if (numChildren.length === 3) {
+      discountRate = 0.8; // 80% of the total cost
+    } else if (numChildren.length >= 4) {
+      discountRate = 0.7; // 70% of the total cost
+    }
+
+    // Calculate the total cost
+    const totalCost = numChildren.length * childCost * discountRate;
+    setCost(totalCost);
+  }, [numChildren.length]);
 
   const hasInsurance = watch('hasInsurance');
   const insurance = watch('insurance');
@@ -541,8 +561,7 @@ function Form() {
       )} */}
         <div className="">
           <strong>
-            Your estimated annual subscription cost: $
-            {(numChildren.length * 515.3 || 0).toFixed(2)}
+            Your estimated annual subscription cost: ${cost.toFixed(2)}
           </strong>
         </div>
         <Button disabled={loading} className="mt-4" type="submit">
