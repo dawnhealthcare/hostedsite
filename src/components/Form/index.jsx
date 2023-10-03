@@ -142,23 +142,12 @@ function Form() {
   });
 
   useEffect(() => {
-    if (numChildren.length === 0) {
-      setCost(0);
-    } else if (numChildren.length === 1) {
-      setCost(499);
-    } else if (numChildren.length === 2) {
-      setCost(948.1);
-    } else if (numChildren.length === 3) {
-      setCost(1347.3);
-    } else if (numChildren.length === 4) {
-      setCost(1696.6);
-    } else if (numChildren.length === 5) {
-      setCost(2045.9);
-    } else if (numChildren.length === 6) {
-      setCost(2395.2);
-    } else if (numChildren.length === 7) {
-      setCost(2744.5);
-    }
+    const firstChildCost = 499;
+    const additionalChildCost = 249;
+
+    const totalCost =
+      firstChildCost + (numChildren.length - 1) * additionalChildCost;
+    setCost(totalCost);
   }, [numChildren.length]);
 
   const hasInsurance = watch('hasInsurance');
