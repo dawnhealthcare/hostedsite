@@ -167,6 +167,7 @@ function Form() {
       form_data: result,
       title: 'Member Info',
     };
+
     emailjs
       .send('service_mo2rzyj', 'template_azf34qd', templateParams)
       .then((response) => {
@@ -196,6 +197,7 @@ function Form() {
       hearAboutUs,
       numOfChildern,
       confirmData,
+      city,
       ambassador,
       ...rest
     } = data;
@@ -205,11 +207,17 @@ function Form() {
       parentPhoneNumber,
       email,
       state,
+      city,
       numOfChildern,
       ...rest,
       howDidYouHearAboutUs: hearAboutUs,
-      ambassador,
+      ambassador: ambassador,
     };
+
+    if (ambassador === undefined) {
+      delete res.ambassador;
+    }
+
     sendEmail(res, reset);
   };
 
@@ -224,6 +232,7 @@ function Form() {
         <pre>Last Name: {getValues().parentLastName}</pre>
         <pre>Phone Number: {getValues().parentPhoneNumber}</pre>
         <pre>State: {getValues().state}</pre>
+        <pre>City: {getValues().city}</pre>
         <pre>Email: {getValues().email}</pre>
         <pre>Number of children: {numChildren.length}</pre>
 
@@ -332,6 +341,16 @@ function Form() {
               ))}
             </SelectWrapper>
             {errors.state && <Error>This field is required</Error>}
+          </Col>
+          <Col md={12} className="mb-4">
+            <label>City</label>
+            <Input
+              register={register}
+              name="city"
+              placeholder="City"
+              validation={{ required: true }}
+              errors={errors}
+            />
           </Col>
         </Row>
         <Row>
