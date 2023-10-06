@@ -124,7 +124,6 @@ function Form() {
     setNumChildren(arr);
   };
   const handleHearAboutChange = (event) => {
-    // setAmbassador(event.target.value);
     setHearAbout(event.target.value);
   };
 
@@ -141,17 +140,24 @@ function Form() {
     mode: 'onBlur',
   });
 
+  const promocode = watch('code');
   useEffect(() => {
-    const firstChildCost = 499;
+    let firstChildCost;
+    if (promocode === 'DH23') {
+      firstChildCost = 499 / 2;
+    } else {
+      firstChildCost = 499;
+    }
     const additionalChildCost = 249;
 
     const totalCost =
       firstChildCost + (numChildren.length - 1) * additionalChildCost;
-    setCost(totalCost);
-  }, [numChildren.length]);
-
-  const hasInsurance = watch('hasInsurance');
-  const insurance = watch('insurance');
+    if (numChildren.length <= 0) {
+      setCost(0);
+    } else {
+      setCost(totalCost);
+    }
+  }, [numChildren, promocode]);
 
   const sendEmail = (data, reset) => {
     setLoading(true);
@@ -199,6 +205,7 @@ function Form() {
       confirmData,
       city,
       ambassador,
+      code,
       ...rest
     } = data;
     const res = {
@@ -290,7 +297,7 @@ function Form() {
               register={register}
               name="parentFirstName"
               placeholder="Parent's First Name"
-              validation={{ required: true }}
+              validation={{ required: 'First name is required' }}
               errors={errors}
             />
           </Col>
@@ -300,7 +307,7 @@ function Form() {
               register={register}
               name="parentLastName"
               placeholder="Parent's Last Name"
-              validation={{ required: true }}
+              validation={{ required: 'Last name is required' }}
               errors={errors}
             />
           </Col>
@@ -340,15 +347,25 @@ function Form() {
                 </OptionWrapper>
               ))}
             </SelectWrapper>
-            {errors.state && <Error>This field is required</Error>}
+            {errors.state && <Error>State is required</Error>}
           </Col>
-          <Col md={12} className="mb-4">
+          <Col md={6} className="mb-4">
             <label>City</label>
             <Input
               register={register}
               name="city"
               placeholder="City"
-              validation={{ required: true }}
+              validation={{ required: 'City is required' }}
+              errors={errors}
+            />
+          </Col>
+          <Col md={6} className="mb-4">
+            <label>CODE</label>
+            <Input
+              register={register}
+              name="code"
+              placeholder="Promo code"
+              validation={{ required: false }}
               errors={errors}
             />
           </Col>
@@ -360,7 +377,13 @@ function Form() {
               register={register}
               name="email"
               placeholder="Email Address"
-              validation={{ required: true }}
+              validation={{
+                required: 'Email is required',
+                pattern: {
+                  value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
+                  message: 'Invalid email address',
+                },
+              }}
               errors={errors}
             />
           </Col>
@@ -381,7 +404,7 @@ function Form() {
               ))}
             </SelectWrapper>
             {errors.numOfChildern && numChildren.length == 0 && (
-              <Error>This field is required</Error>
+              <Error>Children field is required</Error>
             )}
           </Col>
         </Row>
@@ -394,7 +417,7 @@ function Form() {
                   register={register}
                   name={`child${child}Age`}
                   placeholder={`Child ${child} Age`}
-                  validation={{ required: true }}
+                  validation={{ required: 'Age is required' }}
                   errors={errors}
                   type="number"
                 />
@@ -431,7 +454,7 @@ function Form() {
               ))}
             </SelectWrapper>
             {errors.hearAboutUs && hearAbout.length == 0 && (
-              <Error>This field is required</Error>
+              <Error>Required field</Error>
             )}
           </Col>
           {hearAbout === 'Dawn Health Ambassador' && (
@@ -452,7 +475,7 @@ function Form() {
                 ))}
               </SelectWrapper>
               {errors.ambassador && ambassador.length == 0 && (
-                <Error>This field is required</Error>
+                <Error>Required field</Error>
               )}
             </Col>
           )}

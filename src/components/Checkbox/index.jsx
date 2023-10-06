@@ -25,7 +25,7 @@ const Checkbox = ({
       </label>
       {errors[name]?.type === 'required' && !isOpen && (
         <Error role="alert" className="mb-0">
-          {errors[name] && <span>Required</span>}
+          {errors[name] && <span>Required field</span>}
         </Error>
       )}
     </>

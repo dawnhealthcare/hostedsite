@@ -89,7 +89,7 @@ export const therapy = [
   },
   {
     id: 90002,
-    title: "🌞 Health Coaching: Your Family's Daily Sunshine",
+    title: "🌞 Health & Wellness Coaching: Your Family's Daily Sunshine",
     description:
       "Picture a knowledgeable friend guiding you through the day-to-day aspects of wellness—nutrition, exercise, and daily habits. That's what health coaching offers. Health coaches are like your family's personal cheerleaders, setting achievable goals and cheering you on every step of the way. From meal plans to exercise routines, a health coach helps lay the foundation for a vibrant, energetic life.",
   },

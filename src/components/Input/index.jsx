@@ -24,9 +24,14 @@ const Input = (props) => {
         {...register(name, validation)}
         {...rest}
       />
-      {errors[name]?.type === 'required' && (
+      {/* {errors[name]?.type === 'required' && (
         <Error role="alert" className="mb-0">
           {errors[name] && <span>This field is required</span>}
+        </Error>
+      )} */}
+      {errors[name] && (
+        <Error role="alert" className="mb-0">
+          {errors[name].message}
         </Error>
       )}
     </>

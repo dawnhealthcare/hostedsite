@@ -15,13 +15,6 @@ export const teamMembers = [
   //   id: 223344,
   //   title: 'Clinical Excellence Advisory Team',
   //   members: [
-  //     {
-  //       id: 7,
-  //       name: 'Lauren Fulkerson, MD',
-  //       status: 'PEDIATRICS. PARENTING, & HEALTH COACHING ADVISOR',
-  //       src: Team9,
-  //       alt: 'team',
-  //     },
 
   // {
   //   id: 9,
@@ -71,7 +64,7 @@ export const members = [
         {
           id: 1,
           name: 'Panos Efsta, MBA, MS',
-          status: 'Founder, President & Chief System Officer',
+          status: 'Founder & CEO',
           src: Team1,
           alt: 'team',
           lead: true,
@@ -116,6 +109,13 @@ export const members = [
         //   alt: 'team',
         //   lead: true,
         // },
+        {
+          id: 7,
+          name: 'Lauren Fulkerson, MD',
+          status: 'Pediatrician',
+          src: Team9,
+          alt: 'team',
+        },
         {
           id: 5,
           name: 'Kate Efsta, SHRM-CP',

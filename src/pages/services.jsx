@@ -44,7 +44,7 @@ const ServicesPage = () => {
                   className="mt-3 mb-3"
                   onClick={() => navigate('/signup')}
                 >
-                  Parents Click Here
+                  Register Here
                 </Button>
               </Col>
               <Col
@@ -198,7 +198,7 @@ const ServicesPage = () => {
                   className="mb-5 wow animate__animated animate__zoomIn"
                   onClick={() => navigate('/signup')}
                 >
-                  Parents Click Here
+                  Register Here
                 </Button>
               </Col>
             </Row>

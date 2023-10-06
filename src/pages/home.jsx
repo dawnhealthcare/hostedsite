@@ -59,7 +59,7 @@ const HomePage = () => {
                     className="mb-1 parent"
                     onClick={() => navigate('/signup')}
                   >
-                    Parents Click Here
+                    Register Here
                   </Button>
                   <Button
                     className="mb-3 ambassador"
@@ -154,7 +154,7 @@ const HomePage = () => {
                 className="text-center wow animate__animated animate__zoomIn"
               >
                 <Button className="mb-1" onClick={() => navigate('/signup')}>
-                  Parents Click Here
+                  Register Here
                 </Button>
                 {/* <Para className="wow animate__animated animate__fadeInLeft">
                   Discover a world where peace of mind and a sense of belonging

@@ -81,10 +81,10 @@ const SignupPage = () => {
                   <Col md={12} lg={6}>
                     <ValueCard
                       className="mb-5"
-                      title="Health Coaching Session Cost"
+                      title="Health & Wellness Coaching Session Cost"
                     >
                       $80.00 each for guidance and expertise from a
-                      board-certified health coach.
+                      board-certified health & wellness coach.
                     </ValueCard>
                   </Col>
                   <Col md={12} lg={6}>

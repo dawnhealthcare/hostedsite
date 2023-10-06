@@ -26,7 +26,7 @@ const Example = ({
         />
         {errors[name]?.type === 'required' && !phoneNumber && (
           <Error role="alert" className="mb-0">
-            {errors[name] && <span>This field is required</span>}
+            {errors[name] && <span>Phone no is required</span>}
           </Error>
         )}
       </PhoneInputWrapper>
