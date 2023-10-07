@@ -14,7 +14,7 @@ import {
 import Main from './../assets/ambassador/main.png';
 import Main2 from './../assets/ambassador/main2.png';
 import Main3 from './../assets/ambassador/main3.png';
-import Main4 from './../assets/ambassador/main4.png';
+import Main4 from './../assets/ambassador/main5.png';
 import GetStarted from '../components/GetStarted';
 import AmbassadorForm from '../components/AmbassadorForm';
 import { Helmet } from 'react-helmet';

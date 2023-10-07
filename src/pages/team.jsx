@@ -6,7 +6,7 @@ import { SectionHeader } from '../components/SectionHeader';
 import TeamCard from '../components/TeamCard';
 import { members, teamMembers } from '../data/team';
 import { Hero, SectionWrapper, TeamPageWrapper } from '../styles';
-import Main8 from './../assets/team/main.png';
+import Main8 from './../assets/team/i1.png';
 import WellnessCard from '../components/WellnessCard';
 import { Principles } from '../data/home';
 import { Helmet } from 'react-helmet';
@@ -43,8 +43,9 @@ const TeamPage = () => {
                   children.
                 </Para>
               </Col>
+              <Col md={1}></Col>
               <Col
-                md={6}
+                md={5}
                 className="text-end wow animate__animated animate__fadeInRight wrapper"
               >
                 <img

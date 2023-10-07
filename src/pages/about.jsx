@@ -5,7 +5,7 @@ import Para from '../components/Para';
 import { SectionHeader } from '../components/SectionHeader';
 import SubHeading from '../components/SubHeading';
 import { Hero, SectionWrapper, AboutPageWrapper } from '../styles';
-import Main from './../assets/about/1.png';
+import Main from './../assets/about/11.png';
 import Main2 from './../assets/about/2.png';
 import Main3 from './../assets/about/main2.jpg';
 import { partners } from '../data/partners';

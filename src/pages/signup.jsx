@@ -4,7 +4,7 @@ import Heading from '../components/Heading';
 import Para from '../components/Para';
 import { SectionHeader } from '../components/SectionHeader';
 import { Hero, SectionWrapper, SignupPageWrapper } from '../styles';
-import Main from './../assets/signup/1.png';
+import Main from './../assets/signup/3.png';
 import Main2 from './../assets/signup/2.png';
 import Form from '../components/Form';
 import ValueCard from '../components/ValuesCard';

@@ -3,7 +3,7 @@ import { Hero, SectionWrapper, ServicesPageWrapper } from '../styles';
 import { Col, Container, Row } from 'react-bootstrap';
 import Heading from '../components/Heading';
 import Para from '../components/Para';
-import Main from './../assets/home/1.png';
+import Main from './../assets/services/main2.png';
 import Sun from './../assets/services/sun.png';
 import SubHeading from '../components/SubHeading';
 import { services, therapy } from '../data/services';
@@ -44,7 +44,7 @@ const ServicesPage = () => {
                   className="mt-3 mb-3"
                   onClick={() => navigate('/signup')}
                 >
-                  Register Here
+                  Sign Up
                 </Button>
               </Col>
               <Col
@@ -198,7 +198,7 @@ const ServicesPage = () => {
                   className="mb-5 wow animate__animated animate__zoomIn"
                   onClick={() => navigate('/signup')}
                 >
-                  Register Here
+                  Sign Up
                 </Button>
               </Col>
             </Row>
