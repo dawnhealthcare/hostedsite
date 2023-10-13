@@ -91,7 +91,7 @@ const HomePage = () => {
                   title="Dawn Health"
                 >
                   Empowering Resilient Adolescents: Preparing for Tomorrow,
-                  Together
+                  Together.
                 </SectionHeader>
               </Col>
               <Col md={{ span: 12, offset: 0 }}>
@@ -125,7 +125,7 @@ const HomePage = () => {
                   forever transform your perception of what medical care can be.
                   This isn't just about doctor visits and prescriptions; this is
                   about a life-altering voyage toward ultimate wellness for your
-                  little champions
+                  little champions.
                 </Para>
               </Col>
               {why.map((item) => (
@@ -177,7 +177,7 @@ const HomePage = () => {
                   Join us on this transformative journey, where we build a
                   foundation of health, happiness, and limitless possibilities
                   for your precious one(s). Together, let's embrace a new era of
-                  care that celebrates their well-being and ignites their
+                  care that celebrates their wellbeing and ignites their
                   extraordinary potential.
                 </Para> */}
               </Col>
@@ -244,7 +244,7 @@ const HomePage = () => {
                         </li>
                         <li className="mt-3">
                           Engage parents/guardians in measuring symptom severity
-                          and actively monitor their adolescents' well-being.
+                          and actively monitor their adolescents' wellbeing.
                         </li>
                       </ul>
                     </Card>
@@ -280,7 +280,7 @@ const HomePage = () => {
                             </li>
                             <li className="mt-3">
                               Stay informed about your child's emotional
-                              well-being and empower them with the support they
+                              wellbeing and empower them with the support they
                               need to thrive.
                             </li>
                           </ul>
@@ -310,7 +310,7 @@ const HomePage = () => {
                             <li>
                               Embrace the convenience and confidentiality of
                               virtual mental health care, empowering parents to
-                              support their adolescents' well-being.
+                              support their adolescents' wellbeing.
                             </li>
                             <li className="mt-3">
                               Proactively provide necessary resources and
@@ -345,7 +345,7 @@ const HomePage = () => {
                         </li>
                         <li className="mt-3">
                           Collaborate in promoting student involvement, reducing
-                          absenteeism, and cultivating mental well-being, laying
+                          absenteeism, and cultivating mental wellbeing, laying
                           the foundation for children's achievement.
                         </li>
                       </ul>
@@ -366,7 +366,7 @@ const HomePage = () => {
               >
                 <SectionHeader className="" title="Our Values to Help you">
                   We always want to provide the best value for you and your
-                  health. Join us to maximize the benefits
+                  health. Join us to maximize the benefits.
                 </SectionHeader>
               </Col>
             </Row>

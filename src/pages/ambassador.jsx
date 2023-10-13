@@ -41,7 +41,7 @@ const Ambassador = () => {
                 <Heading main="Ambassadorship">Spread the Word!</Heading>
                 <Para hero>
                   Join a community of passionate parents dedicated to nurturing
-                  well-being. Share the benefits of Dawn Health and make a
+                  wellbeing. Share the benefits of Dawn Health and make a
                   positive impact in the lives of families. Exclusive rewards,
                   community connections, and a chance to make a difference await
                   you!
@@ -71,12 +71,11 @@ const Ambassador = () => {
               >
                 <Para className="text-center">
                   A Dawn Health Ambassador is a passionate advocate and a proud
-                  member of our community. As parents committed to the
-                  well-being and growth of their children, our ambassadors play
-                  a vital role in spreading the word about Dawn Health's
-                  initiatives. By sharing their experiences and our values, they
-                  connect us with more families who can benefit from our
-                  programs.
+                  member of our community. As parents committed to the wellbeing
+                  and growth of their children, our ambassadors play a vital
+                  role in spreading the word about Dawn Health's initiatives. By
+                  sharing their experiences and our values, they connect us with
+                  more families who can benefit from our programs.
                 </Para>
               </Col>
             </Row>

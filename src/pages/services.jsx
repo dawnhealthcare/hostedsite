@@ -66,7 +66,7 @@ const ServicesPage = () => {
                 <SubHeading>Wellness-based Model</SubHeading>
                 <Para>
                   Nurturing mental health resilience early on to promote brain
-                  health
+                  health.
                 </Para>
               </Col>
             </Row>
@@ -173,7 +173,7 @@ const ServicesPage = () => {
                 >
                   A systematic review of school-based prevention programs found
                   that these interventions can effectively reduce symptoms of
-                  anxiety and depression in children and adolescents
+                  anxiety and depression in children and adolescents.
                 </ValueCard>
               </Col>
               <Col
@@ -188,7 +188,7 @@ const ServicesPage = () => {
                   A randomized controlled trial of a school-based CBT program
                   for adolescents with anxiety found that the program was
                   effective in reducing symptoms of anxiety and improving school
-                  attendance
+                  attendance.
                 </ValueCard>
               </Col>
             </Row>

@@ -25,7 +25,7 @@ const FaqPage = () => {
                 <Heading main="FAQs">about Our Wellness System</Heading>
                 <Para hero>
                   Answers to common questions about our approach to wellness and
-                  costs associated with it
+                  costs associated with it.
                 </Para>
               </Col>
               <Col
@@ -50,7 +50,7 @@ const FaqPage = () => {
               >
                 <SectionHeader className="pb-main" title="FAQs">
                   Expertly Crafted Answers to Your Mental Wellness Related
-                  Questions
+                  Questions.
                 </SectionHeader>
               </Col>
             </Row>

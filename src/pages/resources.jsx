@@ -53,7 +53,7 @@ const ResourcesPage = () => {
                   className="pb-main"
                   title="Revitalize Your Wellness Journey"
                 >
-                  Explore Dawn Health's Expertly Authored Reading Materials
+                  Explore Dawn Health's Expertly Authored Reading Materials.
                 </SectionHeader>
               </Col>
             </Row>
@@ -79,7 +79,7 @@ const ResourcesPage = () => {
               >
                 <SectionHeader className="pb-main" title="Explore More">
                   Dive into our Additional Reading Materials for Enhanced
-                  Wellbeing
+                  Wellbeing.
                 </SectionHeader>
               </Col>
             </Row>

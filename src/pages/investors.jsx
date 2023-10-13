@@ -29,7 +29,7 @@ const InvestorsPage = () => {
                 <Heading main="Our Investors">Join Us on a Journey</Heading>
                 <Para hero>
                   Welcome to Dawn Health, a virtual mental health company
-                  dedicated to promoting the well-being of adolescents and their
+                  dedicated to promoting the wellbeing of adolescents and their
                   parents. Our investor page is the gateway to a universe of
                   opportunities to make a meaningful impact on mental health.
                 </Para>
@@ -66,6 +66,7 @@ const InvestorsPage = () => {
                   <strong className="ms-2">
                     U.S. Surgeon General, Vivek H. Murthy
                   </strong>
+                  .
                 </SectionHeader>
               </Col>
               <Col md={12}>
@@ -93,7 +94,7 @@ const InvestorsPage = () => {
                 >
                   The U.S. Surgeon General's recent emphasis on adolescent
                   mental health is a much-needed reminder of the critical
-                  importance of prioritizing the well-being of our youth. By
+                  importance of prioritizing the wellbeing of our youth. By
                   shining a spotlight on this pressing issue, we can work
                   towards a future where young people have the resources and
                   support they need to thrive, both personally and academically.

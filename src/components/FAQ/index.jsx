@@ -145,7 +145,7 @@ const FaqList = (props) => {
         <>
           <Para className="mt-4">
             Embrace a pathway to wellness and resilience with Dawn Health at an
-            investment tailored to nurture your mental well-being! Our annual
+            investment tailored to nurture your mental wellbeing! Our annual
             subscription is $499.00, plus a minimal transaction fee. Should your
             personalized care plan activate the Mental Health Resilience
             Pathway, each therapy session will be $155.00 and each health
@@ -190,7 +190,7 @@ const FaqList = (props) => {
           <ul className="mt-4">
             <li className="mb-2">
               Less than a daily gourmet coffee: It's like trading a fancy latte
-              for the well-being of your child.
+              for the wellbeing of your child.
             </li>
             <li className="mb-2">
               Comparable to a monthly family dinner out: Instead of one night

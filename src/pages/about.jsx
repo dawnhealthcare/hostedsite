@@ -107,7 +107,7 @@ const AboutPage = () => {
                   title="Our Approach to Wellness Care"
                 >
                   Empowering Your Health, Inside and Out - Our Unique Wellness
-                  Approach
+                  Approach.
                 </SectionHeader>
               </Col>
             </Row>

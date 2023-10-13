@@ -215,7 +215,7 @@ function AmbassadorForm() {
           <Col md={12} className="">
             <Para>
               Engagement as a Dawn Health Ambassador necessitates that you first
-              attain the status of a registered member within the organization
+              attain the status of a registered member within the organization.
             </Para>
           </Col>
         </Row>

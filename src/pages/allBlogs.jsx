@@ -46,7 +46,7 @@ const AllBlogsPage = () => {
         <title>Blog - Articles - Dawn Health</title>
         <meta
           name="description"
-          content="Embark on a journey into the forefront of children's mental health with Dawn Health. Connect with industry leaders who are also parents, unlock expert insights, and unearth breakthroughs to nurture your child's well-being. Stay ahead of the curve and elevate your knowledge with our unparalleled resources."
+          content="Embark on a journey into the forefront of children's mental health with Dawn Health. Connect with industry leaders who are also parents, unlock expert insights, and unearth breakthroughs to nurture your child's wellbeing. Stay ahead of the curve and elevate your knowledge with our unparalleled resources."
         />
       </Helmet>
       <AllBlogsWrapper>
@@ -65,8 +65,8 @@ const AllBlogsPage = () => {
                   Embark on a journey into the forefront of children's mental
                   health with Dawn Health. Connect with industry leaders who are
                   also parents, unlock expert insights, and unearth
-                  breakthroughs to nurture your child's well-being. Stay ahead
-                  of the curve and elevate your knowledge with our unparalleled
+                  breakthroughs to nurture your child's wellbeing. Stay ahead of
+                  the curve and elevate your knowledge with our unparalleled
                   resources.
                 </Para>
               </Col>

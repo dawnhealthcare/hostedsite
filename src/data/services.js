@@ -85,7 +85,7 @@ export const therapy = [
     id: 90001,
     title: "🌱 Therapy: Your Family's Emotional Gardener",
     description:
-      "Imagine a seasoned gardener delicately examining the roots and leaves of your family's emotional well-being. That's what therapists do—dig deep into the intricacies of mental health, providing a safe space to navigate life's complexities. From understanding social anxieties to conquering emotional hurdles, a therapist helps your child become resilient against life's storms. When you invest in therapy, you're fortifying your family's emotional backbone, allowing your child to blossom in confidence and joy.",
+      "Imagine a seasoned gardener delicately examining the roots and leaves of your family's emotional wellbeing. That's what therapists do—dig deep into the intricacies of mental health, providing a safe space to navigate life's complexities. From understanding social anxieties to conquering emotional hurdles, a therapist helps your child become resilient against life's storms. When you invest in therapy, you're fortifying your family's emotional backbone, allowing your child to blossom in confidence and joy.",
   },
   {
     id: 90002,

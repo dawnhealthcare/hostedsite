@@ -4,7 +4,7 @@ export const why = [
     title: 'A Vibrant Wellness Community Awaits 🌱',
     sub: 'Imagine a Sanctuary for Your Child',
     description:
-      "At Dawn Health, you're not stepping into another sterile clinic; you're joining a vibrant wellness community! Here, your child isn't merely a 'patient' but a cherished member of an ecosystem designed to nurture their total well-being.",
+      "At Dawn Health, you're not stepping into another sterile clinic; you're joining a vibrant wellness community! Here, your child isn't merely a 'patient' but a cherished member of an ecosystem designed to nurture their total wellbeing.",
   },
   {
     id: 99924,
@@ -32,12 +32,12 @@ export const why = [
     title: 'Empower the Extraordinary 🚀',
     sub: 'Unlock Futures Bursting with Promise',
     description:
-      "Trust us to set the stage where your child's wellness doesn't just improve; it soars! We're architects of a new dawn in healthcare, where your child's well-being becomes the glittering star that guides us all.",
+      "Trust us to set the stage where your child's wellness doesn't just improve; it soars! We're architects of a new dawn in healthcare, where your child's wellbeing becomes the glittering star that guides us all.",
   },
   {
     id: 99928,
     title: 'Join the Dawn Health Family 🤝',
     description:
-      "Are you ready to embark on a transformative journey unlike any other? A journey that doesn't just heal but inspires, elevates, and illuminates every facet of your child's life? Then strap in! Let's soar into a new era of healthcare, with your child's well-being as the glittering star that guides us all. ✨",
+      "Are you ready to embark on a transformative journey unlike any other? A journey that doesn't just heal but inspires, elevates, and illuminates every facet of your child's life? Then strap in! Let's soar into a new era of healthcare, with your child's wellbeing as the glittering star that guides us all. ✨",
   },
 ];

@@ -2,7 +2,7 @@ export const blogs = [
   {
     id: 1111,
     title: 'Understanding the Importance of Mental Health',
-    desc: 'Mental health is a crucial aspect of overall well-being that is often neglected and stigmatized. It affects our emotions, thoughts, and behaviors and can have a significant impact on our daily lives. This blog aims to raise awareness about the importance of mental health and the need to break the stigma surrounding it.',
+    desc: 'Mental health is a crucial aspect of overall wellbeing that is often neglected and stigmatized. It affects our emotions, thoughts, and behaviors and can have a significant impact on our daily lives. This blog aims to raise awareness about the importance of mental health and the need to break the stigma surrounding it.',
     image:
       'https://plus.unsplash.com/premium_photo-1672292535264-ef6dab7d6a90?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80',
     createdAt: 'Feb 6, 2023',
