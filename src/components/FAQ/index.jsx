@@ -154,7 +154,7 @@ const FaqList = (props) => {
           <Para className="mt-2">
             Imagine a world where support, growth, and health are accessible,
             wrapped in a package designed to fit seamlessly into your life.
-            These costs aren't mere expenses; they're stepping stones toward a
+            These costs aren't mere expenses; they're stepping stones towards a
             life filled with strength, positivity, and happiness. Take the leap
             with us, and discover the transformation that awaits you!
           </Para>
@@ -210,7 +210,7 @@ const FaqList = (props) => {
             Isn't your child's mental growth, happiness, and success worth it?
             With our program, you're not just spending; you're investing in a
             lifetime of resilience and fulfillment. Join us now and take a
-            purposeful step toward a vibrant future for your child
+            purposeful step towards a vibrant future for your child
           </Para>
           <Para className="mt-2">
             By placing the cost in the context of everyday expenses, this

@@ -10,9 +10,12 @@ import Main8 from './../assets/team/i1.png';
 import WellnessCard from '../components/WellnessCard';
 import { Principles } from '../data/home';
 import { Helmet } from 'react-helmet';
+import Button from '../components/Button';
+import { useNavigate } from 'react-router-dom';
 // import Animated from './../assets/home/animated-1.gif';
 
 const TeamPage = () => {
+  const navigate = useNavigate();
   return (
     <>
       <Helmet>
@@ -42,6 +45,12 @@ const TeamPage = () => {
                   resilience. Together, we're supporting mental health for all
                   children.
                 </Para>
+                <Button
+                  className="mt-3 mb-3"
+                  onClick={() => navigate('/signup')}
+                >
+                  Register Here
+                </Button>
               </Col>
               <Col md={1}></Col>
               <Col

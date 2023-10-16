@@ -7,6 +7,8 @@ import Team9 from './../assets/team/9.png';
 import Team99 from './../assets/team/10.png';
 import Team100 from './../assets/team/12.png';
 import Team11 from './../assets/team/11.png';
+import Team13 from './../assets/team/13.png';
+import Team14 from './../assets/team/14.png';
 import Mem1 from './../assets/team/mem1.jpg';
 import Mem2 from './../assets/team/mem2.jpg';
 import Mem4 from './../assets/team/mem4.png';
@@ -51,6 +53,13 @@ export const teamMembers = [
         alt: 'team',
         lead: true,
       },
+      {
+        id: 100,
+        name: 'Pragnya Vella',
+        status: 'Digital Marketing Intern',
+        src: Team11,
+        alt: 'team',
+      },
     ],
   },
 ];
@@ -78,6 +87,27 @@ export const members = [
           lead: true,
         },
         {
+          id: 8,
+          name: 'Jim Ciemny, LICSW, Ed.S',
+          status: 'MENTAL HEALTH & SECONDARY EDUCATION ADVISOR',
+          src: Team7,
+          alt: 'team',
+        },
+        {
+          id: 7,
+          name: 'Lauren Fulkerson, MD',
+          status: 'Pediatrician',
+          src: Team9,
+          alt: 'team',
+        },
+        {
+          id: 5,
+          name: 'Kate Efsta, SHRM-CP',
+          status: 'Human Capital Architect',
+          src: Team6,
+          alt: 'team',
+        },
+        {
           id: 100,
           name: 'Zachary Fleming',
           status: 'Chief Technology & Product Officer (FRACTIONAL)',
@@ -86,10 +116,17 @@ export const members = [
           lead: true,
         },
         {
-          id: 8,
-          name: 'Jim Ciemny, LICSW, Ed.S',
-          status: 'MENTAL HEALTH & SECONDARY EDUCATION ADVISOR',
-          src: Team7,
+          id: 102,
+          name: 'Gabriella Foster',
+          status: 'Digital Wellness Advocate & Media Liaison',
+          src: Team14,
+          alt: 'team',
+        },
+        {
+          id: 101,
+          name: 'Machelle Croasmun, PhD',
+          status: 'Chief Partnerships Officer (fractional)',
+          src: Team13,
           alt: 'team',
         },
       ],
@@ -109,27 +146,6 @@ export const members = [
         //   alt: 'team',
         //   lead: true,
         // },
-        {
-          id: 7,
-          name: 'Lauren Fulkerson, MD',
-          status: 'Pediatrician',
-          src: Team9,
-          alt: 'team',
-        },
-        {
-          id: 5,
-          name: 'Kate Efsta, SHRM-CP',
-          status: 'Human Capital Architect',
-          src: Team6,
-          alt: 'team',
-        },
-        {
-          id: 100,
-          name: 'Pragnya Vella',
-          status: 'Digital Marketing Intern',
-          src: Team11,
-          alt: 'team',
-        },
       ],
       team3: [
         // {

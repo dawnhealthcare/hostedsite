@@ -102,7 +102,7 @@ const SignupPage = () => {
                 </Para>
                 {/* <Para>
                 Don't merely hope for a bright tomorrow for your child—create
-                it. Join us today, and take the inspired step toward recognizing
+                it. Join us today, and take the inspired step towards recognizing
                 your child's unique brilliance. Together, we're doing more than
                 providing therapy; we're igniting passions and sculpting
                 futures.
@@ -116,7 +116,7 @@ const SignupPage = () => {
                   className="pb-2"
                   title="How It Works: A Simple and Rewarding Process!"
                 >
-                  Embark on a Journey Toward Connection and Joy:
+                  Embark on a Journey Towards Connection and Joy:
                 </SectionHeader>
                 <ul>
                   <li className="mb-2">
@@ -170,7 +170,7 @@ const SignupPage = () => {
                 monthly gym membership or cable bill. The value of nurturing
                 mental health is immeasurable, and this investment serves as a
                 foundation for your child's growth, happiness, and success. Join
-                us in taking this vital step toward a brighter future.
+                us in taking this vital step towards a brighter future.
               </Para> */}
                 <Form />
               </Col>

@@ -9,8 +9,11 @@ import { useState } from 'react';
 import { client } from '../client';
 import Loader from '../components/Loader';
 import { Helmet } from 'react-helmet';
+import Button from '../components/Button';
+import { useNavigate } from 'react-router-dom';
 
 const AllBlogsPage = () => {
+  const navigate = useNavigate();
   const [blogs, setBlogs] = useState([]);
   const [blogsLoading, setBlogsLoading] = useState(true);
   useEffect(() => {
@@ -69,6 +72,20 @@ const AllBlogsPage = () => {
                   the curve and elevate your knowledge with our unparalleled
                   resources.
                 </Para>
+                <div className="d-flex gap-3 mt-4 flex-wrap flex-sm-nowrap justify-content-center">
+                  <Button
+                    className="mb-1 parent"
+                    onClick={() => navigate('/signup')}
+                  >
+                    Register Here
+                  </Button>
+                  <Button
+                    className="mb-3 ambassador"
+                    onClick={() => navigate('/ambassadorship')}
+                  >
+                    Become a Dawn Health Ambassador
+                  </Button>
+                </div>
               </Col>
             </Row>
           </Container>

@@ -31,20 +31,19 @@ const ServicesPage = () => {
             <Row className="align-items-center reverse h-100vh">
               <Col lg={7} className="wow animate__animated animate__fadeInLeft">
                 <Heading main="Our Services">
-                  Wellness-based Virtual Mental Health Care for Adolescents
+                  Preventive Wellness Measurable Based Care
                 </Heading>
                 <Para hero>
-                  Embark on a transformative journey toward wellness with our
-                  unique Virtual Mental Health Care designed exclusively for
-                  adolescents (ages 9 to 17). In close partnership with parents,
-                  we craft a compassionate, holistic approach that fosters
+                  Discover a transformative path to adolescent wellness through
+                  our unique Virtual Mental Health Care, designed exclusively
+                  for ages 9 to 17, where we work closely with parents to foster
                   mental resilience and optimal brain function.
                 </Para>
                 <Button
                   className="mt-3 mb-3"
                   onClick={() => navigate('/signup')}
                 >
-                  Sign Up
+                  Register Here
                 </Button>
               </Col>
               <Col
@@ -198,7 +197,7 @@ const ServicesPage = () => {
                   className="mb-5 wow animate__animated animate__zoomIn"
                   onClick={() => navigate('/signup')}
                 >
-                  Sign Up
+                  Register Here
                 </Button>
               </Col>
             </Row>

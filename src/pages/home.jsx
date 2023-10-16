@@ -19,6 +19,7 @@ import Poem from './../assets/home/poem.png';
 import { Link, useNavigate } from 'react-router-dom';
 import { why } from '../data/why';
 import { Helmet } from 'react-helmet';
+import Form from '../components/Form';
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -37,24 +38,19 @@ const HomePage = () => {
             <Row className="align-items-center h-100vh reverse">
               <Col
                 md={12}
-                lg={7}
+                lg={6}
                 className="wow animate__animated animate__fadeInLeft"
               >
-                <Heading
-                  medium
-                  main="Empowering Adolescents, Guiding Parents"
-                  className="pt-lg-5"
-                >
-                  Nurturing Mental Health Resilience
+                <Heading medium main="Wellness Ecosystem" className="pt-lg-5">
+                  Virtual Mental Health Care For Adolescents & Parents
                 </Heading>
                 <Para hero>
-                  Dawn Health prioritizes preventive wellness. We empower
-                  adolescents, guide parents, and nurture resilience by
-                  proactively managing mental health through innovative
-                  approaches. Join us in empowering the next generation to
-                  thrive.
+                  With our groundbreaking approach to measurable care, the power
+                  of AI technology, and the incredible expertise of our clinical
+                  excellence team, we ignite and strengthen mental resilience
+                  like never before.
                 </Para>
-                <div className="d-flex gap-3 mt-4 flex-wrap flex-sm-nowrap">
+                {/* <div className="d-flex gap-3 mt-4 flex-wrap flex-sm-nowrap">
                   <Button
                     className="mb-1 parent"
                     onClick={() => navigate('/signup')}
@@ -67,10 +63,10 @@ const HomePage = () => {
                   >
                     Become a Dawn Health Ambassador
                   </Button>
-                </div>
+                </div> */}
               </Col>
               <Col
-                md={5}
+                md={6}
                 className="text-end wow animate__animated animate__fadeInRight"
               >
                 <img
@@ -84,6 +80,19 @@ const HomePage = () => {
         </Hero>
         <SectionWrapper>
           <Container>
+            <Row>
+              <Col
+                lg={12}
+                className="wow animate__animated animate__fadeInRight mb-5"
+              >
+                <SectionHeader className="pb-1" title="Sign Up">
+                  Don't let your children and family suffer in silence - reach
+                  out to us for understanding, empowerment, and nurtured
+                  resilience.
+                </SectionHeader>
+                <Form full />
+              </Col>
+            </Row>
             <Row>
               <Col lg={8}>
                 <SectionHeader
@@ -124,8 +133,8 @@ const HomePage = () => {
                   Parents, brace yourselves for a healthcare journey that will
                   forever transform your perception of what medical care can be.
                   This isn't just about doctor visits and prescriptions; this is
-                  about a life-altering voyage toward ultimate wellness for your
-                  little champions.
+                  about a life-altering voyage towards ultimate wellness for
+                  your little champions.
                 </Para>
               </Col>
               {why.map((item) => (
@@ -149,14 +158,14 @@ const HomePage = () => {
                   within! 🌟
                 </Para>
               </Col>
-              <Col
+              {/* <Col
                 md={12}
                 className="text-center wow animate__animated animate__zoomIn"
-              >
-                <Button className="mb-1" onClick={() => navigate('/signup')}>
+              > */}
+              {/* <Button className="mb-1" onClick={() => navigate('/signup')}>
                   Sign Up
-                </Button>
-                {/* <Para className="wow animate__animated animate__fadeInLeft">
+                </Button> */}
+              {/* <Para className="wow animate__animated animate__fadeInLeft">
                   Discover a world where peace of mind and a sense of belonging
                   define your child's care experience. Through our innovative
                   primary and secondary interventions, we take a proactive
@@ -180,7 +189,7 @@ const HomePage = () => {
                   care that celebrates their wellbeing and ignites their
                   extraordinary potential.
                 </Para> */}
-              </Col>
+              {/* </Col> */}
             </Row>
           </Container>
         </SectionWrapper>
@@ -413,7 +422,7 @@ const HomePage = () => {
             </Row>
           </Container>
         </SectionWrapper>
-        <SectionWrapper className="pt-0 wow animate__animated animate__zoomIn">
+        {/* <SectionWrapper className="pt-0 wow animate__animated animate__zoomIn">
           <Container>
             <Row>
               <Col>
@@ -421,21 +430,10 @@ const HomePage = () => {
               </Col>
             </Row>
           </Container>
-        </SectionWrapper>
+        </SectionWrapper> */}
         <SectionWrapper>
           <Container>
             <Row className="align-items-center">
-              <Col
-                lg={6}
-                className="wow animate__animated animate__slideInLeft"
-              >
-                <img
-                  src={Main3}
-                  className="img-fluid mb-5"
-                  alt="Virtual Mental Health Care - Dawn Health"
-                />
-              </Col>
-              <Col lg={1}></Col>
               <Col
                 lg={5}
                 className="wow animate__animated animate__slideInRight"
@@ -466,6 +464,17 @@ const HomePage = () => {
                     </TestimonialCard>
                   </Col>
                 </Row>
+              </Col>
+              <Col lg={1}></Col>
+              <Col
+                lg={6}
+                className="wow animate__animated animate__slideInLeft"
+              >
+                <img
+                  src={Main3}
+                  className="img-fluid mb-5"
+                  alt="Virtual Mental Health Care - Dawn Health"
+                />
               </Col>
             </Row>
           </Container>

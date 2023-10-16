@@ -9,8 +9,11 @@ import { books, ownBooks, websites } from '../data/resources';
 import BookCard from '../components/BookCard';
 import WebsiteCard from '../components/WebsiteCard';
 import { Helmet } from 'react-helmet';
+import Button from '../components/Button';
+import { useNavigate } from 'react-router-dom';
 
 const ResourcesPage = () => {
+  const navigate = useNavigate();
   return (
     <>
       <Helmet>
@@ -32,6 +35,20 @@ const ResourcesPage = () => {
                   and schools as partners, we empower the next generation for
                   academic and personal success.
                 </Para>
+                <div className="d-flex gap-3 mt-4 flex-wrap flex-sm-nowrap">
+                  <Button
+                    className="mb-1 parent"
+                    onClick={() => navigate('/signup')}
+                  >
+                    Register Here
+                  </Button>
+                  <Button
+                    className="mb-3 ambassador"
+                    onClick={() => navigate('/ambassadorship')}
+                  >
+                    Become a Dawn Health Ambassador
+                  </Button>
+                </div>
               </Col>
               <Col
                 md={6}

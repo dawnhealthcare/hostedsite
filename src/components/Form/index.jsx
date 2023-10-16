@@ -108,7 +108,7 @@ const hearAboutUsOptions = [
   { value: "Via My Kid's School", label: "Via My Kid's School" },
 ];
 
-function Form() {
+function Form({ full }) {
   const [numChildren, setNumChildren] = useState([]);
   const [hearAbout, setHearAbout] = useState('');
   const [ambassador, setAmbassador] = useState('');
@@ -598,7 +598,11 @@ function Form() {
             Your estimated annual subscription cost: ${cost.toFixed(2)}
           </strong>
         </div>
-        <Button disabled={loading} className="mt-4" type="submit">
+        <Button
+          disabled={loading}
+          className={`mt-4 ${full && 'px-5'}`}
+          type="submit"
+        >
           {loading ? 'Loading...' : 'Submit'}
         </Button>
       </form>

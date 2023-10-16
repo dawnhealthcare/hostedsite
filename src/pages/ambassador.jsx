@@ -18,8 +18,11 @@ import Main4 from './../assets/ambassador/main5.png';
 import GetStarted from '../components/GetStarted';
 import AmbassadorForm from '../components/AmbassadorForm';
 import { Helmet } from 'react-helmet';
+import { useNavigate } from 'react-router-dom';
+import Button from '../components/Button';
 
 const Ambassador = () => {
+  const navigate = useNavigate();
   return (
     <>
       <Helmet>
@@ -40,12 +43,16 @@ const Ambassador = () => {
               >
                 <Heading main="Ambassadorship">Spread the Word!</Heading>
                 <Para hero>
-                  Join a community of passionate parents dedicated to nurturing
-                  wellbeing. Share the benefits of Dawn Health and make a
-                  positive impact in the lives of families. Exclusive rewards,
-                  community connections, and a chance to make a difference await
-                  you!
-                </Para>
+                  Be part of our vibrant community of dedicated parents who
+                  share a passion for spreading the word about how Dawn Health
+                  nurtures wellbeing.
+                </Para>{' '}
+                <Button
+                  className="mt-3 mb-3"
+                  onClick={() => navigate('/signup')}
+                >
+                  Register Here
+                </Button>
               </Col>
               <Col
                 md={6}
@@ -179,9 +186,9 @@ const Ambassador = () => {
                 >
                   Your interest in the Dawn Health Ambassadorship Program is
                   greatly appreciated! By submitting your details below, you're
-                  taking a positive step toward a potential partnership with us.
-                  Please understand that while every application is considered
-                  with the utmost attention and care, submitting your
+                  taking a positive step towards a potential partnership with
+                  us. Please understand that while every application is
+                  considered with the utmost attention and care, submitting your
                   information does not constitute a guarantee of acceptance.
                   Rest assured, a dedicated member of our team will personally
                   contact you if you are selected for an interview. We look

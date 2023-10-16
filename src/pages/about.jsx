@@ -11,8 +11,11 @@ import Main3 from './../assets/about/main2.jpg';
 import { partners } from '../data/partners';
 import Partner from '../components/Partner';
 import { Helmet } from 'react-helmet';
+import Button from '../components/Button';
+import { useNavigate } from 'react-router-dom';
 
 const AboutPage = () => {
+  const navigate = useNavigate();
   return (
     <>
       <Helmet>
@@ -43,6 +46,12 @@ const AboutPage = () => {
                   for our children by nurturing their mental health resilience
                   today.
                 </Para>
+                <Button
+                  className="mt-3 mb-3"
+                  onClick={() => navigate('/signup')}
+                >
+                  Register Here
+                </Button>
               </Col>
               <Col
                 md={6}
@@ -72,30 +81,21 @@ const AboutPage = () => {
                 <Para>
                   In 2021, a group of brilliant minds at Harvard Medical School
                   had an epiphany: traditional mental healthcare was failing to
-                  keep up with the needs of society. So, after a meticulous
-                  exploration of the market and countless brainstorming
-                  sessions, they decided to take matters into their own hands.
-                  Fast-forward to 2023, and Dawn Health was born - a
-                  revolutionary mental healthcare venture that focuses on
-                  prevention and wellness, not just treating crises.
-                </Para>
-                <Para>
-                  At Dawn Health, we believe that every adolescent deserves to
-                  have control over their mental wellbeing, which is why we've
-                  developed a state-of-the-art digital-wellness solution. Our
-                  platform is user-friendly, accessible, and affordable, making
-                  it easier than ever for young people to screen, monitor, and
-                  manage their mental health. Say goodbye to sky-high costs and
-                  access-to-care barriers - with Dawn Health, the future of
-                  mental healthcare is in your hands.
+                  keep up with the needs of society. Fast-forward to 2023, Dawn
+                  Health was born—a revolutionary mental healthcare venture that
+                  prioritizes prevention and wellness. Our user-friendly,
+                  accessible, and affordable digital-wellness platform empowers
+                  adolescents to take control of their mental wellbeing,
+                  eliminating barriers to access and sky-high costs. With Dawn
+                  Health, the future of mental healthcare is now in your hands.
                 </Para>
               </Col>
             </Row>
-            <Row className="mt-5">
+            {/* <Row className="mt-5">
               <Col className="text-center wow animate__animated animate__zoomIn">
                 <img alt="about" src={Main3} className="img-fluid" />
               </Col>
-            </Row>
+            </Row> */}
             <Row className="mt-5">
               <Col
                 md={12}
