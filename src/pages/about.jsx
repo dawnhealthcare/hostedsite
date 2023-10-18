@@ -36,15 +36,11 @@ const AboutPage = () => {
                 lg={6}
                 className="wow animate__animated animate__fadeInLeft"
               >
-                <Heading main="About Us">
-                  Our Families are Behind Our Brand
-                </Heading>
+                <Heading main="About Us">Prioritizing Family</Heading>
                 <Para hero>
-                  Family comes first for all of us. Our team comprises of
-                  passionate, highly diverse, educated, and experienced
-                  professionals who are committed to creating a better tomorrow
-                  for our children by nurturing their mental health resilience
-                  today.
+                  Prioritizing Family: Our dedicated team of diverse, educated,
+                  and experienced professionals has a mission to build resilient
+                  futures for children and parents.
                 </Para>
                 <Button
                   className="mt-3 mb-3"
@@ -106,8 +102,8 @@ const AboutPage = () => {
                   className="pb-main"
                   title="Our Approach to Wellness Care"
                 >
-                  Empowering Your Health, Inside and Out - Our Unique Wellness
-                  Approach.
+                  Empowering Resilient Adolescents; Preparing for Tomorrow,
+                  Together.
                 </SectionHeader>
               </Col>
             </Row>

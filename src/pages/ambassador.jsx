@@ -41,7 +41,7 @@ const Ambassador = () => {
                 lg={6}
                 className="wow animate__animated animate__fadeInLeft"
               >
-                <Heading main="Ambassadorship">Spread the Word!</Heading>
+                <Heading main="Ambassador">Spread the Word!</Heading>
                 <Para hero>
                   Be part of our vibrant community of dedicated parents who
                   share a passion for spreading the word about how Dawn Health

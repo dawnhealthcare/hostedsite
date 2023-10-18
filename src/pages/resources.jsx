@@ -28,12 +28,10 @@ const ResourcesPage = () => {
           <Container>
             <Row className="align-items-center reverse h-100vh">
               <Col md={6} className="wow animate__animated animate__fadeInLeft">
-                <Heading main="Resources">For Engaged Parents</Heading>
+                <Heading main="Resources">Unlocking Brilliance</Heading>
                 <Para hero>
-                  Unleash your child's brilliance! Our holistic approach unlocks
-                  potential, promoting brain health and resilience. With parents
-                  and schools as partners, we empower the next generation for
-                  academic and personal success.
+                  Our holistic approach to unleashing your child's potential and
+                  foster brain health and resilience.
                 </Para>
                 <div className="d-flex gap-3 mt-4 flex-wrap flex-sm-nowrap">
                   <Button

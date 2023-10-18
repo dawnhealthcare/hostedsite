@@ -45,10 +45,8 @@ const HomePage = () => {
                   Virtual Mental Health Care For Adolescents & Parents
                 </Heading>
                 <Para hero>
-                  With our groundbreaking approach to measurable care, the power
-                  of AI technology, and the incredible expertise of our clinical
-                  excellence team, we ignite and strengthen mental resilience
-                  like never before.
+                  Crafting a future for children and parents where thriving
+                  transcends thought to become an undeniable reality.
                 </Para>
                 {/* <div className="d-flex gap-3 mt-4 flex-wrap flex-sm-nowrap">
                   <Button
@@ -99,7 +97,7 @@ const HomePage = () => {
                   className="wow animate__animated animate__fadeInLeft pb-main"
                   title="Dawn Health"
                 >
-                  Empowering Resilient Adolescents: Preparing for Tomorrow,
+                  Empowering Resilient Adolescents; Preparing for Tomorrow,
                   Together.
                 </SectionHeader>
               </Col>
@@ -133,8 +131,8 @@ const HomePage = () => {
                   Parents, brace yourselves for a healthcare journey that will
                   forever transform your perception of what medical care can be.
                   This isn't just about doctor visits and prescriptions; this is
-                  about a life-altering voyage towards ultimate wellness for
-                  your little champions.
+                  about a life-altering voyage toward ultimate wellness for your
+                  little champions.
                 </Para>
               </Col>
               {why.map((item) => (

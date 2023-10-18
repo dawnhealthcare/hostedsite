@@ -27,7 +27,7 @@ const SignupPage = () => {
           <Container>
             <Row className="align-items-center reverse h-100vh">
               <Col lg={7} className="wow animate__animated animate__fadeInLeft">
-                <Heading main="Sign up here">
+                <Heading main="Sign up">
                   Join the Dawn Health Wellness Ecosystem
                 </Heading>
                 <Para hero>
@@ -75,7 +75,7 @@ const SignupPage = () => {
                       title="Therapy (Individual or Family) Session Cost"
                     >
                       $155.00 each, fostering collaborative care from a licensed
-                      counselor.
+                      independent therapist.
                     </ValueCard>
                   </Col>
                   <Col md={12} lg={6}>
@@ -98,7 +98,7 @@ const SignupPage = () => {
                   Don't just wish for your child's success—make it happen. Join
                   us today to take a decisive step in nurturing their innate
                   talents. Together, we're not just offering therapy; we're
-                  shaping lives.
+                  shaping lives
                 </Para>
                 {/* <Para>
                 Don't merely hope for a bright tomorrow for your child—create
@@ -113,7 +113,7 @@ const SignupPage = () => {
                 className="wow animate__animated animate__fadeInLeft"
               >
                 <SectionHeader
-                  className="pb-2"
+                  className="pb-2 pt-5"
                   title="How It Works: A Simple and Rewarding Process!"
                 >
                   Embark on a Journey Towards Connection and Joy:

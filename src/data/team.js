@@ -56,7 +56,7 @@ export const teamMembers = [
       {
         id: 100,
         name: 'Pragnya Vella',
-        status: 'Digital Marketing Intern',
+        status: 'Secondary Education student',
         src: Team11,
         alt: 'team',
       },

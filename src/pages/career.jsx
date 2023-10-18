@@ -38,12 +38,9 @@ const CareerPage = () => {
                   Join Our Team and Make your mark!
                 </Heading>
                 <Para hero>
-                  Dawn Health is on a mission to nurture mental health
-                  resilience for every child and their families. When you join
-                  Dawn Health, you’re joining a team that has an unstoppable
-                  drive and passion to bring mental health wellness into every
-                  household. We only hire team members that share the same
-                  vision with us.
+                  Experience the pinnacle of clinical excellence while leaving
+                  burnout behind, as we empower you to manage your caseload with
+                  an unwavering focus on safety and quality.
                 </Para>
               </Col>
               <Col

@@ -34,10 +34,10 @@ const ServicesPage = () => {
                   Preventive Wellness Measurable Based Care
                 </Heading>
                 <Para hero>
-                  Discover a transformative path to adolescent wellness through
-                  our unique Virtual Mental Health Care, designed exclusively
-                  for ages 9 to 17, where we work closely with parents to foster
-                  mental resilience and optimal brain function.
+                  Explore a transformative path to adolescent wellness with our
+                  unique virtual mental health care system. Collaboratively with
+                  parents, we nurture mental resilience and optimal brain
+                  function.
                 </Para>
                 <Button
                   className="mt-3 mb-3"

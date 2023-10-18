@@ -38,7 +38,7 @@ const TeamPage = () => {
                 className="wow animate__animated animate__fadeInLeft"
               >
                 <Heading main="Guiding Force">
-                  Empowering Mental Wellness for all Children
+                  Empowering Mental Wellness For All Children
                 </Heading>
                 <Para hero>
                   Breaking access to care barriers and fostering mental health
@@ -90,12 +90,8 @@ const TeamPage = () => {
             <Row>
               <Col className="wow animate__animated animate__fadeInLeft">
                 <SectionHeader className="pb-main" title="Our True North">
-                  Guided by a shared purpose, our True North is to ignite the
-                  potential within adolescents, unlocking a future of limitless
-                  possibilities. We passionately deliver primary and secondary
-                  prevention, joining forces with parents as trusted allies to
-                  empower and equip the next generation with the tools and
-                  resilience needed to thrive in an ever-changing world.
+                  Crafting a future for children and parents where thriving
+                  transcends thought to become an undeniable reality.
                 </SectionHeader>
               </Col>
             </Row>

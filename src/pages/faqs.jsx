@@ -25,7 +25,7 @@ const FaqPage = () => {
           <Container>
             <Row className="align-items-center h-100vh reverse">
               <Col lg={6} className="wow animate__animated animate__fadeInLeft">
-                <Heading main="FAQs">about Our Wellness System</Heading>
+                <Heading main="FAQs">Learn More About Us</Heading>
                 <Para hero>
                   Answers to common questions about our approach to wellness.
                 </Para>
