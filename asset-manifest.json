@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.203b6882.css",
-    "main.js": "/static/js/main.5d3673f1.js",
+    "main.js": "/static/js/main.4dd90e1f.js",
     "static/js/726.0f44553e.chunk.js": "/static/js/726.0f44553e.chunk.js",
     "static/js/496.51819bd1.chunk.js": "/static/js/496.51819bd1.chunk.js",
     "static/media/investors.pdf": "/static/media/investors.03eecd9b6cdd152c3d24.pdf",
@@ -13,13 +13,15 @@
     "static/media/book2.png": "/static/media/book2.8bf157ff69270580b6a8.png",
     "static/media/book12.png": "/static/media/book12.828b1db222c90b14c068.png",
     "static/media/3.png": "/static/media/3.b1655ad190cd6338c5cf.png",
+    "static/media/values2.png": "/static/media/values2.09e5351f2780261dfdba.png",
     "static/media/book5.png": "/static/media/book5.77a0763f43659165f5b3.png",
     "static/media/top.png": "/static/media/top.eadd975c095ad3823dc8.png",
-    "static/media/main5.png": "/static/media/main5.ec93a04ebe8afb129359.png",
     "static/media/book11.png": "/static/media/book11.5ad6c21f03243d64a578.png",
     "static/media/1.png": "/static/media/1.e00964c9877aa4afeb8d.png",
+    "static/media/main.png": "/static/media/main.229fbd60be0a82871b4d.png",
     "static/media/book10.png": "/static/media/book10.1aa325e2cc1298a7b9c2.png",
     "static/media/book4.png": "/static/media/book4.d027f419535d622318b0.png",
+    "static/media/main5.png": "/static/media/main5.a02c0c73424141458737.png",
     "static/media/book14.png": "/static/media/book14.661b801d29750e11603e.png",
     "static/media/2.png": "/static/media/2.51bcf19ef404ee7df03e.png",
     "static/media/11.png": "/static/media/11.ce4e08efadeb7b735577.png",
@@ -32,9 +34,7 @@
     "static/media/14.png": "/static/media/14.f788c9c3d3ade5d41bd4.png",
     "static/media/book1.png": "/static/media/book1.2478652870400956945c.png",
     "static/media/book7.png": "/static/media/book7.c8642ee3ec9758782305.png",
-    "static/media/values2.png": "/static/media/values2.90725c77184cbdf4904f.png",
     "static/media/sun.png": "/static/media/sun.20be2270b30875f731ef.png",
-    "static/media/main.png": "/static/media/main.229fbd60be0a82871b4d.png",
     "static/media/main3.png": "/static/media/main3.2edc7991fb237e1e83df.png",
     "static/media/4.png": "/static/media/4.5ff34e3a0cbd11310c6d.png",
     "static/media/main2.jpg": "/static/media/main2.c25e1be3e4e827ca4613.jpg",
@@ -55,12 +55,12 @@
     "static/media/dark-logo.png": "/static/media/dark-logo.b1b958a6cb0cbae87f36.png",
     "index.html": "/index.html",
     "main.203b6882.css.map": "/static/css/main.203b6882.css.map",
-    "main.5d3673f1.js.map": "/static/js/main.5d3673f1.js.map",
+    "main.4dd90e1f.js.map": "/static/js/main.4dd90e1f.js.map",
     "726.0f44553e.chunk.js.map": "/static/js/726.0f44553e.chunk.js.map",
     "496.51819bd1.chunk.js.map": "/static/js/496.51819bd1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.203b6882.css",
-    "static/js/main.5d3673f1.js"
+    "static/js/main.4dd90e1f.js"
   ]
 }
