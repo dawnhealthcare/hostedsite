@@ -36,7 +36,7 @@ export const teamMembers = [
   // },
   {
     id: 223345,
-    title: 'Advisors Team',
+    title: 'Advisory Team',
     members: [
       {
         id: 11,
@@ -67,7 +67,7 @@ export const teamMembers = [
 export const members = [
   {
     id: 223346,
-    title: 'Leadership Team',
+    title: 'Guiding Force',
     members: {
       team1: [
         {
