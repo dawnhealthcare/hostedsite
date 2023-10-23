@@ -89,14 +89,14 @@ export const members = [
         {
           id: 8,
           name: 'Jim Ciemny, LICSW, Ed.S',
-          status: 'MENTAL HEALTH & SECONDARY EDUCATION ADVISOR',
+          status: 'VP of Care system excellence',
           src: Team7,
           alt: 'team',
         },
         {
           id: 7,
           name: 'Lauren Fulkerson, MD',
-          status: 'Pediatrician',
+          status: 'pediatric health & wellness advisor',
           src: Team9,
           alt: 'team',
         },
@@ -110,7 +110,7 @@ export const members = [
         {
           id: 100,
           name: 'Zachary Fleming',
-          status: 'Chief Technology & Product Officer (FRACTIONAL)',
+          status: 'CHIEF TECHNOLOGY & PRODUCT OFFICER',
           src: Team100,
           alt: 'team',
           lead: true,
@@ -118,14 +118,14 @@ export const members = [
         {
           id: 102,
           name: 'Gabriella Foster',
-          status: 'Digital Wellness Advocate & Media Liaison',
+          status: 'chief of staff & media liaison',
           src: Team14,
           alt: 'team',
         },
         {
           id: 101,
           name: 'Machelle Croasmun, PhD',
-          status: 'Chief Partnerships Officer (fractional)',
+          status: 'Chief Partnerships Officer',
           src: Team13,
           alt: 'team',
         },
