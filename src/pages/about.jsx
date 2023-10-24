@@ -13,6 +13,7 @@ import Partner from '../components/Partner';
 import { Helmet } from 'react-helmet';
 import Button from '../components/Button';
 import { useNavigate } from 'react-router-dom';
+import Poem from './../assets/home/poem.png';
 
 const AboutPage = () => {
   const navigate = useNavigate();
@@ -92,32 +93,14 @@ const AboutPage = () => {
                 <img alt="about" src={Main3} className="img-fluid" />
               </Col>
             </Row> */}
-            <Row className="mt-5">
-              <Col
-                md={12}
-                xl={7}
-                className="wow animate__animated animate__fadeInLeft"
-              >
-                <SectionHeader
-                  className="pb-main"
-                  title="Our Approach to Wellness Care"
-                >
-                  Empowering Resilient Adolescents; Preparing for Tomorrow,
-                  Together.
-                </SectionHeader>
-              </Col>
-            </Row>
-            <Row className="">
-              <Col md={12} className="wow animate__animated animate__zoomIn">
-                <iframe
-                  width="100%"
-                  height="715"
-                  src="https://www.youtube.com/embed/j7Ae0lBtuQE"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
-                ></iframe>
+
+            <Row className="d-flex justify-content-center mt-5 wow animate__animated animate__zoomIn">
+              <Col lg={{ span: 5 }}>
+                <img
+                  src={Poem}
+                  className="img-fluid"
+                  alt="Virtual Mental Health Care - Dawn Health"
+                />
               </Col>
             </Row>
             <Row className="mt-5">

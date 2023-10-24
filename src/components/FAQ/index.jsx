@@ -143,7 +143,7 @@ const FaqList = (props) => {
       ),
       answer: (
         <>
-          <Para className="mt-4">
+          {/* <Para className="mt-4">
             Embrace a pathway to wellness and resilience with Dawn Health at an
             investment tailored to nurture your mental wellbeing! Our annual
             subscription is $499.00, plus a minimal transaction fee. Should your
@@ -157,40 +157,15 @@ const FaqList = (props) => {
             These costs aren't mere expenses; they're stepping stones towards a
             life filled with strength, positivity, and happiness. Take the leap
             with us, and discover the transformation that awaits you!
-          </Para>
+          </Para> */}
           {/* <ul>
             <li className="mb-2">$500 annual subscription fee</li>
           </ul> */}
-          {/* <Para className="mt-4">Mental Health Resilience Pathway:</Para>
-          <ul>
-            <li className="mb-2">
-              $125 ($60*)x 10** = $600 for 1 hr. mental health session cost
-              [*your insurance should be covering this cost after a typical $60
-              copayment. **typical number of sessions per year]
-            </li>
-            <li className="mb-2">
-              $70 x 3*** = $210 for 30 min. health coaching session cost
-              [***typical number of sessions per year] Approximate Annual
-              Out-of-Pocket cost per child: $500+$600+$210 = $1,310
-            </li>
-          </ul> */}
-        </>
-      ),
-    },
-    {
-      id: 334464,
-      question: (
-        <span>
-          How does the cost to receive care from Dawn Health compare to other
-          household expense items?
-        </span>
-      ),
-      answer: (
-        <>
+          {/* <Para className="mt-4">Mental Health Resilience Pathway:</Para> */}
           <ul className="mt-4">
             <li className="mb-2">
               Less than a daily gourmet coffee: It's like trading a fancy latte
-              for the wellbeing of your child.
+              for the well-being of your child.
             </li>
             <li className="mb-2">
               Comparable to a monthly family dinner out: Instead of one night
@@ -210,9 +185,9 @@ const FaqList = (props) => {
             Isn't your child's mental growth, happiness, and success worth it?
             With our program, you're not just spending; you're investing in a
             lifetime of resilience and fulfillment. Join us now and take a
-            purposeful step towards a vibrant future for your child
+            purposeful step toward a vibrant future for your child
           </Para>
-          <Para className="mt-2">
+          <Para className="mt-4">
             By placing the cost in the context of everyday expenses, this
             comparison makes the investment seem more manageable and worthwhile,
             and it connects directly with the values and priorities that parents
@@ -221,6 +196,50 @@ const FaqList = (props) => {
         </>
       ),
     },
+    // {
+    //   id: 334464,
+    //   question: (
+    //     <span>
+    //       How does the cost to receive care from Dawn Health compare to other
+    //       household expense items?
+    //     </span>
+    //   ),
+    //   answer: (
+    //     <>
+    //       <ul className="mt-4">
+    //         <li className="mb-2">
+    //           Less than a daily gourmet coffee: It's like trading a fancy latte
+    //           for the wellbeing of your child.
+    //         </li>
+    //         <li className="mb-2">
+    //           Comparable to a monthly family dinner out: Instead of one night
+    //           out, you're nourishing your child's mental health all month long.
+    //         </li>
+    //         <li className="mb-2">
+    //           The cost of a new outfit or pair of brand-name sneakers: It's an
+    //           investment in confidence and success, not just style.
+    //         </li>
+    //         <li className="mb-2">
+    //           Similar to your monthly streaming or cable bill: Imagine
+    //           exchanging endless channels for endless possibilities in your
+    //           child's life.
+    //         </li>
+    //       </ul>
+    //       <Para className="mt-4">
+    //         Isn't your child's mental growth, happiness, and success worth it?
+    //         With our program, you're not just spending; you're investing in a
+    //         lifetime of resilience and fulfillment. Join us now and take a
+    //         purposeful step towards a vibrant future for your child
+    //       </Para>
+    //       <Para className="mt-2">
+    //         By placing the cost in the context of everyday expenses, this
+    //         comparison makes the investment seem more manageable and worthwhile,
+    //         and it connects directly with the values and priorities that parents
+    //         can understand and appreciate.
+    //       </Para>
+    //     </>
+    //   ),
+    // },
     {
       id: 334465,
       question: 'How do I sign up?',

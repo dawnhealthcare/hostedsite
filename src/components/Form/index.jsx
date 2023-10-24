@@ -144,11 +144,15 @@ function Form({ full }) {
   useEffect(() => {
     let firstChildCost;
     if (promocode === 'DH23') {
-      firstChildCost = 499 / 2;
+      firstChildCost = 399 / 2;
+    } else if (promocode === 'DANCE') {
+      let percentage = (399 * 10) / 100;
+      firstChildCost = 399 - percentage;
     } else {
-      firstChildCost = 499;
+      firstChildCost = 399;
     }
-    const additionalChildCost = 249;
+    let inPer = (399 * 10) / 100;
+    const additionalChildCost = 399 - inPer;
 
     const totalCost =
       firstChildCost + (numChildren.length - 1) * additionalChildCost;
@@ -595,7 +599,8 @@ function Form({ full }) {
       )} */}
         <div className="">
           <strong>
-            Your estimated annual subscription cost: ${cost.toFixed(2)}
+            Your estimated annual subscription cost: ${cost.toFixed(2)} or $
+            {(cost / 12).toFixed(2)} per month.
           </strong>
         </div>
         <Button

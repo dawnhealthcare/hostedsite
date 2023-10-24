@@ -8,14 +8,12 @@ export const Header = (props) => {
   const [menuOpen, toggleMenuOpen] = useState(false);
   const navLinks = [
     { id: 1, to: '/', title: 'Home' },
-    {
-      id: 11,
-      title: 'Welcome',
-      links: [
-        { id: 2, to: '/services', title: 'Services' },
-        { id: 4, to: '/signup', title: 'Sign Up' },
-      ],
-    },
+    // {
+    //   id: 11,
+    //   title: 'Welcome',
+    //   links: [],
+    // },
+    { id: 2, to: '/services', title: 'Services' },
     {
       id: 12,
       title: 'Our Family',
@@ -37,6 +35,7 @@ export const Header = (props) => {
     },
     ,
     { id: 6, to: '/investor-relations', title: 'Investor Relations' },
+    { id: 4, to: '/signup', title: 'Sign Up' },
   ];
   return (
     <NavbarWrapper className="navbar-wrapper">

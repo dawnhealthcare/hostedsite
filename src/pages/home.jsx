@@ -15,7 +15,6 @@ import Main4 from './../assets/home/4.png';
 import Main5 from './../assets/home/5.png';
 import Main6 from './../assets/home/6.png';
 import Main7 from './../assets/home/7.png';
-import Poem from './../assets/home/poem.png';
 import { Link, useNavigate } from 'react-router-dom';
 import { why } from '../data/why';
 import { Helmet } from 'react-helmet';
@@ -48,20 +47,20 @@ const HomePage = () => {
                   Crafting a future for children and parents where thriving
                   transcends thought to become an undeniable reality.
                 </Para>
-                {/* <div className="d-flex gap-3 mt-4 flex-wrap flex-sm-nowrap">
+                <div className="d-flex gap-3 mt-4 flex-wrap flex-sm-nowrap">
                   <Button
                     className="mb-1 parent"
                     onClick={() => navigate('/signup')}
                   >
-                    Sign Up
+                    Register Here
                   </Button>
-                  <Button
+                  {/* <Button
                     className="mb-3 ambassador"
                     onClick={() => navigate('/ambassadorship')}
                   >
                     Become a Dawn Health Ambassador
-                  </Button>
-                </div> */}
+                  </Button> */}
+                </div>
               </Col>
               <Col
                 md={6}
@@ -78,7 +77,7 @@ const HomePage = () => {
         </Hero>
         <SectionWrapper>
           <Container>
-            <Row>
+            {/* <Row>
               <Col
                 lg={12}
                 className="wow animate__animated animate__fadeInRight mb-5"
@@ -90,7 +89,7 @@ const HomePage = () => {
                 </SectionHeader>
                 <Form full />
               </Col>
-            </Row>
+            </Row> */}
             <Row>
               <Col lg={8}>
                 <SectionHeader
@@ -471,19 +470,6 @@ const HomePage = () => {
                 <img
                   src={Main3}
                   className="img-fluid mb-5"
-                  alt="Virtual Mental Health Care - Dawn Health"
-                />
-              </Col>
-            </Row>
-          </Container>
-        </SectionWrapper>
-        <SectionWrapper className="">
-          <Container>
-            <Row className="d-flex justify-content-center pb-main">
-              <Col lg={{ span: 5 }}>
-                <img
-                  src={Poem}
-                  className="img-fluid"
                   alt="Virtual Mental Health Care - Dawn Health"
                 />
               </Col>

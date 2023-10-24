@@ -63,10 +63,9 @@ const SignupPage = () => {
                 <Row>
                   <Col md={12} lg={6}>
                     <ValueCard className="mb-5" title="Annual Subscription">
-                      Enroll your first child for only $499.00. And here's the
-                      magic: every additional child is just $249.00! Delve into
-                      the world of cutting-edge digital health tools and
-                      unmatched value-added services.
+                      Enroll your child for only $399.00 per year. Any
+                      additional sibling receives a 10% discount on the annual
+                      subscription.
                     </ValueCard>
                   </Col>
                   <Col md={12} lg={6}>
@@ -74,7 +73,7 @@ const SignupPage = () => {
                       className="mb-5"
                       title="Therapy (Individual or Family) Session Cost"
                     >
-                      $155.00 each, fostering collaborative care from a licensed
+                      $169.00 each, fostering collaborative care from a licensed
                       independent therapist.
                     </ValueCard>
                   </Col>
@@ -83,7 +82,7 @@ const SignupPage = () => {
                       className="mb-5"
                       title="Health & Wellness Coaching Session Cost"
                     >
-                      $80.00 each for guidance and expertise from a
+                      $79.00 each for guidance and expertise from a
                       board-certified health & wellness coach.
                     </ValueCard>
                   </Col>
