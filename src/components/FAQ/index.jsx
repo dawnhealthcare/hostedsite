@@ -101,10 +101,10 @@ const FaqList = (props) => {
       answer: (
         <Para className="mt-4">
           You will not have to worry about that. Our care navigation team will
-          handle all this for you and your child. We will ensure you know your
-          insurance coverage and out-of-pocket costs up-front and also arrange
-          any and all necessary appointments that fit your child's and family's
-          schedule.
+          handle all this for you and your child. We will ensure to pair you
+          with a provider who offers exceptional, quality-centered
+          individualized care while providing you with a superbill that you can
+          then take back to your insurance for potential reimbursement.
         </Para>
       ),
     },
