@@ -34,12 +34,14 @@ const childrenOptions = [
 ];
 
 const ambassadors = [
+  { value: 'Gabriella Foster', label: 'Gabriella Foster' },
   { value: 'Ilyas Yamani', label: 'Ilyas Yamani' },
   { value: 'Jim Ciemny', label: 'Jim Ciemny' },
   { value: 'Joseph Onyeizu', label: 'Joseph Onyeizu' },
   { value: 'Kate Efsta', label: 'Kate Efsta' },
   { value: 'Kevin Streeter', label: 'Kevin Streeter' },
   { value: 'Lauren Fulkerson', label: 'Lauren Fulkerson' },
+  { value: 'Machelle Croasmun', label: 'Machelle Croasmun' },
   { value: 'Mara Bloom', label: 'Mara Bloom' },
   { value: 'Panos Efsta', label: 'Panos Efsta' },
   { value: 'Shani Reifschlager', label: 'Shani Reifschlager' },
@@ -80,12 +82,13 @@ const insurences = [
 const hearAboutUsOptions = [
   { value: 'At a Local Event', label: 'At a Local Event' },
   { value: 'At My Church', label: 'At My Church' },
-  { value: 'By Seeing an Advertisement', label: 'By Seeing an Advertisement' },
-  { value: 'Through LinkedIn', label: 'Through LinkedIn' },
-  { value: 'On Instagram', label: 'On Instagram' },
   {
     value: 'Dawn Health Ambassador',
     label: 'Dawn Health Ambassador',
+  },
+  {
+    value: 'Dental Office',
+    label: 'Dental Office',
   },
   {
     value: 'From a Friend (Word-of-Mouth)',
@@ -95,15 +98,15 @@ const hearAboutUsOptions = [
     value: 'From somebody at Dawn Health',
     label: 'From somebody at Dawn Health',
   },
+  { value: 'My School', label: 'My School' },
+  { value: 'News/Podcast', label: 'News/Podcast' },
+  { value: 'On LinkedIn', label: 'On LinkedIn' },
+  { value: 'On Instagram', label: 'On Instagram' },
+  {
+    value: 'Pediatric Office',
+    label: 'Pediatric Office',
+  },
   { value: 'Reading Your Books', label: 'Reading Your Books' },
-  {
-    value: 'Recommendation from My Dentist',
-    label: 'Recommendation from My Dentist',
-  },
-  {
-    value: 'Recommendation from My Pediatrician',
-    label: 'Recommendation from My Pediatrician',
-  },
   { value: 'Spotted Your Banner', label: 'Spotted Your Banner' },
   { value: "Via My Kid's School", label: "Via My Kid's School" },
 ];
@@ -118,7 +121,7 @@ function Form({ full }) {
   const [isStatusOpen, setIsStatusOpen] = useState(false);
   const [error, setError] = useState('');
   const [cost, setCost] = useState(0);
-  const [discount, setDiscount] = useState(0);
+  const [enrollmentCost, setEnrollmentCost] = useState(0);
   const handleNumChildrenChange = (event) => {
     const length = event.target.value;
     const arr = Array.from({ length }, (_, index) => index + 1);
@@ -141,49 +144,79 @@ function Form({ full }) {
     mode: 'onBlur',
   });
 
-  const promocode = watch('code');
+  const promoCode = watch('code');
 
-  const calculateTotalCost = (count) => {
-    if (count === 1) {
-      if (promocode === 'DH23') {
-        setCost(cost / 2);
-      } else if (promocode === 'DANCE') {
-        setCost(cost - cost * 0.1);
-      } else {
-        setCost(399);
+  const calculateDiscountedPrice = () => {
+    let finalCost = 0;
+
+    if (numChildren.length === 0) {
+      finalCost = 0;
+    } else if (numChildren.length === 1) {
+      finalCost = 399;
+      if (promoCode === 'DH23') {
+        // 50% discount on the first child only
+        finalCost = 399 - 199.5;
+      } else if (promoCode === 'DANCE') {
+        // 10% discount on the first child only
+        finalCost = 399 - 39.9;
       }
-    } else if (count === 2) {
-      if (promocode === 'DH23') {
-        setCost(cost - 199.5);
-      } else if (promocode === 'DANCE') {
-        setCost(cost - 39.9);
-      } else {
-        setCost(399 * count - 99);
+      setEnrollmentCost(399.0);
+    } else if (numChildren.length === 2) {
+      finalCost = 699.0;
+      if (promoCode === 'DH23') {
+        // 50% discount on the first child only
+        finalCost = 699 - 199.5;
+      } else if (promoCode === 'DANCE') {
+        // 10% discount on the first child only
+        finalCost = 699 - 39.9;
       }
-    } else if (count === 3) {
-      if (promocode === 'DH23') {
-        setCost(cost - 199.5);
-      } else if (promocode === 'DANCE') {
-        setCost(cost - 39.9);
-      } else {
-        setCost(399 * count - 198);
+      setEnrollmentCost(699.0);
+    } else if (numChildren.length === 3) {
+      finalCost = 999.0;
+      if (promoCode === 'DH23') {
+        // 50% discount on the first child only
+        finalCost = 999 - 199.5;
+      } else if (promoCode === 'DANCE') {
+        // 10% discount on the first child only
+        finalCost = 999 - 39.9;
       }
-    } else if (count >= 4) {
-      if (promocode === 'DH23') {
-        setCost(cost - 199.5);
-      } else if (promocode === 'DANCE') {
-        setCost(cost - 39.9);
-      } else {
-        setCost(1299);
-      }
+      setEnrollmentCost(999.0);
     } else {
-      setCost(0);
+      finalCost = 1299.0;
+      setEnrollmentCost(1299.0);
+      if (promoCode === 'DH23') {
+        // 50% discount on the first child only
+        finalCost = 1299 - 199.5;
+        setEnrollmentCost(1299.0 - 199.5);
+      } else if (promoCode === 'DANCE') {
+        // 10% discount on the first child only
+        finalCost = 1299 - 39.9;
+        setEnrollmentCost(1299.0 - 39.9);
+      }
     }
+
+    if (promoCode === 'EDUCATOR') {
+      // 25% discount on the total
+      if (numChildren.length === 1) {
+        finalCost = 399 - (399 * 25) / 100;
+      } else if (numChildren.length === 2) {
+        finalCost = 699 - (699 * 25) / 100;
+      } else if (numChildren.length === 3) {
+        finalCost = 999 - (999 * 25) / 100;
+      } else if (numChildren.length >= 4) {
+        finalCost = 1299 - (1299 * 25) / 100;
+      }
+      // const totalCost = 1 * enrollmentCost;
+      // finalCost = totalCost - totalCost * 0.25;
+    }
+
+    // return finalCost;
+    setCost(finalCost);
   };
 
   useEffect(() => {
-    calculateTotalCost(numChildren.length);
-  }, [numChildren, promocode]);
+    calculateDiscountedPrice();
+  }, [numChildren, promoCode]);
 
   const sendEmail = (data, reset) => {
     setLoading(true);
@@ -503,6 +536,18 @@ function Form({ full }) {
               {errors.ambassador && ambassador.length == 0 && (
                 <Error>Required field</Error>
               )}
+            </Col>
+          )}
+          {hearAbout === 'My School' && (
+            <Col md={12} className="mb-4">
+              <label>School Name</label>
+              <Input
+                register={register}
+                name="schoolName"
+                placeholder="School Name"
+                validation={{ required: 'School name is required' }}
+                errors={errors}
+              />
             </Col>
           )}
           <Col md={12} className="mb-4">
