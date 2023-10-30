@@ -63,9 +63,10 @@ const SignupPage = () => {
                 <Row>
                   <Col md={12} lg={6}>
                     <ValueCard className="mb-5" title="Annual Subscription">
-                      Enroll your child for only $399.00 per year. Any
-                      additional sibling receives a 10% discount on the annual
-                      subscription.
+                      Enroll your child for only $399.00 per year; $699.00 ($99
+                      discount) for 2 children; $999.00 ($198 discount) for 3
+                      children; & and $1,299.00 ($297 discount) for 4 or more
+                      children.
                     </ValueCard>
                   </Col>
                   <Col md={12} lg={6}>

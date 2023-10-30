@@ -118,6 +118,7 @@ function Form({ full }) {
   const [isStatusOpen, setIsStatusOpen] = useState(false);
   const [error, setError] = useState('');
   const [cost, setCost] = useState(0);
+  const [discount, setDiscount] = useState(0);
   const handleNumChildrenChange = (event) => {
     const length = event.target.value;
     const arr = Array.from({ length }, (_, index) => index + 1);
@@ -141,26 +142,47 @@ function Form({ full }) {
   });
 
   const promocode = watch('code');
-  useEffect(() => {
-    let firstChildCost;
-    if (promocode === 'DH23') {
-      firstChildCost = 399 / 2;
-    } else if (promocode === 'DANCE') {
-      let percentage = (399 * 10) / 100;
-      firstChildCost = 399 - percentage;
-    } else {
-      firstChildCost = 399;
-    }
-    let inPer = (399 * 10) / 100;
-    const additionalChildCost = 399 - inPer;
 
-    const totalCost =
-      firstChildCost + (numChildren.length - 1) * additionalChildCost;
-    if (numChildren.length <= 0) {
-      setCost(0);
+  const calculateTotalCost = (count) => {
+    if (count === 1) {
+      if (promocode === 'DH23') {
+        setCost(cost / 2);
+      } else if (promocode === 'DANCE') {
+        setCost(cost - cost * 0.1);
+      } else {
+        setCost(399);
+      }
+    } else if (count === 2) {
+      if (promocode === 'DH23') {
+        setCost(cost - 199.5);
+      } else if (promocode === 'DANCE') {
+        setCost(cost - 39.9);
+      } else {
+        setCost(399 * count - 99);
+      }
+    } else if (count === 3) {
+      if (promocode === 'DH23') {
+        setCost(cost - 199.5);
+      } else if (promocode === 'DANCE') {
+        setCost(cost - 39.9);
+      } else {
+        setCost(399 * count - 198);
+      }
+    } else if (count >= 4) {
+      if (promocode === 'DH23') {
+        setCost(cost - 199.5);
+      } else if (promocode === 'DANCE') {
+        setCost(cost - 39.9);
+      } else {
+        setCost(1299);
+      }
     } else {
-      setCost(totalCost);
+      setCost(0);
     }
+  };
+
+  useEffect(() => {
+    calculateTotalCost(numChildren.length);
   }, [numChildren, promocode]);
 
   const sendEmail = (data, reset) => {
