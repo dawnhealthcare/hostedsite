@@ -8,13 +8,13 @@ export const Header = (props) => {
   const [menuOpen, toggleMenuOpen] = useState(false);
   const navLinks = [
     { id: 1, to: '/', title: 'Home' },
-    { id: 4, to: '/signup', title: 'Sign Up' },
     // {
     //   id: 11,
     //   title: 'Welcome',
     //   links: [],
     // },
     { id: 2, to: '/services', title: 'Services' },
+    { id: 4, to: '/signup', title: 'Sign Up' },
     {
       id: 12,
       title: 'Our Family',

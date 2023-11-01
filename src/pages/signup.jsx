@@ -5,7 +5,7 @@ import Para from '../components/Para';
 import { SectionHeader } from '../components/SectionHeader';
 import { Hero, SectionWrapper, SignupPageWrapper } from '../styles';
 import Main from './../assets/signup/3.png';
-import Main2 from './../assets/signup/2.png';
+import Main2 from './../assets/signup/4.png';
 import Form from '../components/Form';
 import ValueCard from '../components/ValuesCard';
 import { Helmet } from 'react-helmet';
@@ -63,9 +63,13 @@ const SignupPage = () => {
                 <Row>
                   <Col md={12} lg={6}>
                     <ValueCard className="mb-5" title="Annual Subscription">
-                      Enroll your child for only $399.00; 2 children for $699.00
-                      ($99 discount); 3 children for $999.00 ($198 discount);
-                      and 4 or more children for $1,299.00 ($297 discount).
+                      For just $399.00, empower your child with access to our
+                      essential Primary and Secondary prevention services,
+                      invigorating weekly touchpoints, transformative self-care
+                      resources, and enlightening monthly parent-Dawn Health
+                      conferences. Have more than one child? Enroll two for just
+                      $699.00 and save $99! Further discounts are available for
+                      additional siblings.
                     </ValueCard>
                   </Col>
                   <Col md={12} lg={6}>
@@ -73,8 +77,11 @@ const SignupPage = () => {
                       className="mb-5"
                       title="Therapy (Individual or Family) Session Cost"
                     >
-                      $169.00 each, fostering collaborative care from a licensed
-                      independent therapist.
+                      For a limited investment of just $169.00 per session,
+                      connect with our specialized licensed therapists and
+                      embark on a journey of collaborative and personalized care
+                      that will uplift your child's spirit and enrich their
+                      wellbeing.
                     </ValueCard>
                   </Col>
                   <Col md={12} lg={6}>
@@ -82,14 +89,21 @@ const SignupPage = () => {
                       className="mb-5"
                       title="Health & Wellness Coaching Session Cost"
                     >
-                      $79.00 each for guidance and expertise from a
-                      board-certified health & wellness coach.
+                      Experience the ultimate in holistic care for only $79.00
+                      per session! Our board-certified health and wellness
+                      coaches not only offer you and your child personalized
+                      blueprints for a radiant life but also synchronize
+                      seamlessly with our therapists' care plans. It's a unified
+                      approach that amplifies your family's wellbeing.
                     </ValueCard>
                   </Col>
                   <Col md={12} lg={6}>
                     <ValueCard className="mb-5" title="Individualized Care">
-                      Mental Health Resilience pathway tailored to your child's
-                      or your unique needs.
+                      Discover the Mental Health Resilience Pathway, a
+                      transformative program meticulously tailored to meet your
+                      child's—or your own—unique needs. It's not just a service;
+                      it's a life-changing journey crafted to strengthen
+                      resilience and enrich mental wellbeing.
                     </ValueCard>
                   </Col>
                 </Row>
@@ -144,12 +158,12 @@ const SignupPage = () => {
             </Row>
             <Row className="pb-main align-items-center">
               <Col
-                lg={5}
+                lg={6}
                 className="text-end wow animate__animated animate__fadeInLeft"
               >
                 <img src={Main2} className="img-fluid" alt="main" />
               </Col>
-              <Col lg={1}></Col>
+              {/* <Col lg={1}></Col> */}
               <Col
                 lg={6}
                 className="wow animate__animated animate__fadeInRight"

@@ -10,7 +10,7 @@ export const services = [
     desc: (
       <ul className="">
         <li className="mb-3">
-          Our wellness program offers biweekly text-based screenings to detect
+          Our wellness program offers biweekly web-based screenings to detect
           early warning signs of mental health issues and promote metabolic
           health.
         </li>
@@ -32,7 +32,7 @@ export const services = [
           take charge of their health.
         </li>
         <li>
-          Biweekly text-based screenings provide key data points for determining
+          Biweekly web-based screenings provide key data points for determining
           when sessions with culturally competent providers are necessary to
           reinforce the child's mental health resilience.
         </li>
