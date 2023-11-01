@@ -272,6 +272,7 @@ function Form({ full }) {
       parentLastName,
       parentPhoneNumber,
       email,
+      code,
       state,
       city,
       numOfChildern,
@@ -284,7 +285,9 @@ function Form({ full }) {
       delete res.ambassador;
     }
 
-    sendEmail(res, reset);
+    console.log(res);
+
+    // sendEmail(res, reset);
   };
 
   return (
@@ -324,17 +327,20 @@ function Form({ full }) {
             <Alert variant="success" className="d-flex justify-content-between">
               <div>
                 <Para>
-                  Thank you for submitting your information to Dawn Health. The
-                  appropriate team will be in touch with you shortly.
+                  Thank you for entrusting Dawn Health with your information!
+                  Our dedicated team is eager to connect with you and will reach
+                  out shortly to assist you on your journey towards optimal
+                  wellbeing.
                 </Para>
                 <Para>
-                  If this is an emergency, please call 911 or the National
-                  Suicide Prevention Lifeline at 988. Both provide free 24/7
-                  support.
+                  In urgent situations that require immediate attention, we
+                  strongly encourage you to dial 911 or contact the National
+                  Suicide Prevention Lifeline at 988 for 24/7 free support.
                 </Para>
+                <Para>Here's to a healthier, happier family of yours!</Para>
                 <Para className="mb-0">
-                  Warm regards, <br />
-                  Dawn Health
+                  Warmest regards, <br />
+                  The Dawn Health Team
                 </Para>
               </div>
             </Alert>
