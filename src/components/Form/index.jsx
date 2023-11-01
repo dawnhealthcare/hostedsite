@@ -285,9 +285,9 @@ function Form({ full }) {
       delete res.ambassador;
     }
 
-    console.log(res);
+    // console.log(res);
 
-    // sendEmail(res, reset);
+    sendEmail(res, reset);
   };
 
   return (
