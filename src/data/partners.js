@@ -4,6 +4,7 @@ import Partner3 from './../assets/about/s2.png';
 import Partner4 from './../assets/about/s4.png';
 import Partner5 from './../assets/about/s8.png';
 import Partner6 from './../assets/about/s11.png';
+import Partner7 from './../assets/about/3.gif';
 export const partners = [
   {
     id: 226,
@@ -22,6 +23,12 @@ export const partners = [
     title: 'Conscious Parenting Revolution',
     link: 'https://consciousparentingrevolution.com/',
     image: Partner2,
+  },
+  {
+    id: 227,
+    title: 'Better Business Bureau',
+    link: 'https://www.bbb.org/us/tx/hawkins/profile/mental-health-services/dawn-health-care-llc-1075-28146826',
+    image: Partner7,
   },
   // { id: 223, title: 'LanguageLine Solutions', link: '#', image: Partner3 },
   // { id: 224, title: 'Kareo a Tebra Company', link: '#', image: Partner4 },
