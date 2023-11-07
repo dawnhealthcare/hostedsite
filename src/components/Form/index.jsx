@@ -17,6 +17,7 @@ const options = [
   { value: 'FL', label: 'FL' },
   { value: 'IL', label: 'IL' },
   { value: 'MA', label: 'MA' },
+  { value: 'MI', label: 'MI' },
   { value: 'MN', label: 'MN' },
   { value: 'PA', label: 'PA' },
   { value: 'TX', label: 'TX' },
