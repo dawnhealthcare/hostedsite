@@ -46,7 +46,7 @@ const HomePage = () => {
                 <Para hero>
                   Crafting a future for children and parents where thriving
                   transcends thought to become an undeniable reality. Now caring
-                  for families in FL, IL, MI, MN, TX and VA.
+                  for families in DC, FL, IL, MA, MI, MN, NE, PA, TX, VA & WI.
                 </Para>
                 <div className="d-flex gap-3 mt-4 flex-wrap flex-sm-nowrap">
                   <Button

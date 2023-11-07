@@ -19,9 +19,11 @@ const options = [
   { value: 'MA', label: 'MA' },
   { value: 'MI', label: 'MI' },
   { value: 'MN', label: 'MN' },
+  { value: 'NE', label: 'NE' },
   { value: 'PA', label: 'PA' },
   { value: 'TX', label: 'TX' },
   { value: 'VA', label: 'VA' },
+  { value: 'WI', label: 'WI' },
 ];
 
 const childrenOptions = [

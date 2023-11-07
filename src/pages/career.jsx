@@ -65,7 +65,7 @@ const CareerPage = () => {
                   title="Child & Adolescent Behavioral Therapist"
                 >
                   Licensed to practice without supervision in any of the
-                  following states: FL, IL, MI, MN, TX or VA.
+                  following states: DC, FL, IL, MA, MI, MN, NE, PA, TX, VA & WI.
                 </SectionHeader>
               </Col>
             </Row>
