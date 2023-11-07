@@ -12,12 +12,12 @@ export const partners = [
     link: 'https://innovationlabs.harvard.edu/',
     image: Partner6,
   },
-  // {
-  //   id: 221,
-  //   title: 'National Council for Mental Wellbeing',
-  //   link: 'https://www.thenationalcouncil.org/',
-  //   image: Partner1,
-  // },
+  {
+    id: 221,
+    title: 'National Council for Mental Wellbeing',
+    link: 'https://www.thenationalcouncil.org/',
+    image: Partner1,
+  },
   {
     id: 222,
     title: 'Conscious Parenting Revolution',
