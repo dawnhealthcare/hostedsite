@@ -111,7 +111,7 @@ const SignupPage = () => {
                   Don't just wish for your child's success—make it happen. Join
                   us today to take a decisive step in nurturing their innate
                   talents. Together, we're not just offering therapy; we're
-                  shaping lives
+                  shaping lives.
                 </Para>
                 {/* <Para>
                 Don't merely hope for a bright tomorrow for your child—create

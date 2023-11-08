@@ -43,10 +43,13 @@ const HomePage = () => {
                 <Heading medium main="Wellness Ecosystem" className="pt-lg-5">
                   Virtual Mental Health Care For Adolescents & Parents
                 </Heading>
-                <Para hero>
+                <Para hero className="mb-0">
                   Crafting a future for children and parents where thriving
-                  transcends thought to become an undeniable reality. Now caring
-                  for families in DC, FL, IL, MA, MI, MN, NE, PA, TX, VA & WI.
+                  transcends thought to become an undeniable reality.
+                </Para>
+                <Para hero>
+                  Now caring for families in DC, FL, IL, MA, MI, MN, NE, PA, TX,
+                  VA & WI.
                 </Para>
                 <div className="d-flex gap-3 mt-4 flex-wrap flex-sm-nowrap">
                   <Button
