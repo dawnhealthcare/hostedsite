@@ -14,6 +14,7 @@ import Book13 from './../assets/resources/book13.png';
 import Book14 from './../assets/resources/book14.png';
 import Book15 from './../assets/resources/book15.png';
 import Book17 from './../assets/resources/17.png';
+import Book222 from './../assets/resources/222.png';
 import Book16 from './../assets/resources/top.png';
 import Web0 from './../assets/resources/web0.png';
 import Web1 from './../assets/resources/web1.png';
@@ -36,6 +37,11 @@ export const ownBooks = [
     id: 1,
     image: Book1,
     link: 'https://www.amazon.com/Coaching-Kids-Scientific-Thinking-Overcoming/dp/1733905960/ref=sr_1_1?keywords=kate+efsta&sr=8-1',
+  }, 
+  {
+    id: 1666,
+    image: Book222,
+    link: 'https://www.amazon.com/dp/B0CND43ZH9?ref_=ast_author_dp',
   },
 ];
 
@@ -110,6 +116,7 @@ export const books = [
     image: Book15,
     link: 'https://www.amazon.com/Building-Resilience-Children-Teens-Giving/dp/1610023854/ref=sr_1_1?keywords=building+resilience+in+children+and+teens&sr=8-1',
   },
+ 
 ];
 
 export const websites = [
