@@ -6,6 +6,9 @@ body {
   overflow-x: hidden;
   padding-right: 0px !important;
 }
+a {
+  text-decoration: none;
+}
 .h-100vh {
   min-height: 70vh;
 }

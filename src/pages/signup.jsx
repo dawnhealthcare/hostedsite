@@ -5,6 +5,7 @@ import Para from '../components/Para';
 import { SectionHeader } from '../components/SectionHeader';
 import { Hero, SectionWrapper, SignupPageWrapper } from '../styles';
 import Main from './../assets/signup/3.png';
+import Logo from './../assets/signup/logo.png';
 import Main2 from './../assets/signup/4.png';
 import Form from '../components/Form';
 import ValueCard from '../components/ValuesCard';
@@ -34,6 +35,9 @@ const SignupPage = () => {
                   Unlocking Potential, Illuminating Paths: Igniting Resilience
                   in Adolescents, Hand-in-Hand with Parents!
                 </Para>
+                <a href="https://www.thenationalcouncil.org/" target="_blank">
+                  <img src={Logo} className="img-fluid main-image" alt="main" />
+                </a>
               </Col>
               <Col
                 md={5}

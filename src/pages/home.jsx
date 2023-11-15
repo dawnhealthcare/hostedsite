@@ -19,6 +19,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { why } from '../data/why';
 import { Helmet } from 'react-helmet';
 import Form from '../components/Form';
+import { ChatGpt } from '../components/Icons';
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -58,12 +59,14 @@ const HomePage = () => {
                   >
                     Register Here
                   </Button>
-                  {/* <Button
-                    className="mb-3 ambassador"
-                    onClick={() => navigate('/ambassadorship')}
+                  <a
+                    href="https://chat.openai.com/g/g-vss2NzsEb-dawn-health"
+                    target="blank"
                   >
-                    Become a Dawn Health Ambassador
-                  </Button> */}
+                    <Button className="mb-3 ambassador">
+                      <ChatGpt className="me-2" /> Dawn Health ChatGPT
+                    </Button>
+                  </a>
                 </div>
               </Col>
               <Col

@@ -1,6 +1,12 @@
 import React, { useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import { EmailIcon, InstagramIcon, LinkedinIcon } from '../Icons';
+import {
+  ChatGpt,
+  EmailIcon,
+  FacebookIcon,
+  InstagramIcon,
+  LinkedinIcon,
+} from '../Icons';
 import Para from '../Para';
 import Logo from './../../assets/logo/dark-logo.png';
 import { CopyRight, FooterWrapper, ReLink, Title, Text } from './styles';
@@ -36,6 +42,20 @@ const Footer = () => {
                   target="_blank"
                 >
                   <InstagramIcon />
+                </a>
+                <a
+                  className="me-3"
+                  href="https://www.facebook.com/dawnhealth.care"
+                  target="_blank"
+                >
+                  <FacebookIcon />
+                </a>
+                <a
+                  className="me-3"
+                  href="https://chat.openai.com/g/g-vss2NzsEb-dawn-health"
+                  target="_blank"
+                >
+                  <ChatGpt />
                 </a>
                 <Para className="my-3 text-white intro">
                   Dawn Health is a registered trademark owned by ELE

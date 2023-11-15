@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
 export const ButtonWrapper = styled.button`
+  display: flex;
+  align-items: center;
+  text-decoration: none;
   background: linear-gradient(
     270.23deg,
     #e8971e -6.15%,
