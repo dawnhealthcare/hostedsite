@@ -62,8 +62,9 @@ const HomePage = () => {
                   <a
                     href="https://chat.openai.com/g/g-vss2NzsEb-dawn-health"
                     target="blank"
+                    className="parent"
                   >
-                    <Button className="mb-3 ambassador">
+                    <Button className="mb-3 w-100">
                       <ChatGpt className="me-2" /> Dawn Health ChatGPT
                     </Button>
                   </a>
