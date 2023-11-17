@@ -38,11 +38,6 @@ export const ownBooks = [
     image: Book1,
     link: 'https://www.amazon.com/Coaching-Kids-Scientific-Thinking-Overcoming/dp/1733905960/ref=sr_1_1?keywords=kate+efsta&sr=8-1',
   },
-  {
-    id: 1666,
-    image: Book222,
-    link: 'https://www.amazon.com/dp/B0CND43ZH9?ref_=ast_author_dp',
-  },
 ];
 
 export const books = [
@@ -115,6 +110,11 @@ export const books = [
     id: 15,
     image: Book15,
     link: 'https://www.amazon.com/Building-Resilience-Children-Teens-Giving/dp/1610023854/ref=sr_1_1?keywords=building+resilience+in+children+and+teens&sr=8-1',
+  },
+  {
+    id: 1666,
+    image: Book222,
+    link: 'https://www.amazon.com/dp/B0CND43ZH9?ref_=ast_author_dp',
   },
 ];
 
